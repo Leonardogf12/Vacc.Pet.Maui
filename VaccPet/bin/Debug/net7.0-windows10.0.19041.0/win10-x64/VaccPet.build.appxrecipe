@@ -10,31 +10,31 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>2704b3a1-8522-48fe-8cc3-d5782725db3a</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath></WindowsSdkPath>
-    <LayoutDir>D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\VaccPet.runtimeconfig.json">
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\VaccPet.runtimeconfig.json">
       <PackagePath>VaccPet.runtimeconfig.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\VaccPet.dll">
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\VaccPet.dll">
       <PackagePath>VaccPet.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>VaccPet.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\root\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.7\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
@@ -793,7 +793,7 @@
     <AppxPackagedFile Include="C:\Users\root\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.5\runtimes\win-x64\native\e_sqlite3.dll">
       <PackagePath>e_sqlite3.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\VaccPet.deps.json">
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\VaccPet.deps.json">
       <PackagePath>VaccPet.deps.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
@@ -805,22 +805,22 @@
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Core.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\Resources\Raw\catdefault.png">
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\Resources\Raw\catdefault.png">
       <PackagePath>catdefault.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\Resources\Raw\dogdefault.png">
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\Resources\Raw\dogdefault.png">
       <PackagePath>dogdefault.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\Resources\Raw\mousedefault.png">
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\Resources\Raw\mousedefault.png">
       <PackagePath>mousedefault.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\Resources\Raw\noimage.png">
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\Resources\Raw\noimage.png">
       <PackagePath>noimage.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\Resources\Raw\rabbitdefault.png">
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\Resources\Raw\rabbitdefault.png">
       <PackagePath>rabbitdefault.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

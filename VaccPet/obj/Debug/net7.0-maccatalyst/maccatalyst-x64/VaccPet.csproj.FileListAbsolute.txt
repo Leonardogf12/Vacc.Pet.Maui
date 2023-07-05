@@ -1,0 +1,851 @@
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauiimage.inputs
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauifont.inputs
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauisplash.inputs
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauisplash.stamp
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@3x.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@2x.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@3x.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@2x.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@3x.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@2x.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@3x.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon76x76@2x.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@2x.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@3x.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\home.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\home@2x.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\home@3x.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\add.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\catdefault.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\dogdefault.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\imagedefault.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\mousedefault.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\rabbitdefault.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauiimage.stamp
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauifont.stamp
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Regular.ttf
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Semibold.ttf
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\actool\_PartialAppManifest.items
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\actool\_BundleResourceWithLogicalName.items
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\actool\_ProcessedImageAssetsPath.items
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\coremlc\_PartialAppManifest.items
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\coremlc\_BundleResourceWithLogicalName.items
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\coremlc\_ProcessedCoreMLModelsPath.items
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\_ProcessedBundleResourcesPath.items
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\_ProcessedContentPath.items
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.csproj.AssemblyReference.cache
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.AssemblyInfoInputs.cache
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.AssemblyInfo.cs
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.csproj.CoreCompileInputs.cache
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\refint\VaccPet.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.pdb
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.runtimeconfig.json
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.pdb
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.Core.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Mvvm.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\ExCSS.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Fizzler.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\HarfBuzzSharp.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\IconPacks.Material.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Material.Components.Maui.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\MaterialColorUtilities.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.DependencyInjection.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.Abstractions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.Debug.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Options.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Graphics.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\ShimSkiaSharp.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SkiaSharp.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SkiaSharp.HarfBuzz.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SkiaSharp.Views.iOS.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SkiaSharp.Views.Maui.Controls.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SkiaSharp.Views.Maui.Core.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLite-net.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.batteries_v2.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.core.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.provider.sqlite3.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Svg.Custom.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Svg.Model.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Svg.Skia.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Topten.RichTextKit.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libHarfBuzzSharp.framework.zip
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSkiaSharp.framework.zip
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libe_sqlite3.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.CSharp.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.VisualBasic.Core.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.VisualBasic.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Win32.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Win32.Registry.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.AppContext.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Buffers.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Collections.Concurrent.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Collections.Immutable.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Collections.NonGeneric.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Collections.Specialized.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Collections.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ComponentModel.Annotations.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ComponentModel.DataAnnotations.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ComponentModel.EventBasedAsync.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ComponentModel.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ComponentModel.TypeConverter.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ComponentModel.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Configuration.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Console.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Core.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Data.Common.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Data.DataSetExtensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Data.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Contracts.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Debug.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.DiagnosticSource.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.FileVersionInfo.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Process.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.StackTrace.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.TextWriterTraceListener.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Tools.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.TraceSource.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Tracing.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Drawing.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Drawing.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Dynamic.Runtime.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Formats.Asn1.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Formats.Tar.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Globalization.Calendars.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Globalization.Extensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Globalization.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.Compression.Brotli.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.Compression.FileSystem.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.Compression.ZipFile.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.Compression.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.AccessControl.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.DriveInfo.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.Watcher.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.IsolatedStorage.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.MemoryMappedFiles.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.Pipes.AccessControl.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.Pipes.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.UnmanagedMemoryStream.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Linq.Expressions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Linq.Parallel.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Linq.Queryable.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Linq.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Memory.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Http.Json.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Http.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.HttpListener.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Mail.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.NameResolution.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.NetworkInformation.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Ping.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Quic.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Requests.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Security.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.ServicePoint.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Sockets.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.WebClient.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.WebHeaderCollection.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.WebProxy.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.WebSockets.Client.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.WebSockets.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Numerics.Vectors.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Numerics.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ObjectModel.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Private.DataContractSerialization.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Private.Uri.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Private.Xml.Linq.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Private.Xml.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.DispatchProxy.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.ILGeneration.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.Lightweight.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.Extensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.Metadata.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.TypeExtensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Resources.Reader.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Resources.ResourceManager.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Resources.Writer.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.CompilerServices.Unsafe.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.CompilerServices.VisualC.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Extensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Handles.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.JavaScript.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Intrinsics.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Loader.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Numerics.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Formatters.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Json.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Xml.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.AccessControl.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Claims.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Algorithms.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Cng.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Csp.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Encoding.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.OpenSsl.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.X509Certificates.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Principal.Windows.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Principal.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.SecureString.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ServiceModel.Web.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ServiceProcess.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.CodePages.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.Extensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Text.Encodings.Web.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Text.Json.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Text.RegularExpressions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Channels.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Overlapped.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Dataflow.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Extensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Parallel.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Thread.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.ThreadPool.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Timer.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Transactions.Local.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Transactions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ValueTuple.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Web.HttpUtility.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Web.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Windows.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.Linq.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.ReaderWriter.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.Serialization.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.XDocument.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.XPath.XDocument.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.XPath.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.XmlDocument.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.XmlSerializer.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\WindowsBase.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\mscorlib.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\netstandard.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.MacCatalyst.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.Compatibility.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.Xaml.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Essentials.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Private.CoreLib.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\icudt.dat
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\icudt_CJK.dat
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\icudt_EFIGS.dat
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\icudt_no_CJK.dat
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.IO.Compression.Native.a
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.IO.Compression.Native.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.Native.a
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.Native.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.Net.Security.Native.a
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.Net.Security.Native.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.Security.Cryptography.Native.Apple.a
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.Security.Cryptography.Native.Apple.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libicudata.a
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libicui18n.a
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libicuuc.a
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmono-component-debugger-static.a
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmono-component-debugger-stub-static.a
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmono-component-diagnostics_tracing-static.a
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmono-component-diagnostics_tracing-stub-static.a
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmono-component-hot_reload-static.a
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmono-component-hot_reload-stub-static.a
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmonosgen-2.0.a
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmonosgen-2.0.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.MacCatalyst.registrar.a
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-debug.a
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-debug.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.a
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\XamlC.stamp
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.csproj.CopyComplete
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.genruntimeconfig.cache
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\ref\VaccPet.dll
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\add.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\add@2x.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\add@3x.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\adddark.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\adddark@2x.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\adddark@3x.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\catpets.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\dogpets.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\trash.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\trash@2x.png
+D:\PROJETOS\Projetos MAUI\VaccPet\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\trash@3x.png
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.runtimeconfig.json
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.pdb
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.Core.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Mvvm.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\ExCSS.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Fizzler.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\HarfBuzzSharp.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\IconPacks.Material.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Material.Components.Maui.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\MaterialColorUtilities.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.DependencyInjection.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.Abstractions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.Debug.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Options.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Graphics.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\ShimSkiaSharp.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SkiaSharp.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SkiaSharp.HarfBuzz.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SkiaSharp.Views.iOS.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SkiaSharp.Views.Maui.Controls.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SkiaSharp.Views.Maui.Core.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLite-net.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.batteries_v2.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.core.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.provider.sqlite3.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Svg.Custom.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Svg.Model.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Svg.Skia.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Topten.RichTextKit.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libHarfBuzzSharp.framework.zip
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSkiaSharp.framework.zip
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libe_sqlite3.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.CSharp.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.VisualBasic.Core.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.VisualBasic.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Win32.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Win32.Registry.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.AppContext.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Buffers.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Collections.Concurrent.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Collections.Immutable.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Collections.NonGeneric.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Collections.Specialized.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Collections.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ComponentModel.Annotations.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ComponentModel.DataAnnotations.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ComponentModel.EventBasedAsync.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ComponentModel.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ComponentModel.TypeConverter.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ComponentModel.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Configuration.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Console.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Core.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Data.Common.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Data.DataSetExtensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Data.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Contracts.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Debug.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.DiagnosticSource.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.FileVersionInfo.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Process.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.StackTrace.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.TextWriterTraceListener.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Tools.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.TraceSource.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Tracing.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Drawing.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Drawing.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Dynamic.Runtime.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Formats.Asn1.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Formats.Tar.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Globalization.Calendars.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Globalization.Extensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Globalization.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.Compression.Brotli.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.Compression.FileSystem.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.Compression.ZipFile.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.Compression.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.AccessControl.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.DriveInfo.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.Watcher.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.IsolatedStorage.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.MemoryMappedFiles.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.Pipes.AccessControl.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.Pipes.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.UnmanagedMemoryStream.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Linq.Expressions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Linq.Parallel.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Linq.Queryable.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Linq.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Memory.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Http.Json.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Http.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.HttpListener.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Mail.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.NameResolution.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.NetworkInformation.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Ping.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Quic.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Requests.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Security.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.ServicePoint.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Sockets.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.WebClient.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.WebHeaderCollection.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.WebProxy.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.WebSockets.Client.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.WebSockets.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Numerics.Vectors.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Numerics.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ObjectModel.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Private.DataContractSerialization.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Private.Uri.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Private.Xml.Linq.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Private.Xml.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.DispatchProxy.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.ILGeneration.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.Lightweight.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.Extensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.Metadata.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.TypeExtensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Resources.Reader.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Resources.ResourceManager.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Resources.Writer.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.CompilerServices.Unsafe.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.CompilerServices.VisualC.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Extensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Handles.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.JavaScript.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Intrinsics.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Loader.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Numerics.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Formatters.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Json.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Xml.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.AccessControl.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Claims.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Algorithms.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Cng.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Csp.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Encoding.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.OpenSsl.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.X509Certificates.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Principal.Windows.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Principal.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.SecureString.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ServiceModel.Web.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ServiceProcess.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.CodePages.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.Extensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Text.Encodings.Web.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Text.Json.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Text.RegularExpressions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Channels.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Overlapped.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Dataflow.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Extensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Parallel.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Thread.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.ThreadPool.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Timer.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Transactions.Local.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Transactions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ValueTuple.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Web.HttpUtility.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Web.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Windows.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.Linq.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.ReaderWriter.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.Serialization.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.XDocument.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.XPath.XDocument.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.XPath.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.XmlDocument.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.XmlSerializer.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\WindowsBase.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\mscorlib.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\netstandard.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.MacCatalyst.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.Compatibility.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.Xaml.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Essentials.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Private.CoreLib.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\icudt.dat
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\icudt_CJK.dat
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\icudt_EFIGS.dat
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\icudt_no_CJK.dat
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.IO.Compression.Native.a
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.IO.Compression.Native.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.Native.a
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.Native.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.Net.Security.Native.a
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.Net.Security.Native.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.Security.Cryptography.Native.Apple.a
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.Security.Cryptography.Native.Apple.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libicudata.a
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libicui18n.a
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libicuuc.a
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmono-component-debugger-static.a
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmono-component-debugger-stub-static.a
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmono-component-diagnostics_tracing-static.a
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmono-component-diagnostics_tracing-stub-static.a
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmono-component-hot_reload-static.a
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmono-component-hot_reload-stub-static.a
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmonosgen-2.0.a
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmonosgen-2.0.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.MacCatalyst.registrar.a
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-debug.a
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-debug.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.a
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauiimage.inputs
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauifont.inputs
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauisplash.inputs
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauisplash.stamp
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauiimage.stamp
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauifont.stamp
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\actool\_PartialAppManifest.items
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\actool\_BundleResourceWithLogicalName.items
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\actool\_ProcessedImageAssetsPath.items
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\coremlc\_PartialAppManifest.items
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\coremlc\_BundleResourceWithLogicalName.items
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\coremlc\_ProcessedCoreMLModelsPath.items
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\_ProcessedBundleResourcesPath.items
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\_ProcessedContentPath.items
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.csproj.AssemblyReference.cache
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.AssemblyInfoInputs.cache
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.AssemblyInfo.cs
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.csproj.CoreCompileInputs.cache
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\XamlC.stamp
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.csproj.CopyComplete
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\refint\VaccPet.dll
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.pdb
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.genruntimeconfig.cache
+D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\ref\VaccPet.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.runtimeconfig.json
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.pdb
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Maui.Core.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\CommunityToolkit.Mvvm.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\ExCSS.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Fizzler.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\HarfBuzzSharp.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\IconPacks.Material.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Material.Components.Maui.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\MaterialColorUtilities.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.DependencyInjection.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.Abstractions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Logging.Debug.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Options.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Graphics.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\ShimSkiaSharp.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SkiaSharp.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SkiaSharp.HarfBuzz.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SkiaSharp.Views.iOS.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SkiaSharp.Views.Maui.Controls.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SkiaSharp.Views.Maui.Core.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLite-net.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.batteries_v2.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.core.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.provider.sqlite3.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Svg.Custom.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Svg.Model.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Svg.Skia.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Topten.RichTextKit.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libHarfBuzzSharp.framework.zip
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSkiaSharp.framework.zip
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libe_sqlite3.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.CSharp.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.VisualBasic.Core.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.VisualBasic.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Win32.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Win32.Registry.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.AppContext.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Buffers.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Collections.Concurrent.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Collections.Immutable.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Collections.NonGeneric.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Collections.Specialized.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Collections.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ComponentModel.Annotations.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ComponentModel.DataAnnotations.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ComponentModel.EventBasedAsync.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ComponentModel.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ComponentModel.TypeConverter.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ComponentModel.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Configuration.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Console.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Core.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Data.Common.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Data.DataSetExtensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Data.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Contracts.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Debug.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.DiagnosticSource.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.FileVersionInfo.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Process.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.StackTrace.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.TextWriterTraceListener.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Tools.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.TraceSource.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Diagnostics.Tracing.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Drawing.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Drawing.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Dynamic.Runtime.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Formats.Asn1.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Formats.Tar.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Globalization.Calendars.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Globalization.Extensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Globalization.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.Compression.Brotli.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.Compression.FileSystem.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.Compression.ZipFile.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.Compression.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.AccessControl.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.DriveInfo.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.Watcher.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.FileSystem.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.IsolatedStorage.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.MemoryMappedFiles.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.Pipes.AccessControl.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.Pipes.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.UnmanagedMemoryStream.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.IO.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Linq.Expressions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Linq.Parallel.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Linq.Queryable.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Linq.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Memory.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Http.Json.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Http.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.HttpListener.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Mail.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.NameResolution.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.NetworkInformation.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Ping.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Quic.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Requests.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Security.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.ServicePoint.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.Sockets.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.WebClient.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.WebHeaderCollection.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.WebProxy.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.WebSockets.Client.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.WebSockets.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Net.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Numerics.Vectors.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Numerics.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ObjectModel.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Private.DataContractSerialization.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Private.Uri.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Private.Xml.Linq.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Private.Xml.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.DispatchProxy.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.ILGeneration.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.Lightweight.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.Emit.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.Extensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.Metadata.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.TypeExtensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Reflection.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Resources.Reader.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Resources.ResourceManager.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Resources.Writer.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.CompilerServices.Unsafe.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.CompilerServices.VisualC.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Extensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Handles.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.JavaScript.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.InteropServices.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Intrinsics.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Loader.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Numerics.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Formatters.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Json.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.Xml.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.Serialization.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Runtime.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.AccessControl.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Claims.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Algorithms.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Cng.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Csp.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Encoding.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.OpenSsl.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.Primitives.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.X509Certificates.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Cryptography.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Principal.Windows.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.Principal.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.SecureString.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Security.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ServiceModel.Web.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ServiceProcess.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.CodePages.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.Extensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Text.Encoding.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Text.Encodings.Web.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Text.Json.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Text.RegularExpressions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Channels.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Overlapped.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Dataflow.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Extensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.Parallel.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Tasks.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Thread.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.ThreadPool.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.Timer.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Threading.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Transactions.Local.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Transactions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.ValueTuple.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Web.HttpUtility.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Web.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Windows.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.Linq.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.ReaderWriter.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.Serialization.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.XDocument.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.XPath.XDocument.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.XPath.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.XmlDocument.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.XmlSerializer.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Xml.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\WindowsBase.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\mscorlib.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\netstandard.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.MacCatalyst.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.Compatibility.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.Xaml.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Essentials.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\System.Private.CoreLib.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\icudt.dat
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\icudt_CJK.dat
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\icudt_EFIGS.dat
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\icudt_no_CJK.dat
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.IO.Compression.Native.a
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.IO.Compression.Native.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.Native.a
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.Native.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.Net.Security.Native.a
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.Net.Security.Native.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.Security.Cryptography.Native.Apple.a
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libSystem.Security.Cryptography.Native.Apple.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libicudata.a
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libicui18n.a
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libicuuc.a
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmono-component-debugger-static.a
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmono-component-debugger-stub-static.a
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmono-component-diagnostics_tracing-static.a
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmono-component-diagnostics_tracing-stub-static.a
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmono-component-hot_reload-static.a
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmono-component-hot_reload-stub-static.a
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmonosgen-2.0.a
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libmonosgen-2.0.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Microsoft.MacCatalyst.registrar.a
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-debug.a
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet-debug.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.a
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\libxamarin-dotnet.dylib
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauiimage.inputs
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauifont.inputs
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauisplash.inputs
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauisplash.stamp
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauiimage.stamp
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\mauifont.stamp
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\actool\_PartialAppManifest.items
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\actool\_BundleResourceWithLogicalName.items
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\actool\_ProcessedImageAssetsPath.items
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\coremlc\_PartialAppManifest.items
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\coremlc\_BundleResourceWithLogicalName.items
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\coremlc\_ProcessedCoreMLModelsPath.items
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\_ProcessedBundleResourcesPath.items
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\_ProcessedContentPath.items
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.csproj.AssemblyReference.cache
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.AssemblyInfoInputs.cache
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.AssemblyInfo.cs
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.csproj.CoreCompileInputs.cache
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\XamlC.stamp
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.csproj.CopyComplete
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\refint\VaccPet.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.pdb
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.genruntimeconfig.cache
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\ref\VaccPet.dll

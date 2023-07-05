@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YKRg4RGz1hl0FCVnFqnQeBzzREFPfu8fhQDODCo16SGM0cXXLjVGz3N8d0WnKxq5xopcR9no96dU/NsAz0UyEg==",
+  "dgSpecHash": "zTIUpo1p2YlSs0ixc3m7zs5g5YZKebeskedzipHwO5emltxwOYAvoU18K6tZsAnkML/Y03b++KOGxHmlBjE9lw==",
   "success": true,
-  "projectFilePath": "D:\\PROJETOS\\Projetos MAUI\\VaccPet - Copia\\VaccPet\\VaccPet.csproj",
+  "projectFilePath": "D:\\PROJETOS\\Projetos MAUI\\VaccPet.Project\\Vacc.Pet.Maui\\VaccPet\\VaccPet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\root\\.nuget\\packages\\communitytoolkit.maui\\5.2.0\\communitytoolkit.maui.5.2.0.nupkg.sha512",
     "C:\\Users\\root\\.nuget\\packages\\communitytoolkit.maui.core\\5.2.0\\communitytoolkit.maui.core.5.2.0.nupkg.sha512",

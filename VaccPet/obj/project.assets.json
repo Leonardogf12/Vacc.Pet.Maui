@@ -50251,11 +50251,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PROJETOS\\Projetos MAUI\\VaccPet - Copia\\VaccPet\\VaccPet.csproj",
+      "projectUniqueName": "D:\\PROJETOS\\Projetos MAUI\\VaccPet.Project\\Vacc.Pet.Maui\\VaccPet\\VaccPet.csproj",
       "projectName": "VaccPet",
-      "projectPath": "D:\\PROJETOS\\Projetos MAUI\\VaccPet - Copia\\VaccPet\\VaccPet.csproj",
+      "projectPath": "D:\\PROJETOS\\Projetos MAUI\\VaccPet.Project\\Vacc.Pet.Maui\\VaccPet\\VaccPet.csproj",
       "packagesPath": "C:\\Users\\root\\.nuget\\packages\\",
-      "outputPath": "D:\\PROJETOS\\Projetos MAUI\\VaccPet - Copia\\VaccPet\\obj\\",
+      "outputPath": "D:\\PROJETOS\\Projetos MAUI\\VaccPet.Project\\Vacc.Pet.Maui\\VaccPet\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
