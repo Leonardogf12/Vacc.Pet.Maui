@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"            
+             x:Class="VaccPet.MVVM.Views.RegisterPetPage"
+             BackgroundColor="WhiteSmoke"
+             Title="Novo Pet">
+
+    <ScrollView VerticalOptions="FillAndExpand">
+        <Grid Margin="15,15,15,0" RowSpacing="10" ColumnSpacing="10" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Row="0" Grid.ColumnSpan="2">
+
+                <Frame HeightRequest="100" 
+                       Padding="1" 
+                       BackgroundColor="WhiteSmoke" 
+                       BorderColor="{StaticResource Primary}" 
+                       WidthRequest="100" 
+                       CornerRadius="100">
+                    <Image Source="{Binding ImagePath}"
+                              WidthRequest="200" 
+                              HeightRequest="200" 
+                              Aspect="AspectFit">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding GetImageFromGalleryCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
+
+                <Image Source="adddark.svg" HeightRequest="25" Margin="80,-10,0,0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GetImageFromGalleryCommand}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Grid.ColumnSpan="2">
+                <Label Text="Nome" 
+                           TextColor="{StaticResource Gray600}" 
+                           FontSize="Medium" 
+                           FontAttributes="Bold"/>
+
+                <Entry x:Name="entryNamePet"
+                       Text="{Binding Name}"
+                       Placeholder="Nome"                                                       
+                       TextColor="{StaticResource Gray600}" 
+                       Keyboard="Text"
+                       FontSize="Medium"                           
+                       PlaceholderColor="{StaticResource Quinary}"/>
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Grid.ColumnSpan="2">
+                <Label Text="Animal" 
+                       TextColor="{StaticResource Gray600}" 
+                       FontSize="Medium" 
+                       FontAttributes="Bold"/>
+
+                <Picker Title="Selecione" 
+                        TitleColor="{StaticResource Quinary}" 
+                        ItemsSource="{Binding AnimalsList}"
+                        ItemDisplayBinding="{Binding Value}"
+                        SelectedItem="{Binding AnimalSelected}" 
+                        TextColor="{StaticResource Gray600}" 
+                        FontSize="Medium"/>
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="3" Grid.Column="0" >
+                <Label Text="Cor" 
+                       TextColor="{StaticResource Gray600}" 
+                       FontSize="Medium" 
+                       FontAttributes="Bold"/>
+
+                <Entry Placeholder="Cor"
+                       Text="{Binding Color}"
+                       TextColor="{StaticResource Gray600}" 
+                       Keyboard="Text"
+                       FontSize="Medium"                           
+                       PlaceholderColor="{StaticResource Quinary}"/>
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="3" Grid.Column="1">
+                <Label Text="Peso KG" 
+                       TextColor="{StaticResource Gray600}" 
+                       FontSize="Medium" 
+                       FontAttributes="Bold"/>
+
+                <Entry Placeholder="0.0 KG"
+                       MaxLength="5"                      
+                       Text="{Binding Weight}"
+                       TextColor="{StaticResource Gray600}" 
+                       Keyboard="Numeric"                          
+                       FontSize="Medium"                           
+                       PlaceholderColor="{StaticResource Quinary}"/>
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="4" Grid.Column="0">
+
+                <Label Text="Nascimento" 
+                       TextColor="{StaticResource Gray600}" 
+                       FontSize="Medium" 
+                       FontAttributes="Bold"/>
+
+
+                <DatePicker  TextColor="{StaticResource Gray600}" 
+                             MinimumDate="01/01/2008"
+                             MaximumDate="12/31/2030"
+                             FontSize="Medium" 
+                             Date="{Binding BirthDate}"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="4" Grid.Column="1">
+                <Label Text="Sexo" 
+                       TextColor="{StaticResource Gray600}" 
+                       FontSize="Medium" 
+                       FontAttributes="Bold"/>
+
+                <StackLayout Orientation="Horizontal" Spacing="20">
+                    <StackLayout Orientation="Horizontal" Spacing="-10">
+                        <CheckBox Color="CadetBlue" IsChecked="{Binding IsCheckedF}"/>
+                        <Label Text="F" FontSize="Medium" TextColor="{StaticResource Gray600}" Margin="0,8,0,0" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Spacing="-10">
+                        <CheckBox Color="CadetBlue" IsChecked="{Binding IsCheckedM}"/>
+                        <Label Text="M" FontSize="Medium" TextColor="{StaticResource Gray600}" Margin="0,8,0,0" />
+                    </StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Grid.Row="5" Grid.ColumnSpan="2"  Orientation="Vertical">
+
+                <Label Text="Observação" 
+                       TextColor="{StaticResource Gray600}" 
+                       FontSize="Medium" 
+                       FontAttributes="Bold"/>
+
+                <Editor Placeholder="Observação"
+                        Margin="0,0,0,0"
+                        Text="{Binding Observation}"
+                        TextColor="{StaticResource Gray600}" 
+                        Keyboard="Text" 
+                        FontSize="Medium"
+                        PlaceholderColor="{StaticResource Quinary}"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="6" Grid.ColumnSpan="2">
+                <Button Text="Salvar" 
+                        TextColor="White"
+                        FontSize="Medium" 
+                        BackgroundColor="{StaticResource Primary}"
+                        Command="{Binding AddPetCommand}"/>
+            </StackLayout>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

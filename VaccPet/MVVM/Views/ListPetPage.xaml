@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:VaccPet.Helpers"
+             xmlns:vm="clr-namespace:VaccPet.MVVM.ViewModels"
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+             ios:Page.UseSafeArea="true"
+             x:Class="VaccPet.MVVM.Views.ListPetPage"
+             BackgroundColor="WhiteSmoke"
+             Title="Meus Pets">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="toolbarItemDeleteAllPet" Text="Excluir Todos" IconImageSource="trash.svg"  Command="{Binding DeleteAllPetCommand}"/>
+        <ToolbarItem x:Name="toolbarItemAddPet" Text="Novo Pet" IconImageSource="add.svg" Command="{Binding AddPetCommand}"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+   
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <CollectionView ItemsSource="{Binding PetsCollection}" >
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BorderColor="White" HasShadow="True"                        
+                               Margin="15" HeightRequest="120" CornerRadius="20">
+
+                        <Frame.Background>
+                            <LinearGradientBrush EndPoint="1,0">
+                                <GradientStop Color="White" Offset="1.2" />
+                                <GradientStop Color="WhiteSmoke" Offset="0.1" />
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        <Grid ColumnSpacing="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="70"/>
+                                <RowDefinition Height="80"/>
+                                <RowDefinition Height="80"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout HorizontalOptions="Start" Grid.Row="0" Grid.Column="0">
+                                <Frame CornerRadius="100" HeightRequest="80" WidthRequest="80" BorderColor="CadetBlue">
+                                    <Image Source="{Binding ImageData,                                             
+                                               Converter={StaticResource ByteArrayToImageSourceConverter}}"
+                                               WidthRequest="100" 
+                                               HeightRequest="100"                                       
+                                               Aspect="AspectFill"/>
+                                </Frame>
+                            </StackLayout>
+
+                            <VerticalStackLayout Grid.Row="0" Grid.Column="1" Spacing="3">
+
+                                <HorizontalStackLayout Spacing="2" HorizontalOptions="Fill" >
+                                    <Label Text="Nome: " FontAttributes="Bold" TextColor="Black" FontSize="Medium" LineBreakMode="TailTruncation"/>
+                                    <Label Text="{Binding Name}" TextColor="#569583"  FontSize="Medium" FontAttributes="Bold" LineBreakMode="TailTruncation" MaxLines="1"/>
+                                </HorizontalStackLayout>
+
+                                <HorizontalStackLayout  HorizontalOptions="Fill" >
+                                    <Label Text="Cor: " FontAttributes="Bold" TextColor="Black" FontSize="Medium"/>
+                                    <Label Text="{Binding Color}" TextColor="#569583"  FontSize="Medium" FontAttributes="Bold" LineBreakMode="TailTruncation" MaxLines="1"/>
+                                </HorizontalStackLayout>
+
+                                <HorizontalStackLayout  HorizontalOptions="Fill" >
+                                    <Label Text="Nasciment: " FontAttributes="Bold" TextColor="Black" FontSize="Medium"/>
+                                    <Label Text="{Binding BirthDate,StringFormat='{}{0:dd/MM/yyyy}'}" TextColor="#569583" FontAttributes="Bold"  FontSize="Medium" LineBreakMode="TailTruncation" MaxLines="1"/>
+                                </HorizontalStackLayout>
+
+
+                            </VerticalStackLayout>
+
+                        </Grid>
+                    </Frame>
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </ScrollView>
+</ContentPage>

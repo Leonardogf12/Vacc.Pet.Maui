@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:VaccPet.MVVM.Views"
+             x:Class="VaccPet.MainPage"
+             Shell.TabBarIsVisible="False"
+             Shell.NavBarHasShadow="False"
+             BackgroundColor="{StaticResource Primary}"
+             FlyoutBackgroundColor="{StaticResource Secondary}"   
+             Shell.ForegroundColor="White"
+             Shell.TitleColor="White"
+             >
+
+    <ShellContent Title="Home"   
+                  
+                  Icon="home.svg"                   
+                  Route="VaccPet.MVVM.Views.HomePage"
+                  Shell.TabBarIsVisible="False"
+                  ContentTemplate="{DataTemplate views:HomePage}" />
+
+    <ShellContent Title="Pets"                                 
+                  Route="VaccPet.MVVM.Views.ListPetPage"
+                  ContentTemplate="{DataTemplate views:ListPetPage}"/>
+
+
+</Shell>
