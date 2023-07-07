@@ -1,5 +1,7 @@
-﻿using System.Collections.ObjectModel;
+﻿using Mopups.Services;
+using System.Collections.ObjectModel;
 using VaccPet.MVVM.Models;
+using VaccPet.MVVM.Views.Components;
 using VaccPet.Services;
 using static System.Collections.Specialized.NameObjectCollectionBase;
 
@@ -15,6 +17,10 @@ namespace VaccPet.MVVM.ViewModels
         #region COMMANDS
         public Command AddPetCommand { get; set; }
         public Command DeleteAllPetCommand { get; set; }
+
+        //
+        public Command SelectedPetInCollectionCommand { get; set; }
+
 
         #endregion
 
@@ -35,6 +41,13 @@ namespace VaccPet.MVVM.ViewModels
             AddPetCommand = new Command(OnAddPetCommand);
 
             DeleteAllPetCommand = new Command(OnDeleteAllPetCommand);
+
+            SelectedPetInCollectionCommand = new Command(OnSelectedPetInCollectionCommand);
+        }
+
+        private void OnSelectedPetInCollectionCommand()
+        {
+            MopupService.Instance.PushAsync(new PopupConfirmationPage(), true);
         }
 
         private async void OnDeleteAllPetCommand()

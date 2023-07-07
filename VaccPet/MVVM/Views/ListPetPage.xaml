@@ -5,7 +5,7 @@
              xmlns:vm="clr-namespace:VaccPet.MVVM.ViewModels"
              xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
              ios:Page.UseSafeArea="true"
-             x:Class="VaccPet.MVVM.Views.ListPetPage"
+             x:Class="VaccPet.MVVM.Views.ListPetPage"           
              BackgroundColor="WhiteSmoke"
              Title="Meus Pets">
 
@@ -20,13 +20,18 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-   
+
     <ScrollView VerticalScrollBarVisibility="Never">
+
         <CollectionView ItemsSource="{Binding PetsCollection}" >
             <CollectionView.ItemTemplate>
                 <DataTemplate>
+
                     <Frame BorderColor="White" HasShadow="True"                        
                                Margin="15" HeightRequest="120" CornerRadius="20">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding SelectedPetInCollectionCommand}"/>
+                        </Frame.GestureRecognizers>
 
                         <Frame.Background>
                             <LinearGradientBrush EndPoint="1,0">
@@ -34,6 +39,7 @@
                                 <GradientStop Color="WhiteSmoke" Offset="0.1" />
                             </LinearGradientBrush>
                         </Frame.Background>
+
                         <Grid ColumnSpacing="10">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="70"/>
@@ -42,6 +48,7 @@
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="Auto"/>
                             </Grid.ColumnDefinitions>
 
@@ -71,11 +78,12 @@
                                     <Label Text="Nasciment: " FontAttributes="Bold" TextColor="Black" FontSize="Medium"/>
                                     <Label Text="{Binding BirthDate,StringFormat='{}{0:dd/MM/yyyy}'}" TextColor="#569583" FontAttributes="Bold"  FontSize="Medium" LineBreakMode="TailTruncation" MaxLines="1"/>
                                 </HorizontalStackLayout>
-
-
                             </VerticalStackLayout>
-
+                            <Button Grid.Row="0" Grid.Column="2" Text="#" FontSize="30" TextColor="Black" Clicked="Test"/>
                         </Grid>
+
+
+                       
                     </Frame>
 
                 </DataTemplate>

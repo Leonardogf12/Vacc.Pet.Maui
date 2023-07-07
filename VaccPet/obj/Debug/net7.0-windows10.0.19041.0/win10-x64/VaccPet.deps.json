@@ -22,6 +22,7 @@
           "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": "7.0.86",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22621.755",
           "Microsoft.WindowsAppSDK": "1.2.221209.1",
+          "Mopups": "1.1.1",
           "SQLitePCLRaw.bundle_green": "2.1.5",
           "SQLitePCLRaw.core": "2.1.5",
           "SQLitePCLRaw.provider.dynamic_cdecl": "2.1.5",
@@ -801,6 +802,14 @@
           }
         }
       },
+      "AsyncAwaitBestPractices/6.0.4": {
+        "runtime": {
+          "lib/netstandard2.1/AsyncAwaitBestPractices.dll": {
+            "assemblyVersion": "6.0.4.0",
+            "fileVersion": "6.0.4.0"
+          }
+        }
+      },
       "CommunityToolkit.Maui/5.2.0": {
         "dependencies": {
           "CommunityToolkit.Maui.Core": "5.2.0"
@@ -1143,6 +1152,17 @@
         "native": {
           "runtimes/win10-x64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {
             "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Mopups/1.1.1": {
+        "dependencies": {
+          "AsyncAwaitBestPractices": "6.0.4"
+        },
+        "runtime": {
+          "lib/net7.0/Mopups.dll": {
+            "assemblyVersion": "1.1.1.0",
+            "fileVersion": "1.1.1.0"
           }
         }
       },
@@ -1555,6 +1575,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AsyncAwaitBestPractices/6.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dO/ZfaT+5DMMnYUCmxAk2s1jEXUTDcgethroMj1kcmedO0MAu6WgvPP4gPYem/0kJASrnBcem+kr5ju3LaNdMw==",
+      "path": "asyncawaitbestpractices/6.0.4",
+      "hashPath": "asyncawaitbestpractices.6.0.4.nupkg.sha512"
+    },
     "CommunityToolkit.Maui/5.2.0": {
       "type": "package",
       "serviceable": true,
@@ -1778,6 +1805,13 @@
       "sha512": "sha512-1Y8KDCmUqytdduubaQhRz6aqaP7YhVSPE/fHeqLMsK3DrV+eBThrqkM6R/8N2lu0mwkNfKSTSAhixrTR72nyWA==",
       "path": "microsoft.windowsappsdk/1.2.221209.1",
       "hashPath": "microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512"
+    },
+    "Mopups/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3hyQVRJbPJNZImlDxlV5GwbYGDyDvI6OWJpz/ifGANu1znd9eyCy0FDP9QTFp6pOP97nuMJHOd/wpVFb4nppvA==",
+      "path": "mopups/1.1.1",
+      "hashPath": "mopups.1.1.1.nupkg.sha512"
     },
     "runtime.any.System.Collections/4.3.0": {
       "type": "package",

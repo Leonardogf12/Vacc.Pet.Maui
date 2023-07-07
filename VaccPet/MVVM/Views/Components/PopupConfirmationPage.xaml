@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mopups:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+             xmlns:mopupsanim="clr-namespace:Mopups.Animations;assembly=Mopups"
+             x:Class="VaccPet.MVVM.Views.Components.PopupConfirmationPage"
+             BackgroundColor="#80000000"
+             CloseWhenBackgroundIsClicked="False"
+             >
+
+    <mopups:PopupPage.Animation>
+        <mopupsanim:ScaleAnimation
+            DurationIn="300"           
+            PositionIn="Bottom"
+            PositionOut="Center"
+            ScaleIn="0.1"
+            ScaleOut="0.7"/>
+    </mopups:PopupPage.Animation>
+    
+    
+    <ScrollView HorizontalOptions="Center" VerticalOptions="Center">
+
+        <Border HeightRequest="250"
+                WidthRequest="250"
+                BackgroundColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                >
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="20" BackgroundColor="Transparent"/>
+            </Border.StrokeShape>
+            
+            <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+               
+                <Button x:Name="ButtonEdit"
+                        Text="Editar" 
+                        TextColor="White" 
+                        BackgroundColor="Green"
+                        FontSize="Medium"
+                        Clicked="ButtonEdit_Clicked"/>
+                <Button x:Name="ButtonDelete"
+                        Text="Excluir" 
+                        TextColor="White" 
+                        BackgroundColor="Red"
+                        FontSize="Medium"
+                        Clicked="ButtonDelete_Clicked"/>
+            </HorizontalStackLayout>
+        </Border>
+
+    </ScrollView>
+</mopups:PopupPage>
