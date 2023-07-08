@@ -12,13 +12,17 @@
              >
 
     <ShellContent Title="Home"   
-                  
+                  Shell.BackgroundColor="{StaticResource Primary}"                     
+                  Shell.ForegroundColor="White"    
+                  Shell.TitleColor="{StaticResource Secondary}"
                   Icon="home.svg"                   
                   Route="VaccPet.MVVM.Views.HomePage"
                   Shell.TabBarIsVisible="False"
                   ContentTemplate="{DataTemplate views:HomePage}" />
 
-    <ShellContent Title="Pets"                                 
+    <ShellContent Title="Pets"     
+                    Shell.BackgroundColor="White"                     
+                  Shell.ForegroundColor="{StaticResource Primary}"         
                   Route="VaccPet.MVVM.Views.ListPetPage"
                   ContentTemplate="{DataTemplate views:ListPetPage}"/>
 

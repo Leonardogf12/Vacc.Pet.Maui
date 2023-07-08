@@ -2,12 +2,17 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:converters="clr-namespace:VaccPet.Helpers"
-             xmlns:vm="clr-namespace:VaccPet.MVVM.ViewModels"
              xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
-             ios:Page.UseSafeArea="true"
+             xmlns:vm="clr-namespace:VaccPet.MVVM.ViewModels"
+             xmlns:model="clr-namespace:VaccPet.MVVM.Models"
+             ios:Page.UseSafeArea="true"             
              x:Class="VaccPet.MVVM.Views.ListPetPage"           
-             BackgroundColor="WhiteSmoke"
-             Title="Meus Pets">
+             BackgroundColor="{StaticResource Primary}"
+             >
+
+    <ContentPage.BindingContext>
+        <vm:ListPetViewModel />
+    </ContentPage.BindingContext>
 
     <ContentPage.ToolbarItems>
         <ToolbarItem x:Name="toolbarItemDeleteAllPet" Text="Excluir Todos" IconImageSource="trash.svg"  Command="{Binding DeleteAllPetCommand}"/>
@@ -20,74 +25,104 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
+    <StackLayout Spacing="10">
 
-    <ScrollView VerticalScrollBarVisibility="Never">
 
-        <CollectionView ItemsSource="{Binding PetsCollection}" >
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
+        <Grid>
+            <Border HeightRequest="50" 
+                    Margin="20,0,20,0"
+                    Padding="0"
+                    BackgroundColor="Transparent">
 
-                    <Frame BorderColor="White" HasShadow="True"                        
-                               Margin="15" HeightRequest="120" CornerRadius="20">
-                        <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding SelectedPetInCollectionCommand}"/>
-                        </Frame.GestureRecognizers>
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20"/>
+                </Border.StrokeShape>
+                
+                <SearchBar Placeholder="Pesquisar..." 
+                           PlaceholderColor="{StaticResource Primary}"
+                           BackgroundColor="White"
+                           TextColor="{StaticResource Primary}" 
+                           FontSize="Medium"                                
+                           />
 
-                        <Frame.Background>
-                            <LinearGradientBrush EndPoint="1,0">
-                                <GradientStop Color="White" Offset="1.2" />
-                                <GradientStop Color="WhiteSmoke" Offset="0.1" />
-                            </LinearGradientBrush>
-                        </Frame.Background>
+            </Border>
 
-                        <Grid ColumnSpacing="10">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="70"/>
-                                <RowDefinition Height="80"/>
-                                <RowDefinition Height="80"/>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="Auto"/>
-                            </Grid.ColumnDefinitions>
+        </Grid>
 
-                            <StackLayout HorizontalOptions="Start" Grid.Row="0" Grid.Column="0">
-                                <Frame CornerRadius="100" HeightRequest="80" WidthRequest="80" BorderColor="CadetBlue">
-                                    <Image Source="{Binding ImageData,                                             
+        <Grid VerticalOptions="FillAndExpand">
+
+            <ScrollView VerticalScrollBarVisibility="Never" >
+
+                <CollectionView ItemsSource="{Binding PetsCollection}" >
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:PetModel">
+
+                            <Frame  HasShadow="True"  BorderColor="Transparent"                              
+                               Margin="15,0,15,10" HeightRequest="160" CornerRadius="30">
+
+                                <Frame.Background>
+                                    <LinearGradientBrush EndPoint="1,0">
+                                        <GradientStop Color="{StaticResource Tertiary}" Offset="1.2" />
+                                        <GradientStop Color="{StaticResource Tertiary}" Offset="1.8"/>
+                                    </LinearGradientBrush>
+                                </Frame.Background>
+
+                                <Grid ColumnSpacing="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="70"/>
+                                        <RowDefinition Height="80"/>
+                                        <RowDefinition Height="80"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackLayout HorizontalOptions="Start" Grid.Row="0" Grid.Column="0">
+                                        <Frame CornerRadius="30"  HeightRequest="120" WidthRequest="80">
+                                            <Image Source="{Binding ImageData,                                             
                                                Converter={StaticResource ByteArrayToImageSourceConverter}}"
-                                               WidthRequest="100" 
-                                               HeightRequest="100"                                       
+                                               WidthRequest="80" 
+                                               HeightRequest="120"                                       
                                                Aspect="AspectFill"/>
-                                </Frame>
-                            </StackLayout>
+                                        </Frame>
+                                    </StackLayout>
 
-                            <VerticalStackLayout Grid.Row="0" Grid.Column="1" Spacing="3">
+                                    <VerticalStackLayout Grid.Row="0" Grid.Column="1" Spacing="15">
 
-                                <HorizontalStackLayout Spacing="2" HorizontalOptions="Fill" >
-                                    <Label Text="Nome: " FontAttributes="Bold" TextColor="Black" FontSize="Medium" LineBreakMode="TailTruncation"/>
-                                    <Label Text="{Binding Name}" TextColor="#569583"  FontSize="Medium" FontAttributes="Bold" LineBreakMode="TailTruncation" MaxLines="1"/>
-                                </HorizontalStackLayout>
+                                        <HorizontalStackLayout Spacing="2" HorizontalOptions="Fill" >
+                                            <Label Text="Nome: " FontAttributes="Bold" TextColor="{StaticResource Quaternary}" FontSize="Medium" LineBreakMode="TailTruncation"/>
+                                            <Label Text="{Binding Name}" TextColor="{StaticResource Quinary}"  FontSize="Medium" FontAttributes="Bold" LineBreakMode="TailTruncation" MaxLines="1"/>
+                                        </HorizontalStackLayout>
 
-                                <HorizontalStackLayout  HorizontalOptions="Fill" >
-                                    <Label Text="Cor: " FontAttributes="Bold" TextColor="Black" FontSize="Medium"/>
-                                    <Label Text="{Binding Color}" TextColor="#569583"  FontSize="Medium" FontAttributes="Bold" LineBreakMode="TailTruncation" MaxLines="1"/>
-                                </HorizontalStackLayout>
+                                        <HorizontalStackLayout  HorizontalOptions="Fill" >
+                                            <Label Text="Cor: " FontAttributes="Bold" TextColor="{StaticResource Quaternary}" FontSize="Medium"/>
+                                            <Label Text="{Binding Color}" TextColor="{StaticResource Quinary}"  FontSize="Medium" FontAttributes="Bold" LineBreakMode="TailTruncation" MaxLines="1"/>
+                                        </HorizontalStackLayout>
 
-                                <HorizontalStackLayout  HorizontalOptions="Fill" >
-                                    <Label Text="Nasciment: " FontAttributes="Bold" TextColor="Black" FontSize="Medium"/>
-                                    <Label Text="{Binding BirthDate,StringFormat='{}{0:dd/MM/yyyy}'}" TextColor="#569583" FontAttributes="Bold"  FontSize="Medium" LineBreakMode="TailTruncation" MaxLines="1"/>
-                                </HorizontalStackLayout>
-                            </VerticalStackLayout>
-                            <Button Grid.Row="0" Grid.Column="2" Text="#" FontSize="30" TextColor="Black" Clicked="Test"/>
-                        </Grid>
+                                        <HorizontalStackLayout  HorizontalOptions="Fill" >
+                                            <Label Text="Nasciment: " FontAttributes="Bold" TextColor="{StaticResource Quaternary}" FontSize="Medium"/>
+                                            <Label Text="{Binding BirthDate,StringFormat='{}{0:dd/MM/yyyy}'}" TextColor="{StaticResource Quinary}" FontAttributes="Bold"  FontSize="Medium" LineBreakMode="TailTruncation" MaxLines="1"/>
+                                        </HorizontalStackLayout>
+                                    </VerticalStackLayout>
+
+                                </Grid>
+                                <Frame.GestureRecognizers>
+                                    <!--<TapGestureRecognizer Command="{Binding SelectedPetInCollectionCommand}"/>-->
+                                    <TapGestureRecognizer Command="{Binding Source={x:RelativeSource 
+                                                      AncestorType={x:Type vm:ListPetViewModel}},
+                                                      Path=TestCommand}"
+                                                      CommandParameter="{Binding .}"/>
+                                </Frame.GestureRecognizers>
 
 
-                       
-                    </Frame>
+                            </Frame>
 
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-    </ScrollView>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </ScrollView>
+        </Grid>
+    </StackLayout>
 </ContentPage>

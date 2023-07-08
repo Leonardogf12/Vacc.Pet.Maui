@@ -3,11 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:VaccPet.Helpers"
              x:Class="VaccPet.MVVM.Views.HomePage"             
-             Title="Menu"
+             Title="Menu"            
              Shell.FlyoutBehavior="Flyout"
-             BackgroundColor="#80000000">
+             BackgroundColor="{StaticResource Primary}">
 
-    <!--<ScrollView>
+    <ScrollView VerticalScrollBarVisibility="Never">
         <Grid ColumnSpacing="10" RowSpacing="10" Margin="15,0,15,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="140"/>
@@ -21,20 +21,18 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            -->
-    <!-- Pets -->
-    <!--
-            <Frame Grid.Row="1" Grid.Column="0" Padding="1" BorderColor="Transparent">
+            <!--Pets-->
+            <Frame CornerRadius="45" Grid.Row="1" Grid.Column="0" Padding="1" BorderColor="Transparent">
                 <Frame.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding AddPetCommand}"/>
+                    <TapGestureRecognizer Command="{Binding ListPetsCommand}"/>
                 </Frame.GestureRecognizers>
                 <Frame.Background>
                     <LinearGradientBrush EndPoint="1,0">
-                        <GradientStop Color="#34816A" Offset="1.2" />
-                        <GradientStop Color="#095E49" Offset="0.1" />
+                        <GradientStop Color="#F3D39C" Offset="1.2" />
+                        <GradientStop Color="#E1AF51" Offset="0.1" />
                     </LinearGradientBrush>
                 </Frame.Background>
-                
+
                 <Grid Margin="0" Padding="0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="180"/>
@@ -44,16 +42,17 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <Image Grid.Column="0" 
+                    <Image Grid.Column="0"
                            Source="dogpets" 
                            Margin="5,0,0,0"  
                            WidthRequest="100" 
-                           HeightRequest="130"/>
-                    
+                           HeightRequest="130"
+                           Aspect="AspectFill"/>
+
                     <Label Grid.Column="1"
                        Text="Pets" 
-                       Margin="0,0,15,0"
-                       TextColor="White" 
+                       Margin="-20,10,50,0"
+                       TextColor="{StaticResource Primary}" 
                        FontSize="Large" 
                        FontAttributes="Bold" 
                        HorizontalOptions="Center"/>
@@ -61,14 +60,12 @@
                 </Grid>
             </Frame>
 
-            -->
-    <!-- Vacinas -->
-    <!--
-            <Frame Grid.Row="1" Grid.Column="1" Padding="1" BorderColor="Transparent">
+            <!--Vacinas-->
+            <Frame CornerRadius="45" Grid.Row="1" Grid.Column="1" Padding="1" BorderColor="Transparent">
                 <Frame.Background>
                     <LinearGradientBrush EndPoint="1,0">
-                        <GradientStop Color="#EEB682" Offset="1.2" />
-                        <GradientStop Color="#D48F4F" Offset="0.1" />
+                        <GradientStop Color="#E8D2BE" Offset="1.2" />
+                        <GradientStop Color="#E4AA82" Offset="0.1" />
                     </LinearGradientBrush>
                 </Frame.Background>
 
@@ -86,13 +83,92 @@
                            Source="catpets" 
                            WidthRequest="90" 
                            HeightRequest="180" 
+                           Margin="10,0,0,5"  
                            HorizontalOptions="Start"/>
 
                     <Label Grid.Column="0"
                            Grid.Row="0"                          
                            Text="Vacinas" 
-                           Margin="0,0,15,0"
-                           TextColor="White" 
+                           Margin="0,10,15,-30"
+                           TextColor="{StaticResource Primary}" 
+                           FontSize="Large" 
+                           FontAttributes="Bold" 
+                           HorizontalOptions="End"/>
+
+                </Grid>
+
+            </Frame>
+
+            <!--Pets-->
+            <Frame CornerRadius="45" Grid.Row="2" Grid.Column="0" Padding="1" BorderColor="Transparent">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ListPetsCommand}"/>
+                </Frame.GestureRecognizers>
+                <Frame.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="#F3D39C" Offset="1.2" />
+                        <GradientStop Color="#E1AF51" Offset="0.1" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+
+                <Grid Margin="0" Padding="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="180"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Grid.Column="0"
+                           Source="dogpets" 
+                           Margin="5,0,0,0"  
+                           WidthRequest="100" 
+                           HeightRequest="130"
+                           Aspect="AspectFill"/>
+
+                    <Label Grid.Column="1"
+                       Text="Pets" 
+                       Margin="-20,10,50,0"
+                       TextColor="{StaticResource Primary}" 
+                       FontSize="Large" 
+                       FontAttributes="Bold" 
+                       HorizontalOptions="Center"/>
+
+                </Grid>
+            </Frame>
+
+            <!--Vacinas-->
+            <Frame CornerRadius="45" Grid.Row="2" Grid.Column="1" Padding="1" BorderColor="Transparent">
+                <Frame.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="#E8D2BE" Offset="1.2" />
+                        <GradientStop Color="#E4AA82" Offset="0.1" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+
+                <Grid Margin="0" Padding="0" RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="120"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Grid.Column="0" 
+                           Grid.Row="1" 
+                           Source="catpets" 
+                           WidthRequest="90" 
+                           HeightRequest="180" 
+                           Margin="10,0,0,5"  
+                           HorizontalOptions="Start"/>
+
+                    <Label Grid.Column="0"
+                           Grid.Row="0"                          
+                           Text="Vacinas" 
+                           Margin="0,10,15,-30"
+                           TextColor="{StaticResource Primary}" 
                            FontSize="Large" 
                            FontAttributes="Bold" 
                            HorizontalOptions="End"/>
@@ -103,66 +179,6 @@
 
         </Grid>
 
-       
-    </ScrollView>-->    
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Center" >
-        
-        <Frame HeightRequest="200"
-                WidthRequest="150"               
-                HorizontalOptions="Center"                
-                VerticalOptions="Center"
-                CornerRadius="20"
-               BorderColor="Transparent"
-                >
-            <Frame.Background>
-                <LinearGradientBrush EndPoint="1,5">
-                    <GradientStop Color="#34816A" Offset="1.2" />
-                    <GradientStop Color="White" Offset="0.1" />
-                </LinearGradientBrush>
-            </Frame.Background>
-            <!--<Border.StrokeShape>
-                <RoundRectangle CornerRadius="20"/>
-            </Border.StrokeShape>-->
-
-            <Grid RowSpacing="-10">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="70"/>
-                    <RowDefinition Height="70"/>
-                    <RowDefinition Height="70"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
-                </Grid.ColumnDefinitions>
-
-               
-                    <HorizontalStackLayout Grid.Row="0" Spacing="15" Grid.Column="0" Margin="22">
-                        <Image  Source="edit.svg" HeightRequest="25"/>
-                        <Label Text="Editar" 
-                           TextColor="{StaticResource Primary}"                      
-                           FontSize="Medium"
-                           FontAttributes="Bold"/>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout Grid.Row="1" Grid.Column="0"  Margin="22">
-                        <Image Source="remove.svg" HeightRequest="40"/>
-                        <Label Text="Excluir" 
-                           TextColor="{StaticResource Primary}"                       
-                           FontSize="Medium"
-                           FontAttributes="Bold"/>
-                    </HorizontalStackLayout>
-
-                <HorizontalStackLayout Grid.Row="2" Spacing="15" Grid.Column="0" Margin="22">
-                    <Image  Source="edit.svg" HeightRequest="25"/>
-                    <Label Text="Curtir" 
-                           TextColor="{StaticResource Primary}"                      
-                           FontSize="Medium"
-                           FontAttributes="Bold"/>
-                </HorizontalStackLayout>
-
-
-            </Grid>
-        </Frame>
-
-    </StackLayout>
+    </ScrollView>
 
 </ContentPage>

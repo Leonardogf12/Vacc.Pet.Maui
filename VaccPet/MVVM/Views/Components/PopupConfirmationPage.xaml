@@ -5,22 +5,90 @@
              xmlns:mopupsanim="clr-namespace:Mopups.Animations;assembly=Mopups"
              x:Class="VaccPet.MVVM.Views.Components.PopupConfirmationPage"
              BackgroundColor="#80000000"
-             CloseWhenBackgroundIsClicked="False"
+             CloseWhenBackgroundIsClicked="True"
              >
 
     <mopups:PopupPage.Animation>
         <mopupsanim:ScaleAnimation
-            DurationIn="300"           
-            PositionIn="Bottom"
+                  
+            PositionIn="Center"
+           
             PositionOut="Center"
-            ScaleIn="0.1"
-            ScaleOut="0.7"/>
+               
+            />
     </mopups:PopupPage.Animation>
     
     
     <ScrollView HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
 
-        <Border HeightRequest="250"
+            <Frame HeightRequest="200"
+               WidthRequest="160"               
+               HorizontalOptions="Center"                
+               VerticalOptions="Center"
+               CornerRadius="20"
+               BorderColor="Transparent"
+                >
+                <Frame.Background>
+                    <LinearGradientBrush EndPoint="1,5">
+                        <GradientStop Color="WhiteSmoke" Offset="1.2" />
+                        <GradientStop Color="White" Offset="0.1" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+
+                <Grid RowSpacing="-20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="70"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+
+                    <HorizontalStackLayout Grid.Row="0" Spacing="15" Grid.Column="0" Margin="5">
+                        <Image  Source="edit.svg" HeightRequest="25" />
+                        <Label Text="{Binding FirstButton}" 
+                           Margin="0,15,0,0"
+                           TextColor="{StaticResource Primary}"                      
+                           FontSize="Medium"
+                           FontAttributes="Bold">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding FirstCommand}"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Grid.Row="1" Grid.Column="0"  Margin="5">
+                        <Image Source="remove.svg" HeightRequest="40"/>
+                        <Label Text="{Binding SecondButton}" 
+                               Margin="0,15,0,0"
+                               TextColor="{StaticResource Primary}"                       
+                               FontSize="Medium"
+                               FontAttributes="Bold">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding SecondCommand}" 
+                                                      />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Grid.Row="2" Grid.Column="0"  Margin="5">
+                        <Image Source="heart.svg" HeightRequest="32"/>
+                        <Label Text="Info" 
+                               Margin="10,15,0,0"
+                               TextColor="{StaticResource Primary}"                       
+                               FontSize="Medium"
+                               FontAttributes="Bold"/>
+                    </HorizontalStackLayout>
+
+
+                </Grid>
+            </Frame>
+
+        </StackLayout>
+        <!--<Border HeightRequest="250"
                 WidthRequest="250"
                 BackgroundColor="White"
                 HorizontalOptions="Center"
@@ -45,7 +113,7 @@
                         FontSize="Medium"
                         Clicked="ButtonDelete_Clicked"/>
             </HorizontalStackLayout>
-        </Border>
+        </Border>-->
 
     </ScrollView>
 </mopups:PopupPage>

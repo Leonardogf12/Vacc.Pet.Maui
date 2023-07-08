@@ -51,6 +51,8 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\add.svg" />
 	  <None Remove="Resources\Images\adddark.svg" />
+	  <None Remove="Resources\Images\addprimary.svg" />
+	  <None Remove="Resources\Images\addprimary2.svg" />
 	  <None Remove="Resources\Images\catdefault.png" />
 	  <None Remove="Resources\Images\catpets.png" />
 	  <None Remove="Resources\Images\dogdefault.png" />
@@ -62,6 +64,7 @@
 	  <None Remove="Resources\Images\rabbitdefault.png" />
 	  <None Remove="Resources\Images\remove.svg" />
 	  <None Remove="Resources\Images\trash.svg" />
+	  <None Remove="Resources\Images\trashprimary.svg" />
 	  <None Remove="Resources\Raw\noimage.png" />
 	</ItemGroup>
 

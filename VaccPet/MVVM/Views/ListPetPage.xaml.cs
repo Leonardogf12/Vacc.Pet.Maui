@@ -23,10 +23,16 @@ public partial class ListPetPage : ContentPage
 
         var vm = BindingContext as ListPetViewModel;
         vm.OnAppearing();
-    }    
-
-    private void Test(object sender, EventArgs e)
-    {
-        popupNavigation.PushAsync(new PopupConfirmationPage(), true);
     }
+
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+        var vm = BindingContext as ListPetViewModel;
+        vm.OnSelectedPetInCollectionCommand();
+    }
+
+    //private void Test(object sender, EventArgs e)
+    //{
+    //    popupNavigation.PushAsync(new PopupConfirmationPage(null), true);
+    //}
 }

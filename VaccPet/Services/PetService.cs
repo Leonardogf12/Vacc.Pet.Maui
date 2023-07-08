@@ -36,5 +36,12 @@ namespace VaccPet.Services
         {
             await DBConnection.Instance.Database.DeleteAllAsync<PetModel>();
         }
+
+        public event EventHandler<PetModel> SelectedPetPublished;
+
+        public void PublishSelectedPet(PetModel pet)
+        {
+            SelectedPetPublished?.Invoke(this, pet);
+        }
     }
 }

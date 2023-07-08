@@ -1,9 +1,6 @@
 ﻿using System.Collections.ObjectModel;
-using System.Globalization;
 using VaccPet.MVVM.Models;
-using VaccPet.MVVM.Views;
 using VaccPet.Services;
-using static System.Collections.Specialized.NameObjectCollectionBase;
 
 namespace VaccPet.MVVM.ViewModels
 {
@@ -13,8 +10,9 @@ namespace VaccPet.MVVM.ViewModels
 
         public ObservableCollection<PetModel> PetsCollection { get; set; }
 
+
         #region COMMANDS
-        public Command AddPetCommand { get; set; }
+        public Command ListPetsCommand { get; set; }
 
         #endregion
 
@@ -24,14 +22,13 @@ namespace VaccPet.MVVM.ViewModels
 
             PetsCollection = new ObservableCollection<PetModel>();
 
-            AddPetCommand = new Command(OnAddPetCommand);
+            ListPetsCommand = new Command(OnListPetsCommand);
 
         }
 
-        async void OnAddPetCommand()
+        async void OnListPetsCommand()
         {
-            await Navigation.NavigateToAsync<ListPetViewModel>(null);
-            //await App.Current.MainPage.Navigation.PushAsync(new RegisterPetPage(new RegisterPetViewModel(null)));
+            await Navigation.NavigateToAsync<ListPetViewModel>(null);          
         }
 
         public async Task OnLoadAllPets()
