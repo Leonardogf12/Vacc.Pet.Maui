@@ -55,14 +55,19 @@
 	  <None Remove="Resources\Images\addprimary2.svg" />
 	  <None Remove="Resources\Images\catdefault.png" />
 	  <None Remove="Resources\Images\catpets.png" />
+	  <None Remove="Resources\Images\confirmation.svg" />
 	  <None Remove="Resources\Images\dogdefault.png" />
 	  <None Remove="Resources\Images\dogpets.png" />
 	  <None Remove="Resources\Images\edit.svg" />
+	  <None Remove="Resources\Images\edit_blue.svg" />
 	  <None Remove="Resources\Images\heart.svg" />
+	  <None Remove="Resources\Images\loading_green.gif" />
 	  <None Remove="Resources\Images\mousedefault.png" />
 	  <None Remove="Resources\Images\noimage.png" />
+	  <None Remove="Resources\Images\question_yellow.svg" />
 	  <None Remove="Resources\Images\rabbitdefault.png" />
 	  <None Remove="Resources\Images\remove.svg" />
+	  <None Remove="Resources\Images\remove_red.svg" />
 	  <None Remove="Resources\Images\trash.svg" />
 	  <None Remove="Resources\Images\trashprimary.svg" />
 	  <None Remove="Resources\Raw\noimage.png" />
@@ -86,6 +91,9 @@
 	  <MauiXaml Update="MVVM\Views\Components\PopupConfirmationPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="MVVM\Views\Components\PopupListActionsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="MVVM\Views\HomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -102,6 +110,12 @@
 	  <MauiImage Include="Resources\Raw\dogdefault.png" />
 	  <MauiImage Include="Resources\Raw\mousedefault.png" />
 	  <MauiImage Include="Resources\Raw\rabbitdefault.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="MVVM\Views\Components\PopupListActionsPage.xaml.cs">
+	    <DependentUpon>PopupListActionsPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadUnhandledDeviceExceptionVaccPetHideInfoBar="True" /></VisualStudio></ProjectExtensions>

@@ -1,34 +1,36 @@
-﻿using Mopups.Services;
+﻿using CommunityToolkit.Maui.Views;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 using VaccPet.MVVM.Models;
 using VaccPet.MVVM.Views.Components;
 using VaccPet.Services;
-using static System.Collections.Specialized.NameObjectCollectionBase;
 
 namespace VaccPet.MVVM.ViewModels
 {
     public class ListPetViewModel : BaseViewModel
     {
+        #region VARIABLES
+
         private readonly IPetService _IPetService;
 
         PopupViewModel popupViewModel { get; set; } = new PopupViewModel();
+        Popup PopupListActionsControl { get; set; }
+        Popup PopupConfirmationControl { get; set; }
 
         PetModel PetModelObject { get; set; }
 
         public ObservableCollection<PetModel> PetsCollection { get; set; }
-
+        #endregion
 
         #region COMMANDS
-        public Command AddPetCommand { get; set; }
-        public Command DeleteAllPetCommand { get; set; }        
-        public Command SelectedPetInCollectionCommand { get; set; }
-
-        public Command TestCommand { get; set; }
-
+        public ICommand AddPetCommand { get; set; }
+        public ICommand DeleteAllPetCommand { get; set; }        
+        public ICommand SelectedPetInCollectionCommand { get; set; }        
         public ICommand EditPetCommand { get; set; }
         public ICommand DeletePetCommand { get; set; }
         #endregion
+
+        #region PROPS
 
         ImageSource imageData;
         public ImageSource ImageData
@@ -36,6 +38,8 @@ namespace VaccPet.MVVM.ViewModels
             get => imageData;
             set => SetProperty(ref imageData, value);
         }
+
+        #endregion
 
         public ListPetViewModel()
         {            
@@ -51,21 +55,25 @@ namespace VaccPet.MVVM.ViewModels
 
             DeleteAllPetCommand = new Command(OnDeleteAllPetCommand);
 
-            SelectedPetInCollectionCommand = new Command(OnSelectedPetInCollectionCommand);
+            SelectedPetInCollectionCommand = new Command<PetModel>(OnSelectedPetInCollectionCommand);
 
             EditPetCommand = new Command(OnEditPetCommand);
 
             DeletePetCommand = new Command(OnDeletePetCommand);
-
-            TestCommand = new Command<PetModel>(OnTestCommand);
+           
         }
 
-        private void OnTestCommand(PetModel obj)
-        {
-            PetModelObject = obj;
 
-            MopupService.Instance.PushAsync(new PopupConfirmationPage(
-                    popupViewModel.SetParametersPopup("Edit", "Excluir", obj, EditPetCommand, DeletePetCommand)), true);
+        #region METHODS
+        public async void OnSelectedPetInCollectionCommand(PetModel petSelected)
+        {
+            PetModelObject = petSelected;
+            PopupListActionsControl = new Popup();
+
+            PopupListActionsControl = new PopupListActionsPage(
+                    popupViewModel.SetParametersPopup("Editar", "Excluir","Detalhes", petSelected, EditPetCommand, DeletePetCommand));
+
+            await App.Current.MainPage.ShowPopupAsync(PopupListActionsControl);
         }
 
         private async void OnDeletePetCommand()
@@ -74,38 +82,18 @@ namespace VaccPet.MVVM.ViewModels
 
             if (result)
             {
-                await MopupService.Instance.PopAsync();
+                PopupListActionsControl.Close();
                 await _IPetService.DeletePet(PetModelObject);                
                 PetsCollection.Remove(PetModelObject);
-                await App.Current.MainPage.DisplayAlert("Sucesso", "Pet excluído com sucesso.", "Fechar");                               
+
+                await App.Current.MainPage.ShowPopupAsync(new PopupConfirmationPage());
             }
             else
             {
+                PopupListActionsControl.Close();
                 return;
             }
            
-        }
-
-        private async void OnEditPetCommand(object obj)
-        {
-            await MopupService.Instance.PopAsync();
-
-            //TODO Navegar para Edição
-            //await Navigation.NavigateToAsync<RegisterPetViewModel>(null);
-        }
-
-        public void OnSelectedPetInCollectionCommand()
-        {
-            try
-            {
-                MopupService.Instance.PushAsync(new PopupConfirmationPage(
-                    popupViewModel.SetParametersPopup("Edit", "Excluir", EditPetCommand, DeletePetCommand)), true);
-            }
-            catch (Exception e)
-            {
-                throw;
-            }
-            
         }
 
         private async void OnDeleteAllPetCommand()
@@ -116,7 +104,7 @@ namespace VaccPet.MVVM.ViewModels
             {
                 await _IPetService.DeleteAllPets();
                 PetsCollection.Clear();
-                await App.Current.MainPage.DisplayAlert("Sucesso", "Todos os items foram excluídos.", "Fechar");
+                await App.Current.MainPage.ShowPopupAsync(new PopupConfirmationPage());
             }
             else
             {
@@ -124,6 +112,11 @@ namespace VaccPet.MVVM.ViewModels
             }
         }
 
+        private async void OnEditPetCommand(object obj)
+        {
+            PopupListActionsControl.Close();
+        }
+               
         private async void OnAddPetCommand()
         {
             await Navigation.NavigateToAsync<RegisterPetViewModel>(null);
@@ -146,14 +139,10 @@ namespace VaccPet.MVVM.ViewModels
             IsBusy = false;
         }
 
-        private ImageSource LoadImageFromByte(byte[] image)
-        {
-            return ImageSource.FromStream(() => new MemoryStream(image));
-        }
-
         public async void OnAppearing()
         {
             await OnLoadAllPets();
         }
+        #endregion
     }
 }

@@ -10,44 +10,9 @@ using VaccPet.Services;
 namespace VaccPet.MVVM.ViewModels
 {
     public class PopupViewModel : BaseViewModel
-    {       
+    {
 
         #region PROPS
-
-        string imageName;
-        public string ImageName
-        {
-            get => imageName;
-            set => SetProperty(ref imageName, value);
-        }
-
-        string titleName;
-        public string TitleName
-        {
-            get => titleName;
-            set => SetProperty(ref titleName, value);
-        }
-
-        string content;
-        public string Content
-        {
-            get => content;
-            set => SetProperty(ref content, value);
-        }
-
-        string buttonAccept;
-        public string ButtonAccept
-        {
-            get => buttonAccept;
-            set => SetProperty(ref buttonAccept, value);
-        }
-
-        string buttonCancel;
-        public string ButtonCancel
-        {
-            get => buttonCancel;
-            set => SetProperty(ref buttonCancel, value);
-        }
 
         string firstButton;
         public string FirstButton
@@ -63,6 +28,13 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref secondButton, value);
         }
 
+        string tertiaryButton;
+        public string TertiaryButton
+        {
+            get => tertiaryButton;
+            set => SetProperty(ref tertiaryButton, value);
+        }
+
         ICommand firstCommand;
         public ICommand FirstCommand
         {
@@ -76,36 +48,58 @@ namespace VaccPet.MVVM.ViewModels
             get => secondCommand;
             set => SetProperty(ref secondCommand, value);
         }
+
+        ICommand tertiaryCommand;
+        public ICommand TertiaryCommand
+        {
+            get => tertiaryCommand;
+            set => SetProperty(ref tertiaryCommand, value);
+        }
+
         object obj;
         public object Obj
         {
-            get=> obj;
+            get => obj;
             set => SetProperty(ref obj, value);
         }
 
+        string message;
+        public string Message
+        {
+            get=> message;
+            set=> SetProperty(ref message, value);
+        }
 
         #endregion
 
         public PopupViewModel()
-        {                      
+        {
         }
 
         #region METHODS         
-        public PopupViewModel SetParametersPopup(string firstButton, string secondButton, object Obj,
-                                                 ICommand fisrtCommand = null, ICommand secondCommand = null)
+        public PopupViewModel SetParametersPopup(string firstButton = "", string secondButton = "", string tertiaryButton = "", object obj = null,
+                                                 ICommand fisrtCommand = null, ICommand secondCommand = null,
+                                                 ICommand tertiaryCommand = null)
         {
-            PopupViewModel model = new PopupViewModel()
+            return new PopupViewModel()
             {
-               Obj = Obj,
-               FirstButton = firstButton,
-               SecondButton = secondButton,
-               FirstCommand = fisrtCommand,
-               SecondCommand = secondCommand
+                FirstButton = firstButton,
+                SecondButton = secondButton,
+                TertiaryButton = tertiaryButton,
+                Obj = obj,
+                FirstCommand = fisrtCommand,
+                SecondCommand = secondCommand,
+                TertiaryCommand = tertiaryCommand
             };
-
-            return model;
         }
-      
+
+        public PopupViewModel SetParametersPopup(string message = "")
+        {
+            return new PopupViewModel()
+            {
+               Message = message
+            };
+        }
         #endregion
 
     }

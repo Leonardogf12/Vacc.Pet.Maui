@@ -6,21 +6,23 @@
              Title="Novo Pet">
 
     <ScrollView VerticalOptions="FillAndExpand">
-        <Grid Margin="15,15,15,10" RowSpacing="5" ColumnSpacing="10" >
+        <Grid Margin="15,10,15,0" RowSpacing="10" ColumnSpacing="10" >
             <Grid.RowDefinitions>
                 <RowDefinition Height="90"/>
                 <RowDefinition Height="80"/>
                 <RowDefinition Height="80"/>
                 <RowDefinition Height="80"/>
                 <RowDefinition Height="80"/>
-                <RowDefinition Height="150"/>
-                <RowDefinition Height="50"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="40"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
+            <!-- Photo -->
             <StackLayout Grid.Row="0" Grid.ColumnSpan="2">
 
                 <Frame HeightRequest="100" 
@@ -46,87 +48,129 @@
                 </Image>
             </StackLayout>
 
-            <StackLayout Grid.Row="1" Grid.ColumnSpan="2">
+            <!-- Name -->
+            <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical">
                 <Label Text="Nome" 
+                       Margin="5"
                        TextColor="{StaticResource Secondary}" 
                        FontSize="Medium" 
                        FontAttributes="Bold"/>
+                <Border BackgroundColor="{StaticResource Primary}">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="30"/>
+                    </Border.StrokeShape>
 
-                <Entry x:Name="entryNamePet"
-                       Text="{Binding Name}"
-                       Placeholder="Nome"                                                       
-                       TextColor="{StaticResource Quinary}" 
-                       Keyboard="Text"
-                       FontSize="Medium"                           
-                       PlaceholderColor="{StaticResource Gray400}"/>
+                    <Entry x:Name="entryNamePet"                                               
+                            Text="{Binding Name}"
+                            HorizontalOptions="FillAndExpand"
+                            Margin="15,0,10,0"
+                            Placeholder="Nome"                                                       
+                            TextColor="{StaticResource Quinary}" 
+                            Keyboard="Text"
+                            FontSize="Medium"                           
+                            PlaceholderColor="{StaticResource Gray400}"/>
 
+                </Border>
             </StackLayout>
 
+            <!-- Animal -->
             <StackLayout Grid.Row="2" Grid.ColumnSpan="2">
                 <Label Text="Animal" 
+                       Margin="5"
                        TextColor="{StaticResource Secondary}" 
                        FontSize="Medium" 
                        FontAttributes="Bold"/>
 
-                <Picker Title="Selecione" 
-                        TitleColor="{StaticResource Gray400}" 
-                        ItemsSource="{Binding AnimalsList}"
-                        ItemDisplayBinding="{Binding Value}"
-                        SelectedItem="{Binding AnimalSelected}" 
-                        TextColor="{StaticResource Quinary}" 
-                        FontSize="Medium"/>
+                <Border BackgroundColor="{StaticResource Primary}">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="30"/>
+                    </Border.StrokeShape>
+                    <Picker Title="Selecione" 
+                            Margin="15,0,10,0"
+                            TitleColor="{StaticResource Gray400}" 
+                            ItemsSource="{Binding AnimalsList}"
+                            ItemDisplayBinding="{Binding Value}"
+                            SelectedItem="{Binding AnimalSelected}" 
+                            TextColor="{StaticResource Quinary}" 
+                            FontSize="Medium"/>
+                </Border>
+
 
             </StackLayout>
-
-            <StackLayout Grid.Row="3" Grid.Column="0" >
+           
+            <!-- Color -->
+            <StackLayout Grid.Row="3" Grid.ColumnSpan="2" >
                 <Label Text="Cor" 
-                        TextColor="{StaticResource Secondary}" 
+                       Margin="5"
+                       TextColor="{StaticResource Secondary}" 
                        FontSize="Medium" 
                        FontAttributes="Bold"/>
 
-                <Entry Placeholder="Cor"
-                       Text="{Binding Color}"
-                        TextColor="{StaticResource Quinary}" 
-                       Keyboard="Text"
-                       FontSize="Medium"                           
-                       PlaceholderColor="{StaticResource Gray400}"/>
-
+                <Border BackgroundColor="{StaticResource Primary}">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="30"/>
+                    </Border.StrokeShape>
+                    <Entry Placeholder="Cor"
+                           Text="{Binding Color}"
+                           Margin="15,0,10,0"
+                           TextColor="{StaticResource Quinary}" 
+                           Keyboard="Text"
+                           FontSize="Medium"                           
+                           PlaceholderColor="{StaticResource Gray400}"/>
+                </Border>
             </StackLayout>
 
-            <StackLayout Grid.Row="3" Grid.Column="1">
-                <Label Text="Peso KG" 
-                        TextColor="{StaticResource Secondary}" 
-                       FontSize="Medium" 
-                       FontAttributes="Bold"/>
-
-                <Entry Placeholder="0.0 KG"
-                       MaxLength="5"                      
-                       Text="{Binding Weight}"
-                        TextColor="{StaticResource Quinary}" 
-                       Keyboard="Numeric"                          
-                       FontSize="Medium"                           
-                       PlaceholderColor="{StaticResource Gray400}"/>
-
-            </StackLayout>
-
+            <!-- Weight -->
             <StackLayout Grid.Row="4" Grid.Column="0">
+                <Label Text="Peso KG"
+                       Margin="5"
+                       TextColor="{StaticResource Secondary}" 
+                       FontSize="Medium" 
+                       FontAttributes="Bold"/>
+
+                <Border BackgroundColor="{StaticResource Primary}">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="30"/>
+                    </Border.StrokeShape>
+
+                    <Entry Placeholder="0.0 KG"
+                           MaxLength="5"         
+                           Margin="15,0,10,0"
+                           Text="{Binding Weight}"
+                           TextColor="{StaticResource Quinary}" 
+                           Keyboard="Numeric"                          
+                           FontSize="Medium"                           
+                           PlaceholderColor="{StaticResource Gray400}"/>
+                </Border>
+            </StackLayout>
+
+            <!-- BirthDate -->
+            <StackLayout Grid.Row="4" Grid.Column="1">
 
                 <Label Text="Nascimento" 
-                        TextColor="{StaticResource Secondary}" 
+                       Margin="5"
+                       TextColor="{StaticResource Secondary}" 
                        FontSize="Medium" 
                        FontAttributes="Bold"/>
 
-
-                <DatePicker  TextColor="{StaticResource Quinary}" 
+                <Border BackgroundColor="{StaticResource Primary}">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="30"/>
+                    </Border.StrokeShape>
+                    <DatePicker  TextColor="{StaticResource Quinary}" 
+                             Margin="15,0,10,0"
                              MinimumDate="01/01/2008"
                              MaximumDate="12/31/2030"
                              FontSize="Medium" 
                              Date="{Binding BirthDate}"/>
+                </Border>
             </StackLayout>
 
-            <StackLayout Grid.Row="4" Grid.Column="1">
+            <!-- Sex -->
+            <StackLayout Grid.Row="5" Grid.Column="0">
                 <Label Text="Sexo" 
-                        TextColor="{StaticResource Secondary}" 
+                       Margin="5"
+                       TextColor="{StaticResource Secondary}" 
                        FontSize="Medium" 
                        FontAttributes="Bold"/>
 
@@ -141,25 +185,50 @@
                     </StackLayout>
 
                 </StackLayout>
+
             </StackLayout>
 
-            <StackLayout Grid.Row="5" Grid.ColumnSpan="2"  Orientation="Vertical">
-
-                <Label Text="Observação" 
+            <!-- IsCastrated -->
+            <StackLayout Grid.Row="5" Grid.Column="1">
+                <Label Text="Castrado(a)" 
+                       Margin="5"
                        TextColor="{StaticResource Secondary}" 
                        FontSize="Medium" 
                        FontAttributes="Bold"/>
 
-                <Editor Placeholder="Observação"                       
-                        Text="{Binding Observation}"
-                        TextColor="{StaticResource Quinary}" 
-                        Margin="5"
-                        Keyboard="Text" 
-                        FontSize="Medium"
-                        PlaceholderColor="{StaticResource Gray400}"/>
+                <StackLayout Orientation="Horizontal" Spacing="-10">
+                    <CheckBox Color="{StaticResource Quinary}" IsChecked="{Binding IsCatrated}"/>
+                    <Label Text="{Binding IsCastratedConfirm}" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,8,0,0" />
+                </StackLayout>
+
             </StackLayout>
 
-            <StackLayout Grid.Row="6" Grid.ColumnSpan="2">
+            <!-- Observation -->
+            <StackLayout  Grid.Row="6" Grid.ColumnSpan="2" Orientation="Vertical">
+                <Label  Text="Observação" 
+                        Margin="5"
+                        TextColor="{StaticResource Secondary}" 
+                        FontSize="Medium" 
+                        FontAttributes="Bold"/>
+
+                <Border BackgroundColor="{StaticResource Primary}">
+
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="30"/>
+                    </Border.StrokeShape>
+                    <Editor Placeholder="Observação"                                                     
+                            Text="{Binding Observation}"
+                            Margin="15,0,10,0"
+                            TextColor="{StaticResource Quinary}"                         
+                            Keyboard="Text"
+                            HeightRequest="80"                                        
+                            FontSize="Medium"
+                            PlaceholderColor="{StaticResource Gray400}"/>
+                </Border>
+            </StackLayout>
+
+            <!-- Button Save -->
+            <StackLayout Grid.Row="7" Grid.ColumnSpan="2">
                 <Button Text="Salvar" 
                         CornerRadius="30"
                         TextColor="{StaticResource White}" 

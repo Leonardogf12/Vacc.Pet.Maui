@@ -1,17 +1,16 @@
 ﻿using CommunityToolkit.Maui;
-using Material.Components.Maui.Extensions;
 using Microsoft.Extensions.Logging;
-using VaccPet.Data;
-using VaccPet.MVVM.ViewModels;
-using VaccPet.MVVM.Views;
-using VaccPet.Services;
-using VaccPet.Services.Navigation;
 using Microsoft.Maui.Handlers;
 using Microsoft.Maui.Platform;
 using Mopups.Hosting;
 using Mopups.Interfaces;
 using Mopups.Services;
+using VaccPet.Data;
+using VaccPet.MVVM.ViewModels;
+using VaccPet.MVVM.Views;
 using VaccPet.MVVM.Views.Components;
+using VaccPet.Services;
+using VaccPet.Services.Navigation;
 
 namespace VaccPet;
 
@@ -36,13 +35,14 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
-        DBConnection.Instance.Initialize();
+        DBConnection.Instance.Initialize(); //*Transferido para este lugar devido a bug de inicialização na App. Testar essa chamada com Task.
 
         //*Views
         builder.Services.AddSingleton<HomePage>();
 		builder.Services.AddSingleton<RegisterPetPage>();
 		builder.Services.AddSingleton<ListPetPage>();
 
+        builder.Services.AddTransient<PopupListActionsPage>();
         builder.Services.AddTransient<PopupConfirmationPage>();
 
         //*ViewModels
@@ -56,12 +56,14 @@ public static class MauiProgram
 		builder.Services.AddSingleton<INavigationService, NavigationService>();
 		builder.Services.AddSingleton<IPopupNavigation>(MopupService.Instance);
 
-
+        //*IF NECESSÁRIO PARA CORRIGIR BUG DA IMAGEM, PAGINAÇÃO TRAVANDO DEVIDO AO Converter={StaticResource ByteArrayToImageSourceConverter} em ListPetPage
 #if __ANDROID__
         ImageHandler.Mapper.PrependToMapping(nameof(Microsoft.Maui.IImage.Source), (handler, view) => PrependToMappingImageSource(handler, view));
 #endif
         return builder.Build();
 	}
+
+    //*IF NECESSÁRIO PARA CORRIGIR BUG DA IMAGEM, PAGINAÇÃO TRAVANDO DEVIDO AO Converter={StaticResource ByteArrayToImageSourceConverter} em ListPetPage
 #if __ANDROID__
     public static void PrependToMappingImageSource(IImageHandler handler, Microsoft.Maui.IImage image)
     {

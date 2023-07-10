@@ -5,20 +5,30 @@ using System.IO;
 using System.Resources;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Maui.Storage;
+using System.Windows.Input;
+using CommunityToolkit.Maui.Views;
+using VaccPet.MVVM.Views.Components;
 
 namespace VaccPet.MVVM.ViewModels
 {
     public class RegisterPetViewModel : BaseViewModel
     {
+        #region VARIABLES
+
         private readonly IPetService _IPetService;
 
         public List<Animal> AnimalsList { get; set; } = new List<Animal>();
 
+        Popup PopupConfirmationControl { get; set; }
+
+        PopupViewModel PopupViewModel { get; set; } = new PopupViewModel();
+
+        #endregion
 
         #region COMMANDS
-        public Command GetImageFromGalleryCommand { get; set; }
+        public ICommand GetImageFromGalleryCommand { get; set; }
 
-        public Command AddPetCommand { get; set; }
+        public ICommand AddPetCommand { get; set; }
 
         #endregion
 
@@ -102,6 +112,23 @@ namespace VaccPet.MVVM.ViewModels
             }
             set => SetProperty(ref isCheckedM, value);
         }
+        
+        bool isCatrated;
+        public bool IsCatrated
+        {
+            get
+            {
+                if (isCatrated)                
+                    IsCastratedConfirm = "Sim";                
+                else 
+                    IsCastratedConfirm = "Não";
+                
+                return isCatrated;
+            }
+
+            //
+            set => SetProperty(ref isCatrated, value);
+        }
 
         Animal animalSelected;
         public Animal AnimalSelected
@@ -109,14 +136,7 @@ namespace VaccPet.MVVM.ViewModels
             get => animalSelected;
             set => SetProperty(ref animalSelected, value);
         }
-
-        string letterAnimalPhoto;
-        public string LetterAnimalPhoto
-        {
-            get => letterAnimalPhoto;
-            set => SetProperty(ref letterAnimalPhoto, value);
-        }
-
+       
         private string _imagePath;
         public string ImagePath
         {
@@ -124,8 +144,15 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref _imagePath, value);
         }
 
-        #endregion
+        string isCastratedConfirm = "Não";
+        public string IsCastratedConfirm
+        {
+            get => isCastratedConfirm;
+            set=>  SetProperty(ref isCastratedConfirm, value); 
+        }
 
+
+        #endregion
 
         public RegisterPetViewModel(IPetService IPetService)
         {
@@ -136,14 +163,13 @@ namespace VaccPet.MVVM.ViewModels
             GetImageFromGalleryCommand = new Command(OnGetImageFromGalleryCommand);
 
             AddPetCommand = new Command(OnAddPetCommand);
+           
         }
-
 
         #region METHODS
         private async void OnAddPetCommand()
         {
             PetModel pet = new PetModel();
-
 
             pet.Name = Name;
             pet.Animal = AnimalSelected.Value;
@@ -152,14 +178,19 @@ namespace VaccPet.MVVM.ViewModels
             pet.Color = Color;
             pet.Observation = Observation;
             pet.Sex = IsCheckedF == true ? "F" : "M";
+            pet.Catrated = IsCatrated;
             pet.Weight = Weight;
 
             var result = await _IPetService.AddPet(pet);
 
             if (result > 0)
             {
-                await App.Current.MainPage.DisplayAlert("Sucesso", "Pet salvo com sucesso.", "OK");
-                return;
+                //PopupConfirmationControl = new Popup();
+                //PopupConfirmationControl = new PopupConfirmationPage(
+                //        PopupViewModel.SetParametersPopup("Pet Salvo!"));
+
+                await App.Current.MainPage.ShowPopupAsync(new PopupConfirmationPage());
+
             }
             else
             {

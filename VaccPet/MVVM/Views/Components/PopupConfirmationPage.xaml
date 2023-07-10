@@ -1,119 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<mopups:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
-             xmlns:mopupsanim="clr-namespace:Mopups.Animations;assembly=Mopups"
              x:Class="VaccPet.MVVM.Views.Components.PopupConfirmationPage"
-             BackgroundColor="#80000000"
-             CloseWhenBackgroundIsClicked="True"
-             >
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Color="Transparent"
+             Size="80,80">
 
-    <mopups:PopupPage.Animation>
-        <mopupsanim:ScaleAnimation
-                  
-            PositionIn="Center"
-           
-            PositionOut="Center"
-               
-            />
-    </mopups:PopupPage.Animation>
-    
-    
-    <ScrollView HorizontalOptions="Center" VerticalOptions="Center">
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+   <Frame HorizontalOptions="Center" 
+          VerticalOptions="Center"
+          CornerRadius="60" 
+          BackgroundColor="#313A4A" 
+          BorderColor="Transparent">
+       
+        <Image x:Name="ImagePopup"
+               Source="confirmation.svg"                
+               HeightRequest="30" 
+               BackgroundColor="#313A4A" 
+               Aspect="AspectFill"/>
+    </Frame>
 
-            <Frame HeightRequest="200"
-               WidthRequest="160"               
-               HorizontalOptions="Center"                
-               VerticalOptions="Center"
-               CornerRadius="20"
-               BorderColor="Transparent"
-                >
-                <Frame.Background>
-                    <LinearGradientBrush EndPoint="1,5">
-                        <GradientStop Color="WhiteSmoke" Offset="1.2" />
-                        <GradientStop Color="White" Offset="0.1" />
-                    </LinearGradientBrush>
-                </Frame.Background>
-
-                <Grid RowSpacing="-20">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="70"/>
-                        <RowDefinition Height="70"/>
-                        <RowDefinition Height="70"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition />
-                    </Grid.ColumnDefinitions>
-
-
-                    <HorizontalStackLayout Grid.Row="0" Spacing="15" Grid.Column="0" Margin="5">
-                        <Image  Source="edit.svg" HeightRequest="25" />
-                        <Label Text="{Binding FirstButton}" 
-                           Margin="0,15,0,0"
-                           TextColor="{StaticResource Primary}"                      
-                           FontSize="Medium"
-                           FontAttributes="Bold">
-                            <Label.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding FirstCommand}"/>
-                            </Label.GestureRecognizers>
-                        </Label>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout Grid.Row="1" Grid.Column="0"  Margin="5">
-                        <Image Source="remove.svg" HeightRequest="40"/>
-                        <Label Text="{Binding SecondButton}" 
-                               Margin="0,15,0,0"
-                               TextColor="{StaticResource Primary}"                       
-                               FontSize="Medium"
-                               FontAttributes="Bold">
-                            <Label.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding SecondCommand}" 
-                                                      />
-                            </Label.GestureRecognizers>
-                        </Label>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout Grid.Row="2" Grid.Column="0"  Margin="5">
-                        <Image Source="heart.svg" HeightRequest="32"/>
-                        <Label Text="Info" 
-                               Margin="10,15,0,0"
-                               TextColor="{StaticResource Primary}"                       
-                               FontSize="Medium"
-                               FontAttributes="Bold"/>
-                    </HorizontalStackLayout>
-
-
-                </Grid>
-            </Frame>
-
-        </StackLayout>
-        <!--<Border HeightRequest="250"
-                WidthRequest="250"
-                BackgroundColor="White"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                >
-            <Border.StrokeShape>
-                <RoundRectangle CornerRadius="20" BackgroundColor="Transparent"/>
-            </Border.StrokeShape>
-            
-            <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
-               
-                <Button x:Name="ButtonEdit"
-                        Text="Editar" 
-                        TextColor="White" 
-                        BackgroundColor="Green"
-                        FontSize="Medium"
-                        Clicked="ButtonEdit_Clicked"/>
-                <Button x:Name="ButtonDelete"
-                        Text="Excluir" 
-                        TextColor="White" 
-                        BackgroundColor="Red"
-                        FontSize="Medium"
-                        Clicked="ButtonDelete_Clicked"/>
-            </HorizontalStackLayout>
-        </Border>-->
-
-    </ScrollView>
-</mopups:PopupPage>
+</toolkit:Popup>

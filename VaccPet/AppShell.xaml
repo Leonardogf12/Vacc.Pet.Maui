@@ -13,11 +13,5 @@
     Shell.TabBarIsVisible="False"
     Shell.NavBarHasShadow="False"       
     >
-    
-    <ShellContent       
-        Title="Home"       
-        Shell.TabBarIsVisible="False"         
-        ContentTemplate="{DataTemplate views:HomePage}"
-        Route="HomePage" />
 
 </Shell>

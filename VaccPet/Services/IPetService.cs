@@ -9,11 +9,6 @@ namespace VaccPet.Services
         Task DeleteAllPets();
         Task<int> UpdatePet(PetModel model);
         Task<PetModel> GetPet(int id);
-        Task<List<PetModel>> GetPetsList();
-
-
-        //Tests
-        void PublishSelectedPet(PetModel pet);
-        event EventHandler<PetModel> SelectedPetPublished;
+        Task<List<PetModel>> GetPetsList();       
     }
 }

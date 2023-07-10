@@ -20,9 +20,10 @@
                   Shell.TabBarIsVisible="False"
                   ContentTemplate="{DataTemplate views:HomePage}" />
 
-    <ShellContent Title="Pets"     
-                    Shell.BackgroundColor="White"                     
-                  Shell.ForegroundColor="{StaticResource Primary}"         
+    <ShellContent Title="Pets"
+                  Shell.TitleColor="{StaticResource Secondary}"
+                  Shell.BackgroundColor="{StaticResource Primary}"     
+                  Shell.ForegroundColor="White"                           
                   Route="VaccPet.MVVM.Views.ListPetPage"
                   ContentTemplate="{DataTemplate views:ListPetPage}"/>
 

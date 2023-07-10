@@ -1,26 +1,12 @@
-using Mopups.Services;
+using CommunityToolkit.Maui.Views;
 using VaccPet.MVVM.ViewModels;
 
 namespace VaccPet.MVVM.Views.Components;
 
-public partial class PopupConfirmationPage
+public partial class PopupConfirmationPage : Popup
 {
-    public PopupConfirmationPage(PopupViewModel model)
+    public PopupConfirmationPage()
     {
-        InitializeComponent();
-
-        BindingContext = model;
-
-       // CloseWhenBackgroundIsClicked = true;
-    }
-
-    private void ButtonEdit_Clicked(object sender, EventArgs e)
-    {
-        MopupService.Instance.PopAsync();
-    }
-
-    private void ButtonDelete_Clicked(object sender, EventArgs e)
-    {
-        MopupService.Instance.PopAsync();
+        InitializeComponent();       
     }
 }

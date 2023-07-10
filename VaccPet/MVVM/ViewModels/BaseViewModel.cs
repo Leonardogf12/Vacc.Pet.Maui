@@ -6,6 +6,14 @@ namespace VaccPet.MVVM.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
+        #region VARIABLES
+        public INavigationService Navigation => DependencyService.Get<INavigationService>();
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        #endregion
+
+        #region PROPS
+
         bool isBusy = false;
         public bool IsBusy
         {
@@ -13,10 +21,9 @@ namespace VaccPet.MVVM.ViewModels
             set { SetProperty(ref this.isBusy, value); }
         }
 
-        public INavigationService Navigation => DependencyService.Get<INavigationService>();
+        #endregion
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
+        #region METHODS
         protected void OnPropertyChanged([CallerMemberName] string name = "")
         {
             var change = PropertyChanged;
@@ -38,5 +45,6 @@ namespace VaccPet.MVVM.ViewModels
             OnPropertyChanged(name);
             return true;
         }
+        #endregion
     }
 }

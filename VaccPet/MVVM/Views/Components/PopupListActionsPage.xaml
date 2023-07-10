@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+             xmlns:mopupsanim="clr-namespace:Mopups.Animations;assembly=Mopups"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="VaccPet.MVVM.Views.Components.PopupListActionsPage"            
+             Color="Transparent">
+
+    <ScrollView HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+            <Frame Grid.Row="2" Grid.ColumnSpan="2"                
+                   HeightRequest="200"
+                   WidthRequest="160"               
+                   HorizontalOptions="Center"                
+                   VerticalOptions="Center"
+                   CornerRadius="20"
+                   BorderColor="Transparent"
+                   BackgroundColor="#2D3349">
+
+                <Grid RowSpacing="-15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="70"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <HorizontalStackLayout Grid.Row="0" Spacing="15" Grid.Column="0">
+                        <Image  Source="edit_blue.svg" HeightRequest="25" />
+                        <Label Text="{Binding FirstButton}" 
+                               Margin="0,25,0,0"
+                               TextColor="{StaticResource White}"                      
+                               FontSize="Medium"
+                               FontAttributes="None">
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding FirstCommand}"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Grid.Row="1" Grid.Column="0" Spacing="5">
+                        <Image Source="remove_red.svg" HeightRequest="38"/>
+                        <Label Text="{Binding SecondButton}"
+                               Margin="0,20,0,0"
+                               TextColor="{StaticResource White}"                       
+                               FontSize="Medium"
+                               FontAttributes="Bold">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding SecondCommand}"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Grid.Row="2" Grid.Column="0" Spacing="5" >
+                        <Image Source="question_yellow.svg" HeightRequest="35"/>
+                        <Label Text="{Binding TertiaryButton}" 
+                               Margin="0,20,0,0"
+                               TextColor="{StaticResource White}"                       
+                               FontSize="Medium"
+                               FontAttributes="Bold">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TertiaryCommand}"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </HorizontalStackLayout>
+
+                </Grid>
+            </Frame>
+
+        </StackLayout>
+      
+    </ScrollView>
+</toolkit:Popup>

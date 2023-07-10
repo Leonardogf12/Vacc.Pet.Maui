@@ -1,18 +1,21 @@
 ﻿using System.Collections.ObjectModel;
+using System.Windows.Input;
 using VaccPet.MVVM.Models;
 using VaccPet.Services;
 
 namespace VaccPet.MVVM.ViewModels
 {
     public class HomeViewModel : BaseViewModel
-    {        
+    {
+        #region VARIABLES
+
         private readonly IPetService _IPetService;
 
         public ObservableCollection<PetModel> PetsCollection { get; set; }
-
+        #endregion
 
         #region COMMANDS
-        public Command ListPetsCommand { get; set; }
+        public ICommand ListPetsCommand { get; set; }
 
         #endregion
 
@@ -23,9 +26,9 @@ namespace VaccPet.MVVM.ViewModels
             PetsCollection = new ObservableCollection<PetModel>();
 
             ListPetsCommand = new Command(OnListPetsCommand);
-
         }
 
+        #region METHODS
         async void OnListPetsCommand()
         {
             await Navigation.NavigateToAsync<ListPetViewModel>(null);          
@@ -50,7 +53,7 @@ namespace VaccPet.MVVM.ViewModels
         {
             await OnLoadAllPets();            
         }
+        #endregion
 
-        
     }
 }

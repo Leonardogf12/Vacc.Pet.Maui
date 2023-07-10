@@ -13,6 +13,7 @@ namespace VaccPet.MVVM.Models
         public string Animal { get; set; }
         public double Weight { get; set; }
         public string Sex { get; set; }
+        public bool Catrated { get; set; }
         public string Observation { get; set; }
         public byte[] ImageData { get; set; }
 

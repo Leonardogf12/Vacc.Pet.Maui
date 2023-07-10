@@ -6,7 +6,7 @@
              xmlns:vm="clr-namespace:VaccPet.MVVM.ViewModels"
              xmlns:model="clr-namespace:VaccPet.MVVM.Models"
              ios:Page.UseSafeArea="true"             
-             x:Class="VaccPet.MVVM.Views.ListPetPage"           
+             x:Class="VaccPet.MVVM.Views.ListPetPage"              
              BackgroundColor="{StaticResource Primary}"
              >
 
@@ -92,27 +92,26 @@
                                     <VerticalStackLayout Grid.Row="0" Grid.Column="1" Spacing="15">
 
                                         <HorizontalStackLayout Spacing="2" HorizontalOptions="Fill" >
-                                            <Label Text="Nome: " FontAttributes="Bold" TextColor="{StaticResource Quaternary}" FontSize="Medium" LineBreakMode="TailTruncation"/>
+                                            <Label Text="Nome: " FontAttributes="Bold" TextColor="{StaticResource Secondary}" FontSize="Medium" LineBreakMode="TailTruncation"/>
                                             <Label Text="{Binding Name}" TextColor="{StaticResource Quinary}"  FontSize="Medium" FontAttributes="Bold" LineBreakMode="TailTruncation" MaxLines="1"/>
                                         </HorizontalStackLayout>
 
                                         <HorizontalStackLayout  HorizontalOptions="Fill" >
-                                            <Label Text="Cor: " FontAttributes="Bold" TextColor="{StaticResource Quaternary}" FontSize="Medium"/>
+                                            <Label Text="Cor: " FontAttributes="Bold" TextColor="{StaticResource Secondary}" FontSize="Medium"/>
                                             <Label Text="{Binding Color}" TextColor="{StaticResource Quinary}"  FontSize="Medium" FontAttributes="Bold" LineBreakMode="TailTruncation" MaxLines="1"/>
                                         </HorizontalStackLayout>
 
                                         <HorizontalStackLayout  HorizontalOptions="Fill" >
-                                            <Label Text="Nasciment: " FontAttributes="Bold" TextColor="{StaticResource Quaternary}" FontSize="Medium"/>
+                                            <Label Text="Nasciment: " FontAttributes="Bold" TextColor="{StaticResource Secondary}" FontSize="Medium"/>
                                             <Label Text="{Binding BirthDate,StringFormat='{}{0:dd/MM/yyyy}'}" TextColor="{StaticResource Quinary}" FontAttributes="Bold"  FontSize="Medium" LineBreakMode="TailTruncation" MaxLines="1"/>
                                         </HorizontalStackLayout>
                                     </VerticalStackLayout>
 
                                 </Grid>
                                 <Frame.GestureRecognizers>
-                                    <!--<TapGestureRecognizer Command="{Binding SelectedPetInCollectionCommand}"/>-->
                                     <TapGestureRecognizer Command="{Binding Source={x:RelativeSource 
                                                       AncestorType={x:Type vm:ListPetViewModel}},
-                                                      Path=TestCommand}"
+                                                      Path=SelectedPetInCollectionCommand}"
                                                       CommandParameter="{Binding .}"/>
                                 </Frame.GestureRecognizers>
 
