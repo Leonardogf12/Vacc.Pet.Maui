@@ -86,7 +86,7 @@ namespace VaccPet.MVVM.ViewModels
                 await _IPetService.DeletePet(PetModelObject);                
                 PetsCollection.Remove(PetModelObject);
 
-                await App.Current.MainPage.ShowPopupAsync(new PopupConfirmationPage());
+                await App.Current.MainPage.ShowPopupAsync(new PopupSuccessConfirmationPage());
             }
             else
             {
@@ -104,7 +104,7 @@ namespace VaccPet.MVVM.ViewModels
             {
                 await _IPetService.DeleteAllPets();
                 PetsCollection.Clear();
-                await App.Current.MainPage.ShowPopupAsync(new PopupConfirmationPage());
+                await App.Current.MainPage.ShowPopupAsync(new PopupSuccessConfirmationPage());
             }
             else
             {

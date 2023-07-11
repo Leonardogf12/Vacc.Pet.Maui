@@ -1,5 +1,6 @@
 ﻿obj\Debug\net7.0-android\resizetizer\r\drawable\catdefault.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\catpets.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\check_gif.gif
 obj\Debug\net7.0-android\resizetizer\r\drawable\dogdefault.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\dogpets.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\loading_green.gif
@@ -13,6 +14,7 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\confirmation.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\edit.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\edit_blue.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\error.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\heart.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\home.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\question_yellow.png
@@ -29,6 +31,7 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\confirmation.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\dotnet_bot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\edit.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\edit_blue.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\error.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\heart.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\home.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\question_yellow.png
@@ -45,6 +48,7 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\confirmation.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\dotnet_bot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\edit.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\edit_blue.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\error.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\heart.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\home.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\question_yellow.png
@@ -61,6 +65,7 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\confirmation.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\dotnet_bot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\edit.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\edit_blue.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\error.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\heart.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\home.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\question_yellow.png
@@ -77,6 +82,7 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\confirmation.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\dotnet_bot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\edit.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\edit_blue.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\error.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\heart.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\home.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\question_yellow.png

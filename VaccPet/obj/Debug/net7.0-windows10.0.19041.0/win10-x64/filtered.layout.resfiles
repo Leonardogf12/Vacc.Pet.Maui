@@ -68,6 +68,12 @@ appiconWideTile.scale-200.png
 appiconWideTile.scale-400.png
 catdefault.scale-100.png
 catpets.scale-100.png
+check_gif.scale-100.gif
+confirmation.scale-100.png
+confirmation.scale-125.png
+confirmation.scale-150.png
+confirmation.scale-200.png
+confirmation.scale-400.png
 dogdefault.scale-100.png
 dogpets.scale-100.png
 dotnet_bot.scale-100.png
@@ -95,6 +101,7 @@ home.scale-125.png
 home.scale-150.png
 home.scale-200.png
 home.scale-400.png
+loading_green.scale-100.gif
 mousedefault.scale-100.png
 question_yellow.scale-100.png
 question_yellow.scale-125.png
@@ -129,7 +136,9 @@ splashSplashScreen.scale-200.png
 splashSplashScreen.scale-400.png
 AboutAssets.txt
 catdefault.png
+check_json.json
 dogdefault.png
+error_json.json
 mousedefault.png
 noimage.png
 rabbitdefault.png

@@ -60,6 +60,7 @@
 	  <None Remove="Resources\Images\dogpets.png" />
 	  <None Remove="Resources\Images\edit.svg" />
 	  <None Remove="Resources\Images\edit_blue.svg" />
+	  <None Remove="Resources\Images\error.svg" />
 	  <None Remove="Resources\Images\heart.svg" />
 	  <None Remove="Resources\Images\loading_green.gif" />
 	  <None Remove="Resources\Images\mousedefault.png" />
@@ -70,6 +71,8 @@
 	  <None Remove="Resources\Images\remove_red.svg" />
 	  <None Remove="Resources\Images\trash.svg" />
 	  <None Remove="Resources\Images\trashprimary.svg" />
+	  <None Remove="Resources\Raw\check_json.json" />
+	  <None Remove="Resources\Raw\error_json.json" />
 	  <None Remove="Resources\Raw\noimage.png" />
 	</ItemGroup>
 
@@ -80,6 +83,8 @@
 		<PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="7.0.8" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="Mopups" Version="1.1.1" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="SkiaSharp.Extended.UI.Maui" Version="2.0.0-preview.61" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
 		<PackageReference Include="SQLitePCLRaw.provider.dynamic_cdecl" Version="2.1.5" />
 		<PackageReference Include="SQLitePCLRaw.core" Version="2.1.5" />
@@ -88,7 +93,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="MVVM\Views\Components\PopupConfirmationPage.xaml">
+	  <MauiXaml Update="MVVM\Views\Components\PopupErrorConfirmationPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\Views\Components\PopupSuccessConfirmationPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MVVM\Views\Components\PopupListActionsPage.xaml">
@@ -113,6 +121,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="MVVM\Views\Components\PopupSuccessConfirmationPage.xaml.cs">
+	    <DependentUpon>PopupSuccessConfirmationPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="MVVM\Views\Components\PopupErrorConfirmationPage.xaml.cs">
+	    <DependentUpon>PopupErrorConfirmationPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="MVVM\Views\Components\PopupListActionsPage.xaml.cs">
 	    <DependentUpon>PopupListActionsPage.xaml</DependentUpon>
 	  </Compile>

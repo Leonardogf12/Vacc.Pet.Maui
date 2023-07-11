@@ -70,6 +70,7 @@ namespace VaccPet.MVVM.ViewModels
             set=> SetProperty(ref message, value);
         }
 
+       
         #endregion
 
         public PopupViewModel()
@@ -100,6 +101,8 @@ namespace VaccPet.MVVM.ViewModels
                Message = message
             };
         }
+
+        
         #endregion
 
     }

@@ -5,6 +5,7 @@ using Microsoft.Maui.Platform;
 using Mopups.Hosting;
 using Mopups.Interfaces;
 using Mopups.Services;
+using SkiaSharp.Views.Maui.Controls.Hosting;
 using VaccPet.Data;
 using VaccPet.MVVM.ViewModels;
 using VaccPet.MVVM.Views;
@@ -22,7 +23,8 @@ public static class MauiProgram
 		builder
 			.UseMauiApp<App>()
 			.ConfigureMopups()
-			.UseMauiCommunityToolkit()			
+			.UseMauiCommunityToolkit()	
+			.UseSkiaSharp()
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -43,7 +45,8 @@ public static class MauiProgram
 		builder.Services.AddSingleton<ListPetPage>();
 
         builder.Services.AddTransient<PopupListActionsPage>();
-        builder.Services.AddTransient<PopupConfirmationPage>();
+        builder.Services.AddTransient<PopupSuccessConfirmationPage>();
+        builder.Services.AddTransient<PopupErrorConfirmationPage>();
 
         //*ViewModels
         builder.Services.AddSingleton<BaseViewModel>();

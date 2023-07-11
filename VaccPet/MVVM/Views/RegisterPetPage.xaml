@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"            
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"     
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:local="clr-namespace:VaccPet.Helpers"
              x:Class="VaccPet.MVVM.Views.RegisterPetPage"
              BackgroundColor="{StaticResource Primary}"
              Title="Novo Pet">
@@ -50,42 +52,61 @@
 
             <!-- Name -->
             <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical">
-                <Label Text="Nome" 
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <Label Text="Nome" 
                        Margin="5"
                        TextColor="{StaticResource Secondary}" 
                        FontSize="Medium" 
                        FontAttributes="Bold"/>
-                <Border BackgroundColor="{StaticResource Primary}">
+                    <Image x:Name="imageValidationName" HeightRequest="20" />
+
+                </StackLayout>
+
+                <Border x:Name="borderName" BackgroundColor="{StaticResource Primary}">
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="30"/>
                     </Border.StrokeShape>
-
-                    <Entry x:Name="entryNamePet"                                               
+                    <Entry x:Name="entryName"                                               
                             Text="{Binding Name}"
                             HorizontalOptions="FillAndExpand"
                             Margin="15,0,10,0"
                             Placeholder="Nome"                                                       
                             TextColor="{StaticResource Quinary}" 
                             Keyboard="Text"
-                            FontSize="Medium"                           
-                            PlaceholderColor="{StaticResource Gray400}"/>
+                            FontSize="Medium" 
+                            TextChanged="entryName_TextChanged"
+                            PlaceholderColor="{StaticResource Gray400}">
+                        <Entry.Behaviors>
+                            <toolkit:TextValidationBehavior 
+                                x:Name="NameValidator"
+                                Flags="ValidateOnAttaching,ValidateOnValueChanged"
+                                MinimumLength="3"/>
+                        </Entry.Behaviors>
+                    </Entry>
 
                 </Border>
             </StackLayout>
 
+
             <!-- Animal -->
             <StackLayout Grid.Row="2" Grid.ColumnSpan="2">
-                <Label Text="Animal" 
-                       Margin="5"
-                       TextColor="{StaticResource Secondary}" 
-                       FontSize="Medium" 
-                       FontAttributes="Bold"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Animal" 
+                           Margin="5"
+                           TextColor="{StaticResource Secondary}" 
+                           FontSize="Medium" 
+                           FontAttributes="Bold"/>
+                    <Image x:Name="imageValidationAnimal" HeightRequest="20" />
+
+                </StackLayout>
 
                 <Border BackgroundColor="{StaticResource Primary}">
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="30"/>
                     </Border.StrokeShape>
-                    <Picker Title="Selecione" 
+                    <Picker x:Name="pickerAnimal"
+                            Title="Selecione"                           
                             Margin="15,0,10,0"
                             TitleColor="{StaticResource Gray400}" 
                             ItemsSource="{Binding AnimalsList}"
@@ -97,50 +118,67 @@
 
 
             </StackLayout>
-           
+
             <!-- Color -->
-            <StackLayout Grid.Row="3" Grid.ColumnSpan="2" >
-                <Label Text="Cor" 
+            <StackLayout Grid.Row="3" Grid.ColumnSpan="2"  Orientation="Vertical">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Cor" 
                        Margin="5"
                        TextColor="{StaticResource Secondary}" 
                        FontSize="Medium" 
                        FontAttributes="Bold"/>
-
+                    <Image x:Name="imageValidationColor" HeightRequest="20" />
+                </StackLayout>
                 <Border BackgroundColor="{StaticResource Primary}">
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="30"/>
                     </Border.StrokeShape>
-                    <Entry Placeholder="Cor"
+                    <Entry x:Name="entryColor"
+                           Placeholder="Cor"
                            Text="{Binding Color}"
                            Margin="15,0,10,0"
                            TextColor="{StaticResource Quinary}" 
                            Keyboard="Text"
                            FontSize="Medium"                           
-                           PlaceholderColor="{StaticResource Gray400}"/>
+                           PlaceholderColor="{StaticResource Gray400}"
+                           TextChanged="entryColor_TextChanged">
+                        <Entry.Behaviors>
+                            <toolkit:TextValidationBehavior 
+                                x:Name="ColorValidator"
+                                Flags="ValidateOnAttaching,ValidateOnValueChanged"
+                                MinimumLength="4"/>
+                        </Entry.Behaviors>
+                    </Entry>
                 </Border>
             </StackLayout>
 
             <!-- Weight -->
-            <StackLayout Grid.Row="4" Grid.Column="0">
-                <Label Text="Peso KG"
-                       Margin="5"
-                       TextColor="{StaticResource Secondary}" 
-                       FontSize="Medium" 
-                       FontAttributes="Bold"/>
-
+            <StackLayout Grid.Row="4" Grid.Column="0" Orientation="Vertical">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Peso KG"
+                           Margin="5"
+                           TextColor="{StaticResource Secondary}" 
+                           FontSize="Medium" 
+                           FontAttributes="Bold"/>
+                    <Image x:Name="imageValidationWeight" HeightRequest="20" />
+                </StackLayout>
                 <Border BackgroundColor="{StaticResource Primary}">
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="30"/>
                     </Border.StrokeShape>
 
-                    <Entry Placeholder="0.0 KG"
+                    <Entry x:Name="entryWeigth"
+                           Placeholder="0.0 KG"
                            MaxLength="5"         
                            Margin="15,0,10,0"
                            Text="{Binding Weight}"
                            TextColor="{StaticResource Quinary}" 
+                           TextChanged="entryWeigth_TextChanged"
                            Keyboard="Numeric"                          
                            FontSize="Medium"                           
-                           PlaceholderColor="{StaticResource Gray400}"/>
+                           PlaceholderColor="{StaticResource Gray400}">
+                        
+                    </Entry>
                 </Border>
             </StackLayout>
 
@@ -229,12 +267,15 @@
 
             <!-- Button Save -->
             <StackLayout Grid.Row="7" Grid.ColumnSpan="2">
-                <Button Text="Salvar" 
+                <Button x:Name="btnSave"
+                        Text="Salvar" 
                         CornerRadius="30"
                         TextColor="{StaticResource White}" 
                         FontSize="Medium" 
                         BackgroundColor="{StaticResource Tertiary}"
-                        Command="{Binding AddPetCommand}"/>
+                        Clicked="btnSave_Clicked"/>
+
+                <!--Command="{Binding AddPetCommand}"-->
             </StackLayout>
 
         </Grid>

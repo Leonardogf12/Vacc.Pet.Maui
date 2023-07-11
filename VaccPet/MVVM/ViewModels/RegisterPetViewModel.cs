@@ -151,6 +151,12 @@ namespace VaccPet.MVVM.ViewModels
             set=>  SetProperty(ref isCastratedConfirm, value); 
         }
 
+        bool everythingOk;
+        public bool EverythingOk
+        {
+            get => everythingOk;
+            set=>SetProperty(ref everythingOk, value);
+        }
 
         #endregion
 
@@ -169,6 +175,12 @@ namespace VaccPet.MVVM.ViewModels
         #region METHODS
         private async void OnAddPetCommand()
         {
+            if (!EverythingOk)
+            {
+                await App.Current.MainPage.ShowPopupAsync(new PopupErrorConfirmationPage());
+                return;
+            }            
+
             PetModel pet = new PetModel();
 
             pet.Name = Name;
@@ -184,13 +196,8 @@ namespace VaccPet.MVVM.ViewModels
             var result = await _IPetService.AddPet(pet);
 
             if (result > 0)
-            {
-                //PopupConfirmationControl = new Popup();
-                //PopupConfirmationControl = new PopupConfirmationPage(
-                //        PopupViewModel.SetParametersPopup("Pet Salvo!"));
-
-                await App.Current.MainPage.ShowPopupAsync(new PopupConfirmationPage());
-
+            {                            
+                await App.Current.MainPage.ShowPopupAsync(new PopupSuccessConfirmationPage());
             }
             else
             {
