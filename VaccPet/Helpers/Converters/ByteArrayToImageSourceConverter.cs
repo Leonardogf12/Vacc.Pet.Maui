@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Globalization;
 
-namespace VaccPet.Helpers;
+namespace VaccPet.Helpers.Converters;
 
 public class ByteArrayToImageSourceConverter : IValueConverter
 {
@@ -13,7 +8,7 @@ public class ByteArrayToImageSourceConverter : IValueConverter
     {
         if (value is byte[] imageData)
         {
-            return ImageSource.FromStream(() => new System.IO.MemoryStream(imageData));
+            return ImageSource.FromStream(() => new MemoryStream(imageData));
         }
 
         return null;

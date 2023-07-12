@@ -1,13 +1,9 @@
-﻿using VaccPet.Helpers;
-using VaccPet.MVVM.Models;
-using VaccPet.Services;
-using System.IO;
-using System.Resources;
-using Microsoft.Extensions.FileProviders;
-using Microsoft.Maui.Storage;
+﻿using CommunityToolkit.Maui.Views;
 using System.Windows.Input;
-using CommunityToolkit.Maui.Views;
+using VaccPet.Helpers.Models;
+using VaccPet.MVVM.Models;
 using VaccPet.MVVM.Views.Components;
+using VaccPet.Services;
 
 namespace VaccPet.MVVM.ViewModels
 {
@@ -22,6 +18,8 @@ namespace VaccPet.MVVM.ViewModels
         Popup PopupConfirmationControl { get; set; }
 
         PopupViewModel PopupViewModel { get; set; } = new PopupViewModel();
+
+        public Animal AnimalHelper { get; set; } = new Animal();
 
         #endregion
 
@@ -62,7 +60,7 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref this.animals, value);
         }
 
-        double weight;
+        double weight = 0;
         public double Weight
         {
             get => weight;
@@ -112,17 +110,17 @@ namespace VaccPet.MVVM.ViewModels
             }
             set => SetProperty(ref isCheckedM, value);
         }
-        
+
         bool isCatrated;
         public bool IsCatrated
         {
             get
             {
-                if (isCatrated)                
-                    IsCastratedConfirm = "Sim";                
-                else 
+                if (isCatrated)
+                    IsCastratedConfirm = "Sim";
+                else
                     IsCastratedConfirm = "Não";
-                
+
                 return isCatrated;
             }
 
@@ -136,7 +134,7 @@ namespace VaccPet.MVVM.ViewModels
             get => animalSelected;
             set => SetProperty(ref animalSelected, value);
         }
-       
+
         private string _imagePath;
         public string ImagePath
         {
@@ -148,14 +146,28 @@ namespace VaccPet.MVVM.ViewModels
         public string IsCastratedConfirm
         {
             get => isCastratedConfirm;
-            set=>  SetProperty(ref isCastratedConfirm, value); 
+            set => SetProperty(ref isCastratedConfirm, value);
         }
 
         bool everythingOk;
         public bool EverythingOk
         {
             get => everythingOk;
-            set=>SetProperty(ref everythingOk, value);
+            set => SetProperty(ref everythingOk, value);
+        }
+
+        bool isToggledSex = false;
+        public bool IsToggledSex
+        {
+            get=> isToggledSex; 
+            set=> SetProperty(ref isToggledSex, value);
+        }
+
+        bool isValidName;
+        public bool IsValidName
+        {
+            get => isValidName;
+            set=>SetProperty(ref isValidName, value);
         }
 
         #endregion
@@ -164,7 +176,7 @@ namespace VaccPet.MVVM.ViewModels
         {
             _IPetService = IPetService;
 
-            AnimalsList = GetAllAnimals();
+            AnimalsList = AnimalHelper.GetAllAnimals();
 
             GetImageFromGalleryCommand = new Command(OnGetImageFromGalleryCommand);
 
@@ -175,6 +187,8 @@ namespace VaccPet.MVVM.ViewModels
         #region METHODS
         private async void OnAddPetCommand()
         {
+
+
             if (!EverythingOk)
             {
                 await App.Current.MainPage.ShowPopupAsync(new PopupErrorConfirmationPage());
@@ -189,7 +203,8 @@ namespace VaccPet.MVVM.ViewModels
             pet.BirthDate = BirthDate;
             pet.Color = Color;
             pet.Observation = Observation;
-            pet.Sex = IsCheckedF == true ? "F" : "M";
+            pet.Sex = IsToggledSex == true ? "M" : "F";
+            //pet.Sex = IsCheckedF == true ? "F" : "M";
             pet.Catrated = IsCatrated;
             pet.Weight = Weight;
 
@@ -205,29 +220,7 @@ namespace VaccPet.MVVM.ViewModels
                 return;
             }
 
-        }
-        public List<Animal> GetAllAnimals()
-        {
-            return new List<Animal>()
-            {
-                new Animal{Key = 1, Value = "Cachorro"},
-                new Animal{Key = 2, Value = "Gato"},
-                new Animal{Key = 3, Value = "Peixe"},
-                new Animal{Key = 4, Value = "Pássaro"},
-                new Animal{Key = 5, Value = "Coelho"},
-                new Animal{Key = 6, Value = "Hamster"},
-                new Animal{Key = 7, Value = "Tartaruga"},
-                new Animal{Key = 8, Value = "Porquinho-da-índia"},
-                new Animal{Key = 9, Value = "Furão"},
-                new Animal{Key = 10, Value = "Chinchila"},
-                new Animal{Key = 11, Value = "Rato"},
-                new Animal{Key = 12, Value = "Gerbil"},
-                new Animal{Key = 13, Value = "Cobra"},
-                new Animal{Key = 14, Value = "Lagarto"},
-                new Animal{Key = 15, Value = "Cavalo"},
-                new Animal{Key = 16, Value = "Porco"},
-            };
-        }
+        }      
         public async void OnGetImageFromGalleryCommand()
         {
             try

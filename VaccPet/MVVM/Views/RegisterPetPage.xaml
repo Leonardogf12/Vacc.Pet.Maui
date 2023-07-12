@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"     
-             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             xmlns:local="clr-namespace:VaccPet.Helpers"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"             
+             xmlns:local="clr-namespace:VaccPet.Helpers.Behaviors"             
              x:Class="VaccPet.MVVM.Views.RegisterPetPage"
              BackgroundColor="{StaticResource Primary}"
              Title="Novo Pet">
@@ -27,12 +27,13 @@
             <!-- Photo -->
             <StackLayout Grid.Row="0" Grid.ColumnSpan="2">
 
-                <Frame HeightRequest="100" 
+                <Border HeightRequest="100" 
                        Padding="1"                        
-                       BackgroundColor="{StaticResource Tertiary}" 
-                       BorderColor="{StaticResource Quinary}" 
-                       WidthRequest="100" 
-                       CornerRadius="100">
+                       BackgroundColor="{StaticResource Tertiary}"                       
+                       WidthRequest="100">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="100"/>
+                    </Border.StrokeShape>
                     <Image Source="{Binding ImagePath}"
                               WidthRequest="200" 
                               HeightRequest="200" 
@@ -41,7 +42,7 @@
                             <TapGestureRecognizer Command="{Binding GetImageFromGalleryCommand}"/>
                         </Image.GestureRecognizers>
                     </Image>
-                </Frame>
+                </Border>
 
                 <Image Source="add.svg" HeightRequest="25" Margin="80,-10,0,0">
                     <Image.GestureRecognizers>
@@ -55,10 +56,10 @@
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                     <Label Text="Nome" 
-                       Margin="5"
-                       TextColor="{StaticResource Secondary}" 
-                       FontSize="Medium" 
-                       FontAttributes="Bold"/>
+                           Margin="5"                           
+                           TextColor="{StaticResource Secondary}" 
+                           FontSize="Medium" 
+                           FontAttributes="Bold"/>
                     <Image x:Name="imageValidationName" HeightRequest="20" />
 
                 </StackLayout>
@@ -71,23 +72,21 @@
                             Text="{Binding Name}"
                             HorizontalOptions="FillAndExpand"
                             Margin="15,0,10,0"
-                            Placeholder="Nome"                                                       
-                            TextColor="{StaticResource Quinary}" 
+                            Placeholder="Nome" 
+                            TextColor="{StaticResource Quinary}"
                             Keyboard="Text"
-                            FontSize="Medium" 
-                            TextChanged="entryName_TextChanged"
-                            PlaceholderColor="{StaticResource Gray400}">
+                            FontSize="Medium"                             
+                            PlaceholderColor="{StaticResource Gray400}"
+                            >
+
                         <Entry.Behaviors>
-                            <toolkit:TextValidationBehavior 
-                                x:Name="NameValidator"
-                                Flags="ValidateOnAttaching,ValidateOnValueChanged"
-                                MinimumLength="3"/>
+                            <local:TextValidationsBehaviors x:TypeArguments="Entry" x:Name="nameBehaviorValidator" />
                         </Entry.Behaviors>
+
                     </Entry>
 
                 </Border>
             </StackLayout>
-
 
             <!-- Animal -->
             <StackLayout Grid.Row="2" Grid.ColumnSpan="2">
@@ -113,9 +112,12 @@
                             ItemDisplayBinding="{Binding Value}"
                             SelectedItem="{Binding AnimalSelected}" 
                             TextColor="{StaticResource Quinary}" 
-                            FontSize="Medium"/>
+                            FontSize="Medium">
+                        <Picker.Behaviors>
+                            <local:GeralValidationsBehaviors x:TypeArguments="Picker"/>
+                        </Picker.Behaviors>
+                    </Picker>
                 </Border>
-
 
             </StackLayout>
 
@@ -140,13 +142,10 @@
                            TextColor="{StaticResource Quinary}" 
                            Keyboard="Text"
                            FontSize="Medium"                           
-                           PlaceholderColor="{StaticResource Gray400}"
-                           TextChanged="entryColor_TextChanged">
+                           PlaceholderColor="{StaticResource Gray400}">
+
                         <Entry.Behaviors>
-                            <toolkit:TextValidationBehavior 
-                                x:Name="ColorValidator"
-                                Flags="ValidateOnAttaching,ValidateOnValueChanged"
-                                MinimumLength="4"/>
+                            <local:TextValidationsBehaviors x:TypeArguments="Entry"/>
                         </Entry.Behaviors>
                     </Entry>
                 </Border>
@@ -170,14 +169,17 @@
                     <Entry x:Name="entryWeigth"
                            Placeholder="0.0 KG"
                            MaxLength="5"         
-                           Margin="15,0,10,0"
+                           Margin="15,0,10,0"                           
                            Text="{Binding Weight}"
-                           TextColor="{StaticResource Quinary}" 
-                           TextChanged="entryWeigth_TextChanged"
+                           TextColor="{StaticResource Quinary}"                          
                            Keyboard="Numeric"                          
                            FontSize="Medium"                           
                            PlaceholderColor="{StaticResource Gray400}">
-                        
+
+                        <Entry.Behaviors>
+                            <local:NumericValidationsBehaviors x:TypeArguments="Entry"/>
+                        </Entry.Behaviors>
+
                     </Entry>
                 </Border>
             </StackLayout>
@@ -196,11 +198,15 @@
                         <RoundRectangle CornerRadius="30"/>
                     </Border.StrokeShape>
                     <DatePicker  TextColor="{StaticResource Quinary}" 
-                             Margin="15,0,10,0"
-                             MinimumDate="01/01/2008"
-                             MaximumDate="12/31/2030"
-                             FontSize="Medium" 
-                             Date="{Binding BirthDate}"/>
+                                 Margin="15,0,10,0"
+                                 MinimumDate="01/01/2008"
+                                 MaximumDate="12/31/2030"
+                                 FontSize="Medium" 
+                                 Date="{Binding BirthDate}">
+                        <DatePicker.Behaviors>
+                            <local:DateValidationsBehaviors x:TypeArguments="DatePicker"/>
+                        </DatePicker.Behaviors>
+                    </DatePicker>
                 </Border>
             </StackLayout>
 
@@ -213,15 +219,9 @@
                        FontAttributes="Bold"/>
 
                 <StackLayout Orientation="Horizontal" Spacing="20">
-                    <StackLayout Orientation="Horizontal" Spacing="-10">
-                        <CheckBox Color="{StaticResource Quinary}" IsChecked="{Binding IsCheckedF}"/>
-                        <Label Text="F" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,8,0,0" />
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal" Spacing="-10">
-                        <CheckBox Color="{StaticResource Quinary}" IsChecked="{Binding IsCheckedM}"/>
-                        <Label Text="M" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,8,0,0" />
-                    </StackLayout>
-
+                    <Label Text="F" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="20,8,0,0" />
+                    <Switch OnColor="{StaticResource Quinary}" ThumbColor="{StaticResource Secondary}" IsToggled="{Binding IsToggledSex}"/>
+                    <Label Text="M" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,8,0,0" />
                 </StackLayout>
 
             </StackLayout>
@@ -254,6 +254,7 @@
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="30"/>
                     </Border.StrokeShape>
+
                     <Editor Placeholder="Observação"                                                     
                             Text="{Binding Observation}"
                             Margin="15,0,10,0"
@@ -261,7 +262,13 @@
                             Keyboard="Text"
                             HeightRequest="80"                                        
                             FontSize="Medium"
-                            PlaceholderColor="{StaticResource Gray400}"/>
+                            PlaceholderColor="{StaticResource Gray400}">
+
+                        <Editor.Behaviors>
+                            <local:TextValidationsBehaviors x:TypeArguments="Editor" />
+                        </Editor.Behaviors>
+
+                    </Editor>
                 </Border>
             </StackLayout>
 

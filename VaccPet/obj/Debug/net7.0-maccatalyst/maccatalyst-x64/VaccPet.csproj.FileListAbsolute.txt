@@ -923,3 +923,6 @@ D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.pdb
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\VaccPet.genruntimeconfig.cache
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\ref\VaccPet.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\error.png
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\error@2x.png
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\error@3x.png

@@ -1,1 +1,1 @@
-<resources><color name="colorPrimary">#c0d1c2</color><color name="colorPrimaryDark">#181C2C</color><color name="colorAccent">#181C2C</color></resources>
+<resources><color name="colorPrimary">#3E8EED</color><color name="colorPrimaryDark">#181C2C</color><color name="colorAccent">@android:color/darker_gray</color></resources>

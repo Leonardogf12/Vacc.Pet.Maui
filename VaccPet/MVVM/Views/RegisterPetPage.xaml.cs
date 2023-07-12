@@ -1,59 +1,66 @@
+using CommunityToolkit.Maui.Behaviors;
+using VaccPet.Helpers.Behaviors;
 using VaccPet.MVVM.ViewModels;
 
 namespace VaccPet.MVVM.Views;
 
 public partial class RegisterPetPage : ContentPage
 {
-	public RegisterPetPage(RegisterPetViewModel model)
+    
+    public RegisterPetPage(RegisterPetViewModel model)
 	{
 		InitializeComponent();
 
 		BindingContext = model;
-	}
+
+    }
 
     
     private void btnSave_Clicked(object sender, EventArgs e)
     {
-        if (NameValidator.IsNotValid)
+        if (!nameBehaviorValidator.ValidateB)
         {
-            imageValidationName.Source = "error.svg";
-            return;
-        }                
-        else{
-            imageValidationName.Source = "confirmation.svg";
-        }
-
-        if (ColorValidator.IsNotValid)
-        {
-            imageValidationColor.Source = "error.svg";
-            return;
+            DisplayAlert("Ops", "Parece que voce nao preencheu o nome corretamente.", "Ok");
         }
         else
         {
-            imageValidationColor.Source = "confirmation.svg";
+            DisplayAlert("Nome", "Tudo certo com Nome", "Ok");
         }
-        
-        if (pickerAnimal.SelectedItem != null)
-        {
-            imageValidationAnimal.Source = "confirmation.svg";
-        }
-        else{
-            imageValidationAnimal.Source = "error.svg";
-            return;
-        }
-       
-        var vm = BindingContext as RegisterPetViewModel;
 
-        vm.AddPetCommand.Execute(vm);
+
+        //if (NameValidator.IsNotValid)
+        //{
+        //    imageValidationName.Source = "error.svg";
+        //    return;
+        //}                
+        //else{
+        //    imageValidationName.Source = "confirmation.svg";
+        //}
+
+        //if (ColorValidator.IsNotValid)
+        //{
+        //    imageValidationColor.Source = "error.svg";
+        //    return;
+        //}
+        //else
+        //{
+        //    imageValidationColor.Source = "confirmation.svg";
+        //}
+
+        //if (pickerAnimal.SelectedItem != null)
+        //{
+        //    imageValidationAnimal.Source = "confirmation.svg";
+        //}
+        //else{
+        //    imageValidationAnimal.Source = "error.svg";
+        //    return;
+        //}
+
+        //var vm = BindingContext as RegisterPetViewModel;
+
+        //vm.AddPetCommand.Execute(vm);
     }
 
-    private void entryName_TextChanged(object sender, TextChangedEventArgs e)
-    {
-        if (e.NewTextValue.Length >= 3) 
-            imageValidationName.Source = "confirmation.svg";        
-        else        
-            imageValidationName.Source = "error.svg";       
-    }
     private void entryColor_TextChanged(object sender, TextChangedEventArgs e)
     {
         if(e.NewTextValue.Length >= 4)
@@ -68,4 +75,7 @@ public partial class RegisterPetPage : ContentPage
         else        
             imageValidationWeight.Source = "error.svg";        
     }
+
+
+   
 }
