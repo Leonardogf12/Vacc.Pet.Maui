@@ -114,7 +114,7 @@
                             TextColor="{StaticResource Quinary}" 
                             FontSize="Medium">
                         <Picker.Behaviors>
-                            <local:GeralValidationsBehaviors x:TypeArguments="Picker"/>
+                            <local:GeralValidationsBehaviors x:TypeArguments="Picker" x:Name="animalBehaviorValidator"/>
                         </Picker.Behaviors>
                     </Picker>
                 </Border>
@@ -145,7 +145,7 @@
                            PlaceholderColor="{StaticResource Gray400}">
 
                         <Entry.Behaviors>
-                            <local:TextValidationsBehaviors x:TypeArguments="Entry"/>
+                            <local:TextValidationsBehaviors x:TypeArguments="Entry" x:Name="colorBehaviorValidator"/>
                         </Entry.Behaviors>
                     </Entry>
                 </Border>
@@ -177,7 +177,7 @@
                            PlaceholderColor="{StaticResource Gray400}">
 
                         <Entry.Behaviors>
-                            <local:NumericValidationsBehaviors x:TypeArguments="Entry"/>
+                            <local:NumericValidationsBehaviors x:TypeArguments="Entry" x:Name="weightBehaviorValidator"/>
                         </Entry.Behaviors>
 
                     </Entry>
@@ -204,7 +204,7 @@
                                  FontSize="Medium" 
                                  Date="{Binding BirthDate}">
                         <DatePicker.Behaviors>
-                            <local:DateValidationsBehaviors x:TypeArguments="DatePicker"/>
+                            <local:DateValidationsBehaviors x:TypeArguments="DatePicker" x:Name="birthDateBehaviorValidator"/>
                         </DatePicker.Behaviors>
                     </DatePicker>
                 </Border>
@@ -265,7 +265,7 @@
                             PlaceholderColor="{StaticResource Gray400}">
 
                         <Editor.Behaviors>
-                            <local:TextValidationsBehaviors x:TypeArguments="Editor" />
+                            <local:TextValidationsBehaviors x:TypeArguments="Editor" x:Name="observationBehaviorValidator"/>
                         </Editor.Behaviors>
 
                     </Editor>

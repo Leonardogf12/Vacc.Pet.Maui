@@ -37,7 +37,7 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
-        DBConnection.Instance.Initialize(); //*Transferido para este lugar devido a bug de inicialização na App. Testar essa chamada com Task.
+        DBConnection.Instance.Initialize(); //*Transferido para este lugar devido a bug de inicialização na App. Testar essa chamada com async Task.
 
         //*Views
         builder.Services.AddSingleton<HomePage>();

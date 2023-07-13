@@ -35,7 +35,9 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiAsset Include="Resources\Splash\splash.svg" BaseSize="128,128">
+		  <LogicalName>%(RecursiveDir)%(Filename)%(Extension)</LogicalName>
+		</MauiAsset>
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -74,6 +76,7 @@
 	  <None Remove="Resources\Raw\check_json.json" />
 	  <None Remove="Resources\Raw\error_json.json" />
 	  <None Remove="Resources\Raw\noimage.png" />
+	  <None Remove="Resources\Raw\splash.json" />
 	</ItemGroup>
 
 	<ItemGroup>

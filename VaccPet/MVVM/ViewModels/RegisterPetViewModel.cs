@@ -15,10 +15,6 @@ namespace VaccPet.MVVM.ViewModels
 
         public List<Animal> AnimalsList { get; set; } = new List<Animal>();
 
-        Popup PopupConfirmationControl { get; set; }
-
-        PopupViewModel PopupViewModel { get; set; } = new PopupViewModel();
-
         public Animal AnimalHelper { get; set; } = new Animal();
 
         #endregion
@@ -53,25 +49,11 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref this.birthDate, value);
         }
 
-        List<Animal> animals;
-        public List<Animal> Animals
-        {
-            get => animals;
-            set => SetProperty(ref this.animals, value);
-        }
-
         double weight = 0;
         public double Weight
         {
             get => weight;
             set => SetProperty(ref this.weight, value);
-        }
-
-        string sex;
-        public string Sex
-        {
-            get => sex;
-            set => SetProperty(ref this.sex, value);
         }
 
         string observation;
@@ -147,29 +129,15 @@ namespace VaccPet.MVVM.ViewModels
         {
             get => isCastratedConfirm;
             set => SetProperty(ref isCastratedConfirm, value);
-        }
-
-        bool everythingOk;
-        public bool EverythingOk
-        {
-            get => everythingOk;
-            set => SetProperty(ref everythingOk, value);
-        }
+        }       
 
         bool isToggledSex = false;
         public bool IsToggledSex
         {
-            get=> isToggledSex; 
-            set=> SetProperty(ref isToggledSex, value);
+            get => isToggledSex;
+            set => SetProperty(ref isToggledSex, value);
         }
-
-        bool isValidName;
-        public bool IsValidName
-        {
-            get => isValidName;
-            set=>SetProperty(ref isValidName, value);
-        }
-
+    
         #endregion
 
         public RegisterPetViewModel(IPetService IPetService)
@@ -181,20 +149,12 @@ namespace VaccPet.MVVM.ViewModels
             GetImageFromGalleryCommand = new Command(OnGetImageFromGalleryCommand);
 
             AddPetCommand = new Command(OnAddPetCommand);
-           
+
         }
 
         #region METHODS
         private async void OnAddPetCommand()
         {
-
-
-            if (!EverythingOk)
-            {
-                await App.Current.MainPage.ShowPopupAsync(new PopupErrorConfirmationPage());
-                return;
-            }            
-
             PetModel pet = new PetModel();
 
             pet.Name = Name;
@@ -203,24 +163,25 @@ namespace VaccPet.MVVM.ViewModels
             pet.BirthDate = BirthDate;
             pet.Color = Color;
             pet.Observation = Observation;
-            pet.Sex = IsToggledSex == true ? "M" : "F";
-            //pet.Sex = IsCheckedF == true ? "F" : "M";
+            pet.Sex = IsToggledSex == true ? "M" : "F";           
             pet.Catrated = IsCatrated;
             pet.Weight = Weight;
+            pet.Age = 0;
 
             var result = await _IPetService.AddPet(pet);
 
             if (result > 0)
-            {                            
+            {
                 await App.Current.MainPage.ShowPopupAsync(new PopupSuccessConfirmationPage());
+                return;
             }
             else
             {
-                await App.Current.MainPage.DisplayAlert("Erro", "Ops, parece que algo deu errado. Tente novamente.", "OK");
-                return;
+                await App.Current.MainPage.ShowPopupAsync(new PopupErrorConfirmationPage());
+                return;               
             }
+        }
 
-        }      
         public async void OnGetImageFromGalleryCommand()
         {
             try
@@ -235,6 +196,7 @@ namespace VaccPet.MVVM.ViewModels
                 throw;
             }
         }
+
         private async Task<byte[]> ReadImageBytes(string imagePath)
         {
             try
@@ -252,8 +214,9 @@ namespace VaccPet.MVVM.ViewModels
                 throw;
             }
         }
+
         public async static Task<byte[]> GetImageDefault(string type)
-        {          
+        {
             if (type == "Cachorro")
             {
                 using var streamDog = await FileSystem.OpenAppPackageFileAsync("dogdefault.png");
@@ -275,15 +238,17 @@ namespace VaccPet.MVVM.ViewModels
                 return await StreamToByteArrayAsync(streamMou);
             }
 
-            using var stream = await FileSystem.OpenAppPackageFileAsync("noimage.png"); 
+            using var stream = await FileSystem.OpenAppPackageFileAsync("noimage.png");
             return await StreamToByteArrayAsync(stream);
         }
+
         public static async Task<byte[]> StreamToByteArrayAsync(Stream stream)
         {
             using MemoryStream memoryStream = new MemoryStream();
             await stream.CopyToAsync(memoryStream);
             return memoryStream.ToArray();
         }
+
         #endregion
     }
 }

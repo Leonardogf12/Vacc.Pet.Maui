@@ -98,21 +98,21 @@
 
                                         <HorizontalStackLayout  HorizontalOptions="Fill" >
                                             <Label Text="Cor: " FontAttributes="Bold" TextColor="{StaticResource Secondary}" FontSize="Medium"/>
-                                            <Label Text="{Binding Color}" TextColor="{StaticResource Quinary}"  FontSize="Medium" FontAttributes="Bold" LineBreakMode="TailTruncation" MaxLines="1"/>
+                                            <Label Text="{Binding Color}" TextColor="{StaticResource Quinary}"  FontSize="Medium" FontAttributes="Bold" LineBreakMode="CharacterWrap" MaxLines="1"/>
                                         </HorizontalStackLayout>
 
                                         <HorizontalStackLayout  HorizontalOptions="Fill" >
-                                            <Label Text="Nasciment: " FontAttributes="Bold" TextColor="{StaticResource Secondary}" FontSize="Medium"/>
-                                            <Label Text="{Binding BirthDate,StringFormat='{}{0:dd/MM/yyyy}'}" TextColor="{StaticResource Quinary}" FontAttributes="Bold"  FontSize="Medium" LineBreakMode="TailTruncation" MaxLines="1"/>
+                                            <Label Text="Idade: " FontAttributes="Bold" TextColor="{StaticResource Secondary}" FontSize="Medium"/>
+                                            <Label Text="{Binding Age}" TextColor="{StaticResource Quinary}" FontAttributes="Bold"  FontSize="Medium" LineBreakMode="TailTruncation" MaxLines="1"/>
                                         </HorizontalStackLayout>
                                     </VerticalStackLayout>
 
                                 </Grid>
                                 <Frame.GestureRecognizers>
                                     <TapGestureRecognizer Command="{Binding Source={x:RelativeSource 
-                                                      AncestorType={x:Type vm:ListPetViewModel}},
-                                                      Path=SelectedPetInCollectionCommand}"
-                                                      CommandParameter="{Binding .}"/>
+                                                          AncestorType={x:Type vm:ListPetViewModel}},
+                                                          Path=SelectedPetInCollectionCommand}"
+                                                          CommandParameter="{Binding .}"/>
                                 </Frame.GestureRecognizers>
 
 

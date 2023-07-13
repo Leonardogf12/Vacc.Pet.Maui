@@ -6,23 +6,16 @@ namespace VaccPet.Helpers.Behaviors
 {
     public class TextValidationsBehaviors<T> : Behavior<T> where T : BindableObject
     {
-        bool validateB;
-        public bool ValidateB
+        bool validateFields = false;
+        public bool ValidateFields
         {
-            get { return validateB; }
+            get { return validateFields; }
             set
             {
-                this.validateB = value;
+                this.validateFields = value;
                 OnPropertyChanged();
             }
         }
-
-
-        public static readonly BindableProperty IsValidProperty = BindableProperty.Create(nameof(IsValid),
-                                                                                          typeof(bool),
-                                                                                          typeof(TextValidationsBehaviors<T>),
-                                                                                          true,
-                                                                                          BindingMode.OneWayToSource);
 
         public bool IsValid
         {
@@ -31,11 +24,16 @@ namespace VaccPet.Helpers.Behaviors
         }
 
 
+        public static readonly BindableProperty IsValidProperty = BindableProperty.Create(nameof(IsValid),
+                                                                                          typeof(bool),
+                                                                                          typeof(TextValidationsBehaviors<T>),
+                                                                                          true,
+                                                                                          BindingMode.OneWayToSource);
+       
         private static void SetIsValid(BindableObject bindable, bool value)
         {
             bindable.SetValue(IsValidProperty, value);
         }
-
         protected override void OnAttachedTo(T bindable)
         {
             base.OnAttachedTo(bindable);
@@ -50,9 +48,8 @@ namespace VaccPet.Helpers.Behaviors
             }
 
             SetIsValid(bindable, false);
-            //base.OnAttachedTo(bindable);
+            base.OnAttachedTo(bindable);
         }
-
         protected override void OnDetachingFrom(T bindable)
         {
             if (bindable is Entry entry)
@@ -68,15 +65,14 @@ namespace VaccPet.Helpers.Behaviors
         }
 
 
-
-        #region TEXT_CHANGEDS - TEXT
+        #region CHANGES - TEXT
         protected virtual void OnEntryTextChanged(object sender, TextChangedEventArgs args)
         {
             var entry = (Entry)sender;
 
             bool isValid = ValidateEntryText(entry.Text);
             SetIsValid((BindableObject)sender, isValid);
-            ValidateB = isValid;
+            ValidateFields = isValid;
             entry.TextColor = isValid ? Color.FromHex("#CED9FC") : Colors.IndianRed;
         }
 
@@ -84,16 +80,17 @@ namespace VaccPet.Helpers.Behaviors
         {
             var editor = (Editor)sender;
 
-            IsValid = ValidateEditorText(editor.Text);
-
-            editor.TextColor = IsValid ? Color.FromHex("#CED9FC") : Colors.IndianRed;
+            bool isValid = ValidateEditorText(editor.Text);
+            SetIsValid((BindableObject)sender, isValid);
+            ValidateFields = isValid;
+            editor.TextColor = isValid ? Color.FromHex("#CED9FC") : Colors.IndianRed;
         }
         #endregion
 
-        #region VALIDATORS - TEXT
+        #region VALIDATORS
         protected virtual bool ValidateEntryText(string text)
         {
-            if (text.Length < 3 || text.Length >= 15)
+            if (text.Length < 3 || text.Length >= 30)
                 return false;
 
             return true;
@@ -108,8 +105,6 @@ namespace VaccPet.Helpers.Behaviors
         }
 
         #endregion
-
-
 
     }
 }

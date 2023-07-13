@@ -4,11 +4,16 @@ namespace VaccPet.Helpers.Behaviors
 {
     public class NumericValidationsBehaviors<T> : Behavior<T> where T : BindableObject
     {
-        public static readonly BindableProperty IsValidProperty = BindableProperty.Create(nameof(IsValid),
-                                                                                          typeof(bool),
-                                                                                          typeof(NumericValidationsBehaviors<T>),
-                                                                                          true,
-                                                                                          BindingMode.OneWayToSource);
+        bool validateFields;
+        public bool ValidateFields
+        {
+            get { return validateFields; }
+            set
+            {
+                this.validateFields = value;
+                OnPropertyChanged();
+            }
+        }
 
         private bool IsValid
         {
@@ -16,6 +21,13 @@ namespace VaccPet.Helpers.Behaviors
             set { SetValue(IsValidProperty, value); }
         }
 
+
+        public static readonly BindableProperty IsValidProperty = BindableProperty.Create(nameof(IsValid),
+                                                                                          typeof(bool),
+                                                                                          typeof(NumericValidationsBehaviors<T>),
+                                                                                          true,
+                                                                                          BindingMode.OneWayToSource);
+        
         protected override void OnAttachedTo(T bindable)
         {
             if (bindable is Entry entry)
@@ -25,7 +37,6 @@ namespace VaccPet.Helpers.Behaviors
 
             base.OnAttachedTo(bindable);
         }
-
         protected override void OnDetachingFrom(T bindable)
         {
             if (bindable is Entry entry)
@@ -36,20 +47,20 @@ namespace VaccPet.Helpers.Behaviors
             base.OnDetachingFrom(bindable);
         }
 
-
-        #region TEXT_CHANGEDS - NUMERICS
+        #region CHANGES - NUMERICS
         protected virtual void OnEntryValueChanged(object sender, TextChangedEventArgs args)
         {
             var entry = (Entry)sender;
 
-            IsValid = ValidateDoubleValueText(entry.Text);
+            bool isValid = ValidateDoubleValueText(entry.Text);
+            ValidateFields = isValid;
 
-            entry.TextColor = IsValid ? Color.FromHex("#CED9FC") : Colors.IndianRed;
+            entry.TextColor = isValid ? Color.FromHex("#CED9FC") : Colors.IndianRed;
         }
 
         #endregion
 
-        #region VALIDATORS - NUMERICS
+        #region VALIDATORS
 
         protected virtual bool ValidateDoubleValueText(string value)
         {

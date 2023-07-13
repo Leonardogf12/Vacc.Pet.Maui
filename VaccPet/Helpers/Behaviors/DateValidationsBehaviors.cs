@@ -1,15 +1,18 @@
-﻿using CommunityToolkit.Maui.Behaviors;
-using static System.Net.Mime.MediaTypeNames;
-
-namespace VaccPet.Helpers.Behaviors
+﻿namespace VaccPet.Helpers.Behaviors
 {
     public class DateValidationsBehaviors<T> : Behavior<T> where T : BindableObject
     {
-        public static readonly BindableProperty IsValidProperty = BindableProperty.Create(nameof(IsValid),
-                                                                                          typeof(bool),
-                                                                                          typeof(DateValidationsBehaviors<T>),
-                                                                                          true,
-                                                                                          BindingMode.OneWayToSource);
+        
+        bool validateFields;
+        public bool ValidateFields
+        {
+            get { return validateFields; }
+            set
+            {
+                this.validateFields = value;
+                OnPropertyChanged();
+            }
+        }
 
         private bool IsValid
         {
@@ -17,6 +20,13 @@ namespace VaccPet.Helpers.Behaviors
             set { SetValue(IsValidProperty, value); }
         }
 
+
+        public static readonly BindableProperty IsValidProperty = BindableProperty.Create(nameof(IsValid),
+                                                                                          typeof(bool),
+                                                                                          typeof(DateValidationsBehaviors<T>),
+                                                                                          true,
+                                                                                          BindingMode.OneWayToSource);
+      
         protected override void OnAttachedTo(T bindable)
         {
             if (bindable is DatePicker datePicker)
@@ -24,13 +34,8 @@ namespace VaccPet.Helpers.Behaviors
                 datePicker.DateSelected += OnDateSelectedChanged;
             }
 
-
-
             base.OnAttachedTo(bindable);
         }
-
-
-
         protected override void OnDetachingFrom(T bindable)
         {
             if (bindable is DatePicker datePicker)
@@ -38,26 +43,24 @@ namespace VaccPet.Helpers.Behaviors
                 datePicker.DateSelected -= OnDateSelectedChanged;
             }
 
-
             base.OnDetachingFrom(bindable);
         }
 
 
-        #region DATE_CHANGEDS - DATE
+        #region CHANGES - DATE
 
         private void OnDateSelectedChanged(object sender, DateChangedEventArgs e)
         {
             var date = (DatePicker)sender;
+            bool isValid = ValidateDateSelected(date.Date);
+            ValidateFields = isValid;
 
-            IsValid = ValidateDateSelected(date.Date);
-
-            date.TextColor = IsValid ? Color.FromHex("#CED9FC") : Colors.IndianRed;
+            date.TextColor = isValid ? Color.FromHex("#CED9FC") : Colors.IndianRed;
         }
-
 
         #endregion
 
-        #region VALIDATORS - DATE
+        #region VALIDATORS
 
         private bool ValidateDateSelected(DateTime dateSelected)
         {

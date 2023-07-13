@@ -1,5 +1,4 @@
 ﻿using SQLite;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace VaccPet.MVVM.Models
 {
@@ -16,6 +15,6 @@ namespace VaccPet.MVVM.Models
         public bool Catrated { get; set; }
         public string Observation { get; set; }
         public byte[] ImageData { get; set; }
-
+        public int Age { get; set; }
     }
 }

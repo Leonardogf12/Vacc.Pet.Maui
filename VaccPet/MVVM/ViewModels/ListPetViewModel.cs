@@ -14,12 +14,13 @@ namespace VaccPet.MVVM.ViewModels
         private readonly IPetService _IPetService;
 
         PopupViewModel popupViewModel { get; set; } = new PopupViewModel();
-        Popup PopupListActionsControl { get; set; }
-        Popup PopupConfirmationControl { get; set; }
+        
+        Popup PopupListActionsControl { get; set; }       
 
         PetModel PetModelObject { get; set; }
 
         public ObservableCollection<PetModel> PetsCollection { get; set; }
+       
         #endregion
 
         #region COMMANDS
@@ -65,6 +66,7 @@ namespace VaccPet.MVVM.ViewModels
 
 
         #region METHODS
+
         public async void OnSelectedPetInCollectionCommand(PetModel petSelected)
         {
             PetModelObject = petSelected;
@@ -133,6 +135,8 @@ namespace VaccPet.MVVM.ViewModels
 
             foreach (var pet in pets)
             {
+                var age = AgeCalculator(pet.BirthDate);
+                pet.Age = age;
                 PetsCollection.Add(pet);
             }
 
@@ -142,6 +146,27 @@ namespace VaccPet.MVVM.ViewModels
         public async void OnAppearing()
         {
             await OnLoadAllPets();
+        }
+
+        public static int AgeCalculator(DateTime data, DateTime? now = null)
+        {
+            now = ((now == null) ? DateTime.Now : now);
+
+            try
+            {
+                int YearsOld = (now.Value.Year - data.Year);
+
+                if (now.Value.Month < data.Month || (now.Value.Month == data.Month && now.Value.Day < data.Day))
+                {
+                    YearsOld--;
+                }
+
+                return (YearsOld < 0) ? 0 : YearsOld;
+            }
+            catch
+            {
+                return 0;
+            }
         }
         #endregion
     }

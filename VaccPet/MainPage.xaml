@@ -8,8 +8,7 @@
              BackgroundColor="{StaticResource Primary}"
              FlyoutBackgroundColor="{StaticResource Secondary}"   
              Shell.ForegroundColor="White"
-             Shell.TitleColor="White"
-             >
+             Shell.TitleColor="White">
 
     <ShellContent Title="Home"   
                   Shell.BackgroundColor="{StaticResource Primary}"                     

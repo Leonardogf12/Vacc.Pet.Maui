@@ -1,81 +1,69 @@
-using CommunityToolkit.Maui.Behaviors;
-using VaccPet.Helpers.Behaviors;
 using VaccPet.MVVM.ViewModels;
 
 namespace VaccPet.MVVM.Views;
 
 public partial class RegisterPetPage : ContentPage
-{
-    
+{    
     public RegisterPetPage(RegisterPetViewModel model)
 	{
 		InitializeComponent();
 
 		BindingContext = model;
-
     }
 
     
-    private void btnSave_Clicked(object sender, EventArgs e)
+    private async void btnSave_Clicked(object sender, EventArgs e)
     {
-        if (!nameBehaviorValidator.ValidateB)
+        var result = await ValidateFieldsRegisterPet();
+        
+        if(result) 
         {
-            DisplayAlert("Ops", "Parece que voce nao preencheu o nome corretamente.", "Ok");
+            var vm = BindingContext as RegisterPetViewModel;
+            vm.AddPetCommand.Execute(vm);
         }
-        else
+
+        return;
+    }
+
+    private async Task<bool> ValidateFieldsRegisterPet()
+    {
+        if (!nameBehaviorValidator.ValidateFields)
         {
-            DisplayAlert("Nome", "Tudo certo com Nome", "Ok");
+            await DisplayAlert("Nome", "O campo Nome está incorreto. Favor verificar.", "Ok");
+            return false;
         }
 
+        if (!colorBehaviorValidator.ValidateFields)
+        {
+            await DisplayAlert("Cor", "O campo Cor está incorreto. Favor verificar.", "Ok");
+            return false;
+        }
 
-        //if (NameValidator.IsNotValid)
-        //{
-        //    imageValidationName.Source = "error.svg";
-        //    return;
-        //}                
-        //else{
-        //    imageValidationName.Source = "confirmation.svg";
-        //}
+        if (!weightBehaviorValidator.ValidateFields)
+        {
+            await DisplayAlert("Peso", "O campo Peso está incorreto. Favor verificar.", "Ok");
+            return false;
+        }
 
-        //if (ColorValidator.IsNotValid)
-        //{
-        //    imageValidationColor.Source = "error.svg";
-        //    return;
-        //}
-        //else
-        //{
-        //    imageValidationColor.Source = "confirmation.svg";
-        //}
+        if (!birthDateBehaviorValidator.ValidateFields)
+        {
+            await DisplayAlert("Nascimento", "O campo Nascimento está incorreto. Favor verificar.", "Ok");
+            return false;
+        }
 
-        //if (pickerAnimal.SelectedItem != null)
-        //{
-        //    imageValidationAnimal.Source = "confirmation.svg";
-        //}
-        //else{
-        //    imageValidationAnimal.Source = "error.svg";
-        //    return;
-        //}
+        if (!observationBehaviorValidator.ValidateFields)
+        {
+            await DisplayAlert("Observação", "O campo Observação está incorreto. Favor verificar.", "Ok");
+            return false;
+        }
 
-        //var vm = BindingContext as RegisterPetViewModel;
-
-        //vm.AddPetCommand.Execute(vm);
+        if (!animalBehaviorValidator.ValidateFields)
+        {
+            await DisplayAlert("Animal", "O campo Animal está incorreto. Favor verificar.", "Ok");
+            return false;
+        }
+        
+        return true;
     }
-
-    private void entryColor_TextChanged(object sender, TextChangedEventArgs e)
-    {
-        if(e.NewTextValue.Length >= 4)
-            imageValidationColor.Source = "confirmation.svg";
-        else
-            imageValidationColor.Source = "error.svg";
-    }
-    private void entryWeigth_TextChanged(object sender, TextChangedEventArgs e)
-    {
-        if(double.Parse(e.NewTextValue) > 0.1)        
-            imageValidationWeight.Source = "confirmation.svg";        
-        else        
-            imageValidationWeight.Source = "error.svg";        
-    }
-
-
    
 }
