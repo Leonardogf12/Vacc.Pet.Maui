@@ -27,38 +27,20 @@
 
     <StackLayout Spacing="10">
 
-
         <Grid>
-            <Border HeightRequest="50" 
-                    Margin="20,0,20,0"
-                    Padding="0"
-                    BackgroundColor="Transparent">
-
-                <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="20"/>
-                </Border.StrokeShape>
-                
-                <SearchBar Placeholder="Pesquisar..." 
-                           PlaceholderColor="{StaticResource Primary}"
-                           BackgroundColor="White"
-                           TextColor="{StaticResource Primary}" 
-                           FontSize="Medium"                                
-                           />
-
+            <Border Style="{DynamicResource sbCustomBorder}">
+                <SearchBar Style="{DynamicResource sbCustom}"/>
             </Border>
-
         </Grid>
 
         <Grid VerticalOptions="FillAndExpand">
-
             <ScrollView VerticalScrollBarVisibility="Never" >
-
                 <CollectionView ItemsSource="{Binding PetsCollection}" >
                     <CollectionView.ItemTemplate>
                         <DataTemplate x:DataType="model:PetModel">
 
                             <Frame  HasShadow="True"  BorderColor="Transparent"                              
-                               Margin="15,0,15,10" HeightRequest="160" CornerRadius="30">
+                               Margin="15,0,15,10" HeightRequest="160" CornerRadius="40">
 
                                 <Frame.Background>
                                     <LinearGradientBrush EndPoint="1,0">
@@ -80,30 +62,30 @@
                                     </Grid.ColumnDefinitions>
 
                                     <StackLayout HorizontalOptions="Start" Grid.Row="0" Grid.Column="0">
-                                        <Frame CornerRadius="30"  HeightRequest="120" WidthRequest="80">
+                                        <Frame CornerRadius="30"  HeightRequest="120" WidthRequest="100">
                                             <Image Source="{Binding ImageData,                                             
                                                Converter={StaticResource ByteArrayToImageSourceConverter}}"
-                                               WidthRequest="80" 
+                                               WidthRequest="100" 
                                                HeightRequest="120"                                       
                                                Aspect="AspectFill"/>
                                         </Frame>
                                     </StackLayout>
 
-                                    <VerticalStackLayout Grid.Row="0" Grid.Column="1" Spacing="15">
+                                    <VerticalStackLayout Grid.Row="0" Grid.Column="1" Spacing="10">
 
-                                        <HorizontalStackLayout Spacing="2" HorizontalOptions="Fill" >
-                                            <Label Text="Nome: " FontAttributes="Bold" TextColor="{StaticResource Secondary}" FontSize="Medium" LineBreakMode="TailTruncation"/>
-                                            <Label Text="{Binding Name}" TextColor="{StaticResource Quinary}"  FontSize="Medium" FontAttributes="Bold" LineBreakMode="TailTruncation" MaxLines="1"/>
+                                        <HorizontalStackLayout Style="{DynamicResource hslListPetPage}">
+                                            <Label Text="Nome: " Style="{DynamicResource lblTitleListPetPage}"/>
+                                            <Label Text="{Binding Name}" TextColor="{StaticResource Quinary}" Style="{DynamicResource lblTitleListPetPage}"/>
                                         </HorizontalStackLayout>
 
-                                        <HorizontalStackLayout  HorizontalOptions="Fill" >
-                                            <Label Text="Cor: " FontAttributes="Bold" TextColor="{StaticResource Secondary}" FontSize="Medium"/>
-                                            <Label Text="{Binding Color}" TextColor="{StaticResource Quinary}"  FontSize="Medium" FontAttributes="Bold" LineBreakMode="CharacterWrap" MaxLines="1"/>
+                                        <HorizontalStackLayout Style="{DynamicResource hslListPetPage}">
+                                            <Label Text="Cor: " Style="{DynamicResource lblTitleListPetPage}"/>
+                                            <Label Text="{Binding Color}" TextColor="{StaticResource Quinary}" Style="{DynamicResource lblTitleListPetPage}"/>
                                         </HorizontalStackLayout>
 
-                                        <HorizontalStackLayout  HorizontalOptions="Fill" >
-                                            <Label Text="Idade: " FontAttributes="Bold" TextColor="{StaticResource Secondary}" FontSize="Medium"/>
-                                            <Label Text="{Binding Age}" TextColor="{StaticResource Quinary}" FontAttributes="Bold"  FontSize="Medium" LineBreakMode="TailTruncation" MaxLines="1"/>
+                                        <HorizontalStackLayout Style="{DynamicResource hslListPetPage}">
+                                            <Label Text="Idade: " Style="{DynamicResource lblTitleListPetPage}"/>
+                                            <Label Text="{Binding Age}" TextColor="{StaticResource Quinary}" Style="{DynamicResource lblTitleListPetPage}"/>
                                         </HorizontalStackLayout>
                                     </VerticalStackLayout>
 
@@ -114,8 +96,6 @@
                                                           Path=SelectedPetInCollectionCommand}"
                                                           CommandParameter="{Binding .}"/>
                                 </Frame.GestureRecognizers>
-
-
                             </Frame>
 
                         </DataTemplate>

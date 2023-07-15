@@ -68,7 +68,6 @@ appiconWideTile.scale-200.png
 appiconWideTile.scale-400.png
 catdefault.scale-100.png
 catpets.scale-100.png
-check_gif.scale-100.gif
 confirmation.scale-100.png
 confirmation.scale-125.png
 confirmation.scale-150.png
@@ -134,16 +133,13 @@ trashprimary.scale-125.png
 trashprimary.scale-150.png
 trashprimary.scale-200.png
 trashprimary.scale-400.png
-splashSplashScreen.scale-100.png
-splashSplashScreen.scale-125.png
-splashSplashScreen.scale-150.png
-splashSplashScreen.scale-200.png
-splashSplashScreen.scale-400.png
 AboutAssets.txt
 catdefault.png
 check_json.json
+click_json.json
 dogdefault.png
 error_json.json
 mousedefault.png
 noimage.png
 rabbitdefault.png
+Resources\Splash\splash.svg

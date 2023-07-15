@@ -35,13 +35,10 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
 		<!-- Splash Screen -->
-		<MauiAsset Include="Resources\Splash\splash.svg" BaseSize="128,128">
-		  <LogicalName>%(RecursiveDir)%(Filename)%(Extension)</LogicalName>
-		</MauiAsset>
-
+		<MauiAsset Include="Resources\Splash\splash.svg" BaseSize="128,128"/>		
+	
 		<!-- Images -->
-		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
+		<MauiImage Include="Resources\Images\*" />		
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -49,6 +46,7 @@
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
+	
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\add.svg" />
@@ -74,6 +72,7 @@
 	  <None Remove="Resources\Images\trash.svg" />
 	  <None Remove="Resources\Images\trashprimary.svg" />
 	  <None Remove="Resources\Raw\check_json.json" />
+	  <None Remove="Resources\Raw\click_json.json" />
 	  <None Remove="Resources\Raw\error_json.json" />
 	  <None Remove="Resources\Raw\noimage.png" />
 	  <None Remove="Resources\Raw\splash.json" />

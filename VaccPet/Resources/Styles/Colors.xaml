@@ -11,6 +11,7 @@
     <Color x:Key="Tertiary">#21273B</Color>
     <Color x:Key="Quaternary">#F2A731</Color>
     <Color x:Key="Quinary">#CED9FC</Color>
+    <Color x:Key="PrimaryFrame">#2D3349</Color>
     <!-- New Colors end -->
     
     <Color x:Key="White">White</Color>

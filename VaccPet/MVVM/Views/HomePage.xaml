@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:VaccPet.Helpers"
-             x:Class="VaccPet.MVVM.Views.HomePage"             
-             Title="Menu"            
+             x:Class="VaccPet.MVVM.Views.HomePage"                                      
              Shell.FlyoutBehavior="Flyout"
-             BackgroundColor="{StaticResource Primary}">
+             BackgroundColor="{StaticResource Primary}"
+             Title="Menu">
 
     <ScrollView VerticalScrollBarVisibility="Never">
         <Grid ColumnSpacing="10" RowSpacing="10" Margin="15,0,15,0">

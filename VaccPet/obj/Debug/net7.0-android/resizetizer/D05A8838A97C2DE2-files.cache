@@ -1,6 +1,5 @@
 ﻿obj\Debug\net7.0-android\resizetizer\r\drawable\catdefault.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\catpets.png
-obj\Debug\net7.0-android\resizetizer\r\drawable\check_gif.gif
 obj\Debug\net7.0-android\resizetizer\r\drawable\dogdefault.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\dogpets.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\loading_green.gif
@@ -20,7 +19,6 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\home.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\question_yellow.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\remove.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\remove_red.png
-obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\splash.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\trash.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\trashprimary.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\add.png
@@ -37,7 +35,6 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\home.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\question_yellow.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\remove.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\remove_red.png
-obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\splash.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\trash.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\trashprimary.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\add.png
@@ -54,7 +51,6 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\home.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\question_yellow.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\remove.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\remove_red.png
-obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\splash.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\trash.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\trashprimary.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\add.png
@@ -71,7 +67,6 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\home.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\question_yellow.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\remove.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\remove_red.png
-obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\splash.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\trash.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\trashprimary.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\add.png
@@ -88,7 +83,6 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\home.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\question_yellow.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\remove.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\remove_red.png
-obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\splash.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\trash.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\trashprimary.png
 obj\Debug\net7.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
