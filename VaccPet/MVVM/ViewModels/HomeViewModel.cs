@@ -34,25 +34,6 @@ namespace VaccPet.MVVM.ViewModels
             await Navigation.NavigateToViewModelAsync<ListPetViewModel>(null);          
         }
 
-        public async Task OnLoadAllPets()
-        {
-            IsBusy = true;
-
-            var pets = await _IPetService.GetPetsList();
-            PetsCollection.Clear();
-
-            foreach (var pet in pets)
-            {
-                PetsCollection.Add(pet);
-            }
-
-            IsBusy = false;
-        }
-
-        public async void OnAppearing()
-        {
-            await OnLoadAllPets();            
-        }
         #endregion
 
     }

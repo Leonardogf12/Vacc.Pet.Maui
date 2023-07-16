@@ -74,25 +74,25 @@
 
                 <!--3 Small Frames-->
                 <HorizontalStackLayout Grid.Row="2" Grid.ColumnSpan="2" Spacing="15" HorizontalOptions="Center">
-                    <Frame Style="{DynamicResource frDetailPetPage}">
+                    <Frame Style="{StaticResource frDetailPetPage}">
                         <StackLayout Spacing="5" HorizontalOptions="Center">
                             <Image Source="birthday" HeightRequest="25"/>
-                            <Label Text="Idade" Style="{DynamicResource lblfrDetailPetPage}"/>
-                            <Label Text="{Binding DetailPetSelected.Age}" TextColor="{StaticResource White}" Style="{DynamicResource lblfrDetailPetPage}"/>
+                            <Label Text="Idade" Style="{StaticResource lblfrDetailPetPage}"/>
+                            <Label Text="{Binding DetailPetSelected.Age}" TextColor="{StaticResource White}" Style="{StaticResource lblfrDetailPetPage}"/>
                         </StackLayout>
                     </Frame>
-                    <Frame Style="{DynamicResource frDetailPetPage}">
+                    <Frame Style="{StaticResource frDetailPetPage}">
                         <StackLayout Spacing="5" HorizontalOptions="Center">
                             <Image Source="{Binding SexIcon}" HeightRequest="25"/>
-                            <Label Text="Sexo" Style="{DynamicResource lblfrDetailPetPage}"/>
-                            <Label Text="{Binding DetailPetSelected.Sex}" TextColor="{StaticResource White}" Style="{DynamicResource lblfrDetailPetPage}"/>
+                            <Label Text="Sexo" Style="{StaticResource lblfrDetailPetPage}"/>
+                            <Label Text="{Binding DetailPetSelected.Sex}" TextColor="{StaticResource White}" Style="{StaticResource lblfrDetailPetPage}"/>
                         </StackLayout>
                     </Frame>
-                    <Frame Style="{DynamicResource frDetailPetPage}">
+                    <Frame Style="{StaticResource frDetailPetPage}">
                         <StackLayout Spacing="5" HorizontalOptions="Center" >
                             <Image Source="race" HeightRequest="23"/>
-                            <Label Text="Raça" Style="{DynamicResource lblfrDetailPetPage}"/>
-                            <Label Text="{Binding DetailPetSelected.Breed}" TextColor="{StaticResource White}" Style="{DynamicResource lblfrDetailPetPage}"/>
+                            <Label Text="Raça" Style="{StaticResource lblfrDetailPetPage}"/>
+                            <Label Text="{Binding DetailPetSelected.Breed}" TextColor="{StaticResource White}" Style="{StaticResource lblfrDetailPetPage}"/>
                         </StackLayout>
                     </Frame>
                 </HorizontalStackLayout>
@@ -108,13 +108,13 @@
                         <StackLayout Orientation="Vertical" Spacing="10" VerticalOptions="Center">
                             <HorizontalStackLayout Spacing="15" >
                                 <Image Source="vaccine" HeightRequest="20"/>
-                                <Label Text="Próxima Vacina:" Style="{DynamicResource lblVaccineDetailPetPage}"/>
-                                <Label Text="20/05/2025" TextColor="{StaticResource White}" Style="{DynamicResource lblVaccineDetailPetPage}"/>
+                                <Label Text="Próxima Vacina:" Style="{StaticResource lblVaccineDetailPetPage}"/>
+                                <Label Text="20/05/2025" TextColor="{StaticResource White}" Style="{StaticResource lblVaccineDetailPetPage}"/>
                             </HorizontalStackLayout>
                             <HorizontalStackLayout Spacing="10" >
                                 <Image Source="pharmacy" HeightRequest="10"/>
-                                <Label Text="Próxima Vermifugção:" Style="{DynamicResource lblVaccineDetailPetPage}"/>
-                                <Label Text="20/05/2025" TextColor="{StaticResource White}" Style="{DynamicResource lblVaccineDetailPetPage}"/>
+                                <Label Text="Próxima Vermifugção:" Style="{StaticResource lblVaccineDetailPetPage}"/>
+                                <Label Text="20/05/2025" TextColor="{StaticResource White}" Style="{StaticResource lblVaccineDetailPetPage}"/>
                             </HorizontalStackLayout>
                         </StackLayout>
                     </Frame>

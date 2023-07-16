@@ -54,13 +54,13 @@
 
             <!-- Name -->
             <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical">
-                <Label Text="Nome" Style="{DynamicResource lblRegisterPetPage}"/>
-                <Border Style="{DynamicResource brdRegisterPetPage}">
+                <Label Text="Nome" Style="{StaticResource lblRegisterPetPage}"/>
+                <Border Style="{StaticResource brdRegisterPetPage}">
                     <Entry x:Name="entryName"                                             
                             Text="{Binding Name}"                            
                             Placeholder="Nome"                            
                             Keyboard="Text"
-                            Style="{DynamicResource entRegisterPetPage}">
+                            Style="{StaticResource entRegisterPetPage}">
                         <Entry.Behaviors>
                             <local:TextValidationsBehaviors x:TypeArguments="Entry" x:Name="nameBehaviorValidator" />
                         </Entry.Behaviors>
@@ -70,8 +70,8 @@
 
             <!-- Animals -->
             <StackLayout Grid.Row="2" Grid.Column="0">
-                <Label Text="Animal" Style="{DynamicResource lblRegisterPetPage}"/>
-                <Border Style="{DynamicResource brdRegisterPetPage}">
+                <Label Text="Animal" Style="{StaticResource lblRegisterPetPage}"/>
+                <Border Style="{StaticResource brdRegisterPetPage}">
                     <Picker x:Name="pickerAnimal"
                             Title="Selecione"                           
                             Margin="15,0,10,0"
@@ -91,8 +91,8 @@
 
             <!--Breeds-->
             <StackLayout Grid.Row="2" Grid.Column="1">
-                <Label Text="Raça" Style="{DynamicResource lblRegisterPetPage}"/>
-                <Border Style="{DynamicResource brdRegisterPetPage}">
+                <Label Text="Raça" Style="{StaticResource lblRegisterPetPage}"/>
+                <Border Style="{StaticResource brdRegisterPetPage}">
                     <Picker x:Name="pickerRace"
                             Title="Selecione"                           
                             Margin="15,0,10,0"
@@ -109,13 +109,13 @@
 
             <!-- Color -->
             <StackLayout Grid.Row="3" Grid.ColumnSpan="2"  Orientation="Vertical">
-                <Label Text="Cor" Style="{DynamicResource lblRegisterPetPage}"/>
-                <Border Style="{DynamicResource brdRegisterPetPage}">
+                <Label Text="Cor" Style="{StaticResource lblRegisterPetPage}"/>
+                <Border Style="{StaticResource brdRegisterPetPage}">
                     <Entry x:Name="entryColor"                           
                            Text="{Binding Color}"
                            Placeholder="Cor"                                                    
                            Keyboard="Text"                          
-                           Style="{DynamicResource entRegisterPetPage}">
+                           Style="{StaticResource entRegisterPetPage}">
                         <Entry.Behaviors>
                             <local:TextValidationsBehaviors x:TypeArguments="Entry" x:Name="colorBehaviorValidator"/>
                         </Entry.Behaviors>
@@ -125,14 +125,14 @@
 
             <!-- Weight -->
             <StackLayout Grid.Row="4" Grid.Column="0" Orientation="Vertical">
-                <Label Text="Peso KG" Style="{DynamicResource lblRegisterPetPage}"/>
-                <Border Style="{DynamicResource brdRegisterPetPage}">
+                <Label Text="Peso KG" Style="{StaticResource lblRegisterPetPage}"/>
+                <Border Style="{StaticResource brdRegisterPetPage}">
                     <Entry x:Name="entryWeigth"
                            Text="{Binding Weight}" 
                            Placeholder="0.0 KG"
                            MaxLength="5"                                                                                                                                   
                            Keyboard="Numeric"                                                                              
-                           Style="{DynamicResource entRegisterPetPage}">
+                           Style="{StaticResource entRegisterPetPage}">
                         <Entry.Behaviors>
                             <local:NumericValidationsBehaviors x:TypeArguments="Entry" x:Name="weightBehaviorValidator"/>
                         </Entry.Behaviors>
@@ -142,8 +142,8 @@
 
             <!-- BirthDate -->
             <StackLayout Grid.Row="4" Grid.Column="1">
-                <Label Text="Nascimento" Style="{DynamicResource lblRegisterPetPage}"/>
-                <Border Style="{DynamicResource brdRegisterPetPage}">
+                <Label Text="Nascimento" Style="{StaticResource lblRegisterPetPage}"/>
+                <Border Style="{StaticResource brdRegisterPetPage}">
                     <DatePicker  TextColor="{StaticResource Quinary}" 
                                  Margin="15,0,10,0"
                                  MinimumDate="01/01/2008"
@@ -159,7 +159,7 @@
 
             <!-- Sex -->
             <StackLayout Grid.Row="5" Grid.Column="0">
-                <Label Text="Sexo" Style="{DynamicResource lblRegisterPetPage}"/>
+                <Label Text="Sexo" Style="{StaticResource lblRegisterPetPage}"/>
                 <StackLayout Orientation="Horizontal" Spacing="20">
                     <Label Text="F" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="20,8,0,0" />
                     <Switch OnColor="{StaticResource Quinary}" ThumbColor="{StaticResource Secondary}" IsToggled="{Binding IsToggledSex}"/>
@@ -169,7 +169,7 @@
 
             <!-- IsCastrated -->
             <StackLayout Grid.Row="5" Grid.Column="1">
-                <Label Text="Castrado(a)" Style="{DynamicResource lblRegisterPetPage}"/>
+                <Label Text="Castrado(a)" Style="{StaticResource lblRegisterPetPage}"/>
                 <StackLayout Orientation="Horizontal" Spacing="-10">
                     <CheckBox Color="{StaticResource Quinary}" IsChecked="{Binding IsCatrated}"/>
                     <Label Text="{Binding IsCastratedConfirm}" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,8,0,0" />
@@ -178,8 +178,8 @@
 
             <!-- Observation -->
             <StackLayout  Grid.Row="6" Grid.ColumnSpan="2" Orientation="Vertical">
-                <Label  Text="Observação" Style="{DynamicResource lblRegisterPetPage}"/>
-                <Border Style="{DynamicResource brdRegisterPetPage}">
+                <Label  Text="Observação" Style="{StaticResource lblRegisterPetPage}"/>
+                <Border Style="{StaticResource brdRegisterPetPage}">
                     <Editor Placeholder="Observação"                                                     
                             Text="{Binding Observation}"
                             Margin="15,0,10,0"

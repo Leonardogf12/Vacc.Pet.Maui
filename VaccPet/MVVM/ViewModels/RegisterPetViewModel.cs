@@ -165,9 +165,7 @@ namespace VaccPet.MVVM.ViewModels
             AnimalsList = AnimalHelper.GetAllAnimals();
 
             GetImageFromGalleryCommand = new Command(OnGetImageFromGalleryCommand);
-
             AddPetCommand = new Command(OnAddPetCommand);
-
         }
 
         #region METHODS

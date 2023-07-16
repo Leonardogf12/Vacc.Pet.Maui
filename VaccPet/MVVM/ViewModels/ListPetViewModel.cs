@@ -59,7 +59,6 @@ namespace VaccPet.MVVM.ViewModels
             }
         }
 
-
         #endregion
 
         public ListPetViewModel()
@@ -77,7 +76,7 @@ namespace VaccPet.MVVM.ViewModels
             EditPetCommand = new Command(OnEditPetCommand);
             DeletePetCommand = new Command(OnDeletePetCommand);
             DetailPetCommand = new Command(OnDetailPetCommand);
-            SearchEmptyCommand = new Command(async () => await OnLoadAllPets());
+            SearchEmptyCommand = new Command(async () => await LoadAllPets());
         }
 
         #region METHODS
@@ -150,7 +149,23 @@ namespace VaccPet.MVVM.ViewModels
             await Navigation.NavigateToViewModelAsync<RegisterPetViewModel>(null);
         }
 
-        public async Task OnLoadAllPets()
+        private void OnSearchPetCommand()
+        {
+            var pets = PetsCollection.Where(x => x.Name.ToUpper()
+                                      .Contains(TextSearch.ToUpper())).ToList();
+
+            if (pets.Count > 0)
+            {
+                PetsCollection.Clear();
+
+                foreach (var item in pets)
+                {
+                    PetsCollection.Add(item);
+                }
+            }
+        }
+
+        public async Task LoadAllPets()
         {
             IsBusy = true;
 
@@ -171,7 +186,7 @@ namespace VaccPet.MVVM.ViewModels
 
         public async void OnAppearing()
         {
-            await OnLoadAllPets();
+            await LoadAllPets();
         }
 
         public static int AgeCalculator(DateTime data, DateTime? now = null)
@@ -194,23 +209,7 @@ namespace VaccPet.MVVM.ViewModels
                 return 0;
             }
         }
-
-        private void OnSearchPetCommand()
-        {
-            var pets = PetsCollection.Where(x => x.Name.ToUpper()
-                                      .Contains(TextSearch.ToUpper())).ToList();
-
-            if(pets.Count > 0)
-            {
-                PetsCollection.Clear();
-
-                foreach (var item in pets)
-                {
-                    PetsCollection.Add(item);
-                }
-            }
-        }
-
+        
         #endregion
     }
 }

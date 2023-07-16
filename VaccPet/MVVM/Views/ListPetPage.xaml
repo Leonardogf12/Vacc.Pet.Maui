@@ -28,8 +28,8 @@
     <StackLayout Spacing="10">
 
         <Grid>
-            <Border Style="{DynamicResource sbCustomBorder}">
-                <SearchBar Text="{Binding TextSearch}" Style="{DynamicResource sbCustom}"/>
+            <Border Style="{StaticResource sbCustomBorder}">
+                <SearchBar Text="{Binding TextSearch}" Style="{StaticResource sbCustom}"/>
             </Border>
         </Grid>
 
@@ -71,19 +71,19 @@
                                         </Frame>
                                     </StackLayout>
 
-                                    <HorizontalStackLayout Grid.Row="0" Grid.Column="1" Style="{DynamicResource hslListPetPage}">
-                                        <Label Text="Nome: " Style="{DynamicResource lblTitleListPetPage}"/>
-                                        <Label Text="{Binding Name}" TextColor="{StaticResource Quinary}" Style="{DynamicResource lblTitleListPetPage}"/>
+                                    <HorizontalStackLayout Grid.Row="0" Grid.Column="1" Style="{StaticResource hslListPetPage}">
+                                        <Label Text="Nome: " Style="{StaticResource lblTitleListPetPage}"/>
+                                        <Label Text="{Binding Name}" TextColor="{StaticResource Quinary}" Style="{StaticResource lblTitleListPetPage}"/>
                                     </HorizontalStackLayout>
 
-                                    <HorizontalStackLayout Grid.Row="1" Grid.Column="1" Style="{DynamicResource hslListPetPage}">
-                                        <Label Text="Cor: " Style="{DynamicResource lblTitleListPetPage}"/>
-                                        <Label Text="{Binding Color}" TextColor="{StaticResource Quinary}" Style="{DynamicResource lblTitleListPetPage}"/>
+                                    <HorizontalStackLayout Grid.Row="1" Grid.Column="1" Style="{StaticResource hslListPetPage}">
+                                        <Label Text="Cor: " Style="{StaticResource lblTitleListPetPage}"/>
+                                        <Label Text="{Binding Color}" TextColor="{StaticResource Quinary}" Style="{StaticResource lblTitleListPetPage}"/>
                                     </HorizontalStackLayout>
 
-                                    <HorizontalStackLayout Grid.Row="2" Grid.Column="1" Style="{DynamicResource hslListPetPage}">
-                                        <Label Text="Idade: " Style="{DynamicResource lblTitleListPetPage}"/>
-                                        <Label Text="{Binding Age}" TextColor="{StaticResource Quinary}" Style="{DynamicResource lblTitleListPetPage}"/>
+                                    <HorizontalStackLayout Grid.Row="2" Grid.Column="1" Style="{StaticResource hslListPetPage}">
+                                        <Label Text="Idade: " Style="{StaticResource lblTitleListPetPage}"/>
+                                        <Label Text="{Binding Age}" TextColor="{StaticResource Quinary}" Style="{StaticResource lblTitleListPetPage}"/>
                                     </HorizontalStackLayout>
 
                                 </Grid>

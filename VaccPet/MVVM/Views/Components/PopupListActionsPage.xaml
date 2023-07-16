@@ -15,7 +15,7 @@
                VerticalOptions="Center"
                CornerRadius="20"
                BorderColor="Transparent"
-               BackgroundColor="{DynamicResource PrimaryFrame}">
+               BackgroundColor="{StaticResource PrimaryFrame}">
 
             <Grid RowSpacing="5">
                 <Grid.RowDefinitions>
@@ -27,27 +27,27 @@
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
 
-                <HorizontalStackLayout Grid.Row="0" Grid.Column="0" Style="{DynamicResource hslPopListAction}" >
-                    <Image Source="edit_blue.svg" Style="{DynamicResource imgPopListAction}"/>
-                    <Label  Text="{Binding FirstButton}" Style="{DynamicResource lblPopListAction}">
+                <HorizontalStackLayout Grid.Row="0" Grid.Column="0" Style="{StaticResource hslPopListAction}" >
+                    <Image Source="edit_blue.svg" Style="{StaticResource imgPopListAction}"/>
+                    <Label  Text="{Binding FirstButton}" Style="{StaticResource lblPopListAction}">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding FirstCommand}"/>
                         </Label.GestureRecognizers>
                     </Label>
                 </HorizontalStackLayout>
 
-                <HorizontalStackLayout Grid.Row="1" Grid.Column="0" Style="{DynamicResource hslPopListAction}">
-                    <Image  Source="remove_red.svg" Style="{DynamicResource imgPopListAction}"/>
-                    <Label Text="{Binding SecondButton}" Style="{DynamicResource lblPopListAction}">
+                <HorizontalStackLayout Grid.Row="1" Grid.Column="0" Style="{StaticResource hslPopListAction}">
+                    <Image  Source="remove_red.svg" Style="{StaticResource imgPopListAction}"/>
+                    <Label Text="{Binding SecondButton}" Style="{StaticResource lblPopListAction}">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer  Command="{Binding SecondCommand}"/>
                         </Label.GestureRecognizers>
                     </Label>
                 </HorizontalStackLayout>
 
-                <HorizontalStackLayout Grid.Row="2" Grid.Column="0" Style="{DynamicResource hslPopListAction}">
-                    <Image Source="question_yellow.svg" Style="{DynamicResource imgPopListAction}"/>
-                    <Label Text="{Binding TertiaryButton}" Style="{DynamicResource lblPopListAction}" >
+                <HorizontalStackLayout Grid.Row="2" Grid.Column="0" Style="{StaticResource hslPopListAction}">
+                    <Image Source="question_yellow.svg" Style="{StaticResource imgPopListAction}"/>
+                    <Label Text="{Binding TertiaryButton}" Style="{StaticResource lblPopListAction}" >
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding TertiaryCommand}"/>
                         </Label.GestureRecognizers>

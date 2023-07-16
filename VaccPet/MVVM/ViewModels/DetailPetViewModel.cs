@@ -6,6 +6,7 @@ namespace VaccPet.MVVM.ViewModels
     [QueryProperty(nameof(DetailPetSelected), "DetailPetSelected")]
     public class DetailPetViewModel : BaseViewModel
     {
+        #region PROPS
 
         private PetModel detailPetSelected;
         public PetModel DetailPetSelected
@@ -29,6 +30,7 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref this.sexIcon, value);
         }
 
+        #endregion
 
         public DetailPetViewModel()
         {
