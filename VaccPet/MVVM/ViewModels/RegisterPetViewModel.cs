@@ -13,7 +13,7 @@ namespace VaccPet.MVVM.ViewModels
 
         private readonly IPetService _IPetService;
 
-        public List<Animal> AnimalsList { get; set; } = new List<Animal>();
+        public List<Animal> AnimalsList { get; set; } = new List<Animal>();        
 
         public Animal AnimalHelper { get; set; } = new Animal();
 
@@ -114,7 +114,25 @@ namespace VaccPet.MVVM.ViewModels
         public Animal AnimalSelected
         {
             get => animalSelected;
-            set => SetProperty(ref animalSelected, value);
+            set
+            {
+                SetProperty(ref animalSelected, value);
+                GetBreedsByAnimal();
+            }
+        }
+
+        private List<Animal> breedsList;
+        public List<Animal> BreedsList
+        {
+            get => breedsList;
+            set => SetProperty(ref breedsList, value);            
+        }
+       
+        Animal breedSelected;
+        public Animal BreedSelected
+        {
+            get => breedSelected;
+            set => SetProperty(ref breedSelected, value);
         }
 
         private string _imagePath;
@@ -129,7 +147,7 @@ namespace VaccPet.MVVM.ViewModels
         {
             get => isCastratedConfirm;
             set => SetProperty(ref isCastratedConfirm, value);
-        }       
+        }
 
         bool isToggledSex = false;
         public bool IsToggledSex
@@ -137,7 +155,7 @@ namespace VaccPet.MVVM.ViewModels
             get => isToggledSex;
             set => SetProperty(ref isToggledSex, value);
         }
-    
+
         #endregion
 
         public RegisterPetViewModel(IPetService IPetService)
@@ -163,10 +181,11 @@ namespace VaccPet.MVVM.ViewModels
             pet.BirthDate = BirthDate;
             pet.Color = Color;
             pet.Observation = Observation;
-            pet.Sex = IsToggledSex == true ? "M" : "F";           
+            pet.Sex = IsToggledSex == true ? "M" : "F";
             pet.Catrated = IsCatrated;
             pet.Weight = Weight;
             pet.Age = 0;
+            pet.Breed = BreedSelected.Value;
 
             var result = await _IPetService.AddPet(pet);
 
@@ -178,7 +197,7 @@ namespace VaccPet.MVVM.ViewModels
             else
             {
                 await App.Current.MainPage.ShowPopupAsync(new PopupErrorConfirmationPage());
-                return;               
+                return;
             }
         }
 
@@ -216,7 +235,7 @@ namespace VaccPet.MVVM.ViewModels
         }
 
         public async static Task<byte[]> GetImageDefault(string type)
-        {           
+        {
             using var stream = await FileSystem.OpenAppPackageFileAsync("noimage.png");
             return await StreamToByteArrayAsync(stream);
         }
@@ -226,6 +245,26 @@ namespace VaccPet.MVVM.ViewModels
             using MemoryStream memoryStream = new MemoryStream();
             await stream.CopyToAsync(memoryStream);
             return memoryStream.ToArray();
+        }
+
+        private void GetBreedsByAnimal()
+        {
+            if (AnimalSelected.Value == "Cachorro")
+            {
+                BreedsList = AnimalHelper.GetBreedDogs();
+            }
+            else if (AnimalSelected.Value == "Gato")
+            {
+                BreedsList = AnimalHelper.GetBreedCats();
+            }
+            else if (AnimalSelected.Value == "Ave")
+            {
+                BreedsList = AnimalHelper.GetBreedBirds();
+            }
+            else
+            {
+                BreedsList = new List<Animal> { new Animal { Key = 1000, Value = "Raças não encontradas." } };
+            }
         }
 
         #endregion

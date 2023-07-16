@@ -92,7 +92,7 @@
                         <StackLayout Spacing="5" HorizontalOptions="Center" >
                             <Image Source="race" HeightRequest="23"/>
                             <Label Text="Raça" Style="{DynamicResource lblfrDetailPetPage}"/>
-                            <Label Text="{Binding DetailPetSelected.Animal}" TextColor="{StaticResource White}" Style="{DynamicResource lblfrDetailPetPage}"/>
+                            <Label Text="{Binding DetailPetSelected.Breed}" TextColor="{StaticResource White}" Style="{DynamicResource lblfrDetailPetPage}"/>
                         </StackLayout>
                     </Frame>
                 </HorizontalStackLayout>

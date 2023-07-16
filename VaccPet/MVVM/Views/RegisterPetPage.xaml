@@ -68,8 +68,8 @@
                 </Border>
             </StackLayout>
 
-            <!-- Animal -->
-            <StackLayout Grid.Row="2" Grid.ColumnSpan="2">
+            <!-- Animals -->
+            <StackLayout Grid.Row="2" Grid.Column="0">
                 <Label Text="Animal" Style="{DynamicResource lblRegisterPetPage}"/>
                 <Border Style="{DynamicResource brdRegisterPetPage}">
                     <Picker x:Name="pickerAnimal"
@@ -84,6 +84,24 @@
                         <Picker.Behaviors>
                             <local:GeralValidationsBehaviors x:TypeArguments="Picker" x:Name="animalBehaviorValidator"/>
                         </Picker.Behaviors>
+                    </Picker>
+                </Border>
+
+            </StackLayout>
+
+            <!--Breeds-->
+            <StackLayout Grid.Row="2" Grid.Column="1">
+                <Label Text="Raça" Style="{DynamicResource lblRegisterPetPage}"/>
+                <Border Style="{DynamicResource brdRegisterPetPage}">
+                    <Picker x:Name="pickerRace"
+                            Title="Selecione"                           
+                            Margin="15,0,10,0"
+                            TitleColor="{StaticResource Gray400}" 
+                            ItemsSource="{Binding BreedsList}"
+                            ItemDisplayBinding="{Binding Value}"
+                            SelectedItem="{Binding BreedSelected}" 
+                            TextColor="{StaticResource Quinary}" 
+                            FontSize="Medium">
                     </Picker>
                 </Border>
 

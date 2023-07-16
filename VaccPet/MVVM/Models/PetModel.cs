@@ -16,5 +16,6 @@ namespace VaccPet.MVVM.Models
         public string Observation { get; set; }
         public byte[] ImageData { get; set; }
         public int Age { get; set; }
+        public string Breed { get; set; }
     }
 }
