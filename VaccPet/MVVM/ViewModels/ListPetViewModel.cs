@@ -15,22 +15,23 @@ namespace VaccPet.MVVM.ViewModels
         private readonly IPetService _IPetService;
 
         PopupViewModel PopupViewModel { get; set; } = new PopupViewModel();
-        
-        Popup PopupListActionsControl { get; set; }       
+
+        Popup PopupListActionsControl { get; set; }
 
         PetModel PetModelObject { get; set; }
 
         public ObservableCollection<PetModel> PetsCollection { get; set; }
-       
+
         #endregion
 
         #region COMMANDS
         public ICommand AddPetCommand { get; set; }
         public ICommand SelectedPetInCollectionCommand { get; set; }
         public ICommand DeletePetCommand { get; set; }
-        public ICommand DeleteAllPetCommand { get; set; }                      
-        public ICommand EditPetCommand { get; set; }        
+        public ICommand DeleteAllPetCommand { get; set; }
+        public ICommand EditPetCommand { get; set; }
         public ICommand DetailPetCommand { get; set; }
+        public ICommand SearchEmptyCommand { get; set; }
         #endregion
 
         #region PROPS
@@ -42,15 +43,32 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref imageData, value);
         }
 
+        string textSearch;
+        public string TextSearch
+        {
+            get => textSearch;
+            set
+            {
+                textSearch = value;
+                SetProperty(ref this.textSearch, value);
+
+                if (textSearch.Length > 0)
+                    OnSearchPetCommand();
+                else
+                    SearchEmptyCommand.Execute(null);
+            }
+        }
+
+
         #endregion
 
         public ListPetViewModel()
-        {            
+        {
         }
 
         public ListPetViewModel(IPetService IPetService)
         {
-            _IPetService = IPetService;          
+            _IPetService = IPetService;
 
             PetsCollection = new ObservableCollection<PetModel>();
             AddPetCommand = new Command(OnAddPetCommand);
@@ -59,14 +77,15 @@ namespace VaccPet.MVVM.ViewModels
             EditPetCommand = new Command(OnEditPetCommand);
             DeletePetCommand = new Command(OnDeletePetCommand);
             DetailPetCommand = new Command(OnDetailPetCommand);
+            SearchEmptyCommand = new Command(async () => await OnLoadAllPets());
         }
-       
+
         #region METHODS
 
         public async void OnSelectedPetInCollectionCommand(PetModel petSelected)
         {
             PetModelObject = petSelected;
-            
+
             PopupListActionsControl = new PopupListActionsPage(
                     PopupViewModel.SetParametersPopup("Editar", "Excluir", "Detalhes", petSelected, EditPetCommand, DeletePetCommand, DetailPetCommand));
 
@@ -74,13 +93,13 @@ namespace VaccPet.MVVM.ViewModels
         }
 
         private async void OnDeletePetCommand()
-        {         
+        {
             var result = await App.Current.MainPage.DisplayAlert("Excluir", "Deseja realmente excluir este Pet da Lista?", "Sim", "Não");
 
             if (result)
             {
                 PopupListActionsControl.Close();
-                await _IPetService.DeletePet(PetModelObject);                
+                await _IPetService.DeletePet(PetModelObject);
                 PetsCollection.Remove(PetModelObject);
 
                 await App.Current.MainPage.ShowPopupAsync(new PopupSuccessConfirmationPage());
@@ -90,7 +109,7 @@ namespace VaccPet.MVVM.ViewModels
                 PopupListActionsControl.Close();
                 return;
             }
-           
+
         }
 
         private async void OnDeleteAllPetCommand()
@@ -122,12 +141,12 @@ namespace VaccPet.MVVM.ViewModels
             {
                 { "DetailPetSelected", PetModelObject }
             };
-            
+
             await Navigation.NavigateToPageAsync<DetailPetPage>(parameters);
         }
 
         private async void OnAddPetCommand()
-        {           
+        {
             await Navigation.NavigateToViewModelAsync<RegisterPetViewModel>(null);
         }
 
@@ -175,6 +194,23 @@ namespace VaccPet.MVVM.ViewModels
                 return 0;
             }
         }
+
+        private void OnSearchPetCommand()
+        {
+            var pets = PetsCollection.Where(x => x.Name.ToUpper()
+                                      .Contains(TextSearch.ToUpper())).ToList();
+
+            if(pets.Count > 0)
+            {
+                PetsCollection.Clear();
+
+                foreach (var item in pets)
+                {
+                    PetsCollection.Add(item);
+                }
+            }
+        }
+
         #endregion
     }
 }

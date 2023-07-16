@@ -263,7 +263,7 @@ namespace VaccPet.MVVM.ViewModels
             }
             else
             {
-                BreedsList = new List<Animal> { new Animal { Key = 1000, Value = "Raças não encontradas." } };
+                BreedsList = new List<Animal> { new Animal { Key = 1000, Value = "Não Definida" } };
             }
         }
 

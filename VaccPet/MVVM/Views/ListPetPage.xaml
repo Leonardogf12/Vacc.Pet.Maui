@@ -29,7 +29,7 @@
 
         <Grid>
             <Border Style="{DynamicResource sbCustomBorder}">
-                <SearchBar Style="{DynamicResource sbCustom}"/>
+                <SearchBar Text="{Binding TextSearch}" Style="{DynamicResource sbCustom}"/>
             </Border>
         </Grid>
 
