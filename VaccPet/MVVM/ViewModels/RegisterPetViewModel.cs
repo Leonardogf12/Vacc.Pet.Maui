@@ -216,28 +216,7 @@ namespace VaccPet.MVVM.ViewModels
         }
 
         public async static Task<byte[]> GetImageDefault(string type)
-        {
-            if (type == "Cachorro")
-            {
-                using var streamDog = await FileSystem.OpenAppPackageFileAsync("dogdefault.png");
-                return await StreamToByteArrayAsync(streamDog);
-            }
-            if (type == "Gato")
-            {
-                using var streamCat = await FileSystem.OpenAppPackageFileAsync("catdefault.png");
-                return await StreamToByteArrayAsync(streamCat);
-            }
-            if (type == "Coelho")
-            {
-                using var streamRab = await FileSystem.OpenAppPackageFileAsync("rabbitdefault.png");
-                return await StreamToByteArrayAsync(streamRab);
-            }
-            if (type == "Hamster" || type == "Rato")
-            {
-                using var streamMou = await FileSystem.OpenAppPackageFileAsync("mousedefault.png");
-                return await StreamToByteArrayAsync(streamMou);
-            }
-
+        {           
             using var stream = await FileSystem.OpenAppPackageFileAsync("noimage.png");
             return await StreamToByteArrayAsync(stream);
         }

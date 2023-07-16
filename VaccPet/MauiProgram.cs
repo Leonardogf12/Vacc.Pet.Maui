@@ -43,7 +43,9 @@ public static class MauiProgram
         builder.Services.AddSingleton<HomePage>();
 		builder.Services.AddSingleton<RegisterPetPage>();
 		builder.Services.AddSingleton<ListPetPage>();
+        builder.Services.AddSingleton<DetailPetPage>();
 
+        //*Views Popup
         builder.Services.AddTransient<PopupListActionsPage>();
         builder.Services.AddTransient<PopupSuccessConfirmationPage>();
         builder.Services.AddTransient<PopupErrorConfirmationPage>();
@@ -53,9 +55,10 @@ public static class MauiProgram
 		builder.Services.AddSingleton<HomeViewModel>();
 		builder.Services.AddSingleton<ListPetViewModel>();
 		builder.Services.AddSingleton<RegisterPetViewModel>();
+        builder.Services.AddSingleton<DetailPetViewModel>();
 
-		//*Services
-		builder.Services.AddSingleton<IPetService, PetService>();
+        //*Services
+        builder.Services.AddSingleton<IPetService, PetService>();
 		builder.Services.AddSingleton<INavigationService, NavigationService>();
 		builder.Services.AddSingleton<IPopupNavigation>(MopupService.Instance);
 

@@ -50,6 +50,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.Compone
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\Components\PopupSuccessConfirmationPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\Components\PopupSuccessConfirmationPage.xaml
 
+[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MVVM/Views/DetailPetPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.DetailPetPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\DetailPetPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\DetailPetPage.xaml
+
 [D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MVVM/Views/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.HomePage.xaml

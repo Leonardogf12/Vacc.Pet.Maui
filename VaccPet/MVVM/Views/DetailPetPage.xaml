@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:VaccPet.Helpers.Converters"
+             x:Class="VaccPet.MVVM.Views.DetailPetPage"
+             Title="Detail Pet Page"
+             Shell.NavBarIsVisible="False">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="600"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Row="0" Source="{Binding DetailPetSelected.ImageData, 
+               Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill"/>
+
+        <Image Source="back" 
+               HeightRequest="30" 
+               Margin="25" 
+               HorizontalOptions="Start" 
+               VerticalOptions="Start">
+            
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Frame Grid.Row="1" 
+               CornerRadius="80" 
+               BorderColor="Transparent" 
+               BackgroundColor="{StaticResource SecondaryFrame}" 
+               Margin="-10,-50,-10,0">
+            
+            <Grid RowSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="130"/>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="60"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" 
+                       Text="{Binding DetailPetSelected.Name}" 
+                       FontSize="Medium" 
+                       Margin="10" 
+                       Padding="5" 
+                       TextColor="{StaticResource Secondary}"/>
+                
+                <Label  Grid.Row="1" Grid.Column="0" 
+                        HorizontalTextAlignment="Start"
+                        Text="{Binding DetailPetSelected.Observation}" 
+                        IsEnabled="False"
+                        FontSize="Small" 
+                        Margin="10,0,10,0" 
+                        TextColor="{StaticResource Gray100}"/>
+
+                <HorizontalStackLayout Grid.Row="2" Grid.ColumnSpan="2" Spacing="15" HorizontalOptions="Center">
+                    <Frame Style="{DynamicResource frDetailPetPage}">
+                        <StackLayout Spacing="5" HorizontalOptions="Center">
+                            <Image Source="birthday" HeightRequest="25"/>
+                            <Label Text="Idade" Style="{DynamicResource lblfrDetailPetPage}"/>
+                            <Label Text="{Binding DetailPetSelected.Age}" TextColor="{StaticResource White}" Style="{DynamicResource lblfrDetailPetPage}"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Style="{DynamicResource frDetailPetPage}">
+                        <StackLayout Spacing="5" HorizontalOptions="Center">
+                            <Image Source="{Binding SexIcon}" HeightRequest="25"/>
+                            <Label Text="Sexo" Style="{DynamicResource lblfrDetailPetPage}"/>
+                            <Label Text="{Binding DetailPetSelected.Sex}" TextColor="{StaticResource White}" Style="{DynamicResource lblfrDetailPetPage}"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Style="{DynamicResource frDetailPetPage}">
+                        <StackLayout Spacing="5" HorizontalOptions="Center" >
+                            <Image Source="race" HeightRequest="23"/>
+                            <Label Text="Raça" Style="{DynamicResource lblfrDetailPetPage}"/>
+                            <Label Text="{Binding DetailPetSelected.Animal}" TextColor="{StaticResource White}" Style="{DynamicResource lblfrDetailPetPage}"/>
+                        </StackLayout>
+                    </Frame>
+                </HorizontalStackLayout>
+
+                <StackLayout Grid.Row="3" Grid.ColumnSpan="2">
+                    <Frame  HeightRequest="120" 
+                            HorizontalOptions="Fill" 
+                            CornerRadius="25" 
+                            BackgroundColor="{StaticResource Tertiary}" 
+                            BorderColor="Transparent">
+                        
+                        <StackLayout Orientation="Vertical" Spacing="10" VerticalOptions="Center">
+                            <HorizontalStackLayout Spacing="15" >
+                                <Image Source="vaccine" HeightRequest="20"/>
+                                <Label Text="Próxima Vacina:" Style="{DynamicResource lblVaccineDetailPetPage}"/>
+                                <Label Text="20/05/2025" TextColor="{StaticResource White}" Style="{DynamicResource lblVaccineDetailPetPage}"/>
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout Spacing="10" >
+                                <Image Source="pharmacy" HeightRequest="10"/>
+                                <Label Text="Próxima Vermifugção:" Style="{DynamicResource lblVaccineDetailPetPage}"/>
+                                <Label Text="20/05/2025" TextColor="{StaticResource White}" Style="{DynamicResource lblVaccineDetailPetPage}"/>
+                            </HorizontalStackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Row="4" Grid.ColumnSpan="2">
+                    <Button Text="Editar" FontSize="Medium" CornerRadius="15"/>
+                </StackLayout>
+
+            </Grid>
+        </Frame>
+    </Grid>
+
+</ContentPage>

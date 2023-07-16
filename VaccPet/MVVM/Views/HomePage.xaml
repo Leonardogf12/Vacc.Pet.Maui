@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:VaccPet.Helpers"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
              x:Class="VaccPet.MVVM.Views.HomePage"                                      
              Shell.FlyoutBehavior="Flyout"
              BackgroundColor="{StaticResource Primary}"
              Title="Menu">
+
 
     <ScrollView VerticalScrollBarVisibility="Never">
         <Grid ColumnSpacing="10" RowSpacing="10" Margin="15,0,15,0">
@@ -20,8 +20,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-
-            <!--Pets-->
+          
             <Frame CornerRadius="45" Grid.Row="1" Grid.Column="0" Padding="1" BorderColor="Transparent">
                 <Frame.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding ListPetsCommand}"/>
@@ -60,7 +59,7 @@
                 </Grid>
             </Frame>
 
-            <!--Vacinas-->
+          
             <Frame CornerRadius="45" Grid.Row="1" Grid.Column="1" Padding="1" BorderColor="Transparent">
                 <Frame.Background>
                     <LinearGradientBrush EndPoint="1,0">

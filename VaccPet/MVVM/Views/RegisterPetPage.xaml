@@ -96,7 +96,7 @@
                     <Entry x:Name="entryColor"                           
                            Text="{Binding Color}"
                            Placeholder="Cor"                                                    
-                           Keyboard="Text"
+                           Keyboard="Text"                          
                            Style="{DynamicResource entRegisterPetPage}">
                         <Entry.Behaviors>
                             <local:TextValidationsBehaviors x:TypeArguments="Entry" x:Name="colorBehaviorValidator"/>

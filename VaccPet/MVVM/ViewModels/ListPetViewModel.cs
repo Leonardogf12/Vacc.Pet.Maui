@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 using VaccPet.MVVM.Models;
+using VaccPet.MVVM.Views;
 using VaccPet.MVVM.Views.Components;
 using VaccPet.Services;
 
@@ -29,6 +30,8 @@ namespace VaccPet.MVVM.ViewModels
         public ICommand SelectedPetInCollectionCommand { get; set; }        
         public ICommand EditPetCommand { get; set; }
         public ICommand DeletePetCommand { get; set; }
+
+        public ICommand DetailPetCommand { get; set; }
         #endregion
 
         #region PROPS
@@ -61,10 +64,13 @@ namespace VaccPet.MVVM.ViewModels
             EditPetCommand = new Command(OnEditPetCommand);
 
             DeletePetCommand = new Command(OnDeletePetCommand);
-           
+
+            DetailPetCommand = new Command(OnDetailPetCommand);
+
+
         }
 
-
+       
         #region METHODS
 
         public async void OnSelectedPetInCollectionCommand(PetModel petSelected)
@@ -73,7 +79,7 @@ namespace VaccPet.MVVM.ViewModels
             PopupListActionsControl = new Popup();
 
             PopupListActionsControl = new PopupListActionsPage(
-                    popupViewModel.SetParametersPopup("Editar", "Excluir","Detalhes", petSelected, EditPetCommand, DeletePetCommand));
+                    popupViewModel.SetParametersPopup("Editar", "Excluir", "Detalhes", petSelected, EditPetCommand, DeletePetCommand, DetailPetCommand));
 
             await App.Current.MainPage.ShowPopupAsync(PopupListActionsControl);
         }
@@ -118,7 +124,20 @@ namespace VaccPet.MVVM.ViewModels
         {
             PopupListActionsControl.Close();
         }
-               
+
+        private async void OnDetailPetCommand()
+        {
+            PopupListActionsControl.Close();
+
+            Dictionary<string, object> parameters = new Dictionary<string, object>
+            {
+                { "DetailPetSelected", PetModelObject }
+            };
+
+            await AppShell.Current.GoToAsync(nameof(DetailPetPage), true, parameters);
+            //await Navigation.NavigateToAsync<DetailPetViewModel>(parameters);
+        }
+
         private async void OnAddPetCommand()
         {
             await Navigation.NavigateToAsync<RegisterPetViewModel>(null);

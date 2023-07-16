@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "y76MVEP72I4/smYmWOkHGdy6bD9R1IUynf6Cn0RkAydUvTyuJSu7bslLmnx79umaMMSwHDYe6962HgzxrT/FMA==",
+  "dgSpecHash": "/b7Koa2uvpvRTlJAobZPHFMPxJq3ozuAlqGokNIFghXd6X2XCm2+bIO721zGD4MM7O9Lwy9a+bjaasockfMmlw==",
   "success": true,
   "projectFilePath": "D:\\PROJETOS\\Projetos MAUI\\VaccPet.Project\\Vacc.Pet.Maui\\VaccPet\\VaccPet.csproj",
   "expectedPackageFiles": [
@@ -190,6 +190,12 @@
     "C:\\Users\\root\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk8\\1.7.20.1\\xamarin.kotlin.stdlib.jdk8.1.7.20.1.nupkg.sha512",
     "C:\\Users\\root\\.nuget\\packages\\xamarin.kotlinx.coroutines.android\\1.6.4.1\\xamarin.kotlinx.coroutines.android.1.6.4.1.nupkg.sha512",
     "C:\\Users\\root\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.6.4.1\\xamarin.kotlinx.coroutines.core.jvm.1.6.4.1.nupkg.sha512",
+    "C:\\Users\\root\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.android-arm\\7.0.9\\microsoft.netcore.app.runtime.mono.android-arm.7.0.9.nupkg.sha512",
+    "C:\\Users\\root\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.android-x86\\7.0.9\\microsoft.netcore.app.runtime.mono.android-x86.7.0.9.nupkg.sha512",
+    "C:\\Users\\root\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.android-x64\\7.0.9\\microsoft.netcore.app.runtime.mono.android-x64.7.0.9.nupkg.sha512",
+    "C:\\Users\\root\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.android-arm64\\7.0.9\\microsoft.netcore.app.runtime.mono.android-arm64.7.0.9.nupkg.sha512",
+    "C:\\Users\\root\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.iossimulator-x64\\7.0.9\\microsoft.netcore.app.runtime.mono.iossimulator-x64.7.0.9.nupkg.sha512",
+    "C:\\Users\\root\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.maccatalyst-x64\\7.0.9\\microsoft.netcore.app.runtime.mono.maccatalyst-x64.7.0.9.nupkg.sha512",
     "C:\\Users\\root\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.28\\microsoft.windows.sdk.net.ref.10.0.19041.28.nupkg.sha512",
     "C:\\Users\\root\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.7\\microsoft.aspnetcore.app.runtime.win-x64.7.0.7.nupkg.sha512",
     "C:\\Users\\root\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.7\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.7.nupkg.sha512",

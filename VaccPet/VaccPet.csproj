@@ -35,7 +35,7 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
 		<!-- Splash Screen -->
-		<MauiAsset Include="Resources\Splash\splash.svg" BaseSize="128,128"/>		
+		<MauiAsset Include="Resources\Splash\splash.svg" BaseSize="128,128" />		
 	
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />		
@@ -53,6 +53,9 @@
 	  <None Remove="Resources\Images\adddark.svg" />
 	  <None Remove="Resources\Images\addprimary.svg" />
 	  <None Remove="Resources\Images\addprimary2.svg" />
+	  <None Remove="Resources\Images\back.svg" />
+	  <None Remove="Resources\Images\birthday.svg" />
+	  <None Remove="Resources\Images\cao.jpg" />
 	  <None Remove="Resources\Images\catdefault.png" />
 	  <None Remove="Resources\Images\catpets.png" />
 	  <None Remove="Resources\Images\confirmation.svg" />
@@ -60,17 +63,50 @@
 	  <None Remove="Resources\Images\dogpets.png" />
 	  <None Remove="Resources\Images\edit.svg" />
 	  <None Remove="Resources\Images\edit_blue.svg" />
+	  <None Remove="Resources\Images\eight.svg" />
+	  <None Remove="Resources\Images\eighteen.svg" />
+	  <None Remove="Resources\Images\eleven.svg" />
 	  <None Remove="Resources\Images\error.svg" />
+	  <None Remove="Resources\Images\female.svg" />
+	  <None Remove="Resources\Images\fifteen.svg" />
+	  <None Remove="Resources\Images\five.svg" />
+	  <None Remove="Resources\Images\four.svg" />
+	  <None Remove="Resources\Images\fourteen.svg" />
 	  <None Remove="Resources\Images\heart.svg" />
 	  <None Remove="Resources\Images\loading_green.gif" />
+	  <None Remove="Resources\Images\male.svg" />
 	  <None Remove="Resources\Images\mousedefault.png" />
+	  <None Remove="Resources\Images\nine.svg" />
+	  <None Remove="Resources\Images\nineteen.svg" />
 	  <None Remove="Resources\Images\noimage.png" />
+	  <None Remove="Resources\Images\one.svg" />
+	  <None Remove="Resources\Images\pharmacy.svg" />
 	  <None Remove="Resources\Images\question_yellow.svg" />
 	  <None Remove="Resources\Images\rabbitdefault.png" />
+	  <None Remove="Resources\Images\race.svg" />
 	  <None Remove="Resources\Images\remove.svg" />
 	  <None Remove="Resources\Images\remove_red.svg" />
+	  <None Remove="Resources\Images\seven.svg" />
+	  <None Remove="Resources\Images\seventeen.svg" />
+	  <None Remove="Resources\Images\six.svg" />
+	  <None Remove="Resources\Images\sixteen.svg" />
+	  <None Remove="Resources\Images\ten.svg" />
+	  <None Remove="Resources\Images\thirteen.svg" />
+	  <None Remove="Resources\Images\three.svg" />
 	  <None Remove="Resources\Images\trash.svg" />
 	  <None Remove="Resources\Images\trashprimary.svg" />
+	  <None Remove="Resources\Images\twelve.svg" />
+	  <None Remove="Resources\Images\twenty.svg" />
+	  <None Remove="Resources\Images\twenty_five.svg" />
+	  <None Remove="Resources\Images\twenty_four.svg" />
+	  <None Remove="Resources\Images\twenty_one.svg" />
+	  <None Remove="Resources\Images\twenty_seven.svg" />
+	  <None Remove="Resources\Images\twenty_six.svg" />
+	  <None Remove="Resources\Images\twenty_three.svg" />
+	  <None Remove="Resources\Images\twenty_two.svg" />
+	  <None Remove="Resources\Images\two.svg" />
+	  <None Remove="Resources\Images\vaccine.svg" />
+	  <None Remove="Resources\Images\zero.svg" />
 	  <None Remove="Resources\Raw\check_json.json" />
 	  <None Remove="Resources\Raw\click_json.json" />
 	  <None Remove="Resources\Raw\error_json.json" />
@@ -102,6 +138,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MVVM\Views\Components\PopupListActionsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\Views\DetailPetPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MVVM\Views\HomePage.xaml">
