@@ -60,7 +60,6 @@ namespace VaccPet.MVVM.ViewModels
             DeletePetCommand = new Command(OnDeletePetCommand);
             DetailPetCommand = new Command(OnDetailPetCommand);
         }
-
        
         #region METHODS
 
