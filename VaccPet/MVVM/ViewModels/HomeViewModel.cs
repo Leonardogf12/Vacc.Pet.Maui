@@ -31,7 +31,7 @@ namespace VaccPet.MVVM.ViewModels
         #region METHODS
         async void OnListPetsCommand()
         {
-            await Navigation.NavigateToAsync<ListPetViewModel>(null);          
+            await Navigation.NavigateToViewModelAsync<ListPetViewModel>(null);          
         }
 
         public async Task OnLoadAllPets()

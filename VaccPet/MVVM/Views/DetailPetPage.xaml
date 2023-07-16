@@ -21,9 +21,11 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
+        <!--Image Master-->
         <Image Grid.Row="0" Source="{Binding DetailPetSelected.ImageData, 
                Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill"/>
 
+        <!--btn GoBack-->
         <Image Source="back" 
                HeightRequest="30" 
                Margin="25" 
@@ -70,6 +72,7 @@
                         Margin="10,0,10,0" 
                         TextColor="{StaticResource Gray100}"/>
 
+                <!--3 Small Frames-->
                 <HorizontalStackLayout Grid.Row="2" Grid.ColumnSpan="2" Spacing="15" HorizontalOptions="Center">
                     <Frame Style="{DynamicResource frDetailPetPage}">
                         <StackLayout Spacing="5" HorizontalOptions="Center">
@@ -94,6 +97,7 @@
                     </Frame>
                 </HorizontalStackLayout>
 
+                <!--Medium Frame-->
                 <StackLayout Grid.Row="3" Grid.ColumnSpan="2">
                     <Frame  HeightRequest="120" 
                             HorizontalOptions="Fill" 
@@ -116,6 +120,7 @@
                     </Frame>
                 </StackLayout>
 
+                <!--btn Edit-->
                 <StackLayout Grid.Row="4" Grid.ColumnSpan="2">
                     <Button Text="Editar" FontSize="Medium" CornerRadius="15"/>
                 </StackLayout>

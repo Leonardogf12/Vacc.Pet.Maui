@@ -14,7 +14,7 @@ namespace VaccPet.MVVM.ViewModels
 
         private readonly IPetService _IPetService;
 
-        PopupViewModel popupViewModel { get; set; } = new PopupViewModel();
+        PopupViewModel PopupViewModel { get; set; } = new PopupViewModel();
         
         Popup PopupListActionsControl { get; set; }       
 
@@ -26,11 +26,10 @@ namespace VaccPet.MVVM.ViewModels
 
         #region COMMANDS
         public ICommand AddPetCommand { get; set; }
-        public ICommand DeleteAllPetCommand { get; set; }        
-        public ICommand SelectedPetInCollectionCommand { get; set; }        
-        public ICommand EditPetCommand { get; set; }
+        public ICommand SelectedPetInCollectionCommand { get; set; }
         public ICommand DeletePetCommand { get; set; }
-
+        public ICommand DeleteAllPetCommand { get; set; }                      
+        public ICommand EditPetCommand { get; set; }        
         public ICommand DetailPetCommand { get; set; }
         #endregion
 
@@ -54,20 +53,12 @@ namespace VaccPet.MVVM.ViewModels
             _IPetService = IPetService;          
 
             PetsCollection = new ObservableCollection<PetModel>();
-
             AddPetCommand = new Command(OnAddPetCommand);
-
             DeleteAllPetCommand = new Command(OnDeleteAllPetCommand);
-
             SelectedPetInCollectionCommand = new Command<PetModel>(OnSelectedPetInCollectionCommand);
-
             EditPetCommand = new Command(OnEditPetCommand);
-
             DeletePetCommand = new Command(OnDeletePetCommand);
-
             DetailPetCommand = new Command(OnDetailPetCommand);
-
-
         }
 
        
@@ -76,10 +67,9 @@ namespace VaccPet.MVVM.ViewModels
         public async void OnSelectedPetInCollectionCommand(PetModel petSelected)
         {
             PetModelObject = petSelected;
-            PopupListActionsControl = new Popup();
-
+            
             PopupListActionsControl = new PopupListActionsPage(
-                    popupViewModel.SetParametersPopup("Editar", "Excluir", "Detalhes", petSelected, EditPetCommand, DeletePetCommand, DetailPetCommand));
+                    PopupViewModel.SetParametersPopup("Editar", "Excluir", "Detalhes", petSelected, EditPetCommand, DeletePetCommand, DetailPetCommand));
 
             await App.Current.MainPage.ShowPopupAsync(PopupListActionsControl);
         }
@@ -120,7 +110,7 @@ namespace VaccPet.MVVM.ViewModels
             }
         }
 
-        private async void OnEditPetCommand(object obj)
+        private void OnEditPetCommand()
         {
             PopupListActionsControl.Close();
         }
@@ -133,14 +123,13 @@ namespace VaccPet.MVVM.ViewModels
             {
                 { "DetailPetSelected", PetModelObject }
             };
-
-            await AppShell.Current.GoToAsync(nameof(DetailPetPage), true, parameters);
-            //await Navigation.NavigateToAsync<DetailPetViewModel>(parameters);
+            
+            await Navigation.NavigateToPageAsync<DetailPetPage>(parameters);
         }
 
         private async void OnAddPetCommand()
-        {
-            await Navigation.NavigateToAsync<RegisterPetViewModel>(null);
+        {           
+            await Navigation.NavigateToViewModelAsync<RegisterPetViewModel>(null);
         }
 
         public async Task OnLoadAllPets()

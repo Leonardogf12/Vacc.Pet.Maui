@@ -10,23 +10,20 @@ namespace VaccPet.Services.Navigation
 {
     public class NavigationService : INavigationService
     {
-        public async Task NavigateToAsync<TViewModel>() where TViewModel : BaseViewModel
+        #region VIEWMODEL
+        public async Task NavigateToViewModelAsync<TViewModel>() where TViewModel : BaseViewModel
         {
-            await InternalNavigateToAsync(typeof(TViewModel), null, false);
+            await InternalNavigateToViewModelAsync(typeof(TViewModel), null, false);
         }
-        public async Task NavigateToAsync<TViewModel>(bool isAbsoluteRoute) where TViewModel : BaseViewModel
+        public async Task NavigateToViewModelAsync<TViewModel>(bool isAbsoluteRoute) where TViewModel : BaseViewModel
         {
-            await InternalNavigateToAsync(typeof(TViewModel), null, isAbsoluteRoute);
+            await InternalNavigateToViewModelAsync(typeof(TViewModel), null, isAbsoluteRoute);
         }
-        public async Task NavigateToAsync<TViewModel>(object parameter) where TViewModel : BaseViewModel
+        public async Task NavigateToViewModelAsync<TViewModel>(object parameter) where TViewModel : BaseViewModel
         {
-            await InternalNavigateToAsync(typeof(TViewModel), parameter, false);
+            await InternalNavigateToViewModelAsync(typeof(TViewModel), parameter, false);
         }
-        public async Task GoBackAsync()
-        {
-            await Shell.Current.GoToAsync("..");
-        }
-        async Task InternalNavigateToAsync(Type viewModelType, object parameter, bool isAbsoluteRoute = false)
+        async Task InternalNavigateToViewModelAsync(Type viewModelType, object parameter, bool isAbsoluteRoute = false)
         {
             var viewName = viewModelType.FullName.Replace("ViewModels", "Views").Replace("ViewModel", "Page");
             string absolutePrefix = isAbsoluteRoute ? "///" : String.Empty;
@@ -39,6 +36,26 @@ namespace VaccPet.Services.Navigation
             {
                 await Shell.Current.GoToAsync($"{absolutePrefix}{viewName}");
             }
+        }
+        #endregion
+        
+        #region VIEW
+        public async Task NavigateToPageAsync<T>(Dictionary<string, object> parameter) where T : IView
+        {
+            await InternalNavigateToPageAsync(typeof(T), parameter);
+        }
+        async Task InternalNavigateToPageAsync(Type viewType, Dictionary<string, object> parameter)
+        {
+            if (parameter != null)
+                await Shell.Current.GoToAsync($"{viewType.Name}", parameter);
+            else
+                await Shell.Current.GoToAsync($"{viewType.Name}");
+        }
+        #endregion
+
+        public async Task GoBackAsync()
+        {
+            await Shell.Current.GoToAsync("..");
         }
     }
 }

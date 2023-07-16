@@ -4,9 +4,11 @@ namespace VaccPet.Services.Navigation
 {
     public interface INavigationService
     {
-        Task NavigateToAsync<TViewModel>() where TViewModel : BaseViewModel;
-        Task NavigateToAsync<TViewModel>(bool isAbsoluteRoute) where TViewModel : BaseViewModel;
-        Task NavigateToAsync<TViewModel>(object parameter) where TViewModel : BaseViewModel;
+        Task NavigateToViewModelAsync<TViewModel>() where TViewModel : BaseViewModel;
+        Task NavigateToViewModelAsync<TViewModel>(bool isAbsoluteRoute) where TViewModel : BaseViewModel;
+        Task NavigateToViewModelAsync<TViewModel>(object parameter) where TViewModel : BaseViewModel;
+        Task NavigateToPageAsync<T>(Dictionary<string, object> parameter) where T : IView;
         Task GoBackAsync();
+                
     }
 }
