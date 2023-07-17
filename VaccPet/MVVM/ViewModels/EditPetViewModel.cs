@@ -88,6 +88,8 @@ namespace VaccPet.MVVM.ViewModels
         {
             PetModel petModel = (PetModel)PetSelectedForEdit;
 
+            petModel.ImageData = ImagePath == null ? await GetImageDefault(AnimalSelected.Value) : await ReadImageBytes(ImagePath);
+
             var result = await _IPetService.UpdatePet(petModel);
 
             if (result > 0)
