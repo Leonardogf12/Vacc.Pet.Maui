@@ -37,6 +37,7 @@
             <ScrollView VerticalScrollBarVisibility="Never" >
                 <CollectionView ItemsSource="{Binding PetsCollection}" >
                     <CollectionView.ItemTemplate>
+                        
                         <DataTemplate x:DataType="model:PetModel">
                             
                             <Frame  HasShadow="True"  BorderColor="Transparent"                              

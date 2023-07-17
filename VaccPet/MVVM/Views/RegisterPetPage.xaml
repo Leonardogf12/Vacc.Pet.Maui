@@ -34,7 +34,7 @@
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="100"/>
                     </Border.StrokeShape>
-                    <Image Source="{Binding ImagePath}"
+                    <Image Source="{Binding PetSelectedForEdit.ImagePath}"
                               WidthRequest="200" 
                               HeightRequest="200" 
                               Aspect="AspectFit">
@@ -102,6 +102,11 @@
                             SelectedItem="{Binding BreedSelected}" 
                             TextColor="{StaticResource Quinary}" 
                             FontSize="Medium">
+                        
+                        <Picker.Behaviors>
+                            <local:GeralValidationsBehaviors x:TypeArguments="Picker" x:Name="breedBehaviorValidator"/>
+                        </Picker.Behaviors>
+                        
                     </Picker>
                 </Border>
 

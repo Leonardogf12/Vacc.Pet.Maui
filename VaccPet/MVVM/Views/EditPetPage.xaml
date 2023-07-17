@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:converters="clr-namespace:VaccPet.Helpers.Converters"
+             xmlns:local="clr-namespace:VaccPet.Helpers.Behaviors"      
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"            
+             x:Class="VaccPet.MVVM.Views.EditPetPage"
+             BackgroundColor="{StaticResource Primary}"
+             Title="Editar">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView VerticalOptions="FillAndExpand">
+        <Grid Margin="15,10,15,0" RowSpacing="10" ColumnSpacing="10" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Photo -->
+            <StackLayout Grid.Row="0" Grid.ColumnSpan="2">
+                <Border HeightRequest="100" 
+                        Padding="1"                        
+                        BackgroundColor="{StaticResource Tertiary}"                       
+                        WidthRequest="100">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="100"/>
+                    </Border.StrokeShape>
+                    <Image Source="{Binding ImagePath}"                        
+                           WidthRequest="200" 
+                           HeightRequest="200" 
+                           Aspect="AspectFit">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding GetImageFromGalleryCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                </Border>
+
+                <Image Source="add.svg" HeightRequest="25" Margin="80,-10,0,0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GetImageFromGalleryCommand}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+
+            <!-- Name -->
+            <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical">
+                <Label Text="Nome" Style="{StaticResource lblRegisterPetPage}"/>
+                <Border Style="{StaticResource brdRegisterPetPage}">
+                    <Entry x:Name="entryName"                                             
+                            Text="{Binding PetSelectedForEdit.Name}"                            
+                            Placeholder="Nome"                            
+                            Keyboard="Text"
+                            Style="{StaticResource entRegisterPetPage}">
+                        <Entry.Behaviors>
+                            <local:TextValidationsBehaviors x:TypeArguments="Entry" x:Name="nameBehaviorValidator" />
+                        </Entry.Behaviors>
+                    </Entry>
+                </Border>
+            </StackLayout>
+
+            <!-- Animals -->
+            <StackLayout Grid.Row="2" Grid.Column="0">
+                <Label Text="Animal" Style="{StaticResource lblRegisterPetPage}"/>
+                <Border Style="{StaticResource brdRegisterPetPage}">
+                    <Picker x:Name="pickerAnimal"
+                            Title="Selecione"                           
+                            Margin="15,0,10,0"
+                            TitleColor="{StaticResource Gray400}" 
+                            ItemsSource="{Binding AnimalsList}"
+                            ItemDisplayBinding="{Binding Value}"
+                            SelectedItem="{Binding PetSelectedForEdit.Animal}" 
+                            TextColor="{StaticResource Quinary}" 
+                            FontSize="Medium">
+                        <Picker.Behaviors>
+                            <local:GeralValidationsBehaviors x:TypeArguments="Picker" x:Name="animalBehaviorValidator"/>
+                        </Picker.Behaviors>
+                    </Picker>
+                </Border>
+
+            </StackLayout>
+
+            <!--Breeds-->
+            <StackLayout Grid.Row="2" Grid.Column="1">
+                <Label Text="Raça" Style="{StaticResource lblRegisterPetPage}"/>
+                <Border Style="{StaticResource brdRegisterPetPage}">
+                    <Picker x:Name="pickerRace"
+                            Title="Selecione"                           
+                            Margin="15,0,10,0"
+                            TitleColor="{StaticResource Gray400}" 
+                            ItemsSource="{Binding BreedsList}"
+                            ItemDisplayBinding="{Binding Value}"
+                            SelectedItem="{Binding PetSelectedForEdit.Breed}" 
+                            TextColor="{StaticResource Quinary}" 
+                            FontSize="Medium">
+
+                        <Picker.Behaviors>
+                            <local:GeralValidationsBehaviors x:TypeArguments="Picker" x:Name="breedBehaviorValidator"/>
+                        </Picker.Behaviors>
+
+                    </Picker>
+                </Border>
+
+            </StackLayout>
+
+            <!-- Color -->
+            <StackLayout Grid.Row="3" Grid.ColumnSpan="2"  Orientation="Vertical">
+                <Label Text="Cor" Style="{StaticResource lblRegisterPetPage}"/>
+                <Border Style="{StaticResource brdRegisterPetPage}">
+                    <Entry x:Name="entryColor"                           
+                           Text="{Binding PetSelectedForEdit.Color}"
+                           Placeholder="Cor"                                                    
+                           Keyboard="Text"                          
+                           Style="{StaticResource entRegisterPetPage}">
+                        <Entry.Behaviors>
+                            <local:TextValidationsBehaviors x:TypeArguments="Entry" x:Name="colorBehaviorValidator"/>
+                        </Entry.Behaviors>
+                    </Entry>
+                </Border>
+            </StackLayout>
+
+            <!-- Weight -->
+            <StackLayout Grid.Row="4" Grid.Column="0" Orientation="Vertical">
+                <Label Text="Peso KG" Style="{StaticResource lblRegisterPetPage}"/>
+                <Border Style="{StaticResource brdRegisterPetPage}">
+                    <Entry x:Name="entryWeigth"
+                           Text="{Binding PetSelectedForEdit.Weight}" 
+                           Placeholder="0.0 KG"
+                           MaxLength="5"                                                                                                                                   
+                           Keyboard="Numeric"                                                                              
+                           Style="{StaticResource entRegisterPetPage}">
+                        <Entry.Behaviors>
+                            <local:NumericValidationsBehaviors x:TypeArguments="Entry" x:Name="weightBehaviorValidator"/>
+                        </Entry.Behaviors>
+                    </Entry>
+                </Border>
+            </StackLayout>
+
+            <!-- BirthDate -->
+            <StackLayout Grid.Row="4" Grid.Column="1">
+                <Label Text="Nascimento" Style="{StaticResource lblRegisterPetPage}"/>
+                <Border Style="{StaticResource brdRegisterPetPage}">
+                    <DatePicker  TextColor="{StaticResource Quinary}" 
+                                 Margin="15,0,10,0"
+                                 MinimumDate="01/01/2008"
+                                 MaximumDate="12/31/2030"
+                                 FontSize="Medium" 
+                                 Date="{Binding PetSelectedForEdit.BirthDate}">
+                        <DatePicker.Behaviors>
+                            <local:DateValidationsBehaviors x:TypeArguments="DatePicker" x:Name="birthDateBehaviorValidator"/>
+                        </DatePicker.Behaviors>
+                    </DatePicker>
+                </Border>
+            </StackLayout>
+
+            <!-- Sex -->
+            <StackLayout Grid.Row="5" Grid.Column="0">
+                <Label Text="Sexo" Style="{StaticResource lblRegisterPetPage}"/>
+                <StackLayout Orientation="Horizontal" Spacing="20">
+                    <Label Text="F" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="20,8,0,0" />
+                    <Switch OnColor="{StaticResource Quinary}" ThumbColor="{StaticResource Secondary}" IsToggled="{Binding IsToggledSex}"/>
+                    <Label Text="M" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,8,0,0" />
+                </StackLayout>
+            </StackLayout>
+
+            <!-- IsCastrated -->
+            <StackLayout Grid.Row="5" Grid.Column="1">
+                <Label Text="Castrado(a)" Style="{StaticResource lblRegisterPetPage}"/>
+                <StackLayout Orientation="Horizontal" Spacing="-10">
+                    <CheckBox Color="{StaticResource Quinary}" IsChecked="{Binding IsCatrated}"/>
+                    <Label Text="{Binding IsCastratedConfirm}" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,8,0,0" />
+                </StackLayout>
+            </StackLayout>
+
+            <!-- Observation -->
+            <StackLayout  Grid.Row="6" Grid.ColumnSpan="2" Orientation="Vertical">
+                <Label  Text="Observação" Style="{StaticResource lblRegisterPetPage}"/>
+                <Border Style="{StaticResource brdRegisterPetPage}">
+                    <Editor Placeholder="Observação"                                                     
+                            Text="{Binding PetSelectedForEdit.Observation}"
+                            Margin="15,0,10,0"
+                            TextColor="{StaticResource Quinary}"                         
+                            Keyboard="Text"
+                            HeightRequest="80"                                        
+                            FontSize="Medium"
+                            PlaceholderColor="{StaticResource Gray400}">
+                        <Editor.Behaviors>
+                            <local:TextValidationsBehaviors x:TypeArguments="Editor" x:Name="observationBehaviorValidator"/>
+                        </Editor.Behaviors>
+                    </Editor>
+                </Border>
+            </StackLayout>
+
+            <!-- Button Save -->
+            <StackLayout Grid.Row="7" Grid.ColumnSpan="2">
+                <Button x:Name="btnSave"
+                        Text="Salvar" 
+                        CornerRadius="15"
+                        TextColor="{StaticResource White}" 
+                        FontSize="Medium"
+                        FontAttributes="None"
+                        BackgroundColor="#2F3855"
+                        Clicked="btnSave_Clicked"/>
+                <!--Command="{Binding AddPetCommand}"-->
+            </StackLayout>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

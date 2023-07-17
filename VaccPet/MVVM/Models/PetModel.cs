@@ -17,5 +17,7 @@ namespace VaccPet.MVVM.Models
         public byte[] ImageData { get; set; }
         public int Age { get; set; }
         public string Breed { get; set; }
+
+        
     }
 }

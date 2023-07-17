@@ -1,7 +1,5 @@
 using Mopups.Interfaces;
-using Mopups.Services;
 using VaccPet.MVVM.ViewModels;
-using VaccPet.MVVM.Views.Components;
 
 namespace VaccPet.MVVM.Views;
 
@@ -14,4 +12,11 @@ public partial class HomePage : ContentPage
         this.BindingContext = model;
     }
 
+    private async void OnFrameTapped(object sender, EventArgs e)
+    {
+        var frame = (Frame)sender;
+        frame.Opacity = 0.3;
+        frame.Opacity = 1;      
+    }
+   
 }

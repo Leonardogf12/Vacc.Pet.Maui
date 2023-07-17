@@ -127,9 +127,16 @@ namespace VaccPet.MVVM.ViewModels
             }
         }
 
-        private void OnEditPetCommand()
+        private async void OnEditPetCommand()
         {
             PopupListActionsControl.Close();
+
+            Dictionary<string, object> parameters = new Dictionary<string, object>
+            {
+                { "PetSelectedForEdit", PetModelObject }
+            };
+
+            await Navigation.NavigateToPageAsync<EditPetPage>(parameters);
         }
 
         private async void OnDetailPetCommand()

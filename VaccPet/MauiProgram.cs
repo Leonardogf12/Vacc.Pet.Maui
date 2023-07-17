@@ -41,9 +41,11 @@ public static class MauiProgram
 
         //*Views
         builder.Services.AddSingleton<HomePage>();
-		builder.Services.AddSingleton<RegisterPetPage>();
-		builder.Services.AddSingleton<ListPetPage>();
-        builder.Services.AddSingleton<DetailPetPage>();
+		builder.Services.AddTransient<RegisterPetPage>();
+		builder.Services.AddTransient<ListPetPage>();
+        builder.Services.AddTransient<DetailPetPage>();
+        builder.Services.AddTransient<EditPetPage>();
+        
 
         //*Views Popup
         builder.Services.AddTransient<PopupListActionsPage>();
@@ -56,11 +58,13 @@ public static class MauiProgram
 		builder.Services.AddSingleton<ListPetViewModel>();
 		builder.Services.AddSingleton<RegisterPetViewModel>();
         builder.Services.AddSingleton<DetailPetViewModel>();
+        builder.Services.AddSingleton<EditPetViewModel>();
 
         //*Services
         builder.Services.AddSingleton<IPetService, PetService>();
 		builder.Services.AddSingleton<INavigationService, NavigationService>();
 		builder.Services.AddSingleton<IPopupNavigation>(MopupService.Instance);
+        builder.Services.AddSingleton<IAnimalService, AnimalService>();
 
         //*IF NECESSÁRIO PARA CORRIGIR BUG DA IMAGEM, PAGINAÇÃO TRAVANDO DEVIDO AO Converter={StaticResource ByteArrayToImageSourceConverter} em ListPetPage
 #if __ANDROID__

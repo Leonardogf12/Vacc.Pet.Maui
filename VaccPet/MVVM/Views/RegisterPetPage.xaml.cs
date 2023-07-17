@@ -1,9 +1,11 @@
+using System.Text.RegularExpressions;
 using VaccPet.MVVM.ViewModels;
 
 namespace VaccPet.MVVM.Views;
 
 public partial class RegisterPetPage : ContentPage
-{    
+{
+    RegisterPetViewModel _model;
     public RegisterPetPage(RegisterPetViewModel model)
 	{
 		InitializeComponent();
@@ -20,7 +22,7 @@ public partial class RegisterPetPage : ContentPage
         {
             var vm = BindingContext as RegisterPetViewModel;
             vm.AddPetCommand.Execute(vm);
-        }
+        }       
 
         return;
     }
@@ -30,6 +32,18 @@ public partial class RegisterPetPage : ContentPage
         if (!nameBehaviorValidator.ValidateFields)
         {
             await DisplayAlert("Nome", "O campo Nome está incorreto. Favor verificar.", "Ok");
+            return false;
+        }
+
+        if (!animalBehaviorValidator.ValidateFields)
+        {
+            await DisplayAlert("Animal", "O campo Animal está incorreto. Favor verificar.", "Ok");
+            return false;
+        }
+
+        if (!breedBehaviorValidator.ValidateFields)
+        {
+            await DisplayAlert("Raça", "O campo Raça está incorreto. Favor verificar.", "Ok");
             return false;
         }
 
@@ -56,14 +70,10 @@ public partial class RegisterPetPage : ContentPage
             await DisplayAlert("Observação", "O campo Observação está incorreto. Favor verificar.", "Ok");
             return false;
         }
-
-        if (!animalBehaviorValidator.ValidateFields)
-        {
-            await DisplayAlert("Animal", "O campo Animal está incorreto. Favor verificar.", "Ok");
-            return false;
-        }
-        
+                
         return true;
     }
-   
+
+     
+
 }

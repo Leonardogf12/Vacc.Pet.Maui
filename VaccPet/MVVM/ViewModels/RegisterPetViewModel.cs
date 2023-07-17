@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Maui.Views;
 using System.Windows.Input;
+using VaccPet.Helpers.Image;
 using VaccPet.Helpers.Models;
 using VaccPet.MVVM.Models;
 using VaccPet.MVVM.Views.Components;
@@ -13,9 +14,10 @@ namespace VaccPet.MVVM.ViewModels
 
         private readonly IPetService _IPetService;
 
-        public List<Animal> AnimalsList { get; set; } = new List<Animal>();        
+        private readonly IAnimalService _IAnimalService;
 
         public Animal AnimalHelper { get; set; } = new Animal();
+        public ImageContainerHelper imageContainerHelper { get; set; } = new ImageContainerHelper();
 
         #endregion
 
@@ -23,6 +25,8 @@ namespace VaccPet.MVVM.ViewModels
         public ICommand GetImageFromGalleryCommand { get; set; }
 
         public ICommand AddPetCommand { get; set; }
+
+        public ICommand ClearFields { get; set; }
 
         #endregion
 
@@ -121,13 +125,6 @@ namespace VaccPet.MVVM.ViewModels
             }
         }
 
-        private List<Animal> breedsList;
-        public List<Animal> BreedsList
-        {
-            get => breedsList;
-            set => SetProperty(ref breedsList, value);            
-        }
-       
         Animal breedSelected;
         public Animal BreedSelected
         {
@@ -135,7 +132,21 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref breedSelected, value);
         }
 
-        private string _imagePath;
+        List<Animal> animalsList;
+        public List<Animal> AnimalsList
+        {
+            get => animalsList;
+            set => SetProperty(ref animalsList, value);
+        }
+
+        List<Animal> breedsList;
+        public List<Animal> BreedsList
+        {
+            get => breedsList;
+            set => SetProperty(ref breedsList, value);            
+        }
+               
+        string _imagePath;
         public string ImagePath
         {
             get => _imagePath;
@@ -158,15 +169,19 @@ namespace VaccPet.MVVM.ViewModels
 
         #endregion
 
-        public RegisterPetViewModel(IPetService IPetService)
-        {
+        public RegisterPetViewModel(IPetService IPetService, 
+            IAnimalService IAnimalService)
+        {           
             _IPetService = IPetService;
-
+            _IAnimalService = IAnimalService;
+            
             AnimalsList = AnimalHelper.GetAllAnimals();
-
+            ClearFields = new Command(OnClearFields);
             GetImageFromGalleryCommand = new Command(OnGetImageFromGalleryCommand);
             AddPetCommand = new Command(OnAddPetCommand);
         }
+
+        
 
         #region METHODS
         private async void OnAddPetCommand()
@@ -175,7 +190,7 @@ namespace VaccPet.MVVM.ViewModels
 
             pet.Name = Name;
             pet.Animal = AnimalSelected.Value;
-            pet.ImageData = ImagePath == null ? await GetImageDefault(AnimalSelected.Value) : await ReadImageBytes(ImagePath);
+            pet.ImageData = ImagePath == null ? await imageContainerHelper.GetImageDefault(AnimalSelected.Value) : await imageContainerHelper.ReadImageBytes(ImagePath);
             pet.BirthDate = BirthDate;
             pet.Color = Color;
             pet.Observation = Observation;
@@ -263,6 +278,19 @@ namespace VaccPet.MVVM.ViewModels
             {
                 BreedsList = new List<Animal> { new Animal { Key = 1000, Value = "Não Definida" } };
             }
+        }
+
+        public void OnClearFields()
+        {
+            Name = string.Empty;
+            AnimalSelected = new Animal();
+            BreedSelected = new Animal();
+            Color = string.Empty;
+            Weight = 0;
+            BirthDate = DateTime.Now;
+            IsToggledSex = false;
+            IsCastratedConfirm = "Não";
+            Observation = string.Empty;
         }
 
         #endregion
