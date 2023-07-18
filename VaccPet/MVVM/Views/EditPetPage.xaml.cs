@@ -18,4 +18,13 @@ public partial class EditPetPage : ContentPage
 
         return;
     }
+
+    protected override void OnAppearing()
+    {
+        var vm = BindingContext as EditPetViewModel;
+        vm.ImagePath = string.Empty;
+        vm.ImageVector = true;
+
+        base.OnAppearing();
+    }
 }

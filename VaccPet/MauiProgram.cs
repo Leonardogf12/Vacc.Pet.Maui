@@ -7,6 +7,7 @@ using Mopups.Interfaces;
 using Mopups.Services;
 using SkiaSharp.Views.Maui.Controls.Hosting;
 using VaccPet.Data;
+using VaccPet.Helpers.Image;
 using VaccPet.MVVM.ViewModels;
 using VaccPet.MVVM.Views;
 using VaccPet.MVVM.Views.Components;
@@ -65,6 +66,8 @@ public static class MauiProgram
 		builder.Services.AddSingleton<INavigationService, NavigationService>();
 		builder.Services.AddSingleton<IPopupNavigation>(MopupService.Instance);
         builder.Services.AddSingleton<IAnimalService, AnimalService>();
+        builder.Services.AddSingleton<IImageContainerHelper, ImageContainerHelper>();
+
 
         //*IF NECESSÁRIO PARA CORRIGIR BUG DA IMAGEM, PAGINAÇÃO TRAVANDO DEVIDO AO Converter={StaticResource ByteArrayToImageSourceConverter} em ListPetPage
 #if __ANDROID__

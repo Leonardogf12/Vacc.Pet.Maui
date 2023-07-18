@@ -1,8 +1,8 @@
 ﻿namespace VaccPet.Helpers.Image
 {
-    public class ImageContainerHelper
+    public class ImageContainerHelper : IImageContainerHelper
     {
-        private async Task<byte[]> ReadImageBytes(string imagePath)
+        public async Task<byte[]> ReadImageBytes(string imagePath)
         {
             try
             {
@@ -20,7 +20,7 @@
             }
         }
 
-        public async static Task<byte[]> GetImageDefault(string type)
+        public async Task<byte[]> GetImageDefault(string type)
         {
             using var stream = await FileSystem.OpenAppPackageFileAsync("noimage.png");
             return await StreamToByteArrayAsync(stream);

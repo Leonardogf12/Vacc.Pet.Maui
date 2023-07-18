@@ -16,9 +16,10 @@ namespace VaccPet.MVVM.ViewModels
 
         private readonly IAnimalService _IAnimalService;
 
-        public Animal AnimalHelper { get; set; } = new Animal();
-        public ImageContainerHelper imageContainerHelper { get; set; } = new ImageContainerHelper();
+        private readonly IImageContainerHelper _ImageContainerHelper;
 
+        public Animal AnimalHelper { get; set; } = new Animal();
+        
         #endregion
 
         #region COMMANDS
@@ -167,13 +168,22 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref isToggledSex, value);
         }
 
+        bool imageVector;
+        public bool ImageVector
+        {
+            get => imageVector;
+            set => SetProperty(ref imageVector, value);
+        }
+
         #endregion
 
         public RegisterPetViewModel(IPetService IPetService, 
-            IAnimalService IAnimalService)
+                                    IAnimalService IAnimalService,
+                                    IImageContainerHelper ImageContainerHelper)
         {           
             _IPetService = IPetService;
             _IAnimalService = IAnimalService;
+            _ImageContainerHelper = ImageContainerHelper;
             
             AnimalsList = AnimalHelper.GetAllAnimals();
             ClearFields = new Command(OnClearFields);
@@ -190,7 +200,7 @@ namespace VaccPet.MVVM.ViewModels
 
             pet.Name = Name;
             pet.Animal = AnimalSelected.Value;
-            pet.ImageData = ImagePath == null ? await imageContainerHelper.GetImageDefault(AnimalSelected.Value) : await imageContainerHelper.ReadImageBytes(ImagePath);
+            pet.ImageData = ImagePath == null ? await _ImageContainerHelper.GetImageDefault(AnimalSelected.Value) : await _ImageContainerHelper.ReadImageBytes(ImagePath);
             pet.BirthDate = BirthDate;
             pet.Color = Color;
             pet.Observation = Observation;
@@ -221,24 +231,13 @@ namespace VaccPet.MVVM.ViewModels
                 var result = await MediaPicker.PickPhotoAsync();
 
                 if (result != null)
-                    ImagePath = result.FullPath;
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-        }
-
-        private async Task<byte[]> ReadImageBytes(string imagePath)
-        {
-            try
-            {
-                using (FileStream stream = new FileStream(imagePath, FileMode.Open, FileAccess.Read))
                 {
-                    byte[] imageData = new byte[stream.Length];
-                    await stream.ReadAsync(imageData, 0, (int)stream.Length);
-
-                    return imageData;
+                    ImagePath = result.FullPath;
+                    ImageVector = false;
+                }
+                else
+                {
+                    ImageVector = true;
                 }
             }
             catch (Exception ex)
@@ -246,19 +245,7 @@ namespace VaccPet.MVVM.ViewModels
                 throw;
             }
         }
-
-        public async static Task<byte[]> GetImageDefault(string type)
-        {
-            using var stream = await FileSystem.OpenAppPackageFileAsync("noimage.png");
-            return await StreamToByteArrayAsync(stream);
-        }
-
-        public static async Task<byte[]> StreamToByteArrayAsync(Stream stream)
-        {
-            using MemoryStream memoryStream = new MemoryStream();
-            await stream.CopyToAsync(memoryStream);
-            return memoryStream.ToArray();
-        }
+     
 
         private void GetBreedsByAnimal()
         {

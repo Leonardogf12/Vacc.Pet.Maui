@@ -14,9 +14,10 @@
         <vm:ListPetViewModel />
     </ContentPage.BindingContext>
 
+   
     <ContentPage.ToolbarItems>
-        <ToolbarItem x:Name="toolbarItemDeleteAllPet" Text="Excluir Todos" IconImageSource="trash.svg"  Command="{Binding DeleteAllPetCommand}"/>
-        <ToolbarItem x:Name="toolbarItemAddPet" Text="Novo Pet" IconImageSource="add.svg" Command="{Binding AddPetCommand}"/>
+        <ToolbarItem x:Name="toolbarItemDeleteAllPet" IconImageSource="trash"  Command="{Binding DeleteAllPetCommand}"/>
+        <ToolbarItem x:Name="toolbarItemAddPet" IconImageSource="add_circle.svg" Command="{Binding AddPetCommand}"/>
     </ContentPage.ToolbarItems>
 
     <ContentPage.Resources>

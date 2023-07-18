@@ -8,7 +8,7 @@ namespace VaccPet.Services.Navigation
         Task NavigateToViewModelAsync<TViewModel>(bool isAbsoluteRoute) where TViewModel : BaseViewModel;
         Task NavigateToViewModelAsync<TViewModel>(object parameter) where TViewModel : BaseViewModel;
         Task NavigateToPageAsync<T>(Dictionary<string, object> parameter) where T : IView;
-        Task GoBackAsync();
+        Task GoBackAsync(string quantityReturn);
                 
     }
 }

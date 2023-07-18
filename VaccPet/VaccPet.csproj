@@ -55,8 +55,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiImage Remove="Resources\Images\add - Cópia.svg" />
-	  <MauiImage Remove="Resources\Images\add.svg" />
 	  <MauiImage Remove="Resources\Images\adddark - Cópia.svg" />
 	  <MauiImage Remove="Resources\Images\adddark.svg" />
 	  <MauiImage Remove="Resources\Images\addprimary - Cópia.svg" />
@@ -162,6 +160,9 @@
 	
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\add_circle.svg" />
+	  <None Remove="Resources\Images\add_image.svg" />
+	  <None Remove="Resources\Images\add_image_circle.svg" />
 	  <None Remove="Resources\Images\cao - Cópia.jpg" />
 	  <None Remove="Resources\Images\cao.jpg" />
 	  <None Remove="Resources\Images\catdefault.png" />
@@ -170,6 +171,7 @@
 	  <None Remove="Resources\Images\dogdefault.png" />
 	  <None Remove="Resources\Images\dogpets - Cópia.png" />
 	  <None Remove="Resources\Images\dogpets.png" />
+	  <None Remove="Resources\Images\image_vetor.svg" />
 	  <None Remove="Resources\Images\loading_green - Cópia.gif" />
 	  <None Remove="Resources\Images\loading_green.gif" />
 	  <None Remove="Resources\Images\mousedefault.png" />

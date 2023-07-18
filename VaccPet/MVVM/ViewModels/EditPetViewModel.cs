@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Maui.Views;
 using System.Windows.Input;
+using VaccPet.Helpers.Image;
 using VaccPet.Helpers.Models;
 using VaccPet.MVVM.Models;
 using VaccPet.MVVM.Views.Components;
@@ -13,6 +14,7 @@ namespace VaccPet.MVVM.ViewModels
         #region VARIABLES
         private readonly IPetService _IPetService;
         private readonly IAnimalService _IAnimalService;
+        private readonly IImageContainerHelper _IImageContainerHelper;
 
         public Animal AnimalHelper { get; set; } = new Animal();
         #endregion
@@ -64,6 +66,14 @@ namespace VaccPet.MVVM.ViewModels
             get => _imagePath;
             set => SetProperty(ref _imagePath, value);
         }
+
+        bool imageVector = true;
+        public bool ImageVector
+        {
+            get => imageVector;
+            set=> SetProperty(ref imageVector, value);
+        }
+
         #endregion
 
         #region COMMANDS
@@ -74,11 +84,13 @@ namespace VaccPet.MVVM.ViewModels
         #endregion
 
         public EditPetViewModel(IPetService IPetService, 
-                                IAnimalService IAnimalService)
+                                IAnimalService IAnimalService,
+                                IImageContainerHelper IImageContainerHelper)
         {
             _IPetService = IPetService;
             _IAnimalService = IAnimalService;
-
+            _IImageContainerHelper = IImageContainerHelper;
+           
             UpdatePetCommand = new Command(OnUpdatePetCommand);
             GetImageFromGalleryCommand = new Command(OnGetImageFromGalleryCommand);
         }
@@ -88,13 +100,16 @@ namespace VaccPet.MVVM.ViewModels
         {
             PetModel petModel = (PetModel)PetSelectedForEdit;
 
-            petModel.ImageData = ImagePath == null ? await GetImageDefault(AnimalSelected.Value) : await ReadImageBytes(ImagePath);
+            petModel.ImageData = ImagePath == null ? 
+                await _IImageContainerHelper.GetImageDefault(AnimalSelected.Value) :
+                await _IImageContainerHelper.ReadImageBytes(ImagePath);
 
             var result = await _IPetService.UpdatePet(petModel);
 
             if (result > 0)
             {
-                await App.Current.MainPage.ShowPopupAsync(new PopupSuccessConfirmationPage());
+                await App.Current.MainPage.ShowPopupAsync(new PopupSuccessConfirmationPage());                
+                await Navigation.GoBackAsync("..");
                 return;
             }
             else
@@ -132,7 +147,15 @@ namespace VaccPet.MVVM.ViewModels
                 var result = await MediaPicker.PickPhotoAsync();
 
                 if (result != null)
+                {
                     ImagePath = result.FullPath;
+                    ImageVector = false;
+                }
+                else
+                {
+                    ImageVector = true;
+                }
+                    
             }
             catch (Exception ex)
             {

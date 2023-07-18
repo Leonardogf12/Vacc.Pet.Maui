@@ -26,5 +26,19 @@
                   Route="VaccPet.MVVM.Views.ListPetPage"
                   ContentTemplate="{DataTemplate views:ListPetPage}"/>
 
+    <Shell.FlyoutHeader>
+              
+        <Grid HeightRequest="100">
 
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0,2">
+                    <GradientStop Color="{StaticResource Primary}" Offset="0" />
+                    <GradientStop Color="{StaticResource SecondaryFrame}" Offset="1.0" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    
 </Shell>

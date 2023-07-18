@@ -1,11 +1,20 @@
 ﻿using System.Text.RegularExpressions;
+using System.Windows.Input;
 using VaccPet.MVVM.Models;
+using VaccPet.MVVM.Views;
+using VaccPet.Services;
 
 namespace VaccPet.MVVM.ViewModels
 {
     [QueryProperty(nameof(DetailPetSelected), "DetailPetSelected")]
     public class DetailPetViewModel : BaseViewModel
     {
+        #region VARIABLES
+
+        private readonly IPetService _IPetService;
+
+        #endregion
+
         #region PROPS
 
         private PetModel detailPetSelected;
@@ -32,10 +41,27 @@ namespace VaccPet.MVVM.ViewModels
 
         #endregion
 
-        public DetailPetViewModel()
+        #region COMMANDS
+
+        public ICommand EditPetDetailCommand { get; set; }
+
+        #endregion
+
+        public DetailPetViewModel(IPetService IPetService)
         {
+            _IPetService = IPetService;
+
+            EditPetDetailCommand = new Command(OnEditPetDetailCommand);
         }
 
+        private async void OnEditPetDetailCommand(object obj)
+        {
+            Dictionary<string, object> parameters = new Dictionary<string, object>
+            {
+                {"PetSelectedForEdit", DetailPetSelected}
+            };
 
+            await Navigation.NavigateToPageAsync<EditPetPage>(parameters);
+        }
     }
 }

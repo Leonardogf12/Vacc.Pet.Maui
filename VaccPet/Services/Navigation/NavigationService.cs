@@ -48,9 +48,10 @@ namespace VaccPet.Services.Navigation
         }
         #endregion
 
-        public async Task GoBackAsync()
+        public async Task GoBackAsync(string quantityReturn)
         {
-            await Shell.Current.GoToAsync("..");
-        }
+            //*Caso queira voltar 2 views, passe o parametro assim ->  "..\\.."
+            await Shell.Current.GoToAsync(quantityReturn);
+        }      
     }
 }

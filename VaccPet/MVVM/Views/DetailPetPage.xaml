@@ -121,9 +121,9 @@
                 </StackLayout>
 
                 <!--btn Edit-->
-                <StackLayout Grid.Row="4" Grid.ColumnSpan="2">
-                    <Button Text="Editar" FontSize="Medium" CornerRadius="15"/>
-                </StackLayout>
+                <!--<StackLayout Grid.Row="4" Grid.ColumnSpan="2">
+                    <Button Text="Editar" FontSize="Medium" CornerRadius="15" Command="{Binding EditPetDetailCommand}"/>
+                </StackLayout>-->
 
             </Grid>
         </Frame>

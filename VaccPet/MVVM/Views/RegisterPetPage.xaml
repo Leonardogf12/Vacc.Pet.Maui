@@ -34,22 +34,20 @@
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="100"/>
                     </Border.StrokeShape>
-                    <Image Source="{Binding PetSelectedForEdit.ImagePath}"
+                    <StackLayout>
+                        <Image Source="image_vetor.svg" HeightRequest="35" Margin="30" IsVisible="{Binding ImageVector}"/>
+                        <Image Source="{Binding ImagePath}"
                               WidthRequest="200" 
                               HeightRequest="200" 
                               Aspect="AspectFit">
-                        <Image.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding GetImageFromGalleryCommand}"/>
-                        </Image.GestureRecognizers>
-                    </Image>
+                        </Image>
+                    </StackLayout>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GetImageFromGalleryCommand}"/>
+                    </Border.GestureRecognizers>
 
                 </Border>
 
-                <Image Source="add.svg" HeightRequest="25" Margin="80,-10,0,0">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding GetImageFromGalleryCommand}"/>
-                    </Image.GestureRecognizers>
-                </Image>
             </StackLayout>
 
             <!-- Name -->
@@ -102,11 +100,11 @@
                             SelectedItem="{Binding BreedSelected}" 
                             TextColor="{StaticResource Quinary}" 
                             FontSize="Medium">
-                        
+
                         <Picker.Behaviors>
                             <local:GeralValidationsBehaviors x:TypeArguments="Picker" x:Name="breedBehaviorValidator"/>
                         </Picker.Behaviors>
-                        
+
                     </Picker>
                 </Border>
 

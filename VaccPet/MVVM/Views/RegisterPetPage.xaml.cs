@@ -74,6 +74,12 @@ public partial class RegisterPetPage : ContentPage
         return true;
     }
 
-     
+    protected override void OnAppearing()
+    {
+        var vm = BindingContext as RegisterPetViewModel;
+        vm.ImageVector = true;
+
+        base.OnAppearing();
+    }
 
 }
