@@ -113,18 +113,17 @@ namespace VaccPet.MVVM.ViewModels
 
         private async void OnDeleteAllPetCommand()
         {
-            var result = await App.Current.MainPage.DisplayAlert("Excluir", "Deseja realmente excluir todos Pets da Lista?", "Sim", "Não");
+            if(PetsCollection.Count > 0)
+            {
+                var result = await App.Current.MainPage.DisplayAlert("Excluir", "Deseja realmente excluir todos Pets da Lista?", "Sim", "Não");
 
-            if (result)
-            {
-                await _IPetService.DeleteAllPets();
-                PetsCollection.Clear();
-                await App.Current.MainPage.ShowPopupAsync(new PopupSuccessConfirmationPage());
-            }
-            else
-            {
-                return;
-            }
+                if (result)
+                {
+                    await _IPetService.DeleteAllPets();
+                    PetsCollection.Clear();
+                    await App.Current.MainPage.ShowPopupAsync(new PopupSuccessConfirmationPage());
+                }              
+            }           
         }
 
         private async void OnEditPetCommand()

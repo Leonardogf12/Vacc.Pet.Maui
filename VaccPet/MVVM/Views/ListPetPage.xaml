@@ -7,28 +7,44 @@
              xmlns:model="clr-namespace:VaccPet.MVVM.Models"
              ios:Page.UseSafeArea="true"             
              x:Class="VaccPet.MVVM.Views.ListPetPage"              
-             BackgroundColor="{StaticResource Primary}"
-             >
-
+             BackgroundColor="{StaticResource Primary}">
+   
     <ContentPage.BindingContext>
         <vm:ListPetViewModel />
     </ContentPage.BindingContext>
 
-   
-    <ContentPage.ToolbarItems>
-        <ToolbarItem x:Name="toolbarItemDeleteAllPet" IconImageSource="trash"  Command="{Binding DeleteAllPetCommand}"/>
-        <ToolbarItem x:Name="toolbarItemAddPet" IconImageSource="add_circle.svg" Command="{Binding AddPetCommand}"/>
-    </ContentPage.ToolbarItems>
-
     <ContentPage.Resources>
         <ResourceDictionary>
             <converters:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />
+            <Style x:Key="btnAnimationRed" TargetType="ImageButton">
+                <Setter Property="Source" Value="trash_red"/>
+            </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
 
+
+    <Shell.TitleView>
+        <HorizontalStackLayout HorizontalOptions="End" Spacing="5" Margin="0,0,10,0">
+            <ImageButton x:Name="btnDeleteAll" Source="trash" 
+                         Style="{DynamicResource btnAnimationRed}"
+                         HeightRequest="30" 
+                         VerticalOptions="Center"
+                         HorizontalOptions="End"                         
+                         Command="{Binding DeleteAllPetCommand}"
+                        />
+            <ImageButton x:Name="btnAddPet" Source="add_circle"                                                                   
+                         HeightRequest="30" 
+                         VerticalOptions="Center"
+                         HorizontalOptions="End"                         
+                         Command="{Binding AddPetCommand}"
+                         />
+        </HorizontalStackLayout>
+    </Shell.TitleView>
+
     <StackLayout Spacing="10">
 
-        <Grid>
+        <Grid >
+            
             <Border Style="{StaticResource sbCustomBorder}">
                 <SearchBar Text="{Binding TextSearch}" Style="{StaticResource sbCustom}"/>
             </Border>

@@ -90,7 +90,7 @@
                     </Frame>
                     <Frame Style="{StaticResource frDetailPetPage}">
                         <StackLayout Spacing="5" HorizontalOptions="Center" >
-                            <Image Source="race" HeightRequest="23"/>
+                            <Image Source="breed" HeightRequest="23"/>
                             <Label Text="Raça" Style="{StaticResource lblfrDetailPetPage}"/>
                             <Label Text="{Binding DetailPetSelected.Breed}" TextColor="{StaticResource White}" Style="{StaticResource lblfrDetailPetPage}"/>
                         </StackLayout>

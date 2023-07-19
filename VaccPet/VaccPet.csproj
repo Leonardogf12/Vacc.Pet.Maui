@@ -62,9 +62,7 @@
 	  <MauiImage Remove="Resources\Images\addprimary2 - Cópia.svg" />
 	  <MauiImage Remove="Resources\Images\addprimary2.svg" />
 	  <MauiImage Remove="Resources\Images\back - Cópia.svg" />
-	  <MauiImage Remove="Resources\Images\back.svg" />
 	  <MauiImage Remove="Resources\Images\birthday - Cópia.svg" />
-	  <MauiImage Remove="Resources\Images\birthday.svg" />
 	  <MauiImage Remove="Resources\Images\cao - Cópia.jpg" />
 	  <MauiImage Remove="Resources\Images\catpets - Cópia.png" />
 	  <MauiImage Remove="Resources\Images\confirmation - Cópia.svg" />
@@ -74,7 +72,6 @@
 	  <MauiImage Remove="Resources\Images\edit - Cópia.svg" />
 	  <MauiImage Remove="Resources\Images\edit.svg" />
 	  <MauiImage Remove="Resources\Images\edit_blue - Cópia.svg" />
-	  <MauiImage Remove="Resources\Images\edit_blue.svg" />
 	  <MauiImage Remove="Resources\Images\eight - Cópia.svg" />
 	  <MauiImage Remove="Resources\Images\eight.svg" />
 	  <MauiImage Remove="Resources\Images\eighteen - Cópia.svg" />
@@ -84,7 +81,6 @@
 	  <MauiImage Remove="Resources\Images\error - Cópia.svg" />
 	  <MauiImage Remove="Resources\Images\error.svg" />
 	  <MauiImage Remove="Resources\Images\female - Cópia.svg" />
-	  <MauiImage Remove="Resources\Images\female.svg" />
 	  <MauiImage Remove="Resources\Images\fifteen - Cópia.svg" />
 	  <MauiImage Remove="Resources\Images\fifteen.svg" />
 	  <MauiImage Remove="Resources\Images\five - Cópia.svg" />
@@ -97,7 +93,6 @@
 	  <MauiImage Remove="Resources\Images\heart.svg" />
 	  <MauiImage Remove="Resources\Images\home - Cópia.svg" />
 	  <MauiImage Remove="Resources\Images\loading_green - Cópia.gif" />
-	  <MauiImage Remove="Resources\Images\male.svg" />
 	  <MauiImage Remove="Resources\Images\nine - Cópia.svg" />
 	  <MauiImage Remove="Resources\Images\nine.svg" />
 	  <MauiImage Remove="Resources\Images\nineteen - Cópia.svg" />
@@ -105,15 +100,11 @@
 	  <MauiImage Remove="Resources\Images\one - Cópia.svg" />
 	  <MauiImage Remove="Resources\Images\one.svg" />
 	  <MauiImage Remove="Resources\Images\pharmacy - Cópia.svg" />
-	  <MauiImage Remove="Resources\Images\pharmacy.svg" />
 	  <MauiImage Remove="Resources\Images\question_yellow - Cópia.svg" />
-	  <MauiImage Remove="Resources\Images\question_yellow.svg" />
 	  <MauiImage Remove="Resources\Images\race - Cópia.svg" />
-	  <MauiImage Remove="Resources\Images\race.svg" />
 	  <MauiImage Remove="Resources\Images\remove - Cópia.svg" />
 	  <MauiImage Remove="Resources\Images\remove.svg" />
 	  <MauiImage Remove="Resources\Images\remove_red - Cópia.svg" />
-	  <MauiImage Remove="Resources\Images\remove_red.svg" />
 	  <MauiImage Remove="Resources\Images\seven - Cópia.svg" />
 	  <MauiImage Remove="Resources\Images\seven.svg" />
 	  <MauiImage Remove="Resources\Images\seventeen - Cópia.svg" />
@@ -129,7 +120,6 @@
 	  <MauiImage Remove="Resources\Images\three - Cópia.svg" />
 	  <MauiImage Remove="Resources\Images\three.svg" />
 	  <MauiImage Remove="Resources\Images\trash - Cópia.svg" />
-	  <MauiImage Remove="Resources\Images\trash.svg" />
 	  <MauiImage Remove="Resources\Images\trashprimary - Cópia.svg" />
 	  <MauiImage Remove="Resources\Images\trashprimary.svg" />
 	  <MauiImage Remove="Resources\Images\twelve - Cópia.svg" />
@@ -153,7 +143,6 @@
 	  <MauiImage Remove="Resources\Images\two - Cópia.svg" />
 	  <MauiImage Remove="Resources\Images\two.svg" />
 	  <MauiImage Remove="Resources\Images\vaccine - Cópia.svg" />
-	  <MauiImage Remove="Resources\Images\vaccine.svg" />
 	  <MauiImage Remove="Resources\Images\zero - Cópia.svg" />
 	  <MauiImage Remove="Resources\Images\zero.svg" />
 	</ItemGroup>
@@ -161,8 +150,13 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\add_circle.svg" />
+	  <None Remove="Resources\Images\add_circle_green.svg" />
 	  <None Remove="Resources\Images\add_image.svg" />
 	  <None Remove="Resources\Images\add_image_circle.svg" />
+	  <None Remove="Resources\Images\back.svg" />
+	  <None Remove="Resources\Images\birthday.svg" />
+	  <None Remove="Resources\Images\breed.svg" />
+	  <None Remove="Resources\Images\breed_primary.svg" />
 	  <None Remove="Resources\Images\cao - Cópia.jpg" />
 	  <None Remove="Resources\Images\cao.jpg" />
 	  <None Remove="Resources\Images\catdefault.png" />
@@ -171,12 +165,22 @@
 	  <None Remove="Resources\Images\dogdefault.png" />
 	  <None Remove="Resources\Images\dogpets - Cópia.png" />
 	  <None Remove="Resources\Images\dogpets.png" />
+	  <None Remove="Resources\Images\edit_blue.svg" />
+	  <None Remove="Resources\Images\female.svg" />
+	  <None Remove="Resources\Images\home_primary.svg" />
 	  <None Remove="Resources\Images\image_vetor.svg" />
 	  <None Remove="Resources\Images\loading_green - Cópia.gif" />
 	  <None Remove="Resources\Images\loading_green.gif" />
+	  <None Remove="Resources\Images\male.svg" />
 	  <None Remove="Resources\Images\mousedefault.png" />
 	  <None Remove="Resources\Images\noimage.png" />
+	  <None Remove="Resources\Images\pharmacy.svg" />
+	  <None Remove="Resources\Images\question_yellow.svg" />
 	  <None Remove="Resources\Images\rabbitdefault.png" />
+	  <None Remove="Resources\Images\remove_red.svg" />
+	  <None Remove="Resources\Images\trash.svg" />
+	  <None Remove="Resources\Images\trash_red.svg" />
+	  <None Remove="Resources\Images\vaccine.svg" />
 	  <None Remove="Resources\Raw\check_json.json" />
 	  <None Remove="Resources\Raw\click_json.json" />
 	  <None Remove="Resources\Raw\error_json.json" />

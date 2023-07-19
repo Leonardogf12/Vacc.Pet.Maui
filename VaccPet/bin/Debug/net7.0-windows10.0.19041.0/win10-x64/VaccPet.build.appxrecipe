@@ -877,6 +877,21 @@
     <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle.scale-400.png">
       <PackagePath>add_circle.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle_green.scale-100.png">
+      <PackagePath>add_circle_green.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle_green.scale-125.png">
+      <PackagePath>add_circle_green.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle_green.scale-150.png">
+      <PackagePath>add_circle_green.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle_green.scale-200.png">
+      <PackagePath>add_circle_green.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle_green.scale-400.png">
+      <PackagePath>add_circle_green.scale-400.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_image.scale-100.png">
       <PackagePath>add_image.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -1045,6 +1060,66 @@
     <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\back.scale-100.png">
+      <PackagePath>back.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\back.scale-125.png">
+      <PackagePath>back.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\back.scale-150.png">
+      <PackagePath>back.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\back.scale-200.png">
+      <PackagePath>back.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\back.scale-400.png">
+      <PackagePath>back.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\birthday.scale-100.png">
+      <PackagePath>birthday.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\birthday.scale-125.png">
+      <PackagePath>birthday.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\birthday.scale-150.png">
+      <PackagePath>birthday.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\birthday.scale-200.png">
+      <PackagePath>birthday.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\birthday.scale-400.png">
+      <PackagePath>birthday.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\breed.scale-100.png">
+      <PackagePath>breed.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\breed.scale-125.png">
+      <PackagePath>breed.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\breed.scale-150.png">
+      <PackagePath>breed.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\breed.scale-200.png">
+      <PackagePath>breed.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\breed.scale-400.png">
+      <PackagePath>breed.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\breed_primary.scale-100.png">
+      <PackagePath>breed_primary.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\breed_primary.scale-125.png">
+      <PackagePath>breed_primary.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\breed_primary.scale-150.png">
+      <PackagePath>breed_primary.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\breed_primary.scale-200.png">
+      <PackagePath>breed_primary.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\breed_primary.scale-400.png">
+      <PackagePath>breed_primary.scale-400.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\cao.scale-100.jpg">
       <PackagePath>cao.scale-100.jpg</PackagePath>
     </AppxPackagedFile>
@@ -1075,6 +1150,36 @@
     <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_blue.scale-100.png">
+      <PackagePath>edit_blue.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_blue.scale-125.png">
+      <PackagePath>edit_blue.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_blue.scale-150.png">
+      <PackagePath>edit_blue.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_blue.scale-200.png">
+      <PackagePath>edit_blue.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_blue.scale-400.png">
+      <PackagePath>edit_blue.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\female.scale-100.png">
+      <PackagePath>female.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\female.scale-125.png">
+      <PackagePath>female.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\female.scale-150.png">
+      <PackagePath>female.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\female.scale-200.png">
+      <PackagePath>female.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\female.scale-400.png">
+      <PackagePath>female.scale-400.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-100.png">
       <PackagePath>home.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -1089,6 +1194,21 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-400.png">
       <PackagePath>home.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\home_primary.scale-100.png">
+      <PackagePath>home_primary.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\home_primary.scale-125.png">
+      <PackagePath>home_primary.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\home_primary.scale-150.png">
+      <PackagePath>home_primary.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\home_primary.scale-200.png">
+      <PackagePath>home_primary.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\home_primary.scale-400.png">
+      <PackagePath>home_primary.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\image_vetor.scale-100.png">
       <PackagePath>image_vetor.scale-100.png</PackagePath>
@@ -1108,11 +1228,116 @@
     <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loading_green.scale-100.gif">
       <PackagePath>loading_green.scale-100.gif</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\male.scale-100.png">
+      <PackagePath>male.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\male.scale-125.png">
+      <PackagePath>male.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\male.scale-150.png">
+      <PackagePath>male.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\male.scale-200.png">
+      <PackagePath>male.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\male.scale-400.png">
+      <PackagePath>male.scale-400.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\mousedefault.scale-100.png">
       <PackagePath>mousedefault.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\pharmacy.scale-100.png">
+      <PackagePath>pharmacy.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\pharmacy.scale-125.png">
+      <PackagePath>pharmacy.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\pharmacy.scale-150.png">
+      <PackagePath>pharmacy.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\pharmacy.scale-200.png">
+      <PackagePath>pharmacy.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\pharmacy.scale-400.png">
+      <PackagePath>pharmacy.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\question_yellow.scale-100.png">
+      <PackagePath>question_yellow.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\question_yellow.scale-125.png">
+      <PackagePath>question_yellow.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\question_yellow.scale-150.png">
+      <PackagePath>question_yellow.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\question_yellow.scale-200.png">
+      <PackagePath>question_yellow.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\question_yellow.scale-400.png">
+      <PackagePath>question_yellow.scale-400.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\rabbitdefault.scale-100.png">
       <PackagePath>rabbitdefault.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\remove_red.scale-100.png">
+      <PackagePath>remove_red.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\remove_red.scale-125.png">
+      <PackagePath>remove_red.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\remove_red.scale-150.png">
+      <PackagePath>remove_red.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\remove_red.scale-200.png">
+      <PackagePath>remove_red.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\remove_red.scale-400.png">
+      <PackagePath>remove_red.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash.scale-100.png">
+      <PackagePath>trash.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash.scale-125.png">
+      <PackagePath>trash.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash.scale-150.png">
+      <PackagePath>trash.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash.scale-200.png">
+      <PackagePath>trash.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash.scale-400.png">
+      <PackagePath>trash.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash_red.scale-100.png">
+      <PackagePath>trash_red.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash_red.scale-125.png">
+      <PackagePath>trash_red.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash_red.scale-150.png">
+      <PackagePath>trash_red.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash_red.scale-200.png">
+      <PackagePath>trash_red.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash_red.scale-400.png">
+      <PackagePath>trash_red.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\vaccine.scale-100.png">
+      <PackagePath>vaccine.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\vaccine.scale-125.png">
+      <PackagePath>vaccine.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\vaccine.scale-150.png">
+      <PackagePath>vaccine.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\vaccine.scale-200.png">
+      <PackagePath>vaccine.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\vaccine.scale-400.png">
+      <PackagePath>vaccine.scale-400.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
