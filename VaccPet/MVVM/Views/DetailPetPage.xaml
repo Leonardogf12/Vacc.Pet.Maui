@@ -37,12 +37,13 @@
             </Image.GestureRecognizers>
         </Image>
 
-        <Frame Grid.Row="1" 
-               CornerRadius="80" 
-               BorderColor="Transparent" 
-               BackgroundColor="{StaticResource SecondaryFrame}" 
-               Margin="-10,-50,-10,0">
-            
+        <Border Grid.Row="1"              
+                BackgroundColor="{StaticResource SecondaryFrame}"                                 
+                StrokeThickness="0">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="0,60,0,0"/>
+            </Border.StrokeShape>
+
             <Grid RowSpacing="10">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="60"/>
@@ -69,7 +70,7 @@
                         Text="{Binding DetailPetSelected.Observation}" 
                         IsEnabled="False"
                         FontSize="Small" 
-                        Margin="10,0,10,0" 
+                        Margin="15,0,10,10" 
                         TextColor="{StaticResource Gray100}"/>
 
                 <!--3 Small Frames-->
@@ -98,9 +99,9 @@
                 </HorizontalStackLayout>
 
                 <!--Medium Frame-->
-                <StackLayout Grid.Row="3" Grid.ColumnSpan="2">
+                <StackLayout Grid.Row="3" Grid.ColumnSpan="2" Margin="15">
                     <Frame  HeightRequest="120" 
-                            HorizontalOptions="Fill" 
+                            HorizontalOptions="Fill"                           
                             CornerRadius="25" 
                             BackgroundColor="{StaticResource Tertiary}" 
                             BorderColor="Transparent">
@@ -126,7 +127,8 @@
                 </StackLayout>-->
 
             </Grid>
-        </Frame>
+        </Border>
+        <!--</Frame>-->
     </Grid>
 
 </ContentPage>

@@ -1,7 +1,11 @@
 ﻿namespace VaccPet.Helpers.Buttons
 {
+    /// <summary>
+    /// this is an animation class for common buttons, its function 
+    /// is to change the scale of the button.
+    /// </summary>  
     public class ButtonAnimationHelper
-    {
+    {              
         public static void AddButtonAnimation(Button button)
         {
             button.Pressed += OnButtonPressed;

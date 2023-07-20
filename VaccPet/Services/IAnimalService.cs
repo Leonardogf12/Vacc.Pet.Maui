@@ -9,6 +9,6 @@ namespace VaccPet.Services
 {
     public interface IAnimalService
     {
-        List<Animal> GetBreedsByAnimal(string animalSelected);
+        List<AnimalHelper> GetBreedsByAnimal(string animalSelected);
     }
 }

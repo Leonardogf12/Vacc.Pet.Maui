@@ -69,14 +69,14 @@ public static class MauiProgram
         builder.Services.AddSingleton<IImageContainerHelper, ImageContainerHelper>();
 
 
-        //*IF NECESSÁRIO PARA CORRIGIR BUG DA IMAGEM, PAGINAÇÃO TRAVANDO DEVIDO AO Converter={StaticResource ByteArrayToImageSourceConverter} em ListPetPage
+        //*IF NECESSÁRIO PARA CORRIGIR BUG DA IMAGEM, PAGINAÇÃO TRAVANDO DEVIDO AO Converter={StaticResource ByteArrayToImageSourceConverter} em ListPetPage e demais paginas
 #if __ANDROID__
         ImageHandler.Mapper.PrependToMapping(nameof(Microsoft.Maui.IImage.Source), (handler, view) => PrependToMappingImageSource(handler, view));
 #endif
         return builder.Build();
 	}
 
-    //*IF NECESSÁRIO PARA CORRIGIR BUG DA IMAGEM, PAGINAÇÃO TRAVANDO DEVIDO AO Converter={StaticResource ByteArrayToImageSourceConverter} em ListPetPage
+    //*IF NECESSÁRIO PARA CORRIGIR BUG DA IMAGEM, PAGINAÇÃO TRAVANDO DEVIDO AO Converter={StaticResource ByteArrayToImageSourceConverter} em ListPetPage e demais paginas
 #if __ANDROID__
     public static void PrependToMappingImageSource(IImageHandler handler, Microsoft.Maui.IImage image)
     {

@@ -9,9 +9,9 @@ namespace VaccPet.Services
 {
     public class AnimalService : IAnimalService
     {
-        public Animal _animal { get; }
+        public AnimalHelper _animal { get; } = new AnimalHelper();
 
-        public List<Animal> GetBreedsByAnimal(string animalSelected)
+        public List<AnimalHelper> GetBreedsByAnimal(string animalSelected)
         {
             if (animalSelected == "Cachorro")
             {
@@ -27,7 +27,7 @@ namespace VaccPet.Services
             }
             else
             {
-                return new List<Animal> { new Animal { Key = 1000, Value = "Não Definida" } };
+                return new List<AnimalHelper> { new AnimalHelper { Key = 1000, Value = "Não Definida" } };
             }
         }
     }

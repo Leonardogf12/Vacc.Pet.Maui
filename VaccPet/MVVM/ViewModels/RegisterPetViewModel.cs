@@ -18,8 +18,8 @@ namespace VaccPet.MVVM.ViewModels
 
         private readonly IImageContainerHelper _ImageContainerHelper;
 
-        public Animal AnimalHelper { get; set; } = new Animal();
-        
+        public AnimalHelper _animalHelper { get; set; } = new AnimalHelper();
+
         #endregion
 
         #region COMMANDS
@@ -110,43 +110,47 @@ namespace VaccPet.MVVM.ViewModels
 
                 return isCatrated;
             }
-
-            //
-            set => SetProperty(ref isCatrated, value);
+       
+            set => SetProperty(ref this.isCatrated, value);
         }
 
-        Animal animalSelected;
-        public Animal AnimalSelected
+        AnimalHelper animalSelected;
+        public AnimalHelper AnimalSelected
         {
             get => animalSelected;
             set
             {
                 SetProperty(ref animalSelected, value);
-                GetBreedsByAnimal();
+
+                if (animalSelected != null)
+                    BreedsList = _IAnimalService.GetBreedsByAnimal(AnimalSelected.Value);
+                else
+                    App.Current.MainPage.DisplayAlert("Erro", $"Não foi possível carregar a lista " +
+                        $"de raças de {AnimalSelected.Value}. Favor tentar novamente.", "Ok");
             }
         }
 
-        Animal breedSelected;
-        public Animal BreedSelected
+        AnimalHelper breedSelected;
+        public AnimalHelper BreedSelected
         {
             get => breedSelected;
             set => SetProperty(ref breedSelected, value);
         }
 
-        List<Animal> animalsList;
-        public List<Animal> AnimalsList
+        List<AnimalHelper> animalsList;
+        public List<AnimalHelper> AnimalsList
         {
             get => animalsList;
             set => SetProperty(ref animalsList, value);
         }
 
-        List<Animal> breedsList;
-        public List<Animal> BreedsList
+        List<AnimalHelper> breedsList;
+        public List<AnimalHelper> BreedsList
         {
             get => breedsList;
-            set => SetProperty(ref breedsList, value);            
+            set => SetProperty(ref breedsList, value);
         }
-               
+
         string _imagePath;
         public string ImagePath
         {
@@ -177,21 +181,19 @@ namespace VaccPet.MVVM.ViewModels
 
         #endregion
 
-        public RegisterPetViewModel(IPetService IPetService, 
+        public RegisterPetViewModel(IPetService IPetService,
                                     IAnimalService IAnimalService,
                                     IImageContainerHelper ImageContainerHelper)
-        {           
+        {
             _IPetService = IPetService;
             _IAnimalService = IAnimalService;
             _ImageContainerHelper = ImageContainerHelper;
-            
-            AnimalsList = AnimalHelper.GetAllAnimals();
+
+            AnimalsList = _animalHelper.GetAllAnimals();
             ClearFields = new Command(OnClearFields);
-            GetImageFromGalleryCommand = new Command(OnGetImageFromGalleryCommand);
+            GetImageFromGalleryCommand = new Command(async () => await OnGetImageFromGalleryCommand());
             AddPetCommand = new Command(OnAddPetCommand);
         }
-
-        
 
         #region METHODS
         private async void OnAddPetCommand()
@@ -224,54 +226,26 @@ namespace VaccPet.MVVM.ViewModels
             }
         }
 
-        public async void OnGetImageFromGalleryCommand()
+        public async Task OnGetImageFromGalleryCommand()
         {
-            try
-            {
-                var result = await MediaPicker.PickPhotoAsync();
+            var result = await ImageMediaPicker.GetImageFromGallery();
 
-                if (result != null)
-                {
-                    ImagePath = result.FullPath;
-                    ImageVector = false;
-                }
-                else
-                {
-                    ImageVector = true;
-                }
-            }
-            catch (Exception ex)
+            if (result != null)
             {
-                throw;
-            }
-        }
-     
-
-        private void GetBreedsByAnimal()
-        {
-            if (AnimalSelected.Value == "Cachorro")
-            {
-                BreedsList = AnimalHelper.GetBreedDogs();
-            }
-            else if (AnimalSelected.Value == "Gato")
-            {
-                BreedsList = AnimalHelper.GetBreedCats();
-            }
-            else if (AnimalSelected.Value == "Ave")
-            {
-                BreedsList = AnimalHelper.GetBreedBirds();
+                ImagePath = result;
+                ImageVector = false;
             }
             else
             {
-                BreedsList = new List<Animal> { new Animal { Key = 1000, Value = "Não Definida" } };
+                ImageVector = true;
             }
-        }
+        }       
 
         public void OnClearFields()
         {
             Name = string.Empty;
-            AnimalSelected = new Animal();
-            BreedSelected = new Animal();
+            AnimalSelected = new AnimalHelper();
+            BreedSelected = new AnimalHelper();
             Color = string.Empty;
             Weight = 0;
             BirthDate = DateTime.Now;

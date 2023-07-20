@@ -4,6 +4,18 @@
         <name>VaccPet</name>
     </assembly>
     <members>
+        <member name="T:VaccPet.Helpers.Buttons.ButtonAnimationHelper">
+            <summary>
+            this is an animation class for common buttons, its function 
+            is to change the scale of the button.
+            </summary>  
+        </member>
+        <member name="T:VaccPet.Helpers.Buttons.ImageButtonAnimationHelper">
+            <summary>
+            this is an animation class for buttons with Icons, its function is to
+            change the scale of the button and changed old icon for a new icon.
+            </summary>
+        </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
             <summary>
             Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
