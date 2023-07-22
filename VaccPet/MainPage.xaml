@@ -2,18 +2,39 @@
 <Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:views="clr-namespace:VaccPet.MVVM.Views"
+             xmlns:shellCustom="clr-namespace:VaccPet.MVVM.Views.Components"
              x:Class="VaccPet.MainPage"
              Shell.TabBarIsVisible="False"
-             Shell.NavBarHasShadow="False"
-             BackgroundColor="{StaticResource Primary}"
-             FlyoutBackgroundColor="{StaticResource White}"   
-             Shell.ForegroundColor="White"
-             Shell.TitleColor="White">
+             Shell.NavBarHasShadow="False"                        
+             FlyoutBackgroundColor="{StaticResource SecondaryFrame}"   
+             Shell.ForegroundColor="White">
 
-    <ShellContent Title="Home"
+    <!--<Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid ColumnDefinitions="0.2*,0.8*">
+                <Image Source="{Binding FlyoutIcon}"
+                       Margin="5"
+                       HeightRequest="45" />
+                <Label Grid.Column="1"
+                       Text="{Binding Title}"
+                       TextColor="{Binding TextColor}"
+                       FontAttributes="Italic"
+                       VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>-->
+
+
+    <!--<shellCustom:ShellCustom TextColor="Red"
+                             Icon="home_primary"      
+                             Title="Home"
+                             Route="VaccPet.MVVM.Views.HomePage"
+                             ContentTemplate="{DataTemplate views:HomePage}"/>-->      
+
+    <ShellContent Title="Home"                    
                   Shell.BackgroundColor="{StaticResource Primary}"                     
-                  Shell.ForegroundColor="White"    
-                  Shell.TitleColor="{StaticResource Secondary}"
+                  Shell.ForegroundColor="White"                  
+                  Shell.TitleColor="{StaticResource Secondary}"                                                                                 
                   Icon="home_primary"                   
                   Route="VaccPet.MVVM.Views.HomePage"
                   Shell.TabBarIsVisible="False"

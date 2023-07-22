@@ -43,8 +43,7 @@
 
     <StackLayout Spacing="10">
 
-        <Grid >
-            
+        <Grid>
             <Border Style="{StaticResource sbCustomBorder}">
                 <SearchBar Text="{Binding TextSearch}" Style="{StaticResource sbCustom}"/>
             </Border>
@@ -63,7 +62,7 @@
                                 <Frame.Background>
                                     <LinearGradientBrush EndPoint="1,0">
                                         <GradientStop Color="{StaticResource Tertiary}" Offset="1.2" />
-                                        <GradientStop Color="{StaticResource Tertiary}" Offset="1.8"/>
+                                        <GradientStop Color="{StaticResource PrimaryFrame}" Offset="1.8"/>
                                     </LinearGradientBrush>
                                 </Frame.Background>
                               

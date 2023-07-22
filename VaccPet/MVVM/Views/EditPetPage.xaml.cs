@@ -25,6 +25,8 @@ public partial class EditPetPage : ContentPage
         vm.ImagePath = string.Empty;
         vm.ImageVector = true;
 
+       vm.OnSetDetailsPetCommand();
+
         base.OnAppearing();
     }
 }

@@ -21,9 +21,10 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
+
         <!--Image Master-->
-        <Image Grid.Row="0" Source="{Binding DetailPetSelected.ImageData, 
-               Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill"/>
+        <Image Grid.Row="0" Grid.RowSpan="1" BackgroundColor="{StaticResource SecondaryFrame}" Source="{Binding DetailPetSelected.ImageData, 
+               Converter={StaticResource ByteArrayToImageSourceConverter}}" Aspect="AspectFill" HeightRequest="500"/>
 
         <!--btn GoBack-->
         <Image Source="back" 
@@ -31,24 +32,23 @@
                Margin="25" 
                HorizontalOptions="Start" 
                VerticalOptions="Start">
-            
+
             <Image.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
             </Image.GestureRecognizers>
         </Image>
 
-        <Border Grid.Row="1"              
-                BackgroundColor="{StaticResource SecondaryFrame}"                                 
-                StrokeThickness="0">
+        <Border Grid.Row="2"              
+                BackgroundColor="{StaticResource SecondaryFrame}" StrokeThickness="0">
             <Border.StrokeShape>
-                <RoundRectangle CornerRadius="0,60,0,0"/>
+                <RoundRectangle CornerRadius="0,60,0,0" StrokeThickness="0"/>
             </Border.StrokeShape>
 
-            <Grid RowSpacing="10">
+            <Grid RowSpacing="5">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="60"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="130"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="120"/>
                     <RowDefinition Height="120"/>
                     <RowDefinition Height="60"/>
                 </Grid.RowDefinitions>
@@ -58,13 +58,14 @@
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
 
+              
                 <Label Grid.Row="0" Grid.Column="0" 
                        Text="{Binding DetailPetSelected.Name}" 
                        FontSize="Medium" 
-                       Margin="10" 
+                       Margin="10,20,0,0" 
                        Padding="5" 
                        TextColor="{StaticResource Secondary}"/>
-                
+
                 <Label  Grid.Row="1" Grid.Column="0" 
                         HorizontalTextAlignment="Start"
                         Text="{Binding DetailPetSelected.Observation}" 
@@ -74,26 +75,26 @@
                         TextColor="{StaticResource Gray100}"/>
 
                 <!--3 Small Frames-->
-                <HorizontalStackLayout Grid.Row="2" Grid.ColumnSpan="2" Spacing="15" HorizontalOptions="Center">
+                <HorizontalStackLayout Grid.Row="2" Grid.ColumnSpan="2" Spacing="10" HorizontalOptions="Center">
                     <Frame Style="{StaticResource frDetailPetPage}">
-                        <StackLayout Spacing="5" HorizontalOptions="Center">
-                            <Image Source="birthday" HeightRequest="25"/>
+                        <StackLayout Spacing="10" HorizontalOptions="Center">
+                            <Image Source="birthday" HeightRequest="20"/>
                             <Label Text="Idade" Style="{StaticResource lblfrDetailPetPage}"/>
                             <Label Text="{Binding DetailPetSelected.Age}" TextColor="{StaticResource White}" Style="{StaticResource lblfrDetailPetPage}"/>
                         </StackLayout>
                     </Frame>
                     <Frame Style="{StaticResource frDetailPetPage}">
-                        <StackLayout Spacing="5" HorizontalOptions="Center">
-                            <Image Source="{Binding SexIcon}" HeightRequest="25"/>
+                        <StackLayout Spacing="10" HorizontalOptions="Center">
+                            <Image Source="{Binding SexIcon}" HeightRequest="20"/>
                             <Label Text="Sexo" Style="{StaticResource lblfrDetailPetPage}"/>
-                            <Label Text="{Binding DetailPetSelected.Sex}" TextColor="{StaticResource White}" Style="{StaticResource lblfrDetailPetPage}"/>
+                            <Label Text="{Binding SexName}" TextColor="{StaticResource White}" Style="{StaticResource lblfrDetailPetPage}"/>
                         </StackLayout>
                     </Frame>
                     <Frame Style="{StaticResource frDetailPetPage}">
-                        <StackLayout Spacing="5" HorizontalOptions="Center" >
-                            <Image Source="breed" HeightRequest="23"/>
-                            <Label Text="Raça" Style="{StaticResource lblfrDetailPetPage}"/>
-                            <Label Text="{Binding DetailPetSelected.Breed}" TextColor="{StaticResource White}" Style="{StaticResource lblfrDetailPetPage}"/>
+                        <StackLayout Spacing="10" HorizontalOptions="Center" >
+                            <Image Source="breed" HeightRequest="20"/>
+                            <Label Text="Espécie" Style="{StaticResource lblfrDetailPetPage}"/>
+                            <Label Text="{Binding DetailPetSelected.Animal}" TextColor="{StaticResource White}" Style="{StaticResource lblfrDetailPetPage}"/>
                         </StackLayout>
                     </Frame>
                 </HorizontalStackLayout>
@@ -105,7 +106,7 @@
                             CornerRadius="25" 
                             BackgroundColor="{StaticResource Tertiary}" 
                             BorderColor="Transparent">
-                        
+
                         <StackLayout Orientation="Vertical" Spacing="10" VerticalOptions="Center">
                             <HorizontalStackLayout Spacing="15" >
                                 <Image Source="vaccine" HeightRequest="20"/>
@@ -120,15 +121,10 @@
                         </StackLayout>
                     </Frame>
                 </StackLayout>
-
-                <!--btn Edit-->
-                <!--<StackLayout Grid.Row="4" Grid.ColumnSpan="2">
-                    <Button Text="Editar" FontSize="Medium" CornerRadius="15" Command="{Binding EditPetDetailCommand}"/>
-                </StackLayout>-->
-
+                
             </Grid>
         </Border>
-        <!--</Frame>-->
+      
     </Grid>
 
 </ContentPage>

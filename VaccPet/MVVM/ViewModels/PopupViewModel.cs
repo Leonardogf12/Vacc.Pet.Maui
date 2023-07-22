@@ -14,12 +14,14 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref firstButton, value);
         }
 
+
         string secondButton;
         public string SecondButton
         {
             get => secondButton;
             set => SetProperty(ref secondButton, value);
         }
+
 
         string tertiaryButton;
         public string TertiaryButton
@@ -28,12 +30,14 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref tertiaryButton, value);
         }
 
+
         ICommand firstCommand;
         public ICommand FirstCommand
         {
             get => firstCommand;
             set => SetProperty(ref firstCommand, value);
         }
+
 
         ICommand secondCommand;
         public ICommand SecondCommand
@@ -42,6 +46,7 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref secondCommand, value);
         }
 
+
         ICommand tertiaryCommand;
         public ICommand TertiaryCommand
         {
@@ -49,12 +54,14 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref tertiaryCommand, value);
         }
 
+
         object obj;
         public object Obj
         {
             get => obj;
             set => SetProperty(ref obj, value);
         }
+
 
         string message;
         public string Message

@@ -21,16 +21,7 @@ namespace VaccPet.MVVM.ViewModels
         public AnimalHelper _animalHelper { get; set; } = new AnimalHelper();
 
         #endregion
-
-        #region COMMANDS
-        public ICommand GetImageFromGalleryCommand { get; set; }
-
-        public ICommand AddPetCommand { get; set; }
-
-        public ICommand ClearFields { get; set; }
-
-        #endregion
-
+        
         #region PROPS
 
         string name = "";
@@ -40,12 +31,14 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref this.name, value);
         }
 
+
         string color;
         public string Color
         {
             get => color;
             set => SetProperty(ref this.color, value);
         }
+
 
         DateTime birthDate;
         public DateTime BirthDate
@@ -54,12 +47,14 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref this.birthDate, value);
         }
 
+
         double weight = 0;
         public double Weight
         {
             get => weight;
             set => SetProperty(ref this.weight, value);
         }
+
 
         string observation;
         public string Observation
@@ -68,67 +63,31 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref this.observation, value);
         }
 
-        bool isCheckedF;
-        public bool IsCheckedF
-        {
-            get
-            {
-                if (isCheckedF)
-                {
-                    IsCheckedM = false;
-                }
-
-                return isCheckedF;
-            }
-            set => SetProperty(ref isCheckedF, value);
-        }
-
-        bool isCheckedM;
-        public bool IsCheckedM
-        {
-            get
-            {
-                if (isCheckedM)
-                {
-                    IsCheckedF = false;
-                }
-
-                return isCheckedM;
-            }
-            set => SetProperty(ref isCheckedM, value);
-        }
-
+       
         bool isCatrated;
         public bool IsCatrated
         {
             get
             {
                 if (isCatrated)
-                    IsCastratedConfirm = "Sim";
+                    IsCastratedText = "Sim";
                 else
-                    IsCastratedConfirm = "Não";
+                    IsCastratedText = "Não";
 
                 return isCatrated;
             }
-       
+
             set => SetProperty(ref this.isCatrated, value);
         }
+
 
         AnimalHelper animalSelected;
         public AnimalHelper AnimalSelected
         {
             get => animalSelected;
-            set
-            {
-                SetProperty(ref animalSelected, value);
-
-                if (animalSelected != null)
-                    BreedsList = _IAnimalService.GetBreedsByAnimal(AnimalSelected.Value);
-                else
-                    App.Current.MainPage.DisplayAlert("Erro", $"Não foi possível carregar a lista " +
-                        $"de raças de {AnimalSelected.Value}. Favor tentar novamente.", "Ok");
-            }
+            set => SetProperty(ref animalSelected, value);            
         }
+
 
         AnimalHelper breedSelected;
         public AnimalHelper BreedSelected
@@ -137,12 +96,14 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref breedSelected, value);
         }
 
+
         List<AnimalHelper> animalsList;
         public List<AnimalHelper> AnimalsList
         {
             get => animalsList;
             set => SetProperty(ref animalsList, value);
         }
+
 
         List<AnimalHelper> breedsList;
         public List<AnimalHelper> BreedsList
@@ -151,6 +112,7 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref breedsList, value);
         }
 
+
         string _imagePath;
         public string ImagePath
         {
@@ -158,19 +120,48 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref _imagePath, value);
         }
 
-        string isCastratedConfirm = "Não";
-        public string IsCastratedConfirm
+
+        string isCastratedText = "Não";
+        public string IsCastratedText
         {
-            get => isCastratedConfirm;
-            set => SetProperty(ref isCastratedConfirm, value);
+            get => isCastratedText;
+            set => SetProperty(ref isCastratedText, value);
         }
+
+
+        string isSexText = "Fêmea";
+        public string IsSexText
+        {
+            get => isSexText;
+            set => SetProperty(ref isSexText, value);
+
+        }
+
 
         bool isToggledSex = false;
         public bool IsToggledSex
         {
             get => isToggledSex;
-            set => SetProperty(ref isToggledSex, value);
+            set
+            {
+                SetProperty(ref isToggledSex, value);
+                IsSexText = IsToggledSex ? "Macho" : "Fêmea";
+            }
         }
+
+
+        bool isToggledCatrated = false;
+        public bool IsToggledCatrated
+        {
+            get => isToggledCatrated;
+            set
+            {
+                SetProperty(ref isToggledCatrated, value);
+
+                IsCastratedText = IsToggledCatrated ? "Sim" : "Não";
+            }
+        }
+
 
         bool imageVector;
         public bool ImageVector
@@ -178,6 +169,15 @@ namespace VaccPet.MVVM.ViewModels
             get => imageVector;
             set => SetProperty(ref imageVector, value);
         }
+
+        #endregion
+
+        #region COMMANDS
+        public ICommand GetImageFromGalleryCommand { get; set; }
+
+        public ICommand AddPetCommand { get; set; }
+
+        public ICommand ClearFields { get; set; }
 
         #endregion
 
@@ -189,12 +189,14 @@ namespace VaccPet.MVVM.ViewModels
             _IAnimalService = IAnimalService;
             _ImageContainerHelper = ImageContainerHelper;
 
+            ImagePath = "image_vetor.svg";
             AnimalsList = _animalHelper.GetAllAnimals();
             ClearFields = new Command(OnClearFields);
-            GetImageFromGalleryCommand = new Command(async () => await OnGetImageFromGalleryCommand());
-            AddPetCommand = new Command(OnAddPetCommand);
-        }
 
+            GetImageFromGalleryCommand = new Command(async () => await OnGetImageFromGalleryCommand());
+            AddPetCommand = new Command(OnAddPetCommand);          
+        }
+        
         #region METHODS
         private async void OnAddPetCommand()
         {
@@ -202,15 +204,16 @@ namespace VaccPet.MVVM.ViewModels
 
             pet.Name = Name;
             pet.Animal = AnimalSelected.Value;
-            pet.ImageData = ImagePath == null ? await _ImageContainerHelper.GetImageDefault(AnimalSelected.Value) : await _ImageContainerHelper.ReadImageBytes(ImagePath);
+            pet.ImageData = ImagePath == "image_vetor.svg" ?
+                            await _ImageContainerHelper.GetImageDefault(AnimalSelected.Value) :
+                            await _ImageContainerHelper.ReadImageBytes(ImagePath);
             pet.BirthDate = BirthDate;
             pet.Color = Color;
             pet.Observation = Observation;
             pet.Sex = IsToggledSex == true ? "M" : "F";
-            pet.Catrated = IsCatrated;
+            pet.Catrated = IsToggledSex;
             pet.Weight = Weight;
-            pet.Age = 0;
-            pet.Breed = BreedSelected.Value;
+            pet.Age = 0;            
 
             var result = await _IPetService.AddPet(pet);
 
@@ -239,8 +242,8 @@ namespace VaccPet.MVVM.ViewModels
             {
                 ImageVector = true;
             }
-        }       
-
+        }
+      
         public void OnClearFields()
         {
             Name = string.Empty;
@@ -250,10 +253,11 @@ namespace VaccPet.MVVM.ViewModels
             Weight = 0;
             BirthDate = DateTime.Now;
             IsToggledSex = false;
-            IsCastratedConfirm = "Não";
+            IsCastratedText = "Não";
             Observation = string.Empty;
         }
 
         #endregion
     }
+
 }

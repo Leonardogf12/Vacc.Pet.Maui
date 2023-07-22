@@ -43,6 +43,7 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref imageData, value);
         }
 
+
         string textSearch;
         public string TextSearch
         {
@@ -58,6 +59,7 @@ namespace VaccPet.MVVM.ViewModels
                     SearchEmptyCommand.Execute(null);
             }
         }
+
 
         #endregion
 

@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
+using Microsoft.Maui.Controls.PlatformConfiguration;
 using Microsoft.Maui.Handlers;
 using Microsoft.Maui.Platform;
 using Mopups.Hosting;
@@ -19,7 +20,7 @@ namespace VaccPet;
 public static class MauiProgram
 {
 	public static MauiApp CreateMauiApp()
-	{        
+	{     
         var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
@@ -30,7 +31,10 @@ public static class MauiProgram
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			});
+                fonts.AddFont("Montserrat-Regular.ttf", "MontserratRegular");
+                fonts.AddFont("Montserrat-Bold.ttf", "MontserratBold");
+                fonts.AddFont("Montserrat-SemiBold.ttf", "MontserratSemiBold");
+            });
 
 
 
@@ -68,6 +72,13 @@ public static class MauiProgram
         builder.Services.AddSingleton<IAnimalService, AnimalService>();
         builder.Services.AddSingleton<IImageContainerHelper, ImageContainerHelper>();
 
+
+//        Microsoft.Maui.Handlers.EntryHandler.Mapper.AppendToMapping(nameof(Entry), (handler, view) =>
+//        {
+//#if ANDROID
+//            handler.PlatformView.SetBackgroundColor(Android.Graphics.Color.Transparent);
+//#endif
+//        });
 
         //*IF NECESSÁRIO PARA CORRIGIR BUG DA IMAGEM, PAGINAÇÃO TRAVANDO DEVIDO AO Converter={StaticResource ByteArrayToImageSourceConverter} em ListPetPage e demais paginas
 #if __ANDROID__

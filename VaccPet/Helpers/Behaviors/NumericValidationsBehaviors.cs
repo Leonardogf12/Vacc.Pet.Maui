@@ -55,7 +55,7 @@ namespace VaccPet.Helpers.Behaviors
             bool isValid = ValidateDoubleValueText(entry.Text);
             ValidateFields = isValid;
 
-            entry.TextColor = isValid ? Color.FromHex("#CED9FC") : Colors.IndianRed;
+            entry.TextColor = isValid ? Color.FromHex("#181C2C") : Colors.IndianRed;
         }
 
         #endregion

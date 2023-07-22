@@ -4,8 +4,10 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:converters="clr-namespace:VaccPet.Helpers.Converters"
              xmlns:local="clr-namespace:VaccPet.Helpers.Behaviors"      
-             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"            
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"       
+             xmlns:vm="clr-namespace:VaccPet.MVVM.ViewModels"
              x:Class="VaccPet.MVVM.Views.EditPetPage"
+             x:DataType="vm:EditPetViewModel"
              BackgroundColor="{StaticResource Primary}"
              Title="Editar">
 
@@ -34,7 +36,7 @@
 
             <!-- Photo -->
             <StackLayout Grid.Row="0" Grid.ColumnSpan="2">
-              
+
                 <Border HeightRequest="100" 
                         Padding="1"                        
                         BackgroundColor="{StaticResource Tertiary}"                       
@@ -42,24 +44,18 @@
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="100"/>
                     </Border.StrokeShape>
-                    <StackLayout>
-                        <Image Source="image_vetor.svg" HeightRequest="35" Margin="30" IsVisible="{Binding ImageVector}"/>
-                        <Image Source="{Binding ImagePath}"                        
-                           WidthRequest="200" 
-                           HeightRequest="200" 
-                           Aspect="AspectFit">
 
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding GetImageFromGalleryCommand}"/>
-                            </Image.GestureRecognizers>
-                        </Image>
-                       
+                    <StackLayout>
+                        <Image Source="{Binding ImagePath}"
+                                   WidthRequest="100" 
+                                   HeightRequest="100" 
+                                   Aspect="AspectFill"/>
                     </StackLayout>
+
                     <Border.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding GetImageFromGalleryCommand}"/>
                     </Border.GestureRecognizers>
                 </Border>
-                <!--<Image Source="add_image_circle.svg" HeightRequest="20" Margin="80,-10,0,0"  />-->
             </StackLayout>
 
             <!-- Name -->
@@ -79,7 +75,7 @@
             </StackLayout>
 
             <!-- Animals -->
-            <StackLayout Grid.Row="2" Grid.Column="0">
+            <StackLayout Grid.Row="2" Grid.ColumnSpan="2">
                 <Label Text="Animal" Style="{StaticResource lblRegisterPetPage}"/>
                 <Border Style="{StaticResource brdRegisterPetPage}">
                     <Picker x:Name="pickerAnimal"
@@ -88,8 +84,8 @@
                             TitleColor="{StaticResource Gray400}" 
                             ItemsSource="{Binding AnimalsList}"
                             ItemDisplayBinding="{Binding Value}"
-                            SelectedItem="{Binding PetSelectedForEdit.Animal}" 
-                            TextColor="{StaticResource Quinary}" 
+                            SelectedItem="{Binding AnimalSelected}" 
+                            TextColor="{StaticResource Primary}" 
                             FontSize="Medium">
                         <Picker.Behaviors>
                             <local:GeralValidationsBehaviors x:TypeArguments="Picker" x:Name="animalBehaviorValidator"/>
@@ -100,7 +96,7 @@
             </StackLayout>
 
             <!--Breeds-->
-            <StackLayout Grid.Row="2" Grid.Column="1">
+            <!--<StackLayout Grid.Row="2" Grid.Column="1">
                 <Label Text="Raça" Style="{StaticResource lblRegisterPetPage}"/>
                 <Border Style="{StaticResource brdRegisterPetPage}">
                     <Picker x:Name="pickerRace"
@@ -109,8 +105,8 @@
                             TitleColor="{StaticResource Gray400}" 
                             ItemsSource="{Binding BreedsList}"
                             ItemDisplayBinding="{Binding Value}"
-                            SelectedItem="{Binding PetSelectedForEdit.Breed}" 
-                            TextColor="{StaticResource Quinary}" 
+                            SelectedItem="{Binding BreedSelected}" 
+                            TextColor="{StaticResource Primary}" 
                             FontSize="Medium">
 
                         <Picker.Behaviors>
@@ -120,7 +116,7 @@
                     </Picker>
                 </Border>
 
-            </StackLayout>
+            </StackLayout>-->
 
             <!-- Color -->
             <StackLayout Grid.Row="3" Grid.ColumnSpan="2"  Orientation="Vertical">
@@ -175,20 +171,32 @@
             <!-- Sex -->
             <StackLayout Grid.Row="5" Grid.Column="0">
                 <Label Text="Sexo" Style="{StaticResource lblRegisterPetPage}"/>
-                <StackLayout Orientation="Horizontal" Spacing="20">
+                <Border BackgroundColor="#2F3855" StrokeThickness="0" Style="{StaticResource brdRegisterPetPage}">
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Switch OnColor="{StaticResource Quinary}" ThumbColor="{StaticResource Secondary}" IsToggled="{Binding IsToggledSex}"/>
+                        <Label Text="{Binding IsSexText}" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,10,0,0" />
+                    </StackLayout>
+                </Border>
+                <!--<StackLayout Orientation="Horizontal" Spacing="20">
                     <Label Text="F" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="20,8,0,0" />
                     <Switch OnColor="{StaticResource Quinary}" ThumbColor="{StaticResource Secondary}" IsToggled="{Binding IsToggledSex}"/>
                     <Label Text="M" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,8,0,0" />
-                </StackLayout>
+                </StackLayout>-->
             </StackLayout>
 
             <!-- IsCastrated -->
             <StackLayout Grid.Row="5" Grid.Column="1">
                 <Label Text="Castrado(a)" Style="{StaticResource lblRegisterPetPage}"/>
-                <StackLayout Orientation="Horizontal" Spacing="-10">
+                <Border BackgroundColor="#2F3855" StrokeThickness="0" Style="{StaticResource brdRegisterPetPage}">
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Switch OnColor="{StaticResource Quinary}" ThumbColor="{StaticResource Secondary}" IsToggled="{Binding IsToggledCatrated}"/>
+                        <Label Text="{Binding IsCastratedText}" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,10,0,0" />
+                    </StackLayout>
+                </Border>
+                <!--<StackLayout Orientation="Horizontal" Spacing="-10">
                     <CheckBox Color="{StaticResource Quinary}" IsChecked="{Binding IsCatrated}"/>
                     <Label Text="{Binding IsCastratedConfirm}" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,8,0,0" />
-                </StackLayout>
+                </StackLayout>-->
             </StackLayout>
 
             <!-- Observation -->

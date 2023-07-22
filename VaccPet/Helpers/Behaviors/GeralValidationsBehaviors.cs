@@ -62,7 +62,7 @@ namespace VaccPet.Helpers.Behaviors
             SetIsValid((BindableObject)sender, isValid);
             ValidateFields = isValid;
 
-            picker.TitleColor = isValid ? Color.FromHex("#CED9FC") : Colors.IndianRed;
+            picker.TitleColor = isValid ? Color.FromHex("#181C2C") : Colors.IndianRed;
         }
 
         #endregion

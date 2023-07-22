@@ -11,6 +11,7 @@ public partial class RegisterPetPage : ContentPage
 		InitializeComponent();
 
 		BindingContext = model;
+        
     }
 
     
@@ -41,11 +42,11 @@ public partial class RegisterPetPage : ContentPage
             return false;
         }
 
-        if (!breedBehaviorValidator.ValidateFields)
-        {
-            await DisplayAlert("Raça", "O campo Raça está incorreto. Favor verificar.", "Ok");
-            return false;
-        }
+        //if (!breedBehaviorValidator.ValidateFields)
+        //{
+        //    await DisplayAlert("Raça", "O campo Raça está incorreto. Favor verificar.", "Ok");
+        //    return false;
+        //}
 
         if (!colorBehaviorValidator.ValidateFields)
         {

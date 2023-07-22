@@ -1,21 +1,21 @@
-﻿using System.Text.RegularExpressions;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using VaccPet.MVVM.Models;
 using VaccPet.MVVM.Views;
-using VaccPet.Services;
 
 namespace VaccPet.MVVM.ViewModels
 {
     [QueryProperty(nameof(DetailPetSelected), "DetailPetSelected")]
     public class DetailPetViewModel : BaseViewModel
-    {
-        #region VARIABLES
-
-        private readonly IPetService _IPetService;
-
-        #endregion
-
+    {        
         #region PROPS
+
+        string sexName;
+        public string SexName
+        {
+            get => sexName;
+            set => SetProperty(ref this.sexName, value);
+        }
+
 
         private PetModel detailPetSelected;
         public PetModel DetailPetSelected
@@ -25,12 +25,20 @@ namespace VaccPet.MVVM.ViewModels
             {               
                 SetProperty(ref this.detailPetSelected, value);
                 if (DetailPetSelected.Sex == "F")
+                {
                     SexIcon = "female";
+                    SexName = "Fêmea";
+                }
                 else
+                {
                     SexIcon = "male";
+                    SexName = "Macho";
+                }
+                   
 
             }
         }
+
 
         private string sexIcon ="";
         public string SexIcon
@@ -47,13 +55,12 @@ namespace VaccPet.MVVM.ViewModels
 
         #endregion
 
-        public DetailPetViewModel(IPetService IPetService)
-        {
-            _IPetService = IPetService;
-
+        public DetailPetViewModel()
+        {           
             EditPetDetailCommand = new Command(OnEditPetDetailCommand);
         }
 
+        #region METHODS
         private async void OnEditPetDetailCommand(object obj)
         {
             Dictionary<string, object> parameters = new Dictionary<string, object>
@@ -63,5 +70,6 @@ namespace VaccPet.MVVM.ViewModels
 
             await Navigation.NavigateToPageAsync<EditPetPage>(parameters);
         }
+        #endregion
     }
 }

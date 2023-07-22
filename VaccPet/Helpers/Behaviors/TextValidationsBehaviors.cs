@@ -73,7 +73,7 @@ namespace VaccPet.Helpers.Behaviors
             bool isValid = ValidateEntryText(entry.Text);
             SetIsValid((BindableObject)sender, isValid);
             ValidateFields = isValid;
-            entry.TextColor = isValid ? Color.FromHex("#CED9FC") : Colors.IndianRed;
+            entry.TextColor = isValid ? Color.FromHex("#181C2C") : Colors.IndianRed;
         }
 
         private void OnEditorTextChanged(object sender, TextChangedEventArgs args)
@@ -83,7 +83,7 @@ namespace VaccPet.Helpers.Behaviors
             bool isValid = ValidateEditorText(editor.Text);
             SetIsValid((BindableObject)sender, isValid);
             ValidateFields = isValid;
-            editor.TextColor = isValid ? Color.FromHex("#CED9FC") : Colors.IndianRed;
+            editor.TextColor = isValid ? Color.FromHex("#181C2C") : Colors.IndianRed;
         }
         #endregion
 

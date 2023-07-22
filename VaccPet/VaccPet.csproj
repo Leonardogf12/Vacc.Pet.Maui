@@ -149,6 +149,9 @@
 	
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\Montserrat-Bold.ttf" />
+	  <None Remove="Resources\Fonts\Montserrat-Regular.ttf" />
+	  <None Remove="Resources\Fonts\Montserrat-SemiBold.ttf" />
 	  <None Remove="Resources\Images\add_circle.svg" />
 	  <None Remove="Resources\Images\add_circle_green.svg" />
 	  <None Remove="Resources\Images\add_image.svg" />
@@ -248,6 +251,10 @@
 	  <Compile Update="MVVM\Views\Components\PopupListActionsPage.xaml.cs">
 	    <DependentUpon>PopupListActionsPage.xaml</DependentUpon>
 	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Internals\" />
 	</ItemGroup>
 
 	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadUnhandledDeviceExceptionVaccPetHideInfoBar="True" /></VisualStudio></ProjectExtensions>
