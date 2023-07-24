@@ -1,1 +1,0 @@
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\VaccPet.csproj;x64

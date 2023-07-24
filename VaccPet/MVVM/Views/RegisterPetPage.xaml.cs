@@ -1,4 +1,3 @@
-using System.Text.RegularExpressions;
 using VaccPet.MVVM.ViewModels;
 
 namespace VaccPet.MVVM.Views;
@@ -36,17 +35,10 @@ public partial class RegisterPetPage : ContentPage
             return false;
         }
 
-        if (!animalBehaviorValidator.ValidateFields)
+        if(comboBoxAnimal.SelectedItem == null)
         {
-            await DisplayAlert("Animal", "O campo Animal está incorreto. Favor verificar.", "Ok");
-            return false;
+            comboBoxAnimal.HasError = true;           
         }
-
-        //if (!breedBehaviorValidator.ValidateFields)
-        //{
-        //    await DisplayAlert("Raça", "O campo Raça está incorreto. Favor verificar.", "Ok");
-        //    return false;
-        //}
 
         if (!colorBehaviorValidator.ValidateFields)
         {

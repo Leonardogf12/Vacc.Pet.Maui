@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:dxg="clr-namespace:DevExpress.Maui.DataGrid;assembly=DevExpress.Maui.DataGrid"
+             x:Class="VaccPet.MVVM.Views.ListVaccinePetPage"             
+             BackgroundColor="{StaticResource Primary}">
+
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackLayout Grid.Row="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Frame Grid.Row="0" 
+                        BackgroundColor="Blue" 
+                        HorizontalOptions="Center"
+                        HeightRequest="110"
+                        WidthRequest="110"
+                        CornerRadius="120"
+                        BorderColor="Transparent">
+
+                    <Image Source="image_vetor" HeightRequest="110" WidthRequest="110" Aspect="AspectFill"/>
+
+                </Frame>
+
+                <StackLayout Grid.Row="1" Spacing="-5">
+                    <Label Text="Nome" 
+                           HorizontalOptions="Center" 
+                           Style="{StaticResource lblTitlesStyle}" 
+                           FontAttributes="Bold"/>
+                    <Label Text="01/01/2020" 
+                           TextColor="{StaticResource Gray200}"
+                           HorizontalOptions="Center"          
+                           FontSize="Small"/>
+                </StackLayout>
+
+            </Grid>
+        </StackLayout>
+
+
+        <Border Grid.Row="1" StrokeThickness="0">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="1,0">
+                    <GradientStop Color="{StaticResource Tertiary}" Offset="1.2" />
+                    <GradientStop Color="{StaticResource PrimaryFrame}" Offset="1.8"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="60,60,0,0"/>
+            </Border.StrokeShape>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0"
+                       Text="Cartão" 
+                       HorizontalOptions="Center" 
+                       Style="{StaticResource lblTitlesStyle}" 
+                       FontAttributes="Bold"/>
+
+                <HorizontalStackLayout Grid.Row="1" Margin="20" Spacing="10">
+                    <Button Text="Nova" 
+                            Padding="5" CornerRadius="15"
+                            HeightRequest="30" WidthRequest="80"/>
+                    <Button Text="Salvar"
+                            Padding="5" CornerRadius="15" 
+                            HeightRequest="30" WidthRequest="80"/>
+                </HorizontalStackLayout>
+
+                <dxg:DataGridView Grid.Row="2" 
+                                  Margin="5"                                  
+                                  ItemsSource="{Binding VaccinesCollection}"                                
+                                  AutoGenerateColumnsMode="None"
+                                  BorderColor="Transparent"
+                                  VerticalLineThickness="0"
+                                  BackgroundColor="{StaticResource Tertiary}"                                     
+                                  SelectedItem=""                                    
+                                  >
+                    <dxg:DateColumn FieldName="VaccinationDate" 
+                                    HeaderBackgroundColor="{StaticResource Tertiary}"
+                                    BackgroundColor="{StaticResource Tertiary}"
+                                    FontColor="{StaticResource White}"                                   
+                                    HeaderFontColor="{StaticResource Secondary}"
+                                    HorizontalContentAlignment="Center"
+                                    Caption="Data"
+                                    MinWidth="110"
+                                    FontSize="14"
+                                    HeaderFontSize="14"
+                                    DisplayFormat="d"                                     
+                                    VerticalContentAlignment="Center"/>
+                    <dxg:TextColumn FieldName="VaccineName" 
+                                    Caption="Vacina"
+                                    HeaderBackgroundColor="{StaticResource Tertiary}"
+                                    BackgroundColor="{StaticResource Tertiary}"
+                                    FontColor="White"
+                                    HeaderFontColor="{StaticResource Secondary}"
+                                    HorizontalContentAlignment="Center"
+                                    MinWidth="120" 
+                                    HeaderFontSize="14"                                  
+                                    FontSize="14"
+                                    VerticalContentAlignment="Center" />
+                    <dxg:DateColumn FieldName="RevaccinateDate"
+                                    Caption="Revacinar"
+                                    MinWidth="125" 
+                                    HeaderBackgroundColor="{StaticResource Tertiary}"
+                                    BackgroundColor="{StaticResource Tertiary}"
+                                    FontColor="White"
+                                    HeaderFontColor="{StaticResource Secondary}"
+                                    HeaderFontSize="14"
+                                    FontSize="14"
+                                    DisplayFormat="d" 
+                                    VerticalContentAlignment="Center"/>
+                    <dxg:TextColumn FieldName="Weight" 
+                                    Caption="Peso"
+                                    HeaderBackgroundColor="{StaticResource Tertiary}"
+                                    BackgroundColor="{StaticResource Tertiary}"
+                                    FontColor="White"
+                                    HeaderFontColor="{StaticResource Secondary}"
+                                    HorizontalContentAlignment="Center"
+                                    HeaderFontSize="14"
+                                    FontSize="14"
+                                    MinWidth="90" 
+                                    VerticalContentAlignment="Center" />
+                </dxg:DataGridView>
+
+
+            </Grid>
+
+
+
+        </Border>
+    </Grid>
+
+
+
+</ContentPage>

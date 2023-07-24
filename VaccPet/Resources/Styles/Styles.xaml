@@ -2,7 +2,8 @@
 <?xaml-comp compile="true" ?>
 <ResourceDictionary 
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors">
 
     <Style TargetType="ActivityIndicator">
         <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
@@ -436,20 +437,21 @@
         <Setter Property="FontFamily" Value="MontserratRegular"/>
     </Style>
     <!--Page PopListActionPage End-->
-
-    <!--Page RegisterPetPage Start-->
-    <Style x:Key="lblRegisterPetPage" TargetType="Label">
+    
+    <!-- Custom Styles -->
+    <Style x:Key="lblTitlesStyle" TargetType="Label">
         <Setter Property="TextColor" Value="{StaticResource Secondary}"/>
         <Setter Property="Margin" Value="5"/>
         <Setter Property="FontSize" Value="Medium"/>
         <Setter Property="FontAttributes" Value="None"/>
         <Setter Property="FontFamily" Value="MontserratRegular"/>
     </Style>
-    <Style x:Key="brdRegisterPetPage" TargetType="Border">
+    <Style x:Key="borberCustomStyle" TargetType="Border">
         <Setter Property="BackgroundColor" Value="{StaticResource White}"/>
         <Setter Property="StrokeShape" Value="RoundRectangle 15"/>
+        <Setter Property="HeightRequest" Value="45"/>
     </Style>
-    <Style x:Key="entRegisterPetPage" TargetType="Entry">
+    <Style x:Key="entryCustomStyle" TargetType="Entry">
         <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
         <Setter Property="Margin" Value="15,0,10,0"/>
         <Setter Property="TextColor" Value="{StaticResource Primary}"/>
@@ -457,7 +459,28 @@
         <Setter Property="FontSize" Value="Medium"/>
         <Setter Property="FontFamily" Value="MontserratRegular"/>
     </Style>
-    <!--Page RegisterPetPage End-->
+    <Style x:Key="comboBoxStyle" TargetType="dxe:ComboBoxEdit">
+        <Setter Property="TextFontFamily" Value="MontserratRegular"/>
+        <Setter Property="DropDownItemFontFamily" Value="MontserratRegular" />
+        <Setter Property="BottomTextFontFamily" Value="MontserratRegular" />
+        <Setter Property="TextFontSize" Value="18" />
+        <Setter Property="HeightRequest" Value="45" />
+        <Setter Property="TextVerticalAlignment" Value="Center" />
+        <Setter Property="IconVerticalAlignment" Value="Center" />
+        <Setter Property="PlaceholderText" Value="Selecione" />
+        <Setter Property="PlaceholderColor" Value="{StaticResource Gray300}"/>
+        <Setter Property="TextColor" Value="{StaticResource Primary}" />
+        <Setter Property="CornerRadius" Value="15" />
+        <Setter Property="BorderColor" Value="{StaticResource White}" />
+        <Setter Property="FocusedBorderColor" Value="Transparent" />
+        <Setter Property="DropDownSelectedItemBackgroundColor" Value="{StaticResource Gray200}" />
+        <Setter Property="DropDownBackgroundColor" Value="{StaticResource White}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource White}" />
+        <Setter Property="PickerShowMode" Value="DropDown" />
+        <Setter Property="BoxPadding" Value="20,0,10,0" />
+        <Setter Property="ErrorIconColor" Value="{StaticResource RedIconError}" />
+    </Style>
+    <!-- Custom Styles End-->
 
     <!--Page ListPetPage Start-->
     <Style x:Key="hslListPetPage" TargetType="HorizontalStackLayout">
@@ -478,9 +501,9 @@
         <Setter Property="MaxLines" Value="1"/>
         <Setter Property="FontFamily" Value="MontserratRegular"/>
     </Style>
-    <!--Page RegisterPetPage End-->
+    <!--Page ListPetPage End-->
 
-    <!--Page ListPetPage Start-->
+    <!--Page DetailPetPage Start-->
     <Style x:Key="frDetailPetPage" TargetType="Frame">
         <Setter Property="BackgroundColor" Value="{StaticResource Tertiary}"/>
         <Setter Property="BorderColor" Value="Transparent"/>
@@ -500,6 +523,6 @@
         <Setter Property="HorizontalTextAlignment" Value="Center"/>
         <Setter Property="FontFamily" Value="MontserratRegular"/>
     </Style>
-    <!--Page RegisterPetPage End-->
+    <!--Page DetailPetPage End-->
 
 </ResourceDictionary>

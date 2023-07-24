@@ -14,25 +14,25 @@ public final class R {
 		public static final int browser_actions_title_color = 0x7f05002a;
 	}
 	public static final class dimen {
-		public static final int browser_actions_context_menu_max_width = 0x7f060052;
-		public static final int browser_actions_context_menu_min_padding = 0x7f060053;
+		public static final int browser_actions_context_menu_max_width = 0x7f060053;
+		public static final int browser_actions_context_menu_min_padding = 0x7f060054;
 	}
 	public static final class id {
-		public static final int browser_actions_header_text = 0x7f080064;
-		public static final int browser_actions_menu_item_icon = 0x7f080065;
-		public static final int browser_actions_menu_item_text = 0x7f080066;
-		public static final int browser_actions_menu_items = 0x7f080067;
-		public static final int browser_actions_menu_view = 0x7f080068;
+		public static final int browser_actions_header_text = 0x7f080068;
+		public static final int browser_actions_menu_item_icon = 0x7f080069;
+		public static final int browser_actions_menu_item_text = 0x7f08006a;
+		public static final int browser_actions_menu_items = 0x7f08006b;
+		public static final int browser_actions_menu_view = 0x7f08006c;
 	}
 	public static final class layout {
-		public static final int browser_actions_context_menu_page = 0x7f0b001c;
-		public static final int browser_actions_context_menu_row = 0x7f0b001d;
+		public static final int browser_actions_context_menu_page = 0x7f0b001d;
+		public static final int browser_actions_context_menu_row = 0x7f0b001e;
 	}
 	public static final class string {
-		public static final int copy_toast_msg = 0x7f0f0027;
-		public static final int fallback_menu_item_copy_link = 0x7f0f002d;
-		public static final int fallback_menu_item_open_in_browser = 0x7f0f002e;
-		public static final int fallback_menu_item_share_link = 0x7f0f002f;
+		public static final int copy_toast_msg = 0x7f0f0029;
+		public static final int fallback_menu_item_copy_link = 0x7f0f0031;
+		public static final int fallback_menu_item_open_in_browser = 0x7f0f0032;
+		public static final int fallback_menu_item_share_link = 0x7f0f0033;
 	}
 	public static final class xml {
 		public static final int image_share_filepaths = 0x7f120000;

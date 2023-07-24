@@ -32,6 +32,9 @@ namespace VaccPet.MVVM.ViewModels
         public ICommand EditPetCommand { get; set; }
         public ICommand DetailPetCommand { get; set; }
         public ICommand SearchEmptyCommand { get; set; }
+        public ICommand GoToListVaccines { get; set; }
+
+        
         #endregion
 
         #region PROPS
@@ -79,7 +82,10 @@ namespace VaccPet.MVVM.ViewModels
             DeletePetCommand = new Command(OnDeletePetCommand);
             DetailPetCommand = new Command(OnDetailPetCommand);
             SearchEmptyCommand = new Command(async () => await LoadAllPets());
+            GoToListVaccines = new Command(OnGoToListVaccines);
         }
+
+       
 
         #region METHODS
 
@@ -88,7 +94,9 @@ namespace VaccPet.MVVM.ViewModels
             PetModelObject = petSelected;
 
             PopupListActionsControl = new PopupListActionsPage(
-                    PopupViewModel.SetParametersPopup("Editar", "Excluir", "Detalhes", petSelected, EditPetCommand, DeletePetCommand, DetailPetCommand));
+                    PopupViewModel.SetParametersPopup("Editar", "Excluir", "Detalhes", "Vacinas",
+                                                       petSelected, EditPetCommand, DeletePetCommand, 
+                                                       DetailPetCommand, GoToListVaccines));
 
             await App.Current.MainPage.ShowPopupAsync(PopupListActionsControl);
         }
@@ -138,6 +146,18 @@ namespace VaccPet.MVVM.ViewModels
             };
 
             await Navigation.NavigateToPageAsync<EditPetPage>(parameters);
+        }
+
+        private async void OnGoToListVaccines()
+        {
+            PopupListActionsControl.Close();
+
+            Dictionary<string, object> parameters = new Dictionary<string, object>
+            {
+                { "PetSelectedForEdit", PetModelObject }
+            };
+
+            await Navigation.NavigateToPageAsync<ListVaccinePetPage>(parameters);
         }
 
         private async void OnDetailPetCommand()

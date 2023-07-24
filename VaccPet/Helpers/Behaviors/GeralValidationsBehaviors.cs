@@ -1,5 +1,4 @@
-﻿using CommunityToolkit.Maui.Behaviors;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using DevExpress.Maui.Editors;
 
 namespace VaccPet.Helpers.Behaviors
 {
@@ -40,6 +39,11 @@ namespace VaccPet.Helpers.Behaviors
                 picker.SelectedIndexChanged += OnPickerSelectedIndexChanged;
             }
 
+            if (bindable is ComboBoxEdit comboBox)
+            {
+                comboBox.SelectionChanged += OnComboBoxEditSelectedIndexChanged;
+            }
+
             SetIsValid(bindable, false);
             base.OnAttachedTo(bindable);
         }
@@ -47,7 +51,12 @@ namespace VaccPet.Helpers.Behaviors
         {
             if (bindable is Picker picker)
             {
-                picker.SelectedIndexChanged += OnPickerSelectedIndexChanged;
+                picker.SelectedIndexChanged -= OnPickerSelectedIndexChanged;
+            }
+
+            if (bindable is ComboBoxEdit comboBox)
+            {
+                comboBox.SelectionChanged -= OnComboBoxEditSelectedIndexChanged;
             }
 
             base.OnDetachingFrom(bindable);
@@ -64,6 +73,17 @@ namespace VaccPet.Helpers.Behaviors
 
             picker.TitleColor = isValid ? Color.FromHex("#181C2C") : Colors.IndianRed;
         }
+
+        private void OnComboBoxEditSelectedIndexChanged(object sender, EventArgs e)
+        {
+            var comboBox = (ComboBoxEdit)sender;
+            bool isValid = ValidatePickerSelectedItem(comboBox.SelectedItem);
+            SetIsValid((BindableObject)sender, isValid);
+            ValidateFields = isValid;
+
+            comboBox.BorderColor = isValid ? Color.FromHex("#181C2C") : Colors.IndianRed;
+        }
+        
 
         #endregion
 

@@ -58,13 +58,11 @@
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
 
-              
                 <Label Grid.Row="0" Grid.Column="0" 
                        Text="{Binding DetailPetSelected.Name}" 
-                       FontSize="Medium" 
                        Margin="10,20,0,0" 
-                       Padding="5" 
-                       TextColor="{StaticResource Secondary}"/>
+                       Padding="5"                                             
+                       Style="{StaticResource lblTitlesStyle}"/>
 
                 <Label  Grid.Row="1" Grid.Column="0" 
                         HorizontalTextAlignment="Start"

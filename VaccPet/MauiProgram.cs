@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Maui;
+using DevExpress.Maui;
 using Microsoft.Extensions.Logging;
-using Microsoft.Maui.Controls.PlatformConfiguration;
 using Microsoft.Maui.Handlers;
 using Microsoft.Maui.Platform;
 using Mopups.Hosting;
@@ -25,9 +25,10 @@ public static class MauiProgram
 		builder
 			.UseMauiApp<App>()
 			.ConfigureMopups()
-			.UseMauiCommunityToolkit()	
-			.UseSkiaSharp()
-			.ConfigureFonts(fonts =>
+			.UseMauiCommunityToolkit()            
+            .UseSkiaSharp()
+            .UseDevExpress()
+            .ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
@@ -50,7 +51,8 @@ public static class MauiProgram
 		builder.Services.AddTransient<ListPetPage>();
         builder.Services.AddTransient<DetailPetPage>();
         builder.Services.AddTransient<EditPetPage>();
-        
+        builder.Services.AddSingleton<ListVaccinePetPage>();
+
 
         //*Views Popup
         builder.Services.AddTransient<PopupListActionsPage>();
@@ -64,6 +66,7 @@ public static class MauiProgram
 		builder.Services.AddSingleton<RegisterPetViewModel>();
         builder.Services.AddSingleton<DetailPetViewModel>();
         builder.Services.AddSingleton<EditPetViewModel>();
+        builder.Services.AddSingleton<ListVaccinePetViewModel>();
 
         //*Services
         builder.Services.AddSingleton<IPetService, PetService>();
@@ -72,13 +75,6 @@ public static class MauiProgram
         builder.Services.AddSingleton<IAnimalService, AnimalService>();
         builder.Services.AddSingleton<IImageContainerHelper, ImageContainerHelper>();
 
-
-//        Microsoft.Maui.Handlers.EntryHandler.Mapper.AppendToMapping(nameof(Entry), (handler, view) =>
-//        {
-//#if ANDROID
-//            handler.PlatformView.SetBackgroundColor(Android.Graphics.Color.Transparent);
-//#endif
-//        });
 
         //*IF NECESSÁRIO PARA CORRIGIR BUG DA IMAGEM, PAGINAÇÃO TRAVANDO DEVIDO AO Converter={StaticResource ByteArrayToImageSourceConverter} em ListPetPage e demais paginas
 #if __ANDROID__

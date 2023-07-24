@@ -70,6 +70,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.ListPet
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\ListPetPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\ListPetPage.xaml
 
+[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MVVM/Views/ListVaccinePetPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.ListVaccinePetPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\ListVaccinePetPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\ListVaccinePetPage.xaml
+
 [D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MVVM/Views/RegisterPetPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.RegisterPetPage.xaml

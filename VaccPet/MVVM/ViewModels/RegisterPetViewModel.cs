@@ -67,17 +67,14 @@ namespace VaccPet.MVVM.ViewModels
         bool isCatrated;
         public bool IsCatrated
         {
-            get
-            {
-                if (isCatrated)
+            get => isCatrated;
+            set { SetProperty(ref this.isCatrated, value);
+                
+                if (IsCatrated)
                     IsCastratedText = "Sim";
                 else
                     IsCastratedText = "Não";
-
-                return isCatrated;
             }
-
-            set => SetProperty(ref this.isCatrated, value);
         }
 
 
@@ -211,7 +208,7 @@ namespace VaccPet.MVVM.ViewModels
             pet.Color = Color;
             pet.Observation = Observation;
             pet.Sex = IsToggledSex == true ? "M" : "F";
-            pet.Catrated = IsToggledSex;
+            pet.Catrated = IsCatrated;
             pet.Weight = Weight;
             pet.Age = 0;            
 

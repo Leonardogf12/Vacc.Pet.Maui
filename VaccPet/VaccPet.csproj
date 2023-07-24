@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
-		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
+		<TargetFrameworks>net7.0-android;net7.0-ios;<!--net7.0-maccatalyst--></TargetFrameworks>
+		<!--<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>-->
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
 		<OutputType>Exe</OutputType>
@@ -175,6 +175,9 @@
 	  <None Remove="Resources\Images\loading_green - Cópia.gif" />
 	  <None Remove="Resources\Images\loading_green.gif" />
 	  <None Remove="Resources\Images\male.svg" />
+	  <None Remove="Resources\Images\menu_dot.svg" />
+	  <None Remove="Resources\Images\menu_dot_yellow.svg" />
+	  <None Remove="Resources\Images\menu_popup.svg" />
 	  <None Remove="Resources\Images\mousedefault.png" />
 	  <None Remove="Resources\Images\noimage.png" />
 	  <None Remove="Resources\Images\pharmacy.svg" />
@@ -187,6 +190,7 @@
 	  <None Remove="Resources\Raw\check_json.json" />
 	  <None Remove="Resources\Raw\click_json.json" />
 	  <None Remove="Resources\Raw\error_json.json" />
+	  <None Remove="Resources\Raw\menu_dot_json.json" />
 	  <None Remove="Resources\Raw\noimage.png" />
 	  <None Remove="Resources\Raw\splash.json" />
 	</ItemGroup>
@@ -229,6 +233,9 @@
 	  <MauiXaml Update="MVVM\Views\ListPetPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="MVVM\Views\ListVaccinePetPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="MVVM\Views\RegisterPetPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -255,6 +262,18 @@
 
 	<ItemGroup>
 	  <Folder Include="Internals\" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-android'">
+	  <PackageReference Include="DevExpress.Maui.DataGrid">
+	    <Version>23.1.4</Version>
+	  </PackageReference>
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-ios'">
+	  <PackageReference Include="DevExpress.Maui.DataGrid">
+	    <Version>23.1.4</Version>
+	  </PackageReference>
 	</ItemGroup>
 
 	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadUnhandledDeviceExceptionVaccPetHideInfoBar="True" /></VisualStudio></ProjectExtensions>

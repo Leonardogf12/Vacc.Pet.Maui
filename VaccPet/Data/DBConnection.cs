@@ -44,6 +44,9 @@ namespace VaccPet.Data
                 if (!Database.TableMappings.Any(x => x.MappedType.Name == typeof(PetModel).Name))
                     await Database.CreateTableAsync<PetModel>();
 
+                if (!Database.TableMappings.Any(x => x.MappedType.Name == typeof(VaccineModel).Name))
+                    await Database.CreateTableAsync<VaccineModel>();
+
                 initialize = true;
             }
         }

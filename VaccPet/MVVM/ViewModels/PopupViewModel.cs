@@ -30,6 +30,13 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref tertiaryButton, value);
         }
 
+        string quartenaryButton;
+        public string QuartenaryButton
+        {
+            get => quartenaryButton;
+            set => SetProperty(ref quartenaryButton, value);
+        }
+
 
         ICommand firstCommand;
         public ICommand FirstCommand
@@ -52,6 +59,13 @@ namespace VaccPet.MVVM.ViewModels
         {
             get => tertiaryCommand;
             set => SetProperty(ref tertiaryCommand, value);
+        }
+
+        ICommand quartenaryCommand;
+        public ICommand QuartenaryCommand
+        {
+            get => quartenaryCommand;
+            set => SetProperty(ref quartenaryCommand, value);
         }
 
 
@@ -78,19 +92,22 @@ namespace VaccPet.MVVM.ViewModels
         }
 
         #region METHODS         
-        public PopupViewModel SetParametersPopup(string firstButton = "", string secondButton = "", string tertiaryButton = "", object obj = null,
+        public PopupViewModel SetParametersPopup(string firstButton = "", string secondButton = "",
+                                                 string tertiaryButton = "", string quartenaryButton = "", object obj = null,
                                                  ICommand fisrtCommand = null, ICommand secondCommand = null,
-                                                 ICommand tertiaryCommand = null)
+                                                 ICommand tertiaryCommand = null, ICommand quartenatyCommand = null)
         {
             return new PopupViewModel()
             {
                 FirstButton = firstButton,
                 SecondButton = secondButton,
                 TertiaryButton = tertiaryButton,
+                QuartenaryButton = quartenaryButton,
                 Obj = obj,
                 FirstCommand = fisrtCommand,
                 SecondCommand = secondCommand,
-                TertiaryCommand = tertiaryCommand
+                TertiaryCommand = tertiaryCommand,
+                QuartenaryCommand = quartenatyCommand
             };
         }
 

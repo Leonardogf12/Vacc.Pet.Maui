@@ -3,12 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:converters="clr-namespace:VaccPet.Helpers.Converters"
              xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
              xmlns:vm="clr-namespace:VaccPet.MVVM.ViewModels"
              xmlns:model="clr-namespace:VaccPet.MVVM.Models"
              ios:Page.UseSafeArea="true"             
              x:Class="VaccPet.MVVM.Views.ListPetPage"              
              BackgroundColor="{StaticResource Primary}">
-   
+
     <ContentPage.BindingContext>
         <vm:ListPetViewModel />
     </ContentPage.BindingContext>
@@ -53,31 +54,32 @@
             <ScrollView VerticalScrollBarVisibility="Never" >
                 <CollectionView ItemsSource="{Binding PetsCollection}" >
                     <CollectionView.ItemTemplate>
-                        
+
                         <DataTemplate x:DataType="model:PetModel">
-                            
+
                             <Frame  HasShadow="True"  BorderColor="Transparent"                              
                                Margin="15,0,15,10" HeightRequest="160" CornerRadius="40">
-                                
+
                                 <Frame.Background>
                                     <LinearGradientBrush EndPoint="1,0">
                                         <GradientStop Color="{StaticResource Tertiary}" Offset="1.2" />
                                         <GradientStop Color="{StaticResource PrimaryFrame}" Offset="1.8"/>
                                     </LinearGradientBrush>
                                 </Frame.Background>
-                              
+
                                 <Grid ColumnSpacing="10" RowSpacing="1">
                                     <Grid.RowDefinitions>
-                                        <RowDefinition Height="40"/>
-                                        <RowDefinition Height="40"/>
-                                        <RowDefinition Height="40"/>
+                                        <RowDefinition Height="30"/>
+                                        <RowDefinition Height="30"/>
+                                        <RowDefinition Height="30"/>
+                                        <RowDefinition Height="30"/>
                                     </Grid.RowDefinitions>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="Auto"/>
-                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
                                         <ColumnDefinition Width="Auto"/>
                                     </Grid.ColumnDefinitions>
-                                    
+
                                     <StackLayout Grid.Row="0" Grid.Column="0">
                                         <Frame CornerRadius="30"  HeightRequest="120" WidthRequest="100">
                                             <Image Source="{Binding ImageData,                                             
@@ -88,10 +90,13 @@
                                         </Frame>
                                     </StackLayout>
 
-                                    <HorizontalStackLayout Grid.Row="0" Grid.Column="1" Style="{StaticResource hslListPetPage}">
-                                        <Label Text="Nome: " Style="{StaticResource lblTitleListPetPage}"/>
-                                        <Label Text="{Binding Name}" TextColor="{StaticResource Quinary}" Style="{StaticResource lblTitleListPetPage}"/>
-                                    </HorizontalStackLayout>
+                                    <StackLayout  Grid.Row="0" Grid.Column="1">
+                                        <HorizontalStackLayout Style="{StaticResource hslListPetPage}" >
+                                            <Label Text="Nome: " Style="{StaticResource lblTitleListPetPage}"/>
+                                            <Label Text="{Binding Name}" MaximumWidthRequest="80" TextColor="{StaticResource Quinary}" Style="{StaticResource lblTitleListPetPage}" LineBreakMode="WordWrap"/>
+                                        </HorizontalStackLayout>
+                                    </StackLayout>
+                                   
 
                                     <HorizontalStackLayout Grid.Row="1" Grid.Column="1" Style="{StaticResource hslListPetPage}">
                                         <Label Text="Cor: " Style="{StaticResource lblTitleListPetPage}"/>
@@ -103,13 +108,24 @@
                                         <Label Text="{Binding Age}" TextColor="{StaticResource Quinary}" Style="{StaticResource lblTitleListPetPage}"/>
                                     </HorizontalStackLayout>
 
-                                </Grid>
-                                <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding Source={x:RelativeSource 
+                                    <ImageButton x:Name="btnPopupMenu"                                                  
+                                                 Grid.Row="3" Grid.Column="2"
+                                                 Source="menu_popup" 
+                                                 Margin="0"
+                                                 HeightRequest="25">
+
+                                        <ImageButton.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding Source={x:RelativeSource 
                                                           AncestorType={x:Type vm:ListPetViewModel}},
                                                           Path=SelectedPetInCollectionCommand}"
                                                           CommandParameter="{Binding .}"/>
-                                </Frame.GestureRecognizers>
+                                        </ImageButton.GestureRecognizers>
+                                    </ImageButton>
+                                    <!--<skia:SKLottieView x:Name="ImagePopup"
+                                                       Grid.Row="3" Grid.Column="2"
+                                                       HeightRequest="50"                                                                                                                                                          
+                                                       Source="menu_dot_json"/>-->
+                                </Grid>
                             </Frame>
 
                         </DataTemplate>

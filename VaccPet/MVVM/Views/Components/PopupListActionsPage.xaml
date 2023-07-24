@@ -9,7 +9,7 @@
 
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <Frame Grid.Row="2" Grid.ColumnSpan="2"                
-               HeightRequest="200"
+               HeightRequest="250"
                WidthRequest="160"               
                HorizontalOptions="Center"                
                VerticalOptions="Center"
@@ -19,6 +19,7 @@
 
             <Grid RowSpacing="5">
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
                     <RowDefinition Height="50"/>
                     <RowDefinition Height="50"/>
                     <RowDefinition Height="50"/>
@@ -50,6 +51,15 @@
                     <Label Text="{Binding TertiaryButton}" Style="{StaticResource lblPopListAction}" >
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding TertiaryCommand}"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Grid.Row="3" Grid.Column="0" Style="{StaticResource hslPopListAction}">
+                    <Image Source="vaccine.svg" Style="{StaticResource imgPopListAction}"/>
+                    <Label Text="{Binding QuartenaryButton}" Style="{StaticResource lblPopListAction}" >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding QuartenaryCommand}"/>
                         </Label.GestureRecognizers>
                     </Label>
                 </HorizontalStackLayout>

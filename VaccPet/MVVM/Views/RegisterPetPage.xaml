@@ -5,6 +5,7 @@
              xmlns:local="clr-namespace:VaccPet.Helpers.Behaviors"      
              xmlns:vm="clr-namespace:VaccPet.MVVM.ViewModels"
              xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
+             xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"             
              x:Class="VaccPet.MVVM.Views.RegisterPetPage"
              x:DataType="vm:RegisterPetViewModel"
@@ -58,14 +59,14 @@
 
             <!-- Name -->
             <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical">
-                <Label Text="Nome" Style="{StaticResource lblRegisterPetPage}"/>
-                <Border Style="{StaticResource brdRegisterPetPage}" >
+                <Label Text="Nome" Style="{StaticResource lblTitlesStyle}"/>
+                <Border Style="{StaticResource borberCustomStyle}" >
                     <Entry x:Name="entryName"                              
                            Text="{Binding Name}"  
                            TextColor="{StaticResource Primary}"
                            Placeholder="Nome"                              
                            Keyboard="Text"
-                           Style="{StaticResource entRegisterPetPage}">
+                           Style="{StaticResource entryCustomStyle}">
                         <Entry.Behaviors>
                             <local:TextValidationsBehaviors x:TypeArguments="Entry" x:Name="nameBehaviorValidator" />
                         </Entry.Behaviors>
@@ -75,8 +76,16 @@
 
             <!-- Animals -->
             <StackLayout Grid.Row="2" Grid.ColumnSpan="2">
-                <Label Text="Animal" Style="{StaticResource lblRegisterPetPage}"/>
-                <Border Style="{StaticResource brdRegisterPetPage}">
+                <Label Text="Animal" Style="{StaticResource lblTitlesStyle}"/>
+                <dxe:ComboBoxEdit x:Name="comboBoxAnimal"
+                                  Style="{StaticResource comboBoxStyle}" 
+                                  ItemsSource="{Binding AnimalsList}"
+                                  SelectedItem="{Binding AnimalSelected}"
+                                  DisplayMember="Value"/>
+
+
+
+                <!--<Border Style="{StaticResource borberCustomStyle}">
                     <Picker x:Name="pickerAnimal"
                             Title="Selecione"                           
                             Margin="15,0,10,0"
@@ -90,14 +99,14 @@
                             <local:GeralValidationsBehaviors x:TypeArguments="Picker" x:Name="animalBehaviorValidator"/>
                         </Picker.Behaviors>
                     </Picker>
-                </Border>
+                </Border>-->
 
             </StackLayout>
 
             <!--Breeds--><!--
             <StackLayout Grid.Row="2" Grid.Column="1">
-                <Label Text="Raça" Style="{StaticResource lblRegisterPetPage}"/>
-                <Border Style="{StaticResource brdRegisterPetPage}">
+                <Label Text="Raça" Style="{StaticResource lblTitlesStyle}"/>
+                <Border Style="{StaticResource borberCustomStyle}">
                     <Picker x:Name="pickerRace"
                             Title="Selecione"                           
                             Margin="15,0,10,0"
@@ -119,14 +128,14 @@
 
             <!-- Color -->
             <StackLayout Grid.Row="3" Grid.ColumnSpan="2"  Orientation="Vertical">
-                <Label Text="Cor" Style="{StaticResource lblRegisterPetPage}"/>
-                <Border Style="{StaticResource brdRegisterPetPage}">
+                <Label Text="Cor" Style="{StaticResource lblTitlesStyle}"/>
+                <Border Style="{StaticResource borberCustomStyle}">
                     <Entry x:Name="entryColor"                           
                            Text="{Binding Color}"
                            TextColor="{StaticResource Primary}"
                            Placeholder="Cor"                                                    
                            Keyboard="Text"                          
-                           Style="{StaticResource entRegisterPetPage}">
+                           Style="{StaticResource entryCustomStyle}">
                         <Entry.Behaviors>
                             <local:TextValidationsBehaviors x:TypeArguments="Entry" x:Name="colorBehaviorValidator"/>
                         </Entry.Behaviors>
@@ -136,15 +145,15 @@
 
             <!-- Weight -->
             <StackLayout Grid.Row="4" Grid.Column="0" Orientation="Vertical">
-                <Label Text="Peso KG" Style="{StaticResource lblRegisterPetPage}"/>
-                <Border Style="{StaticResource brdRegisterPetPage}">
+                <Label Text="Peso KG" Style="{StaticResource lblTitlesStyle}"/>
+                <Border Style="{StaticResource borberCustomStyle}">
                     <Entry x:Name="entryWeigth"
                            Text="{Binding Weight}" 
                            TextColor="{StaticResource Primary}"
                            Placeholder="0.0 KG"
                            MaxLength="5"                                                                                                                                   
                            Keyboard="Numeric"                                                                              
-                           Style="{StaticResource entRegisterPetPage}">
+                           Style="{StaticResource entryCustomStyle}">
                         <Entry.Behaviors>
                             <local:NumericValidationsBehaviors x:TypeArguments="Entry" x:Name="weightBehaviorValidator"/>
                         </Entry.Behaviors>
@@ -154,8 +163,8 @@
 
             <!-- BirthDate -->
             <StackLayout Grid.Row="4" Grid.Column="1">
-                <Label Text="Nascimento" Style="{StaticResource lblRegisterPetPage}"/>
-                <Border Style="{StaticResource brdRegisterPetPage}">
+                <Label Text="Nascimento" Style="{StaticResource lblTitlesStyle}"/>
+                <Border Style="{StaticResource borberCustomStyle}">
                     <DatePicker  TextColor="{StaticResource Primary}" 
                                  Margin="15,0,10,0"
                                  MinimumDate="01/01/2008"
@@ -171,8 +180,8 @@
 
             <!-- Sex -->
             <StackLayout Grid.Row="5" Grid.Column="0">
-                <Label Text="Sexo" Style="{StaticResource lblRegisterPetPage}"/>
-                <Border BackgroundColor="#2F3855" StrokeThickness="0" Style="{StaticResource brdRegisterPetPage}">
+                <Label Text="Sexo" Style="{StaticResource lblTitlesStyle}"/>
+                <Border BackgroundColor="#2F3855" StrokeThickness="0" Style="{StaticResource borberCustomStyle}">
                     <StackLayout Orientation="Horizontal" Spacing="10">
                         <Switch OnColor="{StaticResource Quinary}" ThumbColor="{StaticResource Secondary}" IsToggled="{Binding IsToggledSex}"/>
                         <Label Text="{Binding IsSexText}" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,10,0,0" />
@@ -182,8 +191,8 @@
 
             <!-- IsCastrated -->
             <StackLayout Grid.Row="5" Grid.Column="1">
-                <Label Text="Castrado(a)" Style="{StaticResource lblRegisterPetPage}"/>
-                <Border BackgroundColor="#2F3855" StrokeThickness="0" Style="{StaticResource brdRegisterPetPage}">
+                <Label Text="Castrado(a)" Style="{StaticResource lblTitlesStyle}"/>
+                <Border BackgroundColor="#2F3855" StrokeThickness="0" Style="{StaticResource borberCustomStyle}">
                     <StackLayout Orientation="Horizontal" Spacing="10">
                         <Switch OnColor="{StaticResource Quinary}" ThumbColor="{StaticResource Secondary}" IsToggled="{Binding IsToggledCatrated}"/>
                         <Label Text="{Binding IsCastratedText}" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,10,0,0" />
@@ -193,8 +202,8 @@
 
             <!-- Observation -->
             <StackLayout  Grid.Row="6" Grid.ColumnSpan="2" Orientation="Vertical">
-                <Label  Text="Observação" Style="{StaticResource lblRegisterPetPage}"/>
-                <Border Style="{StaticResource brdRegisterPetPage}">
+                <Label  Text="Observação" Style="{StaticResource lblTitlesStyle}"/>
+                <Border Style="{StaticResource borberCustomStyle}" HeightRequest="80">
                     <Editor Placeholder="Observação"                                                     
                             Text="{Binding Observation}"
                             Margin="15,0,10,0"
