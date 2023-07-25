@@ -208,7 +208,7 @@ namespace VaccPet.MVVM.ViewModels
             pet.Color = Color;
             pet.Observation = Observation;
             pet.Sex = IsToggledSex == true ? "M" : "F";
-            pet.Catrated = IsCatrated;
+            pet.Catrated = IsToggledCatrated;
             pet.Weight = Weight;
             pet.Age = 0;            
 

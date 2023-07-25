@@ -82,6 +82,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.Registe
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\RegisterPetPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\RegisterPetPage.xaml
 
+[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MVVM/Views/RegisterVaccinePetPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.RegisterVaccinePetPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\RegisterVaccinePetPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\RegisterVaccinePetPage.xaml
+
 [D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.Resources.Styles.Colors.xaml

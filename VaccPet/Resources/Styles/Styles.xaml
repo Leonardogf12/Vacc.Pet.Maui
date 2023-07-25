@@ -439,6 +439,27 @@
     <!--Page PopListActionPage End-->
     
     <!-- Custom Styles -->
+
+    <Style x:Key="btnDarkStyle" TargetType="Button">
+        <Setter Property="TextColor" Value="{StaticResource White}"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="FontSize" Value="Medium"/>
+        <Setter Property="FontAttributes" Value="None"/>
+        <Setter Property="CornerRadius" Value="20"/>
+        <Setter Property="BackgroundColor" Value="{StaticResource Primary}"/>
+        <Setter Property="FontFamily" Value="MontserratRegular"/>
+    </Style>
+    <Style x:Key="btnDefaultStyle" TargetType="Button">
+        <Setter Property="TextColor" Value="{StaticResource White}"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="FontSize" Value="Medium"/>
+        <Setter Property="FontAttributes" Value="None"/>
+        <Setter Property="CornerRadius" Value="20"/>
+        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryButton}"/>
+        <Setter Property="FontFamily" Value="MontserratRegular"/>
+    </Style>
+
+
     <Style x:Key="lblTitlesStyle" TargetType="Label">
         <Setter Property="TextColor" Value="{StaticResource Secondary}"/>
         <Setter Property="Margin" Value="5"/>
@@ -446,9 +467,16 @@
         <Setter Property="FontAttributes" Value="None"/>
         <Setter Property="FontFamily" Value="MontserratRegular"/>
     </Style>
+    <Style x:Key="lblDetailStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource White}"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="FontSize" Value="Medium"/>
+        <Setter Property="FontAttributes" Value="None"/>
+        <Setter Property="FontFamily" Value="MontserratRegular"/>
+    </Style>
     <Style x:Key="borberCustomStyle" TargetType="Border">
         <Setter Property="BackgroundColor" Value="{StaticResource White}"/>
-        <Setter Property="StrokeShape" Value="RoundRectangle 15"/>
+        <Setter Property="StrokeShape" Value="RoundRectangle 10"/>
         <Setter Property="HeightRequest" Value="45"/>
     </Style>
     <Style x:Key="entryCustomStyle" TargetType="Entry">
@@ -470,7 +498,7 @@
         <Setter Property="PlaceholderText" Value="Selecione" />
         <Setter Property="PlaceholderColor" Value="{StaticResource Gray300}"/>
         <Setter Property="TextColor" Value="{StaticResource Primary}" />
-        <Setter Property="CornerRadius" Value="15" />
+        <Setter Property="CornerRadius" Value="10" />
         <Setter Property="BorderColor" Value="{StaticResource White}" />
         <Setter Property="FocusedBorderColor" Value="Transparent" />
         <Setter Property="DropDownSelectedItemBackgroundColor" Value="{StaticResource Gray200}" />

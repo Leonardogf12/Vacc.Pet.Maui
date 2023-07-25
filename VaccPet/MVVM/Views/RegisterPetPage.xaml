@@ -78,6 +78,7 @@
             <StackLayout Grid.Row="2" Grid.ColumnSpan="2">
                 <Label Text="Animal" Style="{StaticResource lblTitlesStyle}"/>
                 <dxe:ComboBoxEdit x:Name="comboBoxAnimal"
+                                  Margin="2,0,2,0"
                                   Style="{StaticResource comboBoxStyle}" 
                                   ItemsSource="{Binding AnimalsList}"
                                   SelectedItem="{Binding AnimalSelected}"
@@ -222,12 +223,9 @@
             <!-- Button Save -->
             <StackLayout Grid.Row="7" Grid.ColumnSpan="2">
                 <Button x:Name="btnSave"
-                        Text="Salvar" 
-                        CornerRadius="15"
-                        TextColor="{StaticResource White}" 
-                        FontSize="Medium"
-                        FontAttributes="None"
-                        BackgroundColor="#2F3855"
+                        Text="Salvar"                        
+                        TextColor="{StaticResource White}"                         
+                        Style="{StaticResource btnDefaultStyle}"                       
                         Clicked="btnSave_Clicked"/>
                 <!--Command="{Binding AddPetCommand}"-->
             </StackLayout>

@@ -52,6 +52,7 @@ public static class MauiProgram
         builder.Services.AddTransient<DetailPetPage>();
         builder.Services.AddTransient<EditPetPage>();
         builder.Services.AddSingleton<ListVaccinePetPage>();
+        builder.Services.AddSingleton<RegisterVaccinePetPage>();
 
 
         //*Views Popup
@@ -67,6 +68,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<DetailPetViewModel>();
         builder.Services.AddSingleton<EditPetViewModel>();
         builder.Services.AddSingleton<ListVaccinePetViewModel>();
+        builder.Services.AddSingleton<RegisterVaccinePetViewModel>();        
 
         //*Services
         builder.Services.AddSingleton<IPetService, PetService>();

@@ -19,6 +19,7 @@ public partial class App : Application
         Routing.RegisterRoute(nameof(DetailPetPage), typeof(DetailPetPage));
         Routing.RegisterRoute(nameof(EditPetPage), typeof(EditPetPage));
         Routing.RegisterRoute(nameof(ListVaccinePetPage), typeof(ListVaccinePetPage));
+        Routing.RegisterRoute(nameof(RegisterVaccinePetPage), typeof(RegisterVaccinePetPage));
         MainPage = new MainPage();
 	}
 

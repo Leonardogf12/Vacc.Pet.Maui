@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:VaccPet.Helpers.Converters"             
              xmlns:dxg="clr-namespace:DevExpress.Maui.DataGrid;assembly=DevExpress.Maui.DataGrid"
              x:Class="VaccPet.MVVM.Views.ListVaccinePetPage"             
              BackgroundColor="{StaticResource Primary}">
 
-
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
     <Grid>
         <Grid.RowDefinitions>
@@ -34,16 +39,17 @@
                         CornerRadius="120"
                         BorderColor="Transparent">
 
-                    <Image Source="image_vetor" HeightRequest="110" WidthRequest="110" Aspect="AspectFill"/>
+                    <Image Source="{Binding PetSelectedForVaccine.ImageData, 
+                            Converter={StaticResource ByteArrayToImageSourceConverter}}" HeightRequest="110" WidthRequest="110" Aspect="AspectFill"/>
 
                 </Frame>
 
                 <StackLayout Grid.Row="1" Spacing="-5">
-                    <Label Text="Nome" 
+                    <Label Text="{Binding PetSelectedForVaccine.Name}" 
                            HorizontalOptions="Center" 
                            Style="{StaticResource lblTitlesStyle}" 
                            FontAttributes="Bold"/>
-                    <Label Text="01/01/2020" 
+                    <Label Text="{Binding PetSelectedForVaccine.BirthDate, StringFormat='{}{0:dd/MM/yyyy}'}" 
                            TextColor="{StaticResource Gray200}"
                            HorizontalOptions="Center"          
                            FontSize="Small"/>
@@ -80,13 +86,18 @@
                        Style="{StaticResource lblTitlesStyle}" 
                        FontAttributes="Bold"/>
 
-                <HorizontalStackLayout Grid.Row="1" Margin="20" Spacing="10">
+                <HorizontalStackLayout Grid.Row="1" Margin="15">
                     <Button Text="Nova" 
-                            Padding="5" CornerRadius="15"
-                            HeightRequest="30" WidthRequest="80"/>
+                            Padding="5"
+                            HeightRequest="40" WidthRequest="80"
+                            Style="{StaticResource btnDarkStyle}"
+                            FontSize="Small"
+                            Command="{Binding AddVaccinePetCommand}"/>
                     <Button Text="Salvar"
-                            Padding="5" CornerRadius="15" 
-                            HeightRequest="30" WidthRequest="80"/>
+                            Padding="5"
+                            Style="{StaticResource btnDarkStyle}"
+                            FontSize="Small"
+                            HeightRequest="40" WidthRequest="80"/>
                 </HorizontalStackLayout>
 
                 <dxg:DataGridView Grid.Row="2" 

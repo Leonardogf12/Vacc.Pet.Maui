@@ -1,7 +1,11 @@
-﻿using static VaccPet.Mokup.VaccineMokupHelper;
+﻿using System.Windows.Input;
+using VaccPet.MVVM.Models;
+using VaccPet.MVVM.Views;
+using static VaccPet.Mokup.VaccineMokupHelper;
 
 namespace VaccPet.MVVM.ViewModels
 {
+    [QueryProperty(nameof(PetSelectedForVaccine),"PetSelectedForVaccine")]
     public class ListVaccinePetViewModel : BaseViewModel
     {
 
@@ -11,10 +15,40 @@ namespace VaccPet.MVVM.ViewModels
         public IReadOnlyList<VaccineMokup> VaccinesCollection { get => data.VaccineMokupCollection; }
         #endregion
 
-        public ListVaccinePetViewModel()
+
+        #region PROPS
+
+        PetModel petSelectedForVaccine;
+        public PetModel PetSelectedForVaccine
         {
-            data = new VaccineMokupData();           
+            get => petSelectedForVaccine;
+            set=> SetProperty(ref petSelectedForVaccine, value);
         }
 
+
+        #endregion
+
+        #region COMMANDS
+
+        public ICommand AddVaccinePetCommand { get; set; }
+
+        #endregion
+
+        public ListVaccinePetViewModel()
+        {
+            data = new VaccineMokupData();
+
+            AddVaccinePetCommand = new Command(OnAddVaccinePetCommand);
+        }
+
+        private async void OnAddVaccinePetCommand()
+        {
+            Dictionary<string, object> parameters = new Dictionary<string, object>
+            {
+                { "RegisterVaccinePet", PetSelectedForVaccine },
+            };
+
+            await Navigation.NavigateToPageAsync<RegisterVaccinePetPage>(parameters);
+        }
     }
 }

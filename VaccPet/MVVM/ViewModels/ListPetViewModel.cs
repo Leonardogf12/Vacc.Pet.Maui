@@ -154,7 +154,7 @@ namespace VaccPet.MVVM.ViewModels
 
             Dictionary<string, object> parameters = new Dictionary<string, object>
             {
-                { "PetSelectedForEdit", PetModelObject }
+                { "PetSelectedForVaccine", PetModelObject }
             };
 
             await Navigation.NavigateToPageAsync<ListVaccinePetPage>(parameters);
