@@ -76,6 +76,7 @@ public static class MauiProgram
 		builder.Services.AddSingleton<IPopupNavigation>(MopupService.Instance);
         builder.Services.AddSingleton<IAnimalService, AnimalService>();
         builder.Services.AddSingleton<IImageContainerHelper, ImageContainerHelper>();
+        builder.Services.AddSingleton<IVaccineService, VaccineService>();
 
 
         //*IF NECESSÁRIO PARA CORRIGIR BUG DA IMAGEM, PAGINAÇÃO TRAVANDO DEVIDO AO Converter={StaticResource ByteArrayToImageSourceConverter} em ListPetPage e demais paginas

@@ -32,7 +32,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Frame Grid.Row="0" 
-                        BackgroundColor="Blue" 
+                        BackgroundColor="Transparent" 
                         HorizontalOptions="Center"
                         HeightRequest="110"
                         WidthRequest="110"

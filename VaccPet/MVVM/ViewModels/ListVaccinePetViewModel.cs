@@ -43,9 +43,11 @@ namespace VaccPet.MVVM.ViewModels
 
         private async void OnAddVaccinePetCommand()
         {
+            PetModel petModel = (PetModel)PetSelectedForVaccine;
+
             Dictionary<string, object> parameters = new Dictionary<string, object>
             {
-                { "RegisterVaccinePet", PetSelectedForVaccine },
+                { "RegisterVaccinePet", petModel },
             };
 
             await Navigation.NavigateToPageAsync<RegisterVaccinePetPage>(parameters);
