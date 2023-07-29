@@ -4,6 +4,7 @@ using VaccPet.Helpers.Image;
 using VaccPet.Helpers.Models;
 using VaccPet.MVVM.Models;
 using VaccPet.MVVM.Views.Components;
+using VaccPet.Repositories;
 using VaccPet.Services;
 
 namespace VaccPet.MVVM.ViewModels
@@ -16,6 +17,8 @@ namespace VaccPet.MVVM.ViewModels
         private readonly IPetService _IPetService;
         private readonly IAnimalService _IAnimalService;
         private readonly IImageContainerHelper _IImageContainerHelper;
+
+        private readonly PetModelRepository _PetModelRepository;
 
         public AnimalHelper _animalHelper { get; set; } = new AnimalHelper();
         #endregion
@@ -135,6 +138,7 @@ namespace VaccPet.MVVM.ViewModels
                                 IImageContainerHelper IImageContainerHelper)
         {
             _IPetService = IPetService;
+            _PetModelRepository = new PetModelRepository(App.dbPath);
             _IAnimalService = IAnimalService;
             _IImageContainerHelper = IImageContainerHelper;
 
@@ -152,13 +156,20 @@ namespace VaccPet.MVVM.ViewModels
             if (ImagePath != "" && ImagePath != "image_vetor.svg")
                 petModel.ImageData = await _IImageContainerHelper.ReadImageBytes(ImagePath);
 
+            //if (ImagePath != "" && ImagePath != "image_vetor.svg")
+            //   petModel.ImageData = ImagePath;
+
+
             petModel.Sex = IsToggledSex ? "M" : "F";
 
             petModel.Catrated = IsToggledCatrated ? true : false;
 
             petModel.Animal = (AnimalSelected.Value != petModel.Animal) ? AnimalSelected.Value : petModel.Animal;
 
-            var result = await _IPetService.UpdatePet(petModel);
+            var result = await _PetModelRepository.UpdatePetAsync(petModel);
+
+            //var result = await _IPetService.UpdatePet(petModel);
+            
 
             if (result > 0)
             {

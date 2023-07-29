@@ -1,8 +1,11 @@
 ﻿using SQLite;
+using System.ComponentModel.DataAnnotations.Schema;
+using VaccPet.MVVM.ViewModels;
 
 namespace VaccPet.MVVM.Models
 {
-    public class PetModel
+    [SQLite.Table("Pet")]
+    public class PetModel : BaseViewModel
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
@@ -14,10 +17,8 @@ namespace VaccPet.MVVM.Models
         public string Sex { get; set; }
         public bool Catrated { get; set; }
         public string Observation { get; set; }
-        public byte[] ImageData { get; set; }
+        public byte[] ImageData { get; set; }       
         public int Age { get; set; }
-        //public string Breed { get; set; }
 
-        
     }
 }

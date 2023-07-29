@@ -113,6 +113,10 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "SQLiteNetExtensions": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
             "SQLitePCLRaw.bundle_green": {
               "target": "Package",
               "version": "[2.1.5, )"
@@ -282,6 +286,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "SQLiteNetExtensions": {
+              "target": "Package",
+              "version": "[2.1.0, )"
             },
             "SQLitePCLRaw.bundle_green": {
               "target": "Package",

@@ -4,6 +4,7 @@ using System.Windows.Input;
 using VaccPet.MVVM.Models;
 using VaccPet.MVVM.Views;
 using VaccPet.MVVM.Views.Components;
+using VaccPet.Repositories;
 using VaccPet.Services;
 
 namespace VaccPet.MVVM.ViewModels
@@ -13,6 +14,8 @@ namespace VaccPet.MVVM.ViewModels
         #region VARIABLES
 
         private readonly IPetService _IPetService;
+
+        private readonly PetModelRepository _PetModelRepository;
 
         PopupViewModel PopupViewModel { get; set; } = new PopupViewModel();
 
@@ -73,6 +76,7 @@ namespace VaccPet.MVVM.ViewModels
         public ListPetViewModel(IPetService IPetService)
         {
             _IPetService = IPetService;
+            _PetModelRepository = new PetModelRepository(App.dbPath);
 
             PetsCollection = new ObservableCollection<PetModel>();
             AddPetCommand = new Command(OnAddPetCommand);
@@ -108,7 +112,9 @@ namespace VaccPet.MVVM.ViewModels
             if (result)
             {
                 PopupListActionsControl.Close();
-                await _IPetService.DeletePet(PetModelObject);
+
+                await _PetModelRepository.DeletePetAsync(PetModelObject);
+                //await _IPetService.DeletePet(PetModelObject);
                 PetsCollection.Remove(PetModelObject);
 
                 await App.Current.MainPage.ShowPopupAsync(new PopupSuccessConfirmationPage());
@@ -129,7 +135,8 @@ namespace VaccPet.MVVM.ViewModels
 
                 if (result)
                 {
-                    await _IPetService.DeleteAllPets();
+                    await _PetModelRepository.DeleteAllAsync();
+                    //await _IPetService.DeleteAllPets();
                     PetsCollection.Clear();
                     await App.Current.MainPage.ShowPopupAsync(new PopupSuccessConfirmationPage());
                 }              
@@ -197,14 +204,15 @@ namespace VaccPet.MVVM.ViewModels
         {
             IsBusy = true;
 
-            var pets = await _IPetService.GetPetsList();
+            var pets = await _PetModelRepository.GetAllPetsAsync();
+            //var pets = await _IPetService.GetPetsList();
 
 
             PetsCollection.Clear();
 
             foreach (var pet in pets)
             {
-                var age = AgeCalculator(pet.BirthDate);
+                var age = AgeCalculator(pet.BirthDate);                
                 pet.Age = age;
                 PetsCollection.Add(pet);
             }

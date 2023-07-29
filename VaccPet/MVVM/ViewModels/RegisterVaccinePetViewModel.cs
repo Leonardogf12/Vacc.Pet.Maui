@@ -1,6 +1,9 @@
-﻿using System.Windows.Input;
+﻿using CommunityToolkit.Maui.Views;
+using System.Windows.Input;
 using VaccPet.Helpers.Models;
 using VaccPet.MVVM.Models;
+using VaccPet.MVVM.Views.Components;
+using VaccPet.Repositories;
 using VaccPet.Services;
 
 namespace VaccPet.MVVM.ViewModels
@@ -12,7 +15,10 @@ namespace VaccPet.MVVM.ViewModels
         #region VARIABLES
 
         private readonly IVaccineService _IVaccineService;
-        
+
+        private readonly VaccineModelRepository _VaccineModelRepository;
+
+
         #endregion
 
         #region PROPS 
@@ -98,14 +104,34 @@ namespace VaccPet.MVVM.ViewModels
         public RegisterVaccinePetViewModel(IVaccineService IVaccineService)
         {
             _IVaccineService = IVaccineService;
+            _VaccineModelRepository = new VaccineModelRepository(App.dbPath);
 
             AddVaccinePetCommand = new Command(OnAddVaccinePetCommand);
         }
 
-        private void OnAddVaccinePetCommand()
+        private async void OnAddVaccinePetCommand()
         {
             VaccineModel model = new VaccineModel();
 
+            model.VaccinationDate = VacinationDate;
+            model.RevaccinateDate = RevacinationDate;
+            model.VaccineName = VaccineSelected.Value;
+            model.Weight = WeightPet;
+            model.PetlId = RegisterVaccinePet.Id;          
+
+            var result = await _VaccineModelRepository.SaveVaccineAsync(model);
+            //var result  = await _IVaccineService.AddVaccine(model);
+
+            if(result > 0)
+            {
+                await App.Current.MainPage.ShowPopupAsync(new PopupSuccessConfirmationPage());
+                return;
+            }
+            else
+            {
+                await App.Current.MainPage.ShowPopupAsync(new PopupErrorConfirmationPage());
+                return;
+            }
         }
     }
 }

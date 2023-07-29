@@ -55,6 +55,7 @@ public class MonoPackageManager_Resources {
 		"SkiaSharp.Views.Maui.Controls.dll",
 		"SkiaSharp.Views.Maui.Core.dll",
 		"SQLite-net.dll",
+		"SQLiteNetExtensions.dll",
 		"SQLitePCLRaw.batteries_v2.dll",
 		"SQLitePCLRaw.core.dll",
 		"SQLitePCLRaw.lib.e_sqlite3.android.dll",

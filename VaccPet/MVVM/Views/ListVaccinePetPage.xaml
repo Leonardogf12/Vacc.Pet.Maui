@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:converters="clr-namespace:VaccPet.Helpers.Converters"             
              xmlns:dxg="clr-namespace:DevExpress.Maui.DataGrid;assembly=DevExpress.Maui.DataGrid"
+             xmlns:model="clr-namespace:VaccPet.MVVM.Models"
              x:Class="VaccPet.MVVM.Views.ListVaccinePetPage"             
              BackgroundColor="{StaticResource Primary}">
 
@@ -74,7 +75,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="40"/>
                     <RowDefinition Height="50"/>
-                    <RowDefinition/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -100,62 +101,117 @@
                             HeightRequest="40" WidthRequest="80"/>
                 </HorizontalStackLayout>
 
-                <dxg:DataGridView Grid.Row="2" 
-                                  Margin="5"                                  
-                                  ItemsSource="{Binding VaccinesCollection}"                                
-                                  AutoGenerateColumnsMode="None"
-                                  BorderColor="Transparent"
-                                  VerticalLineThickness="0"
-                                  BackgroundColor="{StaticResource Tertiary}"                                     
-                                  SelectedItem=""                                    
-                                  >
-                    <dxg:DateColumn FieldName="VaccinationDate" 
-                                    HeaderBackgroundColor="{StaticResource Tertiary}"
-                                    BackgroundColor="{StaticResource Tertiary}"
-                                    FontColor="{StaticResource White}"                                   
-                                    HeaderFontColor="{StaticResource Secondary}"
-                                    HorizontalContentAlignment="Center"
-                                    Caption="Data"
-                                    MinWidth="110"
-                                    FontSize="14"
-                                    HeaderFontSize="14"
-                                    DisplayFormat="d"                                     
-                                    VerticalContentAlignment="Center"/>
-                    <dxg:TextColumn FieldName="VaccineName" 
-                                    Caption="Vacina"
-                                    HeaderBackgroundColor="{StaticResource Tertiary}"
-                                    BackgroundColor="{StaticResource Tertiary}"
-                                    FontColor="White"
-                                    HeaderFontColor="{StaticResource Secondary}"
-                                    HorizontalContentAlignment="Center"
-                                    MinWidth="120" 
-                                    HeaderFontSize="14"                                  
-                                    FontSize="14"
-                                    VerticalContentAlignment="Center" />
-                    <dxg:DateColumn FieldName="RevaccinateDate"
-                                    Caption="Revacinar"
-                                    MinWidth="125" 
-                                    HeaderBackgroundColor="{StaticResource Tertiary}"
-                                    BackgroundColor="{StaticResource Tertiary}"
-                                    FontColor="White"
-                                    HeaderFontColor="{StaticResource Secondary}"
-                                    HeaderFontSize="14"
-                                    FontSize="14"
-                                    DisplayFormat="d" 
-                                    VerticalContentAlignment="Center"/>
-                    <dxg:TextColumn FieldName="Weight" 
-                                    Caption="Peso"
-                                    HeaderBackgroundColor="{StaticResource Tertiary}"
-                                    BackgroundColor="{StaticResource Tertiary}"
-                                    FontColor="White"
-                                    HeaderFontColor="{StaticResource Secondary}"
-                                    HorizontalContentAlignment="Center"
-                                    HeaderFontSize="14"
-                                    FontSize="14"
-                                    MinWidth="90" 
-                                    VerticalContentAlignment="Center" />
-                </dxg:DataGridView>
 
+              <StackLayout Grid.Row="2">
+                    <!--<ListView ItemsSource="{Binding VaccineModelCollection}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate x:DataType="model:VaccineModel">
+                                <ViewCell >
+                                    <Grid Padding="10" ColumnSpacing="10">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="60"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Label Grid.Column="0" Text="{Binding VaccinationDate, StringFormat='{}{0:dd/MM/yyyy}' }" TextColor="White"/>
+                                        <Label Grid.Column="1" Text="{Binding VaccineName}" TextColor="White"/>
+                                        <Label Grid.Column="2" Text="{Binding RevaccinateDate, StringFormat='{}{0:dd/MM/yyyy}' }" TextColor="White"/>
+                                        <Label Grid.Column="3" Text="{Binding Weight}" TextColor="White"/>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>-->
+
+                    <!--
+                    <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+                        <Label Text="Data" Style="{StaticResource lblTitlesStyle}"/>
+                        <Label Text="Vacina" Style="{StaticResource lblTitlesStyle}"/>
+                        <Label Text="Revacinar" Style="{StaticResource lblTitlesStyle}"/>
+                        <Label Text="Peso" Style="{StaticResource lblTitlesStyle}"/>
+                    </HorizontalStackLayout>
+                    <ScrollView Orientation="Horizontal">
+                        <CollectionView ItemsSource="{Binding VaccineModelCollection}" Margin="20" VerticalOptions="FillAndExpand">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate x:DataType="model:VaccineModel">
+                                    <HorizontalStackLayout Spacing="20">
+                                        <DatePicker Date="{Binding VaccinationDate}" TextColor="White" IsEnabled="False"/>
+                                        <Label Text="{Binding VaccineName}" TextColor="White" VerticalOptions="Center"/>
+                                        <DatePicker Date="{Binding RevaccinateDate}" TextColor="White" IsEnabled="False"/>
+                                        <Label Text="{Binding Weight}" TextColor="White" VerticalOptions="Center"/>
+                                    </HorizontalStackLayout>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </ScrollView>
+                -->
+                
+                </StackLayout>
+
+
+
+                <dxg:DataGridView Grid.Row="2" Margin="5"                                
+                                    ItemsSource="{Binding VaccineModelCollection}"                                                                
+                                    BorderColor="Transparent"
+                                    VerticalLineThickness="0"
+                                    BackgroundColor="{StaticResource Tertiary}"                                                                                                   
+                                    ColumnHeaderHeight="40"                                      
+                                    AutoGenerateColumnsMode="Replace"                                    
+                                    SelectionMode="Single"
+                                    RowHeight="40"
+                                    HorizontalOptions="Center"
+                                    IsHorizontalScrollBarVisible="False">
+                    <dxg:DateColumn FieldName="VaccinationDate" 
+                                        HeaderBackgroundColor="{StaticResource Tertiary}"
+                                        BackgroundColor="{StaticResource Tertiary}"
+                                        FontColor="{StaticResource White}"                                   
+                                        HeaderFontColor="{StaticResource Secondary}"
+                                        HorizontalContentAlignment="Center"
+                                        Caption="Data"
+                                        MinWidth="110"
+                                        FontSize="14"
+                                        HeaderFontSize="14"
+                                        DisplayFormat="d"                                                  
+                                        VerticalContentAlignment="Center"/>
+                    <dxg:TextColumn FieldName="VaccineName" 
+                                        Caption="Vacina"
+                                        HeaderBackgroundColor="{StaticResource Tertiary}"
+                                        BackgroundColor="{StaticResource Tertiary}"
+                                        FontColor="White"
+                                        HeaderFontColor="{StaticResource Secondary}"
+                                        HorizontalContentAlignment="Center"
+                                        MinWidth="120" 
+                                        HeaderFontSize="14"                                  
+                                        FontSize="14"
+                                        VerticalContentAlignment="Center" />
+                    <dxg:DateColumn FieldName="RevaccinateDate"
+                                        Caption="Revacinar"
+                                        MinWidth="125" 
+                                        HeaderBackgroundColor="{StaticResource Tertiary}"
+                                        BackgroundColor="{StaticResource Tertiary}"
+                                        FontColor="White"
+                                        HeaderFontColor="{StaticResource Secondary}"
+                                        HeaderFontSize="14"
+                                        FontSize="14"
+                                        DisplayFormat="d" 
+                                        VerticalContentAlignment="Center"/>
+                    <dxg:TextColumn FieldName="Weight" 
+                                        Caption="Peso"
+                                        HeaderBackgroundColor="{StaticResource Tertiary}"
+                                        BackgroundColor="{StaticResource Tertiary}"
+                                        FontColor="White"
+                                        HeaderFontColor="{StaticResource Secondary}"
+                                        HorizontalContentAlignment="Center"
+                                        HeaderFontSize="14"
+                                        FontSize="14"
+                                        MinWidth="90" 
+                                        VerticalContentAlignment="Center" />
+                </dxg:DataGridView>
 
             </Grid>
 

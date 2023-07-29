@@ -5,6 +5,14 @@ namespace VaccPet.Services
 {
     public class VaccineService : IVaccineService
     {
+
+        public VaccineService()
+        {
+            //if (!DBConnection.Instance.Database.TableMappings.Any(x => x.MappedType.Name == typeof(VaccineModel).Name))
+            //    DBConnection.Instance.Database.CreateTableAsync<VaccineModel>();
+        }
+
+
         public async Task<int> AddVaccine(VaccineModel model)
         {
             return await DBConnection.Instance.Database.InsertAsync(model);

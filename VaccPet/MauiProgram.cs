@@ -7,7 +7,6 @@ using Mopups.Hosting;
 using Mopups.Interfaces;
 using Mopups.Services;
 using SkiaSharp.Views.Maui.Controls.Hosting;
-using VaccPet.Data;
 using VaccPet.Helpers.Image;
 using VaccPet.MVVM.ViewModels;
 using VaccPet.MVVM.Views;
@@ -43,7 +42,7 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
-        DBConnection.Instance.Initialize(); //*Transferido para este lugar devido a bug de inicialização na App. Testar essa chamada com async Task.
+        //DBConnection.Instance.Initialize();
 
         //*Views
         builder.Services.AddSingleton<HomePage>();

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qPGuY+dWqu4pwgF+NbNTeTJnWYKPN4eB7NOprnWJgZJyOW6mD6ILdxmnSnpgsWdKFYJvcLbEnfOb4/48lc+ASQ==",
+  "dgSpecHash": "mK2ZGjnMrPys1pRHR/hNaSiOUFLrs5yu399QAY9i293JxAe6ZHJQ3pNZxMdsnA3gC0f88TOIqP+mfsym5/2axg==",
   "success": true,
   "projectFilePath": "D:\\PROJETOS\\Projetos MAUI\\VaccPet.Project\\Vacc.Pet.Maui\\VaccPet\\VaccPet.csproj",
   "expectedPackageFiles": [
@@ -68,6 +68,7 @@
     "C:\\Users\\root\\.nuget\\packages\\skiasharp.views.maui.controls\\2.88.3\\skiasharp.views.maui.controls.2.88.3.nupkg.sha512",
     "C:\\Users\\root\\.nuget\\packages\\skiasharp.views.maui.core\\2.88.3\\skiasharp.views.maui.core.2.88.3.nupkg.sha512",
     "C:\\Users\\root\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
+    "C:\\Users\\root\\.nuget\\packages\\sqlitenetextensions\\2.1.0\\sqlitenetextensions.2.1.0.nupkg.sha512",
     "C:\\Users\\root\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.1.5\\sqlitepclraw.bundle_green.2.1.5.nupkg.sha512",
     "C:\\Users\\root\\.nuget\\packages\\sqlitepclraw.core\\2.1.5\\sqlitepclraw.core.2.1.5.nupkg.sha512",
     "C:\\Users\\root\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3.android\\2.1.5\\sqlitepclraw.lib.e_sqlite3.android.2.1.5.nupkg.sha512",

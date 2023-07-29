@@ -4,6 +4,7 @@ using VaccPet.Helpers.Image;
 using VaccPet.Helpers.Models;
 using VaccPet.MVVM.Models;
 using VaccPet.MVVM.Views.Components;
+using VaccPet.Repositories;
 using VaccPet.Services;
 
 namespace VaccPet.MVVM.ViewModels
@@ -17,6 +18,8 @@ namespace VaccPet.MVVM.ViewModels
         private readonly IAnimalService _IAnimalService;
 
         private readonly IImageContainerHelper _ImageContainerHelper;
+
+        private readonly PetModelRepository _PetModelRepository;
 
         public AnimalHelper _animalHelper { get; set; } = new AnimalHelper();
 
@@ -182,6 +185,7 @@ namespace VaccPet.MVVM.ViewModels
                                     IAnimalService IAnimalService,
                                     IImageContainerHelper ImageContainerHelper)
         {
+            _PetModelRepository = new PetModelRepository(App.dbPath);
             _IPetService = IPetService;
             _IAnimalService = IAnimalService;
             _ImageContainerHelper = ImageContainerHelper;
@@ -204,6 +208,8 @@ namespace VaccPet.MVVM.ViewModels
             pet.ImageData = ImagePath == "image_vetor.svg" ?
                             await _ImageContainerHelper.GetImageDefault(AnimalSelected.Value) :
                             await _ImageContainerHelper.ReadImageBytes(ImagePath);
+
+            //pet.ImageData = ImagePath == "image_vetor.svg" ? AnimalSelected.Value : ImagePath;                          
             pet.BirthDate = BirthDate;
             pet.Color = Color;
             pet.Observation = Observation;
@@ -212,7 +218,9 @@ namespace VaccPet.MVVM.ViewModels
             pet.Weight = Weight;
             pet.Age = 0;            
 
-            var result = await _IPetService.AddPet(pet);
+
+            var result = await _PetModelRepository.SavePetAsync(pet);
+            //var result = await _IPetService.AddPet(pet);
 
             if (result > 0)
             {

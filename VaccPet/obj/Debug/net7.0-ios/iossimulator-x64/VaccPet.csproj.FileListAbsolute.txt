@@ -1355,3 +1355,4 @@ D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\menu_popup.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\menu_popup@2x.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\menu_popup@3x.png
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-ios\iossimulator-x64\SQLiteNetExtensions.dll

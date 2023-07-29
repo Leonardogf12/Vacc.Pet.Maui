@@ -1,11 +1,14 @@
-﻿using System.Windows.Input;
+﻿using System.Collections.ObjectModel;
+using System.Drawing.Printing;
+using System.Windows.Input;
 using VaccPet.MVVM.Models;
 using VaccPet.MVVM.Views;
+using VaccPet.Repositories;
 using static VaccPet.Mokup.VaccineMokupHelper;
 
 namespace VaccPet.MVVM.ViewModels
 {
-    [QueryProperty(nameof(PetSelectedForVaccine),"PetSelectedForVaccine")]
+    [QueryProperty(nameof(PetSelectedForVaccine), "PetSelectedForVaccine")]
     public class ListVaccinePetViewModel : BaseViewModel
     {
 
@@ -13,8 +16,18 @@ namespace VaccPet.MVVM.ViewModels
         public readonly VaccineMokupData data;
 
         public IReadOnlyList<VaccineMokup> VaccinesCollection { get => data.VaccineMokupCollection; }
+
+
         #endregion
 
+        #region VARIABLES
+
+        private readonly VaccineModelRepository _VaccineModelRepository;
+
+
+        public ObservableCollection<VaccineModel> VaccineModelCollection { get; set; }       
+
+        #endregion
 
         #region PROPS
 
@@ -22,7 +35,12 @@ namespace VaccPet.MVVM.ViewModels
         public PetModel PetSelectedForVaccine
         {
             get => petSelectedForVaccine;
-            set=> SetProperty(ref petSelectedForVaccine, value);
+            set
+            {
+                SetProperty(ref petSelectedForVaccine, value);
+              
+                GetAllVaccinesOfPetSelected();
+            }
         }
 
 
@@ -36,9 +54,26 @@ namespace VaccPet.MVVM.ViewModels
 
         public ListVaccinePetViewModel()
         {
-            data = new VaccineMokupData();
+            _VaccineModelRepository = new VaccineModelRepository(App.dbPath);
+            //data = new VaccineMokupData();
 
             AddVaccinePetCommand = new Command(OnAddVaccinePetCommand);
+            
+        }
+
+        private async void GetAllVaccinesOfPetSelected()
+        {
+            VaccineModelCollection = new ObservableCollection<VaccineModel>();
+
+            var listVaccines = await _VaccineModelRepository.GetAllVaccinesByPetAsync(PetSelectedForVaccine.Id);
+            
+            VaccineModelCollection.Clear();
+
+            foreach (var item in listVaccines)
+            {
+                VaccineModelCollection.Add(item);
+            }
+                
         }
 
         private async void OnAddVaccinePetCommand()

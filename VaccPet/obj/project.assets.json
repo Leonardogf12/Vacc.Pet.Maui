@@ -807,6 +807,23 @@
           }
         }
       },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SQLitePCLRaw.bundle_green/2.1.5": {
         "type": "package",
         "dependencies": {
@@ -3620,6 +3637,23 @@
           }
         }
       },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SQLitePCLRaw.bundle_green/2.1.5": {
         "type": "package",
         "dependencies": {
@@ -6400,6 +6434,23 @@
         "runtime": {
           "lib/netstandard2.0/SQLite-net.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -9186,6 +9237,23 @@
           }
         }
       },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SQLitePCLRaw.bundle_green/2.1.5": {
         "type": "package",
         "dependencies": {
@@ -11969,6 +12037,23 @@
           }
         }
       },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SQLitePCLRaw.bundle_green/2.1.5": {
         "type": "package",
         "dependencies": {
@@ -14743,6 +14828,23 @@
         "runtime": {
           "lib/netstandard2.0/SQLite-net.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -17584,6 +17686,23 @@
           }
         }
       },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SQLitePCLRaw.bundle_green/2.1.5": {
         "type": "package",
         "dependencies": {
@@ -18908,6 +19027,23 @@
           }
         }
       },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SQLitePCLRaw.bundle_green/2.1.5": {
         "type": "package",
         "dependencies": {
@@ -20220,6 +20356,23 @@
         "runtime": {
           "lib/netstandard2.0/SQLite-net.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -21538,6 +21691,23 @@
           }
         }
       },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SQLitePCLRaw.bundle_green/2.1.5": {
         "type": "package",
         "dependencies": {
@@ -22850,6 +23020,23 @@
         "runtime": {
           "lib/netstandard2.0/SQLite-net.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -24178,6 +24365,23 @@
         "runtime": {
           "lib/netstandard2.0/SQLite-net.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -26843,6 +27047,35 @@
         "lib/netstandard2.0/SQLite-net.xml",
         "sqlite-net-pcl.1.8.116.nupkg.sha512",
         "sqlite-net-pcl.nuspec"
+      ]
+    },
+    "SQLiteNetExtensions/2.1.0": {
+      "sha512": "oiyhVxCi7M2nr3tI6h05jdHGT0HKW6GxMNKUiO04zWAxv42MHtX12c4tW67w6VqGwcnXj1bwyTpq9P0W8QoGYQ==",
+      "type": "package",
+      "path": "sqlitenetextensions/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.1/SQLiteNetExtensions.dll",
+        "lib/netstandard1.1/SQLiteNetExtensions.pdb",
+        "sqlitenetextensions.2.1.0.nupkg.sha512",
+        "sqlitenetextensions.nuspec",
+        "src/SQLiteNetExtensions/Attributes/CascadeOperation.cs",
+        "src/SQLiteNetExtensions/Attributes/ForeignKeyAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/ManyToManyAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/ManyToOneAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/OneToManyAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/OneToOneAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/RelationshipAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/TextBlobAttribute.cs",
+        "src/SQLiteNetExtensions/Exceptions/IncorrectRelationshipException.cs",
+        "src/SQLiteNetExtensions/Extensions/ReadOperations.cs",
+        "src/SQLiteNetExtensions/Extensions/ReflectionExtensions.cs",
+        "src/SQLiteNetExtensions/Extensions/TextBlob/ITextBlobSerializer.cs",
+        "src/SQLiteNetExtensions/Extensions/TextBlob/Serializers/JsonBlobSerializer.cs",
+        "src/SQLiteNetExtensions/Extensions/TextBlob/TextBlobOperations.cs",
+        "src/SQLiteNetExtensions/Extensions/WriteOperations.cs",
+        "src/SQLiteNetExtensions/Properties/AssemblyInfo.cs"
       ]
     },
     "SQLitePCLRaw.bundle_green/2.1.5": {
@@ -30441,6 +30674,7 @@
       "Microsoft.Maui.Graphics >= 7.0.92",
       "Mopups >= 1.1.1",
       "Newtonsoft.Json >= 13.0.3",
+      "SQLiteNetExtensions >= 2.1.0",
       "SQLitePCLRaw.bundle_green >= 2.1.5",
       "SQLitePCLRaw.core >= 2.1.5",
       "SQLitePCLRaw.provider.dynamic_cdecl >= 2.1.5",
@@ -30473,6 +30707,7 @@
       "Microsoft.Maui.Graphics >= 7.0.92",
       "Mopups >= 1.1.1",
       "Newtonsoft.Json >= 13.0.3",
+      "SQLiteNetExtensions >= 2.1.0",
       "SQLitePCLRaw.bundle_green >= 2.1.5",
       "SQLitePCLRaw.core >= 2.1.5",
       "SQLitePCLRaw.provider.dynamic_cdecl >= 2.1.5",
@@ -30594,6 +30829,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
+          },
+          "SQLiteNetExtensions": {
+            "target": "Package",
+            "version": "[2.1.0, )"
           },
           "SQLitePCLRaw.bundle_green": {
             "target": "Package",
@@ -30764,6 +31003,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
+          },
+          "SQLiteNetExtensions": {
+            "target": "Package",
+            "version": "[2.1.0, )"
           },
           "SQLitePCLRaw.bundle_green": {
             "target": "Package",
