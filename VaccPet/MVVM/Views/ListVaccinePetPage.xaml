@@ -1,16 +1,55 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:converters="clr-namespace:VaccPet.Helpers.Converters"             
+             xmlns:converters="clr-namespace:VaccPet.Helpers.Converters"       
+             xmlns:controls="clr-namespace:Microsoft.Maui.Controls"
+             xmlns:local="clr-namespace:VaccPet.MVVM.ViewModels"
              xmlns:dxg="clr-namespace:DevExpress.Maui.DataGrid;assembly=DevExpress.Maui.DataGrid"
              xmlns:model="clr-namespace:VaccPet.MVVM.Models"
              x:Class="VaccPet.MVVM.Views.ListVaccinePetPage"             
              BackgroundColor="{StaticResource Primary}">
 
+
+    <ContentPage.BindingContext>
+        <local:ListVaccinePetViewModel />
+    </ContentPage.BindingContext>
+
+
     <ContentPage.Resources>
         <ResourceDictionary>
             <converters:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />
         </ResourceDictionary>
+      
+            <DataTemplate x:Key="HeaderTemplate">
+                <Grid Padding="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Text="Data" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+                    <Label Grid.Column="1" Text="Vacina" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+                    <Label Grid.Column="2" Text="Revacinar" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+                    <Label Grid.Column="3" Text="Peso" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+                </Grid>
+            </DataTemplate>
+
+            <DataTemplate x:Key="ItemTemplate">
+                <Grid Padding="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Text="{Binding VaccinationDate}" />
+                    <Label Grid.Column="1" Text="{Binding VaccineName}" />
+                    <Label Grid.Column="2" Text="{Binding RevaccinationDate}" />
+                    <Label Grid.Column="3" Text="{Binding Weight}" />
+                </Grid>
+            </DataTemplate>
+       
     </ContentPage.Resources>
 
     <Grid>
@@ -102,8 +141,43 @@
                 </HorizontalStackLayout>
 
 
-              <StackLayout Grid.Row="2">
-                    <!--<ListView ItemsSource="{Binding VaccineModelCollection}">
+
+                <ListView Grid.Row="2" ItemsSource="{Binding VaccineModelCollection}" HorizontalOptions="CenterAndExpand">
+                    <ListView.Header>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="Data" Style="{StaticResource lblTitlesStyle}" />
+                            <Label Grid.Column="1" Text="Vacina" Style="{StaticResource lblTitlesStyle}" />
+                            <Label Grid.Column="2" Text="Revacinar" Style="{StaticResource lblTitlesStyle}"/>
+                            <Label Grid.Column="3" Text="Peso" Style="{StaticResource lblTitlesStyle}"/>
+                        </Grid>
+                    </ListView.Header>
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="model:VaccineModel">
+                            <ViewCell>
+                                <Grid ColumnSpacing="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0" Text="{Binding VaccinationDate,StringFormat='{}{0:dd/MM/yyyy}'}" Style="{StaticResource lblDetailStyle}" FontSize="14" />
+                                    <Label Grid.Column="1" Text="{Binding VaccineName}" Style="{StaticResource lblDetailStyle}" HorizontalTextAlignment="Center" FontSize="14"/>
+                                    <Label Grid.Column="2" Text="{Binding RevaccinateDate,StringFormat='{}{0:dd/MM/yyyy}'}"  Style="{StaticResource lblDetailStyle}" FontSize="14"/>
+                                    <Label Grid.Column="3" Text="{Binding Weight}" Style="{StaticResource lblDetailStyle}" HorizontalTextAlignment="Start" FontSize="14"/>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <!--<ListView ItemsSource="{Binding VaccineModelCollection}">
                         <ListView.ItemTemplate>
                             <DataTemplate x:DataType="model:VaccineModel">
                                 <ViewCell >
@@ -151,11 +225,10 @@
                     </ScrollView>
                 -->
                 
-                </StackLayout>
+              
 
 
-
-                <dxg:DataGridView Grid.Row="2" Margin="5"                                
+                <!--<dxg:DataGridView Grid.Row="2" Margin="5"                                
                                     ItemsSource="{Binding VaccineModelCollection}"                                                                
                                     BorderColor="Transparent"
                                     VerticalLineThickness="0"
@@ -211,7 +284,7 @@
                                         FontSize="14"
                                         MinWidth="90" 
                                         VerticalContentAlignment="Center" />
-                </dxg:DataGridView>
+                </dxg:DataGridView>-->
 
             </Grid>
 
