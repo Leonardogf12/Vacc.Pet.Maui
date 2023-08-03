@@ -1,9 +1,9 @@
 ﻿using System.Collections.ObjectModel;
-using System.Drawing.Printing;
 using System.Windows.Input;
 using VaccPet.MVVM.Models;
 using VaccPet.MVVM.Views;
 using VaccPet.Repositories;
+using static System.Collections.Specialized.NameObjectCollectionBase;
 using static VaccPet.Mokup.VaccineMokupHelper;
 
 namespace VaccPet.MVVM.ViewModels
@@ -12,21 +12,10 @@ namespace VaccPet.MVVM.ViewModels
     public class ListVaccinePetViewModel : BaseViewModel
     {
 
-        #region DATA MOKUP
-        public readonly VaccineMokupData data;
-
-        public IReadOnlyList<VaccineMokup> VaccinesCollection { get => data.VaccineMokupCollection; }
-
-
-        #endregion
-
         #region VARIABLES
 
         private readonly VaccineModelRepository _VaccineModelRepository;
-
-
-        public ObservableCollection<VaccineModel> VaccineModelCollection { get; set; }       
-
+             
         #endregion
 
         #region PROPS
@@ -43,6 +32,19 @@ namespace VaccPet.MVVM.ViewModels
             }
         }
 
+        private ObservableCollection<VaccineModel> _vaccineModelCollection;
+        public ObservableCollection<VaccineModel> VaccineModelCollection
+        {
+            get => _vaccineModelCollection;
+            set => SetProperty(ref _vaccineModelCollection, value);
+        }
+
+        private int _vaccineCount;
+        public int VaccineCount
+        {
+            get => _vaccineCount;
+            set=> SetProperty(ref _vaccineCount, value);
+        }
 
         #endregion
 
@@ -54,9 +56,10 @@ namespace VaccPet.MVVM.ViewModels
 
         public ListVaccinePetViewModel()
         {
-            _VaccineModelRepository = new VaccineModelRepository(App.dbPath);
-            //data = new VaccineMokupData();
+            VaccineModelCollection = new ObservableCollection<VaccineModel>();
 
+            _VaccineModelRepository = new VaccineModelRepository(App.dbPath);
+          
             AddVaccinePetCommand = new Command(OnAddVaccinePetCommand);
             
         }
@@ -73,7 +76,8 @@ namespace VaccPet.MVVM.ViewModels
             {
                 VaccineModelCollection.Add(item);
             }
-                
+
+            VaccineCount = VaccineModelCollection.Count;
         }
 
         private async void OnAddVaccinePetCommand()
@@ -87,5 +91,6 @@ namespace VaccPet.MVVM.ViewModels
 
             await Navigation.NavigateToPageAsync<RegisterVaccinePetPage>(parameters);
         }
+      
     }
 }

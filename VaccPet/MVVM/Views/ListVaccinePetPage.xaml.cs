@@ -4,10 +4,10 @@ namespace VaccPet.MVVM.Views;
 
 public partial class ListVaccinePetPage : ContentPage
 {
-    public ListVaccinePetPage(ListVaccinePetViewModel model)
+    public ListVaccinePetPage()
     {
         InitializeComponent();
 
-        BindingContext = model;
+        BindingContext = new  ListVaccinePetViewModel();
     }
 }

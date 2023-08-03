@@ -11,6 +11,7 @@ using VaccPet.Helpers.Image;
 using VaccPet.MVVM.ViewModels;
 using VaccPet.MVVM.Views;
 using VaccPet.MVVM.Views.Components;
+using VaccPet.Repositories;
 using VaccPet.Services;
 using VaccPet.Services.Navigation;
 
@@ -37,12 +38,9 @@ public static class MauiProgram
             });
 
 
-
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
-
-        //DBConnection.Instance.Initialize();
 
         //*Views
         builder.Services.AddSingleton<HomePage>();
@@ -52,7 +50,6 @@ public static class MauiProgram
         builder.Services.AddTransient<EditPetPage>();
         builder.Services.AddSingleton<ListVaccinePetPage>();
         builder.Services.AddSingleton<RegisterVaccinePetPage>();
-
 
         //*Views Popup
         builder.Services.AddTransient<PopupListActionsPage>();
@@ -69,13 +66,11 @@ public static class MauiProgram
         builder.Services.AddSingleton<ListVaccinePetViewModel>();
         builder.Services.AddSingleton<RegisterVaccinePetViewModel>();        
 
-        //*Services
-        builder.Services.AddSingleton<IPetService, PetService>();
+        //*Services      
 		builder.Services.AddSingleton<INavigationService, NavigationService>();
 		builder.Services.AddSingleton<IPopupNavigation>(MopupService.Instance);
         builder.Services.AddSingleton<IAnimalService, AnimalService>();
-        builder.Services.AddSingleton<IImageContainerHelper, ImageContainerHelper>();
-        builder.Services.AddSingleton<IVaccineService, VaccineService>();
+        builder.Services.AddSingleton<IImageContainerHelper, ImageContainerHelper>();        
 
 
         //*IF NECESSÁRIO PARA CORRIGIR BUG DA IMAGEM, PAGINAÇÃO TRAVANDO DEVIDO AO Converter={StaticResource ByteArrayToImageSourceConverter} em ListPetPage e demais paginas

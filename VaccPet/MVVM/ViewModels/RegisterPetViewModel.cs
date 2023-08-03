@@ -12,15 +12,13 @@ namespace VaccPet.MVVM.ViewModels
     public class RegisterPetViewModel : BaseViewModel
     {
         #region VARIABLES
-
-        private readonly IPetService _IPetService;
-
+       
         private readonly IAnimalService _IAnimalService;
 
         private readonly IImageContainerHelper _ImageContainerHelper;
 
         private readonly PetModelRepository _PetModelRepository;
-
+       
         public AnimalHelper _animalHelper { get; set; } = new AnimalHelper();
 
         #endregion
@@ -181,12 +179,10 @@ namespace VaccPet.MVVM.ViewModels
 
         #endregion
 
-        public RegisterPetViewModel(IPetService IPetService,
-                                    IAnimalService IAnimalService,
+        public RegisterPetViewModel(IAnimalService IAnimalService,
                                     IImageContainerHelper ImageContainerHelper)
-        {
-            _PetModelRepository = new PetModelRepository(App.dbPath);
-            _IPetService = IPetService;
+        {          
+            _PetModelRepository = new PetModelRepository(App.dbPath);        
             _IAnimalService = IAnimalService;
             _ImageContainerHelper = ImageContainerHelper;
 
@@ -216,11 +212,9 @@ namespace VaccPet.MVVM.ViewModels
             pet.Sex = IsToggledSex == true ? "M" : "F";
             pet.Catrated = IsToggledCatrated;
             pet.Weight = Weight;
-            pet.Age = 0;            
+            pet.Age = 0;
 
-
-            var result = await _PetModelRepository.SavePetAsync(pet);
-            //var result = await _IPetService.AddPet(pet);
+            var result = await _PetModelRepository.SavePetAsync(pet);            
 
             if (result > 0)
             {

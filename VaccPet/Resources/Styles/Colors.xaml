@@ -16,6 +16,8 @@
     <Color x:Key="GreenIconSuccess">#70C842</Color>
     <Color x:Key="RedIconError">#F3756C</Color>
     <Color x:Key="PrimaryButton">#2F3855</Color>
+    <Color x:Key="PinkAscent">#D54A9E</Color>
+    
     
 
     <!-- New Colors end -->

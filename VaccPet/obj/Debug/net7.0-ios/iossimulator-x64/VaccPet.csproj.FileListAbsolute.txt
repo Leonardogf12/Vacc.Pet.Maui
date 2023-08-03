@@ -600,7 +600,6 @@ D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-ios\iossimula
 D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\VaccPet.pdb
 D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\VaccPet.genruntimeconfig.cache
 D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\ref\VaccPet.dll
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-ios\iossimulator-x64\libmonosgen-2.0.dylib
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-ios\iossimulator-x64\VaccPet.runtimeconfig.json
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-ios\iossimulator-x64\VaccPet.dll
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-ios\iossimulator-x64\VaccPet.pdb
@@ -650,6 +649,7 @@ D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-ios\iossimulator-x64\SkiaSharp.Views.Maui.Controls.dll
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-ios\iossimulator-x64\SkiaSharp.Views.Maui.Core.dll
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-ios\iossimulator-x64\SQLite-net.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-ios\iossimulator-x64\SQLiteNetExtensions.dll
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-ios\iossimulator-x64\SQLitePCLRaw.batteries_v2.dll
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-ios\iossimulator-x64\SQLitePCLRaw.core.dll
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-ios\iossimulator-x64\SQLitePCLRaw.provider.dynamic_cdecl.dll
@@ -864,6 +864,7 @@ D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-ios\iossimulator-x64\libmono-component-hot_reload-stub-static.a
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-ios\iossimulator-x64\libmono-component-hot_reload.dylib
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-ios\iossimulator-x64\libmonosgen-2.0.a
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-ios\iossimulator-x64\libmonosgen-2.0.dylib
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-ios\iossimulator-x64\Microsoft.iOS.registrar.a
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-ios\iossimulator-x64\libextension-dotnet.a
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-ios\iossimulator-x64\libxamarin-dotnet-debug.a
@@ -1298,6 +1299,9 @@ D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\menu_dot_yellow.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\menu_dot_yellow@2x.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\menu_dot_yellow@3x.png
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\menu_popup.png
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\menu_popup@2x.png
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\menu_popup@3x.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\pharmacy.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\pharmacy@2x.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\pharmacy@3x.png
@@ -1352,7 +1356,3 @@ D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\VaccPet.pdb
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\VaccPet.genruntimeconfig.cache
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\ref\VaccPet.dll
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\menu_popup.png
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\menu_popup@2x.png
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-ios\iossimulator-x64\resizetizer\r\menu_popup@3x.png
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-ios\iossimulator-x64\SQLiteNetExtensions.dll

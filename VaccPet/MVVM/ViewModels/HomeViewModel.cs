@@ -8,9 +8,7 @@ namespace VaccPet.MVVM.ViewModels
     public class HomeViewModel : BaseViewModel
     {
         #region VARIABLES
-
-        private readonly IPetService _IPetService;
-
+        
         public ObservableCollection<PetModel> PetsCollection { get; set; }
         #endregion
 
@@ -19,10 +17,8 @@ namespace VaccPet.MVVM.ViewModels
 
         #endregion
 
-        public HomeViewModel(IPetService IPetService)
-        {
-            _IPetService = IPetService;
-
+        public HomeViewModel()
+        {            
             PetsCollection = new ObservableCollection<PetModel>();
 
             ListPetsCommand = new Command(OnListPetsCommand);

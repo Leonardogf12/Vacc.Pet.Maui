@@ -13,11 +13,8 @@ namespace VaccPet.MVVM.ViewModels
     {
 
         #region VARIABLES
-
-        private readonly IVaccineService _IVaccineService;
-
+      
         private readonly VaccineModelRepository _VaccineModelRepository;
-
 
         #endregion
 
@@ -101,13 +98,14 @@ namespace VaccPet.MVVM.ViewModels
 
         #endregion  
 
-        public RegisterVaccinePetViewModel(IVaccineService IVaccineService)
-        {
-            _IVaccineService = IVaccineService;
+        public RegisterVaccinePetViewModel()
+        {            
             _VaccineModelRepository = new VaccineModelRepository(App.dbPath);
 
             AddVaccinePetCommand = new Command(OnAddVaccinePetCommand);
         }
+
+        #region METHODS
 
         private async void OnAddVaccinePetCommand()
         {
@@ -120,8 +118,7 @@ namespace VaccPet.MVVM.ViewModels
             model.PetlId = RegisterVaccinePet.Id;          
 
             var result = await _VaccineModelRepository.SaveVaccineAsync(model);
-            //var result  = await _IVaccineService.AddVaccine(model);
-
+          
             if(result > 0)
             {
                 await App.Current.MainPage.ShowPopupAsync(new PopupSuccessConfirmationPage());
@@ -133,5 +130,7 @@ namespace VaccPet.MVVM.ViewModels
                 return;
             }
         }
+
+        #endregion
     }
 }

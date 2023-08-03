@@ -1,13 +1,12 @@
 ﻿using SQLite;
-using VaccPet.Data;
 using VaccPet.MVVM.Models;
 
 namespace VaccPet.Repositories
 {
     public class VaccineModelRepository
     {
-        private readonly SQLiteAsyncConnection _database;
         private readonly GenericRepository<VaccineModel> _genericRepository;
+        private readonly SQLiteAsyncConnection _database;
 
         public VaccineModelRepository(string dbPath)
         {
@@ -42,7 +41,7 @@ namespace VaccPet.Repositories
 
         public Task<List<VaccineModel>> GetAllVaccinesByPetAsync(int idPet)
         {
-            return _database.Table<VaccineModel>().Where(x=>x.PetlId == idPet).ToListAsync();
+            return _database.Table<VaccineModel>().Where(x => x.PetlId == idPet).ToListAsync();
         }
     }
 }

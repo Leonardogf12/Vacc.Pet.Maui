@@ -97,7 +97,6 @@
                                         </HorizontalStackLayout>
                                     </StackLayout>
                                    
-
                                     <HorizontalStackLayout Grid.Row="1" Grid.Column="1" Style="{StaticResource hslListPetPage}">
                                         <Label Text="Cor: " Style="{StaticResource lblTitleListPetPage}"/>
                                         <Label Text="{Binding Color}" TextColor="{StaticResource Quinary}" Style="{StaticResource lblTitleListPetPage}"/>
@@ -121,10 +120,7 @@
                                                           CommandParameter="{Binding .}"/>
                                         </ImageButton.GestureRecognizers>
                                     </ImageButton>
-                                    <!--<skia:SKLottieView x:Name="ImagePopup"
-                                                       Grid.Row="3" Grid.Column="2"
-                                                       HeightRequest="50"                                                                                                                                                          
-                                                       Source="menu_dot_json"/>-->
+                                    
                                 </Grid>
                             </Frame>
 

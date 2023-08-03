@@ -2108,6 +2108,14 @@ D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-android\stamp
 D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-android\stamp\_GenerateJavaStubs.stamp
 D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 D:\PROJETOS\Projetos MAUI\VaccPet - Copia\VaccPet\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\VaccPet.runtimeconfig.json
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\VaccPet.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\VaccPet.pdb
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\com.companyname.vaccpet.apk
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\com.companyname.vaccpet.aab
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\com.companyname.vaccpet-Signed.aab
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\com.companyname.vaccpet-Signed.apk
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\com.companyname.vaccpet-Signed.apk.idsig
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\build.props
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\adb.props
@@ -2138,6 +2146,7 @@ D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\male.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\menu_dot.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\menu_dot_yellow.png
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\menu_popup.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\pharmacy.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\question_yellow.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\remove_red.png
@@ -2161,6 +2170,7 @@ D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\male.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\menu_dot.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\menu_dot_yellow.png
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\menu_popup.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\pharmacy.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\question_yellow.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\remove_red.png
@@ -2184,6 +2194,7 @@ D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\male.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\menu_dot.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\menu_dot_yellow.png
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\menu_popup.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\pharmacy.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\question_yellow.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\remove_red.png
@@ -2207,6 +2218,7 @@ D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\male.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\menu_dot.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\menu_dot_yellow.png
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\menu_popup.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\pharmacy.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\question_yellow.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\remove_red.png
@@ -2230,6 +2242,7 @@ D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\male.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\menu_dot.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\menu_dot_yellow.png
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\menu_popup.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\pharmacy.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\question_yellow.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\remove_red.png
@@ -2327,14 +2340,6 @@ D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\VaccPet.AssemblyInfoInputs.cache
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\VaccPet.AssemblyInfo.cs
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\VaccPet.csproj.CoreCompileInputs.cache
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\VaccPet.runtimeconfig.json
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\VaccPet.dll
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\VaccPet.pdb
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\com.companyname.vaccpet.apk
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\com.companyname.vaccpet.aab
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\com.companyname.vaccpet-Signed.aab
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\com.companyname.vaccpet-Signed.apk
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\com.companyname.vaccpet-Signed.apk.idsig
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\XamlC.stamp
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\VaccPet.dll
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\VaccPet.pdb
@@ -2428,6 +2433,8 @@ D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\assets\SkiaSharp.Views.Maui.Core.dll
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\assets\SkiaSharp.Views.Maui.Core.pdb
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\assets\SQLite-net.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\assets\SQLiteNetExtensions.dll
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\assets\SQLiteNetExtensions.pdb
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\assets\SQLitePCLRaw.batteries_v2.dll
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\assets\SQLitePCLRaw.core.dll
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\assets\SQLitePCLRaw.lib.e_sqlite3.android.dll
@@ -3416,10 +3423,3 @@ D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\stamp\_GenerateJavaStubs.stamp
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\menu_popup.png
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\menu_popup.png
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\menu_popup.png
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\menu_popup.png
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\menu_popup.png
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\assets\SQLiteNetExtensions.dll
-D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\assets\SQLiteNetExtensions.pdb

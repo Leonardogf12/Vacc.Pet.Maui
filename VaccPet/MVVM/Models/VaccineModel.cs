@@ -1,6 +1,8 @@
 ﻿using SQLite;
 using SQLiteNetExtensions.Attributes;
+using System.ComponentModel.DataAnnotations.Schema;
 using VaccPet.MVVM.ViewModels;
+using ForeignKeyAttribute = SQLiteNetExtensions.Attributes.ForeignKeyAttribute;
 
 namespace VaccPet.MVVM.Models
 {
@@ -13,13 +15,13 @@ namespace VaccPet.MVVM.Models
         public string VaccineName { get; set; }
         public DateTime RevaccinateDate { get; set; }
         public double Weight { get; set; }
-      
-        [SQLiteNetExtensions.Attributes.ForeignKey(typeof(PetModel))]
+
+        [ForeignKey(typeof(PetModel))]
         public int PetlId { get; set; }
-
-
+                
         [ManyToOne]
+        [NotMapped]
         public PetModel PetModel { get; set; }
-
+        
     }
 }

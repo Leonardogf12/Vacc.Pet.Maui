@@ -13,8 +13,7 @@ namespace VaccPet.MVVM.ViewModels
     public class EditPetViewModel : BaseViewModel
     {
         #region VARIABLES
-
-        private readonly IPetService _IPetService;
+       
         private readonly IAnimalService _IAnimalService;
         private readonly IImageContainerHelper _IImageContainerHelper;
 
@@ -133,11 +132,9 @@ namespace VaccPet.MVVM.ViewModels
 
         #endregion
 
-        public EditPetViewModel(IPetService IPetService,
-                                IAnimalService IAnimalService,
+        public EditPetViewModel(IAnimalService IAnimalService,
                                 IImageContainerHelper IImageContainerHelper)
-        {
-            _IPetService = IPetService;
+        {           
             _PetModelRepository = new PetModelRepository(App.dbPath);
             _IAnimalService = IAnimalService;
             _IImageContainerHelper = IImageContainerHelper;

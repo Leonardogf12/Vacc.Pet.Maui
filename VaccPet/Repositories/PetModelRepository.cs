@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SQLite;
 using VaccPet.MVVM.Models;
 
 namespace VaccPet.Repositories
@@ -11,9 +7,12 @@ namespace VaccPet.Repositories
     {
         private readonly GenericRepository<PetModel> _genericRepository;
 
+        private readonly SQLiteAsyncConnection _dataBase;
+
         public PetModelRepository(string dbPath)
         {
             _genericRepository = new GenericRepository<PetModel>(dbPath);
+            _dataBase = new SQLiteAsyncConnection(dbPath);
         }
 
         public Task<List<PetModel>> GetAllPetsAsync()
@@ -41,5 +40,9 @@ namespace VaccPet.Repositories
             return _genericRepository.DeleteAllAsync();
         }
 
+        public async Task<PetModel> GetPetByIdAsync(int id)
+        {
+            return await _dataBase.Table<PetModel>().Where(x => x.Id == id).FirstOrDefaultAsync();
+        }
     }
 }

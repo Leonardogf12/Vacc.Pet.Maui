@@ -12,9 +12,7 @@ namespace VaccPet.MVVM.ViewModels
     public class ListPetViewModel : BaseViewModel
     {
         #region VARIABLES
-
-        private readonly IPetService _IPetService;
-
+  
         private readonly PetModelRepository _PetModelRepository;
 
         PopupViewModel PopupViewModel { get; set; } = new PopupViewModel();
@@ -70,12 +68,7 @@ namespace VaccPet.MVVM.ViewModels
         #endregion
 
         public ListPetViewModel()
-        {
-        }
-
-        public ListPetViewModel(IPetService IPetService)
-        {
-            _IPetService = IPetService;
+        {            
             _PetModelRepository = new PetModelRepository(App.dbPath);
 
             PetsCollection = new ObservableCollection<PetModel>();
@@ -90,7 +83,6 @@ namespace VaccPet.MVVM.ViewModels
         }
 
        
-
         #region METHODS
 
         public async void OnSelectedPetInCollectionCommand(PetModel petSelected)
@@ -114,7 +106,7 @@ namespace VaccPet.MVVM.ViewModels
                 PopupListActionsControl.Close();
 
                 await _PetModelRepository.DeletePetAsync(PetModelObject);
-                //await _IPetService.DeletePet(PetModelObject);
+              
                 PetsCollection.Remove(PetModelObject);
 
                 await App.Current.MainPage.ShowPopupAsync(new PopupSuccessConfirmationPage());
@@ -135,8 +127,7 @@ namespace VaccPet.MVVM.ViewModels
 
                 if (result)
                 {
-                    await _PetModelRepository.DeleteAllAsync();
-                    //await _IPetService.DeleteAllPets();
+                    await _PetModelRepository.DeleteAllAsync();                 
                     PetsCollection.Clear();
                     await App.Current.MainPage.ShowPopupAsync(new PopupSuccessConfirmationPage());
                 }              
@@ -205,9 +196,7 @@ namespace VaccPet.MVVM.ViewModels
             IsBusy = true;
 
             var pets = await _PetModelRepository.GetAllPetsAsync();
-            //var pets = await _IPetService.GetPetsList();
-
-
+            
             PetsCollection.Clear();
 
             foreach (var pet in pets)
