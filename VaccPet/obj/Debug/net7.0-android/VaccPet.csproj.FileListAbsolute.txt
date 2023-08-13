@@ -3422,6 +3422,9 @@ D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable\pet_menu_4.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable\pet_menu_5.png
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable\pet_menu_6.png
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable\pet_menu_7.png
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable\pet_menu_8.png
+D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\assets\Maui.Skeleton.dll
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\typemaps.arm64-v8a.ll
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\environment.arm64-v8a.ll
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\compressed_assemblies.arm64-v8a.ll

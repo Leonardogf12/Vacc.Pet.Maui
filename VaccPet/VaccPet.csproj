@@ -184,6 +184,8 @@
 	  <None Remove="Resources\Images\pet_menu_4.png" />
 	  <None Remove="Resources\Images\pet_menu_5.png" />
 	  <None Remove="Resources\Images\pet_menu_6.png" />
+	  <None Remove="Resources\Images\pet_menu_7.png" />
+	  <None Remove="Resources\Images\pet_menu_8.png" />
 	  <None Remove="Resources\Images\pharmacy.svg" />
 	  <None Remove="Resources\Images\question_yellow.svg" />
 	  <None Remove="Resources\Images\rabbitdefault.png" />
@@ -202,6 +204,7 @@
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui" Version="5.2.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
+		<PackageReference Include="HorusStudio.Maui.Skeleton" Version="2.0.0" />
 		<PackageReference Include="Material.Components.Maui" Version="0.1.2-beta" />
 		<PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="7.0.8" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
@@ -217,6 +220,21 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="MVVM\Views\CardMiddleAHomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\Views\CardMiddleBHomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\Views\CardTopAHomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\Views\CardTopBHomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\Views\CardTopCHomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="MVVM\Views\Components\PopupErrorConfirmationPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -257,6 +275,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="MVVM\Views\CardTopCHomePage.xaml.cs">
+	    <DependentUpon>CardTopCHomePage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="MVVM\Views\CardTopBHomePage.xaml.cs">
+	    <DependentUpon>CardTopBHomePage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="MVVM\Views\CardTopAHomePage.xaml.cs">
+	    <DependentUpon>CardTopAHomePage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="MVVM\Views\Components\PopupSuccessConfirmationPage.xaml.cs">
 	    <DependentUpon>PopupSuccessConfirmationPage.xaml</DependentUpon>
 	  </Compile>

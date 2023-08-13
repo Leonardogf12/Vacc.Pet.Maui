@@ -59,7 +59,7 @@
 
                             <Frame  HasShadow="True"  BorderColor="Transparent"                              
                                Margin="15,0,15,10" HeightRequest="160" CornerRadius="40">
-
+                              
                                 <Frame.Background>
                                     <LinearGradientBrush EndPoint="1,0">
                                         <GradientStop Color="{StaticResource Tertiary}" Offset="1.2" />

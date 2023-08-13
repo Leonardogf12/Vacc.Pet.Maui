@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:xct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:sk="clr-namespace:Maui.Skeleton;assembly=Maui.Skeleton"
              x:Class="VaccPet.MVVM.Views.HomePage"     
              xmlns:views="clr-namespace:VaccPet.MVVM.Views"
              xmlns:local="clr-namespace:VaccPet.MVVM.Models"
@@ -11,32 +12,51 @@
              BackgroundColor="{StaticResource Primary}"              
              Shell.NavBarIsVisible="False">
 
-
     <Grid RowSpacing="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
-            <RowDefinition Height="150"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="220"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-      
+
+        <Label Grid.Row="0" 
+               Text="VaccPet" 
+               TextColor="{StaticResource Secondary}" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Center" 
+               FontSize="Large"              
+               />
+
         <ScrollView Grid.Row="1" Orientation="Horizontal" HorizontalOptions="FillAndExpand" HorizontalScrollBarVisibility="Never">
-            <CollectionView Margin="10" ItemsLayout="HorizontalList"  ItemsSource="{Binding HomeMenuHorizontalModelCollection}">
+            <CollectionView Margin="10" ItemsLayout="HorizontalList"  ItemsSource="{Binding HomeTopMenuHorizontalModelCollection}">
                 <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="helpers:HomeMenuHorizontalModel">
+                    <DataTemplate x:DataType="helpers:HomeMenuCardsHorizontalModel">
                         <Frame Margin="5" 
                                HeightRequest="80" 
                                WidthRequest="150" 
-                               CornerRadius="20"
-                               Padding="0"
-                               BorderColor="Transparent">
+                               CornerRadius="15"
+                               Padding="1" 
+                               BorderColor="{StaticResource Primary}"
+                               sk:Skeleton.IsBusy="{Binding IsBusy}"
+                               sk:Skeleton.BackgroundColor="{StaticResource Gray300}"
+                               sk:Skeleton.Animation="{sk:DefaultAnimation Source=Fade, Interval='1000',Parameter='0.3'}">
                             <Grid>
-                                <Image Source="{Binding ImageButton}" 
-                                       HeightRequest="{Binding HeightRequestImage}" 
-                                       VerticalOptions="End" 
-                                       HorizontalOptions="End"
-                                       Margin="0,0,10,0"/>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
 
-                                <Label Text="{Binding Name}" 
+
+                                <Image Source="{Binding ImageButton}" 
+                                           HeightRequest="{Binding HeightRequestImage}" 
+                                           Grid.Column="1" VerticalOptions="End"                                   
+                                           HorizontalOptions="End"
+                                           Margin="0,0,10,-2"
+                                           />
+
+
+                                <Label Grid.Column="0" Text="{Binding Name}" 
                                        TextColor="White" 
                                        Margin="10"
                                        HorizontalOptions="Start"
@@ -44,7 +64,7 @@
                                        FontSize="Medium" 
                                        FontAttributes="Bold"/>
                             </Grid>
-                          
+
                             <Frame.Background>
                                 <LinearGradientBrush StartPoint="{Binding NumberStartPoint}" EndPoint="{Binding NumberEndPoint}">
                                     <GradientStop Color="{Binding FirstColor}" Offset="{Binding FirstOffset}"/>
@@ -63,9 +83,94 @@
             </CollectionView>
         </ScrollView>
 
-        <ScrollView Grid.Row="2" VerticalScrollBarVisibility="Never">
+        <ScrollView  Grid.Row="2" Orientation="Horizontal" HorizontalOptions="FillAndExpand" HorizontalScrollBarVisibility="Never">
+            <CollectionView x:Name="collectionView" Margin="10" ItemsLayout="HorizontalList"  ItemsSource="{Binding HomeMiddleMenuHorizontalModelCollection}">
+                <CollectionView.ItemTemplate>
+                    <!--<CarouselView x:Name="collectionView" IndicatorView="indicatorMiddleCards"  
+                          ItemsSource="{Binding HomeMiddleMenuHorizontalModelCollection}" ItemsLayout="HorizontalList" BackgroundColor="Pink" >
+                <CarouselView.ItemTemplate>-->
+                    <DataTemplate x:DataType="helpers:HomeMenuCardsHorizontalModel">
+                        <Frame Margin="5"
+                               HeightRequest="180" 
+                               WidthRequest="320"
+                    
+                               CornerRadius="20"
+                               Padding="1" 
+                               BorderColor="{StaticResource Primary}">
+
+                            <Grid RowSpacing="5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="50"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="50"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0"
+                                       Text="{Binding Name}" 
+                                       TextColor="White" 
+                                       Margin="15,10,0,0"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="Center"
+                                       FontSize="Medium" 
+                                       FontAttributes="Bold"/>
+
+                                <Label Grid.Row="1" Text="{Binding TextCardMiddleMenuHorizontal}" 
+                                       TextColor="White" 
+                                       Margin="15,0,0,0"
+                                       HorizontalOptions="Start"
+                                       VerticalOptions="Center"
+                                       FontSize="Small" 
+                                       FontAttributes="Bold"/>
+
+                                <Button Grid.Row="2" 
+                                        Opacity="0.4"
+                                        BackgroundColor="{StaticResource Primary}"
+                                        CornerRadius="10"
+                                        Text="Conferir"
+                                        Padding="1"
+                                        FontSize="Small"
+                                        TextColor="White"
+                                        Margin="15,0,0,10"                                        
+                                        HeightRequest="30" 
+                                        WidthRequest="100" 
+                                        HorizontalOptions="Start"
+                                        Command="{Binding Source={x:RelativeSource 
+                                                          AncestorType={x:Type vm:HomeViewModel}},
+                                                          Path=NavigationMenuHorizontalCommand}"
+                                                          CommandParameter="{Binding .}"/>
+
+                                <StackLayout Grid.RowSpan="3" Grid.Column="1" VerticalOptions="End">
+                                    <Image Source="{Binding ImageButton}" 
+                                           HeightRequest="{Binding HeightRequestImage}"                                          
+                                           HorizontalOptions="End"
+                                           Margin="0,0,10,0"/>
+                                </StackLayout>
+
+                            </Grid>
+
+                            <Frame.Background>
+                                <LinearGradientBrush StartPoint="{Binding NumberStartPoint}" EndPoint="{Binding NumberEndPoint}">
+                                    <GradientStop Color="{Binding FirstColor}" Offset="{Binding FirstOffset}"/>
+                                    <GradientStop Color="{Binding SecondaryColor}" Offset="{Binding SecondaryOffset}"/>
+                                </LinearGradientBrush>
+                            </Frame.Background>
+
+                        </Frame>
+                    </DataTemplate>
+                    <!--</CarouselView.ItemTemplate>
+                </CarouselView>-->
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+
+        <ScrollView Grid.Row="3" VerticalScrollBarVisibility="Never">
             <Grid ColumnSpacing="10" RowSpacing="10" Margin="15,0,15,0">
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="160"/>
                     <RowDefinition Height="160"/>
                     <RowDefinition Height="160"/>
                 </Grid.RowDefinitions>
@@ -74,12 +179,11 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Frame x:Name="btnPets"                    
-                   Grid.Row="0" Grid.Column="0"
-                   CornerRadius="35"  
-                   Padding="0" 
-                   HeightRequest="160"
-                   BorderColor="Transparent">
+                <Frame Grid.Row="0" Grid.Column="0"
+                       CornerRadius="25"  
+                       Padding="1" 
+                       BorderColor="{StaticResource Primary}"
+                       HeightRequest="160">
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_GoToPetList"/>
                     </Frame.GestureRecognizers>
@@ -101,28 +205,28 @@
                         </Grid.ColumnDefinitions>
 
                         <Image Grid.Column="0"
-                           Source="pet_menu_1" 
-                           Margin="10,0,0,0"  
-                           WidthRequest="100" 
-                           HeightRequest="140"
-                           Aspect="AspectFill"/>
+                               Source="pet_menu_1"                              
+                               Margin="10,0,0,0"  
+                               WidthRequest="100" 
+                               HeightRequest="140"
+                               Aspect="AspectFill"/>
 
                         <Label Grid.Column="1"
-                           Text="Pets" 
-                           Margin="-10,10,10,0"
-                           TextColor="{StaticResource White}" 
-                           FontSize="Large" 
-                           FontAttributes="Bold" 
-                           HorizontalOptions="Center"/>
+                               Text="Pets" 
+                               Margin="-10,10,10,0"
+                               TextColor="{StaticResource White}" 
+                               FontSize="Large" 
+                               FontAttributes="Bold" 
+                               HorizontalOptions="Center"/>
 
                     </Grid>
                 </Frame>
 
                 <Frame Grid.Row="0" Grid.Column="1" 
-                   CornerRadius="35" 
-                   HeightRequest="160"
-                   Padding="0" 
-                   BorderColor="Transparent">
+                       CornerRadius="25"
+                       HeightRequest="160"
+                       Padding="1" 
+                       BorderColor="{StaticResource Primary}">
 
                     <Frame.Background>
                         <LinearGradientBrush EndPoint="1,0">
@@ -141,31 +245,30 @@
                         </Grid.ColumnDefinitions>
 
                         <Image Grid.Column="0" 
-                           Grid.Row="1" 
-                           Source="pet_menu_2" 
-                           WidthRequest="110" 
-                           HeightRequest="180" 
-                           Margin="10,10,0,0"  
-                           HorizontalOptions="Start"/>
+                               Grid.Row="1" 
+                               Source="pet_menu_2" 
+                               WidthRequest="110" 
+                               HeightRequest="180" 
+                               Margin="10,10,0,0"  
+                               HorizontalOptions="Start"/>
 
                         <Label Grid.Column="0"
-                           Grid.Row="0"                          
-                           Text="Page" 
-                           Margin="0,10,30,-30"
-                           TextColor="{StaticResource White}" 
-                           FontSize="Large" 
-                           FontAttributes="Bold" 
-                           HorizontalOptions="End"/>
+                               Grid.Row="0"                          
+                               Text="Page" 
+                               Margin="0,10,30,-30"
+                               TextColor="{StaticResource White}" 
+                               FontSize="Large" 
+                               FontAttributes="Bold" 
+                               HorizontalOptions="End"/>
 
                     </Grid>
                 </Frame>
 
-                <Frame x:Name="qqqq"                    
-                   Grid.Row="1" Grid.Column="0"
-                   CornerRadius="35"  
-                   Padding="0" 
-                   HeightRequest="160"
-                   BorderColor="Transparent">
+                <Frame Grid.Row="1" Grid.Column="0"
+                       CornerRadius="25"
+                       Padding="1" 
+                       BorderColor="{StaticResource Primary}"
+                       HeightRequest="160">
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_GoToPetList"/>
                     </Frame.GestureRecognizers>
@@ -178,33 +281,36 @@
                     </Frame.Background>
 
                     <Grid Margin="0" Padding="0">
+
                         <Grid.RowDefinitions>
                             <RowDefinition Height="180"/>
                         </Grid.RowDefinitions>
+
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
 
                         <Image Grid.Column="0"
-                           Source="pet_menu_3" 
-                           Margin="10,0,0,0"  
-                           WidthRequest="100" 
-                           HeightRequest="140"
-                           Aspect="AspectFill"/>
+                               Source="pet_menu_3" 
+                               Margin="10,0,0,0"  
+                               WidthRequest="100" 
+                               HeightRequest="140"
+                               Aspect="AspectFill"/>
 
                         <Label Grid.Column="1"
-                           Text="Page" 
-                           Margin="-10,10,20,0"
-                           TextColor="{StaticResource White}" 
-                           FontSize="Large" 
-                           FontAttributes="Bold" 
-                           HorizontalOptions="Center"/>
+                               Text="Page" 
+                               Margin="-10,10,20,0"
+                               TextColor="{StaticResource White}" 
+                               FontSize="Large" 
+                               FontAttributes="Bold" 
+                               HorizontalOptions="Center"/>
 
                     </Grid>
                 </Frame>
 
             </Grid>
         </ScrollView>
+        
     </Grid>
 </ContentPage>

@@ -269,6 +269,19 @@
           }
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "IconPacks.Material/1.0.8457.2-build": {
         "type": "package",
         "compile": {
@@ -3124,6 +3137,19 @@
           "buildTransitive/net6.0-android30.0/HarfBuzzSharp.NativeAssets.Android.targets": {}
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "IconPacks.Material/1.0.8457.2-build": {
         "type": "package",
         "compile": {
@@ -5922,6 +5948,19 @@
         },
         "build": {
           "buildTransitive/net6.0-android30.0/HarfBuzzSharp.NativeAssets.Android.targets": {}
+        }
+      },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
         }
       },
       "IconPacks.Material/1.0.8457.2-build": {
@@ -8724,6 +8763,19 @@
           "buildTransitive/net6.0-android30.0/HarfBuzzSharp.NativeAssets.Android.targets": {}
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "IconPacks.Material/1.0.8457.2-build": {
         "type": "package",
         "compile": {
@@ -11524,6 +11576,19 @@
           "buildTransitive/net6.0-android30.0/HarfBuzzSharp.NativeAssets.Android.targets": {}
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "IconPacks.Material/1.0.8457.2-build": {
         "type": "package",
         "compile": {
@@ -14319,6 +14384,19 @@
         },
         "build": {
           "buildTransitive/net6.0-android30.0/HarfBuzzSharp.NativeAssets.Android.targets": {}
+        }
+      },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
         }
       },
       "IconPacks.Material/1.0.8457.2-build": {
@@ -17125,6 +17203,19 @@
           }
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "IconPacks.Material/1.0.8457.2-build": {
         "type": "package",
         "compile": {
@@ -18374,6 +18465,19 @@
         },
         "build": {
           "buildTransitive/net6.0-ios13.6/HarfBuzzSharp.NativeAssets.iOS.targets": {}
+        }
+      },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
         }
       },
       "IconPacks.Material/1.0.8457.2-build": {
@@ -19708,6 +19812,19 @@
           "buildTransitive/net6.0-ios13.6/HarfBuzzSharp.NativeAssets.iOS.targets": {}
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "IconPacks.Material/1.0.8457.2-build": {
         "type": "package",
         "compile": {
@@ -21040,6 +21157,19 @@
           "buildTransitive/net6.0-ios13.6/HarfBuzzSharp.NativeAssets.iOS.targets": {}
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "IconPacks.Material/1.0.8457.2-build": {
         "type": "package",
         "compile": {
@@ -22370,6 +22500,19 @@
         },
         "build": {
           "buildTransitive/net6.0-ios13.6/HarfBuzzSharp.NativeAssets.iOS.targets": {}
+        }
+      },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
         }
       },
       "IconPacks.Material/1.0.8457.2-build": {
@@ -23709,6 +23852,19 @@
         },
         "build": {
           "buildTransitive/net6.0-ios13.6/HarfBuzzSharp.NativeAssets.iOS.targets": {}
+        }
+      },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
         }
       },
       "IconPacks.Material/1.0.8457.2-build": {
@@ -25558,6 +25714,19 @@
         "runtimes/ios/native/libHarfBuzzSharp.framework/Modules/module.modulemap",
         "runtimes/ios/native/libHarfBuzzSharp.framework/_CodeSignature/CodeResources",
         "runtimes/ios/native/libHarfBuzzSharp.framework/libHarfBuzzSharp"
+      ]
+    },
+    "HorusStudio.Maui.Skeleton/2.0.0": {
+      "sha512": "afjshuB9nNDBm73JV7h1SzHraz6AEibskMqsZiWZIwX0tm+qd78/gkedmFRHObW2qSAZh0/j0IhWOiP9SDdb5g==",
+      "type": "package",
+      "path": "horusstudio.maui.skeleton/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "horusstudio.maui.skeleton.2.0.0.nupkg.sha512",
+        "horusstudio.maui.skeleton.nuspec",
+        "lib/net6.0/Maui.Skeleton.dll",
+        "lib/net6.0/Maui.Skeleton.xml"
       ]
     },
     "IconPacks.Material/1.0.8457.2-build": {
@@ -30664,6 +30833,7 @@
       "CommunityToolkit.Maui >= 5.2.0",
       "CommunityToolkit.Mvvm >= 8.2.0",
       "DevExpress.Maui.DataGrid >= 23.1.4",
+      "HorusStudio.Maui.Skeleton >= 2.0.0",
       "Material.Components.Maui >= 0.1.2-beta",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
@@ -30697,6 +30867,7 @@
       "CommunityToolkit.Maui >= 5.2.0",
       "CommunityToolkit.Mvvm >= 8.2.0",
       "DevExpress.Maui.DataGrid >= 23.1.4",
+      "HorusStudio.Maui.Skeleton >= 2.0.0",
       "Material.Components.Maui >= 0.1.2-beta",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
@@ -30784,6 +30955,10 @@
           "DevExpress.Maui.DataGrid": {
             "target": "Package",
             "version": "[23.1.4, )"
+          },
+          "HorusStudio.Maui.Skeleton": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           },
           "Material.Components.Maui": {
             "target": "Package",
@@ -30958,6 +31133,10 @@
           "DevExpress.Maui.DataGrid": {
             "target": "Package",
             "version": "[23.1.4, )"
+          },
+          "HorusStudio.Maui.Skeleton": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           },
           "Material.Components.Maui": {
             "target": "Package",

@@ -27,6 +27,7 @@ public class MonoPackageManager_Resources {
 		"Fizzler.dll",
 		"GoogleGson.dll",
 		"HarfBuzzSharp.dll",
+		"Maui.Skeleton.dll",
 		"IconPacks.Material.dll",
 		"Material.Components.Maui.dll",
 		"MaterialColorUtilities.dll",

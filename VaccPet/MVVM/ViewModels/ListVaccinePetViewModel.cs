@@ -1,7 +1,10 @@
-﻿using System.Collections.ObjectModel;
+﻿using CommunityToolkit.Maui.Views;
+using DevExpress.Maui.Core.Internal;
+using System.Collections.ObjectModel;
 using System.Windows.Input;
 using VaccPet.MVVM.Models;
 using VaccPet.MVVM.Views;
+using VaccPet.MVVM.Views.Components;
 using VaccPet.Repositories;
 using static System.Collections.Specialized.NameObjectCollectionBase;
 using static VaccPet.Mokup.VaccineMokupHelper;
@@ -15,22 +18,23 @@ namespace VaccPet.MVVM.ViewModels
         #region VARIABLES
 
         private readonly VaccineModelRepository _VaccineModelRepository;
-             
+
         #endregion
 
         #region PROPS
 
-        PetModel petSelectedForVaccine;
+        private PetModel _petSelectedForVaccine;
         public PetModel PetSelectedForVaccine
         {
-            get => petSelectedForVaccine;
+            get => _petSelectedForVaccine;
             set
             {
-                SetProperty(ref petSelectedForVaccine, value);
-              
+                SetProperty(ref _petSelectedForVaccine, value);
+
                 GetAllVaccinesOfPetSelected();
             }
         }
+
 
         private ObservableCollection<VaccineModel> _vaccineModelCollection;
         public ObservableCollection<VaccineModel> VaccineModelCollection
@@ -39,11 +43,20 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref _vaccineModelCollection, value);
         }
 
+
         private int _vaccineCount;
         public int VaccineCount
         {
             get => _vaccineCount;
-            set=> SetProperty(ref _vaccineCount, value);
+            set => SetProperty(ref _vaccineCount, value);
+        }
+
+
+        private string _revaccinationColor = "DeepPink";
+        public string RevaccinationColor
+        {
+            get => _revaccinationColor;
+            set => SetProperty(ref _revaccinationColor, value);
         }
 
         #endregion
@@ -51,6 +64,8 @@ namespace VaccPet.MVVM.ViewModels
         #region COMMANDS
 
         public ICommand AddVaccinePetCommand { get; set; }
+        public Command RemoveVaccineItem { get; set; }
+        public Command InformVaccinationCommand { get; set; }
 
         #endregion
 
@@ -59,9 +74,33 @@ namespace VaccPet.MVVM.ViewModels
             VaccineModelCollection = new ObservableCollection<VaccineModel>();
 
             _VaccineModelRepository = new VaccineModelRepository(App.dbPath);
-          
+
             AddVaccinePetCommand = new Command(OnAddVaccinePetCommand);
-            
+
+            RemoveVaccineItem = new Command<VaccineModel>(OnRemoveVaccineItem);
+
+            InformVaccinationCommand = new Command<VaccineModel>(OnInformVaccinationCommand);
+        }
+
+        private async void OnInformVaccinationCommand(VaccineModel model)
+        {
+            RevaccinationColor = "GreenYellow";
+        }
+
+        private async void OnRemoveVaccineItem(VaccineModel model)
+        {
+            var question = await App.Current.MainPage.DisplayAlert("Excluir", "Deseja realmente exlcuir este registro?", "Sim", "Não");
+
+            if (!question) return;
+
+            VaccineModelCollection.Remove(model);
+
+            var result = await _VaccineModelRepository.DeleteVaccineAsync(model);
+
+            if (result > 0)            
+                await App.Current.MainPage.ShowPopupAsync(new PopupSuccessConfirmationPage());                       
+            else            
+                await App.Current.MainPage.ShowPopupAsync(new PopupErrorConfirmationPage());                          
         }
 
         private async void GetAllVaccinesOfPetSelected()
@@ -69,7 +108,7 @@ namespace VaccPet.MVVM.ViewModels
             VaccineModelCollection = new ObservableCollection<VaccineModel>();
 
             var listVaccines = await _VaccineModelRepository.GetAllVaccinesByPetAsync(PetSelectedForVaccine.Id);
-            
+
             VaccineModelCollection.Clear();
 
             foreach (var item in listVaccines)
@@ -91,6 +130,6 @@ namespace VaccPet.MVVM.ViewModels
 
             await Navigation.NavigateToPageAsync<RegisterVaccinePetPage>(parameters);
         }
-      
+
     }
 }

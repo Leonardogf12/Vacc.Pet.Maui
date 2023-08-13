@@ -11,4 +11,21 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
     <UseInterpreter>true</UseInterpreter>
   </PropertyGroup>
+  <ItemGroup>
+    <MauiXaml Update="MVVM\Views\CardMiddleAHomePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="MVVM\Views\CardMiddleBHomePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="MVVM\Views\CardTopAHomePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="MVVM\Views\CardTopBHomePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="MVVM\Views\CardTopCHomePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+  </ItemGroup>
 </Project>

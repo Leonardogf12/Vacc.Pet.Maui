@@ -20,62 +20,109 @@ namespace VaccPet.MVVM.ViewModels
 
         #region PROPS 
 
-        private PetModel registerVaccinePet;
+        private PetModel _registerVaccinePet;
         public PetModel RegisterVaccinePet
         {
-            get => registerVaccinePet;
-            set => SetProperty(ref this.registerVaccinePet, value);
+            get => _registerVaccinePet;
+            set => SetProperty(ref _registerVaccinePet, value);
         }
 
-        List<VaccineHelper> vaccineList;
+
+        private List<VaccineHelper> _vaccineList;
         public List<VaccineHelper> VaccineList
         {
-            get => vaccineList;
-            set => SetProperty(ref vaccineList, value);
+            get => _vaccineList;
+            set => SetProperty(ref _vaccineList, value);
         }
 
-        DateTime vacinationDate;
+
+        private DateTime _vacinationDate = DateTime.Now;
         public DateTime VacinationDate
         {
-            get => vacinationDate;
-            set => SetProperty(ref this.vacinationDate, value);
+            get => _vacinationDate;
+            set => SetProperty(ref this._vacinationDate, value);
+        }
+        
+
+        private DateTime _maxVacinationDate = DateTime.Now.AddYears(2);
+        public DateTime MaxVacinationDate
+        {
+            get => _maxVacinationDate;
+            set => SetProperty(ref this._maxVacinationDate, value);
         }
 
-        DateTime revacinationDate;
+
+        private DateTime _minVacinationDate = DateTime.Now.AddYears(-1);
+        public DateTime MinVacinationDate
+        {
+            get => _minVacinationDate;
+            set => SetProperty(ref this._minVacinationDate, value);
+        }
+
+
+        private DateTime _revacinationDate = DateTime.Now;
         public DateTime RevacinationDate
         {
-            get => revacinationDate;
-            set => SetProperty(ref this.revacinationDate, value);
+            get => _revacinationDate;
+            set => SetProperty(ref this._revacinationDate, value);
         }
 
-        VaccineHelper vaccineSelected;
+        private Color _revacinationColor =  Color.FromRgba("#D54A9E");
+        public Color RevacinationColor
+        {
+            get => _revacinationColor;
+            set => SetProperty(ref this._revacinationColor, value);
+        }
+
+
+
+        private DateTime _maxRevacinationDate = DateTime.Now.AddYears(2);
+        public DateTime MaxRevacinationDate
+        {
+            get => _maxRevacinationDate;
+            set => SetProperty(ref this._maxRevacinationDate, value);
+        }
+
+
+        private DateTime _minRevacinationDate = DateTime.Now;
+        public DateTime MinRevacinationDate
+        {
+            get => _minRevacinationDate;
+            set => SetProperty(ref this._minRevacinationDate, value);
+        }
+
+
+        private VaccineHelper _vaccineSelected;
         public VaccineHelper VaccineSelected
         {
-            get => vaccineSelected;
-            set => SetProperty(ref this.vaccineSelected, value);
+            get => _vaccineSelected;
+            set => SetProperty(ref this._vaccineSelected, value);
         }
 
-        string vaccineName;
+
+        private string _vaccineName;
         public string VaccineName
         {
-            get => vaccineName;
-            set => SetProperty(ref this.vaccineName, value);
+            get => _vaccineName;
+            set => SetProperty(ref this._vaccineName, value);
         }
 
-        double weightPet;
+
+        private double _weightPet;
         public double WeightPet
         {
-            get => weightPet;
-            set => SetProperty(ref this.weightPet, value);
+            get => _weightPet;
+            set => SetProperty(ref this._weightPet, value);
         }
 
-        bool isToggledAllOk;
+
+        private bool _isToggledAllOk;
         public bool IsToggledAllOk
         {
-            get => isToggledAllOk;
+            get => _isToggledAllOk;
             set
             {
-                SetProperty(ref isToggledAllOk, value);
+                SetProperty(ref _isToggledAllOk, value);
                 if(IsToggledAllOk)
                     AllFieldsOk = true;
                 else
@@ -83,11 +130,12 @@ namespace VaccPet.MVVM.ViewModels
             }
         }
 
-        bool allFieldsOk;
+
+        private bool _allFieldsOk;
         public bool AllFieldsOk
         {
-            get => allFieldsOk;
-            set => SetProperty(ref allFieldsOk, value);
+            get => _allFieldsOk;
+            set => SetProperty(ref _allFieldsOk, value);
         }
 
         #endregion
@@ -115,8 +163,8 @@ namespace VaccPet.MVVM.ViewModels
             model.RevaccinateDate = RevacinationDate;
             model.VaccineName = VaccineSelected.Value;
             model.Weight = WeightPet;
-            model.PetlId = RegisterVaccinePet.Id;          
-
+            model.PetlId = RegisterVaccinePet.Id;
+           
             var result = await _VaccineModelRepository.SaveVaccineAsync(model);
           
             if(result > 0)

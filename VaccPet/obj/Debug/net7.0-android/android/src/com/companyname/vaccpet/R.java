@@ -11090,20 +11090,22 @@ public final class R {
     public static final int pet_menu_4=0x7f07012f;
     public static final int pet_menu_5=0x7f070130;
     public static final int pet_menu_6=0x7f070131;
-    public static final int pharmacy=0x7f070132;
-    public static final int question_yellow=0x7f070133;
-    public static final int rabbitdefault=0x7f070134;
-    public static final int radiobuttonchecked=0x7f070135;
-    public static final int radiobuttonunchecked=0x7f070136;
-    public static final int remove_red=0x7f070137;
-    public static final int searchicon=0x7f070138;
-    public static final int test_level_drawable=0x7f070139;
-    public static final int tooltip_frame_dark=0x7f07013a;
-    public static final int tooltip_frame_light=0x7f07013b;
-    public static final int trash=0x7f07013c;
-    public static final int trash_red=0x7f07013d;
-    public static final int vaccine=0x7f07013e;
-    public static final int watermark=0x7f07013f;
+    public static final int pet_menu_7=0x7f070132;
+    public static final int pet_menu_8=0x7f070133;
+    public static final int pharmacy=0x7f070134;
+    public static final int question_yellow=0x7f070135;
+    public static final int rabbitdefault=0x7f070136;
+    public static final int radiobuttonchecked=0x7f070137;
+    public static final int radiobuttonunchecked=0x7f070138;
+    public static final int remove_red=0x7f070139;
+    public static final int searchicon=0x7f07013a;
+    public static final int test_level_drawable=0x7f07013b;
+    public static final int tooltip_frame_dark=0x7f07013c;
+    public static final int tooltip_frame_light=0x7f07013d;
+    public static final int trash=0x7f07013e;
+    public static final int trash_red=0x7f07013f;
+    public static final int vaccine=0x7f070140;
+    public static final int watermark=0x7f070141;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

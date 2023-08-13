@@ -86,8 +86,8 @@
                                         TextColor="{StaticResource Primary}"                            
                                         Style="{StaticResource entryCustomStyle}"
                                         Date="{Binding VacinationDate}"
-                                        MaximumDate="01/01/2025"
-                                        MinimumDate="01/01/2020">
+                                        MaximumDate="{Binding MaxVacinationDate}"
+                                        MinimumDate="{Binding MinVacinationDate}">
                                 <DatePicker.Behaviors>
                                     <local:DateValidationsBehaviors x:TypeArguments="DatePicker" x:Name="VacinationDateBehaviorValidator" />
                                 </DatePicker.Behaviors>
@@ -115,8 +115,8 @@
                                         TextColor="{StaticResource Primary}"                            
                                         Style="{StaticResource entryCustomStyle}"
                                         Date="{Binding RevacinationDate}"
-                                        MaximumDate="01/01/2025"
-                                        MinimumDate="01/01/2020">
+                                        MaximumDate="{Binding MaxRevacinationDate}"
+                                        MinimumDate="{Binding MinRevacinationDate}">
                             </DatePicker>
                         </Border>
                     </StackLayout>
