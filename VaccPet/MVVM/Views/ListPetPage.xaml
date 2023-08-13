@@ -3,10 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:converters="clr-namespace:VaccPet.Helpers.Converters"
              xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+             ios:Page.UseSafeArea="true"            
              xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
              xmlns:vm="clr-namespace:VaccPet.MVVM.ViewModels"
-             xmlns:model="clr-namespace:VaccPet.MVVM.Models"
-             ios:Page.UseSafeArea="true"             
+             xmlns:model="clr-namespace:VaccPet.MVVM.Models"            
              x:Class="VaccPet.MVVM.Views.ListPetPage"              
              BackgroundColor="{StaticResource Primary}">
 
@@ -113,10 +113,11 @@
                                                  Margin="0"
                                                  HeightRequest="25">
 
+                                        
                                         <ImageButton.GestureRecognizers>
-                                            <TapGestureRecognizer Command="{Binding Source={x:RelativeSource 
-                                                          AncestorType={x:Type vm:ListPetViewModel}},
-                                                          Path=SelectedPetInCollectionCommand}"
+                                            
+                                            <TapGestureRecognizer Tapped="Tapped_OpenPopup" Command="{Binding Source={x:RelativeSource 
+                                                          AncestorType={x:Type vm:ListPetViewModel}}}"
                                                           CommandParameter="{Binding .}"/>
                                         </ImageButton.GestureRecognizers>
                                     </ImageButton>

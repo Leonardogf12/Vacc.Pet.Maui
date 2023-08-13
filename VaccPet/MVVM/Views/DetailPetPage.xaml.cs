@@ -1,11 +1,17 @@
 using VaccPet.MVVM.ViewModels;
+using VaccPet.Services.Navigation;
 
 namespace VaccPet.MVVM.Views;
 
 public partial class DetailPetPage : ContentPage
 {
-	public DetailPetPage(DetailPetViewModel model)
+
+    private readonly INavigationService _navigationService;
+
+	public DetailPetPage(DetailPetViewModel model, INavigationService navigationService)
 	{
+        _navigationService  = navigationService;
+
 		InitializeComponent();
 
 		BindingContext = model;
@@ -13,6 +19,8 @@ public partial class DetailPetPage : ContentPage
     
     private async void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
     {
-        await App.Current.MainPage.Navigation.PopAsync();
+        var componentClicked = sender as Image;
+
+        await _navigationService.GoBackAsync("..", componentClicked);
     }
 }

@@ -2,12 +2,15 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:converters="clr-namespace:VaccPet.Helpers.Converters"       
-             xmlns:controls="clr-namespace:Microsoft.Maui.Controls"
+             xmlns:controls="clr-namespace:Microsoft.Maui.Controls"            
              xmlns:local="clr-namespace:VaccPet.MVVM.ViewModels"
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+             ios:Page.UseSafeArea="true"          
              xmlns:dxg="clr-namespace:DevExpress.Maui.DataGrid;assembly=DevExpress.Maui.DataGrid"
              xmlns:model="clr-namespace:VaccPet.MVVM.Models"
              x:Class="VaccPet.MVVM.Views.ListVaccinePetPage"             
-             BackgroundColor="{StaticResource Primary}">
+             BackgroundColor="{StaticResource Primary}"
+             Shell.NavBarIsVisible="False">
 
 
     <ContentPage.BindingContext>
@@ -30,28 +33,36 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
+        <!--btn GoBack-->
+        <Image x:DataType="GoBackIcon"
+               Source="back" 
+               HeightRequest="30" 
+               Margin="25" 
+               HorizontalOptions="Start" 
+               VerticalOptions="Start">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_GoBackIcon"/>
+            </Image.GestureRecognizers>
+        </Image>
+
         <StackLayout Grid.Row="0">
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="120"/>
-                    <RowDefinition/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
 
-                <Frame Grid.Row="0" 
-                        BackgroundColor="Transparent" 
-                        HorizontalOptions="Center"
-                        HeightRequest="110"
-                        WidthRequest="110"
-                        CornerRadius="120"
-                        BorderColor="Transparent">
+                <StackLayout Grid.Row="0" VerticalOptions="Center" Margin="0,30,0,0">
 
-                    <Image Source="{Binding PetSelectedForVaccine.ImageData, 
-                            Converter={StaticResource ByteArrayToImageSourceConverter}}" HeightRequest="110" WidthRequest="110" Aspect="AspectFill"/>
-
-                </Frame>
+                    <Frame VerticalOptions="Center" HeightRequest="120" WidthRequest="120" CornerRadius="100">
+                        <Image Source="{Binding PetSelectedForVaccine.ImageData, 
+                           Converter={StaticResource ByteArrayToImageSourceConverter}}" 
+                           HeightRequest="120" 
+                           WidthRequest="120"                           
+                           Aspect="AspectFill"/>
+                    </Frame>
+                   
+                </StackLayout>
 
                 <StackLayout Grid.Row="1" Spacing="-5">
                     <Label Text="{Binding PetSelectedForVaccine.Name}" 
@@ -67,8 +78,7 @@
             </Grid>
         </StackLayout>
 
-
-        <Border Grid.Row="1" StrokeThickness="0" 
+       <Border Grid.Row="1" StrokeThickness="0" Margin="0,20,0,0"
                 BackgroundColor="{StaticResource Tertiary}">
             <Border.StrokeShape>
                 <RoundRectangle CornerRadius="60,60,0,0"/>
@@ -102,16 +112,16 @@
                             Style="{StaticResource btnDarkStyle}"
                             FontSize="Small"
                             HeightRequest="40" WidthRequest="80"/>
-                   
+
                 </HorizontalStackLayout>
-                
+
                 <HorizontalStackLayout Grid.Row="1" Spacing="5" HorizontalOptions="End" Margin="0,15,20,0">
                     <Label Text="Total:"  TextColor="Gray" />
                     <Label Text="{Binding VaccineCount}" HorizontalOptions="End" TextColor="Gray" />
                 </HorizontalStackLayout>
-               
 
-                <Grid Grid.Row="2" Margin="20">
+
+                <Grid Grid.Row="2" Margin="20,0,20,0">
 
                     <CollectionView ItemsSource="{Binding VaccineModelCollection}" >
                         <CollectionView.ItemTemplate>
@@ -192,13 +202,6 @@
                                                      Source="menu_popup" 
                                                      Margin="0"
                                                      HeightRequest="25">
-
-                                            <!--<ImageButton.GestureRecognizers>
-                                                <TapGestureRecognizer Command="{Binding Source={x:RelativeSource 
-                                                          AncestorType={x:Type vm:ListPetViewModel}},
-                                                          Path=SelectedPetInCollectionCommand}"
-                                                          CommandParameter="{Binding .}"/>
-                                            </ImageButton.GestureRecognizers>-->
                                         </ImageButton>
                                     </Grid>
                                 </Frame>

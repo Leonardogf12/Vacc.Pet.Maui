@@ -164,10 +164,8 @@
 	  <None Remove="Resources\Images\cao.jpg" />
 	  <None Remove="Resources\Images\catdefault.png" />
 	  <None Remove="Resources\Images\catpets - Cópia.png" />
-	  <None Remove="Resources\Images\catpets.png" />
 	  <None Remove="Resources\Images\dogdefault.png" />
 	  <None Remove="Resources\Images\dogpets - Cópia.png" />
-	  <None Remove="Resources\Images\dogpets.png" />
 	  <None Remove="Resources\Images\edit_blue.svg" />
 	  <None Remove="Resources\Images\female.svg" />
 	  <None Remove="Resources\Images\home_primary.svg" />
@@ -180,6 +178,12 @@
 	  <None Remove="Resources\Images\menu_popup.svg" />
 	  <None Remove="Resources\Images\mousedefault.png" />
 	  <None Remove="Resources\Images\noimage.png" />
+	  <None Remove="Resources\Images\pet_menu_1.png" />
+	  <None Remove="Resources\Images\pet_menu_2.png" />
+	  <None Remove="Resources\Images\pet_menu_3.png" />
+	  <None Remove="Resources\Images\pet_menu_4.png" />
+	  <None Remove="Resources\Images\pet_menu_5.png" />
+	  <None Remove="Resources\Images\pet_menu_6.png" />
 	  <None Remove="Resources\Images\pharmacy.svg" />
 	  <None Remove="Resources\Images\question_yellow.svg" />
 	  <None Remove="Resources\Images\rabbitdefault.png" />

@@ -1,11 +1,15 @@
 using VaccPet.MVVM.ViewModels;
+using VaccPet.Services.Navigation;
 
 namespace VaccPet.MVVM.Views;
 
 public partial class EditPetPage : ContentPage
 {
-	public EditPetPage(EditPetViewModel model)
+    private readonly INavigationService _navigationService;
+	public EditPetPage(EditPetViewModel model, INavigationService navigationService)
 	{
+        _navigationService = navigationService;
+
 		InitializeComponent();
 
 		BindingContext = model;
@@ -28,5 +32,12 @@ public partial class EditPetPage : ContentPage
        vm.OnSetDetailsPetCommand();
 
         base.OnAppearing();
+    }
+
+    private async void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
+    {
+        var componentClicked = sender as Image;
+
+        await _navigationService.GoBackAsync("..", componentClicked);        
     }
 }

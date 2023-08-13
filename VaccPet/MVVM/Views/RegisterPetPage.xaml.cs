@@ -4,7 +4,7 @@ namespace VaccPet.MVVM.Views;
 
 public partial class RegisterPetPage : ContentPage
 {
-    RegisterPetViewModel _model;
+    
     public RegisterPetPage(RegisterPetViewModel model)
 	{
 		InitializeComponent();
@@ -65,6 +65,11 @@ public partial class RegisterPetPage : ContentPage
         }
                 
         return true;
+    }    
+
+    private async void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
+    {
+        await App.Current.MainPage.Navigation.PopAsync();
     }
 
     protected override void OnAppearing()
@@ -74,5 +79,4 @@ public partial class RegisterPetPage : ContentPage
 
         base.OnAppearing();
     }
-
 }

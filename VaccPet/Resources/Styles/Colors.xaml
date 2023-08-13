@@ -17,8 +17,15 @@
     <Color x:Key="RedIconError">#F3756C</Color>
     <Color x:Key="PrimaryButton">#2F3855</Color>
     <Color x:Key="PinkAscent">#D54A9E</Color>
-    
-    
+
+    <Color x:Key="LightOrangeButtonHome">#F3D39C</Color>
+    <Color x:Key="OrangeButtonHome">#E1AF51</Color>
+
+    <Color x:Key="LightSalmonButtonHome">#E8D2BE</Color>
+    <Color x:Key="SalmonButtonHome">#E4AA82</Color>
+
+    <Color x:Key="LightPurpleButtonHome">#E6DFEC</Color>
+    <Color x:Key="PurpleButtonHome">#BBA3E2</Color>
 
     <!-- New Colors end -->
     

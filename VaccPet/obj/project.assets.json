@@ -30942,7 +30942,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       },
       "net7.0-ios16.1": {
         "targetAlias": "net7.0-ios",
@@ -31044,32 +31044,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.Maui.Controls.Ref.ios",
-            "version": "[7.0.92, 7.0.92]"
-          },
-          {
-            "name": "Microsoft.Maui.Controls.Runtime.ios",
-            "version": "[7.0.92, 7.0.92]"
-          },
-          {
-            "name": "Microsoft.Maui.Core.Ref.ios",
-            "version": "[7.0.92, 7.0.92]"
-          },
-          {
-            "name": "Microsoft.Maui.Core.Runtime.ios",
-            "version": "[7.0.92, 7.0.92]"
-          },
-          {
-            "name": "Microsoft.Maui.Essentials.Ref.ios",
-            "version": "[7.0.92, 7.0.92]"
-          },
-          {
-            "name": "Microsoft.Maui.Essentials.Runtime.ios",
-            "version": "[7.0.92, 7.0.92]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.iOS": {
             "privateAssets": "all"
@@ -31087,7 +31061,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

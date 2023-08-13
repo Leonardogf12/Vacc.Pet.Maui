@@ -16,7 +16,7 @@ public partial class App : Application
         DependencyService.Register<NavigationService>();
 
         Routing.RegisterRoute(nameof(HomePage), typeof(HomePage));
-        Routing.RegisterRoute(typeof(ListPetPage).FullName, typeof(ListPetPage));
+        Routing.RegisterRoute(nameof(ListPetPage), typeof(ListPetPage));
         Routing.RegisterRoute(typeof(RegisterPetPage).FullName, typeof(RegisterPetPage));       
         Routing.RegisterRoute(nameof(DetailPetPage), typeof(DetailPetPage));
         Routing.RegisterRoute(nameof(EditPetPage), typeof(EditPetPage));

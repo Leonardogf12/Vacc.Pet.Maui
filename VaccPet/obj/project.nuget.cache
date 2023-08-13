@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mK2ZGjnMrPys1pRHR/hNaSiOUFLrs5yu399QAY9i293JxAe6ZHJQ3pNZxMdsnA3gC0f88TOIqP+mfsym5/2axg==",
+  "dgSpecHash": "j3oexkbZL/ju9PA0XvptvaVDBC8/5szkvhFg0E6hDvok4lrv3cwhzhVAsKnXie3LRmLvivqIlYnccOaMnEmPsA==",
   "success": true,
   "projectFilePath": "D:\\PROJETOS\\Projetos MAUI\\VaccPet.Project\\Vacc.Pet.Maui\\VaccPet\\VaccPet.csproj",
   "expectedPackageFiles": [
@@ -186,13 +186,7 @@
     "C:\\Users\\root\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk7\\1.7.20.1\\xamarin.kotlin.stdlib.jdk7.1.7.20.1.nupkg.sha512",
     "C:\\Users\\root\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk8\\1.7.20.1\\xamarin.kotlin.stdlib.jdk8.1.7.20.1.nupkg.sha512",
     "C:\\Users\\root\\.nuget\\packages\\xamarin.kotlinx.coroutines.android\\1.6.4.1\\xamarin.kotlinx.coroutines.android.1.6.4.1.nupkg.sha512",
-    "C:\\Users\\root\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.6.4.1\\xamarin.kotlinx.coroutines.core.jvm.1.6.4.1.nupkg.sha512",
-    "C:\\Users\\root\\.nuget\\packages\\microsoft.maui.controls.runtime.ios\\7.0.92\\microsoft.maui.controls.runtime.ios.7.0.92.nupkg.sha512",
-    "C:\\Users\\root\\.nuget\\packages\\microsoft.maui.essentials.ref.ios\\7.0.92\\microsoft.maui.essentials.ref.ios.7.0.92.nupkg.sha512",
-    "C:\\Users\\root\\.nuget\\packages\\microsoft.maui.core.ref.ios\\7.0.92\\microsoft.maui.core.ref.ios.7.0.92.nupkg.sha512",
-    "C:\\Users\\root\\.nuget\\packages\\microsoft.maui.controls.ref.ios\\7.0.92\\microsoft.maui.controls.ref.ios.7.0.92.nupkg.sha512",
-    "C:\\Users\\root\\.nuget\\packages\\microsoft.maui.essentials.runtime.ios\\7.0.92\\microsoft.maui.essentials.runtime.ios.7.0.92.nupkg.sha512",
-    "C:\\Users\\root\\.nuget\\packages\\microsoft.maui.core.runtime.ios\\7.0.92\\microsoft.maui.core.runtime.ios.7.0.92.nupkg.sha512"
+    "C:\\Users\\root\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.6.4.1\\xamarin.kotlinx.coroutines.core.jvm.1.6.4.1.nupkg.sha512"
   ],
   "logs": []
 }

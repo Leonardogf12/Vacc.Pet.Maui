@@ -5,12 +5,16 @@ namespace VaccPet.MVVM.Views;
 
 public partial class ListPetPage : ContentPage
 {
+    public ImageButtonAnimationHelper _imageButtonAnimationHelper;
+
 
     public ListPetPage(ListPetViewModel model)
     {
         InitializeComponent();
       
         this.BindingContext = model;
+
+        _imageButtonAnimationHelper = new ImageButtonAnimationHelper();
 
         ImageButtonAnimationHelper btnAdd = new ImageButtonAnimationHelper();
         ImageButtonAnimationHelper btnDelete = new ImageButtonAnimationHelper();        
@@ -26,4 +30,15 @@ public partial class ListPetPage : ContentPage
         vm.OnAppearing();
     }
 
+  
+
+    private async void Tapped_OpenPopup(object sender, TappedEventArgs e)
+    {
+        var element = sender as ImageButton;
+        await _imageButtonAnimationHelper.AnimateScaleViewElement(element,0.8);
+
+        var vm = BindingContext as ListPetViewModel;
+
+        vm.SelectedPetInCollectionCommand.Execute(e.Parameter);
+    }
 }

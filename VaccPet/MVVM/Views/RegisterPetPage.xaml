@@ -10,10 +10,29 @@
              x:Class="VaccPet.MVVM.Views.RegisterPetPage"
              x:DataType="vm:RegisterPetViewModel"
              BackgroundColor="{StaticResource Primary}"
-             Title="Novo Pet">
+             Shell.NavBarIsVisible="False">
 
-    <ScrollView VerticalOptions="FillAndExpand">
-        <Grid Margin="15,10,15,0" RowSpacing="10" ColumnSpacing="10" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!--btn GoBack-->
+        <Image Grid.Row="0" Source="back" 
+                   HeightRequest="30" 
+                   Margin="25" 
+                   HorizontalOptions="Start" 
+                   VerticalOptions="Start" >
+
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+            </Image.GestureRecognizers>
+        </Image>
+
+        <ScrollView Grid.Row="1" VerticalOptions="FillAndExpand" BackgroundColor="Transparent">
+      
+        <Grid Margin="20,10,20,0" RowSpacing="10" ColumnSpacing="10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="100"/>
                 <RowDefinition Height="80"/>
@@ -22,31 +41,32 @@
                 <RowDefinition Height="80"/>
                 <RowDefinition Height="80"/>
                 <RowDefinition Height="120"/>
-                <RowDefinition Height="40"/>
+                <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-            <!-- Photo -->
+                <!-- Photo -->
             <StackLayout Grid.Row="0" Grid.ColumnSpan="2">
                 <Grid ColumnSpacing="10" HorizontalOptions="Center">
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Border Grid.Row="0" Grid.Column="0"
-                            HeightRequest="100" 
+                            HeightRequest="120" 
+                            WidthRequest="120" 
                             Padding="1"                        
                             BackgroundColor="{StaticResource White}"                       
-                            WidthRequest="100" StrokeThickness="0.5">
+                            StrokeThickness="0.5">
                         <Border.StrokeShape>
                             <RoundRectangle CornerRadius="100" />
                         </Border.StrokeShape>
                         <StackLayout>
                             <Image Source="{Binding ImagePath}"
-                                   WidthRequest="100" 
-                                   HeightRequest="100" 
+                                   WidthRequest="120" 
+                                   HeightRequest="120" 
                                    Aspect="AspectFill"/>
                         </StackLayout>
                         <Border.GestureRecognizers>
@@ -86,48 +106,7 @@
                                   SelectedItem="{Binding AnimalSelected}"
                                   DisplayMember="Value"/>
 
-
-
-                <!--<Border Style="{StaticResource borberCustomStyle}">
-                    <Picker x:Name="pickerAnimal"
-                            Title="Selecione"                           
-                            Margin="15,0,10,0"
-                            TitleColor="{StaticResource Gray400}" 
-                            ItemsSource="{Binding AnimalsList}"
-                            ItemDisplayBinding="{Binding Value}"
-                            SelectedItem="{Binding AnimalSelected}" 
-                            TextColor="{StaticResource Primary}" 
-                            FontSize="Medium">
-                        <Picker.Behaviors>
-                            <local:GeralValidationsBehaviors x:TypeArguments="Picker" x:Name="animalBehaviorValidator"/>
-                        </Picker.Behaviors>
-                    </Picker>
-                </Border>-->
-
             </StackLayout>
-
-            <!--Breeds--><!--
-            <StackLayout Grid.Row="2" Grid.Column="1">
-                <Label Text="Raça" Style="{StaticResource lblTitlesStyle}"/>
-                <Border Style="{StaticResource borberCustomStyle}">
-                    <Picker x:Name="pickerRace"
-                            Title="Selecione"                           
-                            Margin="15,0,10,0"
-                            TitleColor="{StaticResource Gray400}" 
-                            ItemsSource="{Binding BreedsList}"
-                            ItemDisplayBinding="{Binding Value}"
-                            SelectedItem="{Binding BreedSelected}" 
-                            TextColor="{StaticResource Primary}" 
-                            FontSize="Medium">
-
-                        <Picker.Behaviors>
-                            <local:GeralValidationsBehaviors x:TypeArguments="Picker" x:Name="breedBehaviorValidator"/>
-                        </Picker.Behaviors>
-
-                    </Picker>
-                </Border>
-
-            </StackLayout>-->
 
             <!-- Color -->
             <StackLayout Grid.Row="3" Grid.ColumnSpan="2"  Orientation="Vertical">
@@ -224,14 +203,14 @@
 
             <!-- Button Save -->
             <StackLayout Grid.Row="7" Grid.ColumnSpan="2">
-                <Button x:Name="btnSave"
-                        Text="Salvar"                        
-                        TextColor="{StaticResource White}"                         
-                        Style="{StaticResource btnDefaultStyle}"                       
-                        Clicked="btnSave_Clicked"/>
-                <!--Command="{Binding AddPetCommand}"-->
+                    <Button x:Name="btnSave"
+                            Text="Salvar"                        
+                            TextColor="{StaticResource White}"                         
+                            Style="{StaticResource btnDefaultStyle}"                       
+                            Clicked="btnSave_Clicked"/>
             </StackLayout>
 
         </Grid>
     </ScrollView>
+    </Grid>
 </ContentPage>

@@ -3,8 +3,15 @@ obj\Debug\net7.0-android\resizetizer\r\drawable\catdefault.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\catpets.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\dogdefault.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\dogpets.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\dogpets_two.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\loading_green.gif
 obj\Debug\net7.0-android\resizetizer\r\drawable\mousedefault.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\pet_menu_1.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\pet_menu_2.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\pet_menu_3.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\pet_menu_4.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\pet_menu_5.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\pet_menu_6.png
 obj\Debug\net7.0-android\resizetizer\r\drawable\rabbitdefault.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\add_circle.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\add_circle_green.png

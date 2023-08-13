@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Maui.Views;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
+using VaccPet.Helpers.Buttons;
 using VaccPet.MVVM.Models;
 using VaccPet.MVVM.Views;
 using VaccPet.MVVM.Views.Components;
@@ -72,6 +73,7 @@ namespace VaccPet.MVVM.ViewModels
             _PetModelRepository = new PetModelRepository(App.dbPath);
 
             PetsCollection = new ObservableCollection<PetModel>();
+
             AddPetCommand = new Command(OnAddPetCommand);
             DeleteAllPetCommand = new Command(OnDeleteAllPetCommand);
             SelectedPetInCollectionCommand = new Command<PetModel>(OnSelectedPetInCollectionCommand);
@@ -86,11 +88,11 @@ namespace VaccPet.MVVM.ViewModels
         #region METHODS
 
         public async void OnSelectedPetInCollectionCommand(PetModel petSelected)
-        {
+        {            
             PetModelObject = petSelected;
 
             PopupListActionsControl = new PopupListActionsPage(
-                    PopupViewModel.SetParametersPopup("Editar", "Excluir", "Detalhes", "Vacinas",
+                            PopupViewModel.SetParametersPopup("Editar", "Excluir", "Detalhes", "Vacinas",
                                                        petSelected, EditPetCommand, DeletePetCommand, 
                                                        DetailPetCommand, GoToListVaccines));
 

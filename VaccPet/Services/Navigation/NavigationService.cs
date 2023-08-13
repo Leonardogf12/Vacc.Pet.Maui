@@ -1,10 +1,15 @@
-﻿using System.Web;
+﻿using System.ComponentModel;
+using System.Web;
+using VaccPet.Helpers.Buttons;
 using VaccPet.MVVM.ViewModels;
 
 namespace VaccPet.Services.Navigation
 {
     public class NavigationService : INavigationService
     {
+
+        public ImageButtonAnimationHelper _imageButtonAnimationHelper;
+
         #region VIEWMODEL
         public async Task NavigateToViewModelAsync<TViewModel>() where TViewModel : BaseViewModel
         {
@@ -33,25 +38,36 @@ namespace VaccPet.Services.Navigation
             }
         }
         #endregion
-        
+
         #region VIEW
-        public async Task NavigateToPageAsync<T>(Dictionary<string, object> parameter) where T : IView
+        public async Task NavigateToPageAsync<T>(Dictionary<string, object> parameter, View component = null) where T : IView
         {
-            await InternalNavigateToPageAsync(typeof(T), parameter);
+            await InternalNavigateToPageAsync(typeof(T), parameter, component);
         }
-        async Task InternalNavigateToPageAsync(Type viewType, Dictionary<string, object> parameter)
+
+        async Task InternalNavigateToPageAsync(Type viewType, Dictionary<string, object> parameter, View component = null)
         {
+            _imageButtonAnimationHelper = new ImageButtonAnimationHelper();
+
+            if (component != null)
+                await _imageButtonAnimationHelper.AnimateScaleViewElement(component);
+
             if (parameter != null)
                 await Shell.Current.GoToAsync($"{viewType.Name}", parameter);
             else
                 await Shell.Current.GoToAsync($"{viewType.Name}");
         }
-        #endregion
 
-        public async Task GoBackAsync(string quantityReturn)
+        public async Task GoBackAsync(string quantityReturn, View component = null)
         {
-            //*Caso queira voltar 2 views, passe o parametro assim ->  "..\\.."
+            _imageButtonAnimationHelper = new ImageButtonAnimationHelper();
+
+            if (component != null)
+                await _imageButtonAnimationHelper.AnimateScaleViewElement(component);
+
+            //*Caso queira voltar 2 views, passe o parametro assim ->  "..\\.."            
             await Shell.Current.GoToAsync(quantityReturn);
-        }      
+        }
+        #endregion
     }
 }

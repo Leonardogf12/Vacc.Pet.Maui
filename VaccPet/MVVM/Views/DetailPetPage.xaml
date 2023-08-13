@@ -2,8 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:converters="clr-namespace:VaccPet.Helpers.Converters"
-             x:Class="VaccPet.MVVM.Views.DetailPetPage"
-             Title="Detail Pet Page"
+             x:Class="VaccPet.MVVM.Views.DetailPetPage"             
              Shell.NavBarIsVisible="False">
 
     <ContentPage.Resources>

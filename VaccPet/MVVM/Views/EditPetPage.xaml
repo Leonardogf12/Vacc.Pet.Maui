@@ -10,7 +10,7 @@
              x:Class="VaccPet.MVVM.Views.EditPetPage"
              x:DataType="vm:EditPetViewModel"
              BackgroundColor="{StaticResource Primary}"
-             Title="Editar">
+             Shell.NavBarIsVisible="False">
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -18,200 +18,174 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <ScrollView VerticalOptions="FillAndExpand">
-        <Grid Margin="15,10,15,0" RowSpacing="10" ColumnSpacing="10" >
-            <Grid.RowDefinitions>
-                <RowDefinition Height="90"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="120"/>
-                <RowDefinition Height="40"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
 
-            <!-- Photo -->
-            <StackLayout Grid.Row="0" Grid.ColumnSpan="2">
 
-                <Border HeightRequest="100" 
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--btn GoBack-->
+        <Image Grid.Row="0" Source="back" 
+                   HeightRequest="30" 
+                   Margin="25" 
+                   HorizontalOptions="Start" 
+                   VerticalOptions="Start" >
+
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+            </Image.GestureRecognizers>
+        </Image>
+        
+        <ScrollView Grid.Row="1" VerticalOptions="FillAndExpand">
+
+            <Grid Margin="15,10,15,0" RowSpacing="10" ColumnSpacing="10" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Photo -->
+                <StackLayout Grid.Row="0" Grid.ColumnSpan="2">
+
+                    <Border HeightRequest="120" 
+                        WidthRequest="120"
                         Padding="1"                        
-                        BackgroundColor="{StaticResource Tertiary}"                       
-                        WidthRequest="100">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="100"/>
-                    </Border.StrokeShape>
+                        BackgroundColor="{StaticResource Tertiary}">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="100"/>
+                        </Border.StrokeShape>
 
-                    <StackLayout>
-                        <Image Source="{Binding ImagePath}"
-                                   WidthRequest="100" 
-                                   HeightRequest="100" 
+                        <StackLayout>
+                            <Image Source="{Binding ImagePath}"
+                                   WidthRequest="120" 
+                                   HeightRequest="120" 
                                    Aspect="AspectFill"/>
-                    </StackLayout>
+                        </StackLayout>
 
-                    <Border.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding GetImageFromGalleryCommand}"/>
-                    </Border.GestureRecognizers>
-                </Border>
-            </StackLayout>
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding GetImageFromGalleryCommand}"/>
+                        </Border.GestureRecognizers>
+                    </Border>
+                </StackLayout>
 
-            <!-- Name -->
-            <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical">
-                <Label Text="Nome" Style="{StaticResource lblTitlesStyle}"/>
-                <Border Style="{StaticResource borberCustomStyle}">
-                    <Entry x:Name="entryName"                                             
+                <!-- Name -->
+                <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical">
+                    <Label Text="Nome" Style="{StaticResource lblTitlesStyle}"/>
+                    <Border Style="{StaticResource borberCustomStyle}">
+                        <Entry x:Name="entryName"                                             
                             Text="{Binding PetSelectedForEdit.Name}"                            
                             Placeholder="Nome"                            
                             Keyboard="Text"
                             Style="{StaticResource entryCustomStyle}">
-                        <Entry.Behaviors>
-                            <local:TextValidationsBehaviors x:TypeArguments="Entry" x:Name="nameBehaviorValidator" />
-                        </Entry.Behaviors>
-                    </Entry>
-                </Border>
-            </StackLayout>
+                            <Entry.Behaviors>
+                                <local:TextValidationsBehaviors x:TypeArguments="Entry" x:Name="nameBehaviorValidator" />
+                            </Entry.Behaviors>
+                        </Entry>
+                    </Border>
+                </StackLayout>
 
-            <!-- Animals -->
-            <StackLayout Grid.Row="2" Grid.ColumnSpan="2">
-                <Label Text="Animal" Style="{StaticResource lblTitlesStyle}"/>
+                <!-- Animals -->
+                <StackLayout Grid.Row="2" Grid.ColumnSpan="2">
+                    <Label Text="Animal" Style="{StaticResource lblTitlesStyle}"/>
 
-                <dxe:ComboBoxEdit x:Name="comboBoxAnimal"
+                    <dxe:ComboBoxEdit x:Name="comboBoxAnimal"
                                   Style="{StaticResource comboBoxStyle}" 
                                   ItemsSource="{Binding AnimalsList}"
                                   SelectedItem="{Binding AnimalSelected}"
                                   DisplayMember="Value"/>
-                
-                <!--<Border Style="{StaticResource borberCustomStyle}">
-                    <Picker x:Name="pickerAnimal"
-                            Title="Selecione"                           
-                            Margin="15,0,10,0"
-                            TitleColor="{StaticResource Gray400}" 
-                            ItemsSource="{Binding AnimalsList}"
-                            ItemDisplayBinding="{Binding Value}"
-                            SelectedItem="{Binding AnimalSelected}" 
-                            TextColor="{StaticResource Primary}" 
-                            FontSize="Medium">
-                        <Picker.Behaviors>
-                            <local:GeralValidationsBehaviors x:TypeArguments="Picker" x:Name="animalBehaviorValidator"/>
-                        </Picker.Behaviors>
-                    </Picker>
-                </Border>-->
 
-            </StackLayout>
 
-            <!--Breeds-->
-            <!--<StackLayout Grid.Row="2" Grid.Column="1">
-                <Label Text="Raça" Style="{StaticResource lblTitlesStyle}"/>
-                <Border Style="{StaticResource borberCustomStyle}">
-                    <Picker x:Name="pickerRace"
-                            Title="Selecione"                           
-                            Margin="15,0,10,0"
-                            TitleColor="{StaticResource Gray400}" 
-                            ItemsSource="{Binding BreedsList}"
-                            ItemDisplayBinding="{Binding Value}"
-                            SelectedItem="{Binding BreedSelected}" 
-                            TextColor="{StaticResource Primary}" 
-                            FontSize="Medium">
+                </StackLayout>
 
-                        <Picker.Behaviors>
-                            <local:GeralValidationsBehaviors x:TypeArguments="Picker" x:Name="breedBehaviorValidator"/>
-                        </Picker.Behaviors>
-
-                    </Picker>
-                </Border>
-
-            </StackLayout>-->
-
-            <!-- Color -->
-            <StackLayout Grid.Row="3" Grid.ColumnSpan="2"  Orientation="Vertical">
-                <Label Text="Cor" Style="{StaticResource lblTitlesStyle}"/>
-                <Border Style="{StaticResource borberCustomStyle}">
-                    <Entry x:Name="entryColor"                           
+                <!-- Color -->
+                <StackLayout Grid.Row="3" Grid.ColumnSpan="2"  Orientation="Vertical">
+                    <Label Text="Cor" Style="{StaticResource lblTitlesStyle}"/>
+                    <Border Style="{StaticResource borberCustomStyle}">
+                        <Entry x:Name="entryColor"                           
                            Text="{Binding PetSelectedForEdit.Color}"
                            Placeholder="Cor"                                                    
                            Keyboard="Text"                          
                            Style="{StaticResource entryCustomStyle}">
-                        <Entry.Behaviors>
-                            <local:TextValidationsBehaviors x:TypeArguments="Entry" x:Name="colorBehaviorValidator"/>
-                        </Entry.Behaviors>
-                    </Entry>
-                </Border>
-            </StackLayout>
+                            <Entry.Behaviors>
+                                <local:TextValidationsBehaviors x:TypeArguments="Entry" x:Name="colorBehaviorValidator"/>
+                            </Entry.Behaviors>
+                        </Entry>
+                    </Border>
+                </StackLayout>
 
-            <!-- Weight -->
-            <StackLayout Grid.Row="4" Grid.Column="0" Orientation="Vertical">
-                <Label Text="Peso KG" Style="{StaticResource lblTitlesStyle}"/>
-                <Border Style="{StaticResource borberCustomStyle}">
-                    <Entry x:Name="entryWeigth"
+                <!-- Weight -->
+                <StackLayout Grid.Row="4" Grid.Column="0" Orientation="Vertical">
+                    <Label Text="Peso KG" Style="{StaticResource lblTitlesStyle}"/>
+                    <Border Style="{StaticResource borberCustomStyle}">
+                        <Entry x:Name="entryWeigth"
                            Text="{Binding PetSelectedForEdit.Weight}" 
                            Placeholder="0.0 KG"
                            MaxLength="5"                                                                                                                                   
                            Keyboard="Numeric"                                                                              
                            Style="{StaticResource entryCustomStyle}">
-                        <Entry.Behaviors>
-                            <local:NumericValidationsBehaviors x:TypeArguments="Entry" x:Name="weightBehaviorValidator"/>
-                        </Entry.Behaviors>
-                    </Entry>
-                </Border>
-            </StackLayout>
+                            <Entry.Behaviors>
+                                <local:NumericValidationsBehaviors x:TypeArguments="Entry" x:Name="weightBehaviorValidator"/>
+                            </Entry.Behaviors>
+                        </Entry>
+                    </Border>
+                </StackLayout>
 
-            <!-- BirthDate -->
-            <StackLayout Grid.Row="4" Grid.Column="1">
-                <Label Text="Nascimento" Style="{StaticResource lblTitlesStyle}"/>
-                <Border Style="{StaticResource borberCustomStyle}">
-                    <DatePicker  TextColor="{StaticResource Quinary}" 
+                <!-- BirthDate -->
+                <StackLayout Grid.Row="4" Grid.Column="1">
+                    <Label Text="Nascimento" Style="{StaticResource lblTitlesStyle}"/>
+                    <Border Style="{StaticResource borberCustomStyle}">
+                        <DatePicker  TextColor="{StaticResource Quinary}" 
                                  Margin="15,0,10,0"
                                  MinimumDate="01/01/2008"
                                  MaximumDate="12/31/2030"
                                  FontSize="Medium" 
                                  Date="{Binding PetSelectedForEdit.BirthDate}">
-                        <DatePicker.Behaviors>
-                            <local:DateValidationsBehaviors x:TypeArguments="DatePicker" x:Name="birthDateBehaviorValidator"/>
-                        </DatePicker.Behaviors>
-                    </DatePicker>
-                </Border>
-            </StackLayout>
+                            <DatePicker.Behaviors>
+                                <local:DateValidationsBehaviors x:TypeArguments="DatePicker" x:Name="birthDateBehaviorValidator"/>
+                            </DatePicker.Behaviors>
+                        </DatePicker>
+                    </Border>
+                </StackLayout>
 
-            <!-- Sex -->
-            <StackLayout Grid.Row="5" Grid.Column="0">
-                <Label Text="Sexo" Style="{StaticResource lblTitlesStyle}"/>
-                <Border BackgroundColor="#2F3855" StrokeThickness="0" Style="{StaticResource borberCustomStyle}">
-                    <StackLayout Orientation="Horizontal" Spacing="10">
-                        <Switch OnColor="{StaticResource Quinary}" ThumbColor="{StaticResource Secondary}" IsToggled="{Binding IsToggledSex}"/>
-                        <Label Text="{Binding IsSexText}" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,10,0,0" />
-                    </StackLayout>
-                </Border>
-                <!--<StackLayout Orientation="Horizontal" Spacing="20">
-                    <Label Text="F" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="20,8,0,0" />
-                    <Switch OnColor="{StaticResource Quinary}" ThumbColor="{StaticResource Secondary}" IsToggled="{Binding IsToggledSex}"/>
-                    <Label Text="M" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,8,0,0" />
-                </StackLayout>-->
-            </StackLayout>
+                <!-- Sex -->
+                <StackLayout Grid.Row="5" Grid.Column="0">
+                    <Label Text="Sexo" Style="{StaticResource lblTitlesStyle}"/>
+                    <Border BackgroundColor="#2F3855" StrokeThickness="0" Style="{StaticResource borberCustomStyle}">
+                        <StackLayout Orientation="Horizontal" Spacing="10">
+                            <Switch OnColor="{StaticResource Quinary}" ThumbColor="{StaticResource Secondary}" IsToggled="{Binding IsToggledSex}"/>
+                            <Label Text="{Binding IsSexText}" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,10,0,0" />
+                        </StackLayout>
+                    </Border>
+                </StackLayout>
 
-            <!-- IsCastrated -->
-            <StackLayout Grid.Row="5" Grid.Column="1">
-                <Label Text="Castrado(a)" Style="{StaticResource lblTitlesStyle}"/>
-                <Border BackgroundColor="#2F3855" StrokeThickness="0" Style="{StaticResource borberCustomStyle}">
-                    <StackLayout Orientation="Horizontal" Spacing="10">
-                        <Switch OnColor="{StaticResource Quinary}" ThumbColor="{StaticResource Secondary}" IsToggled="{Binding IsToggledCatrated}"/>
-                        <Label Text="{Binding IsCastratedText}" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,10,0,0" />
-                    </StackLayout>
-                </Border>
-                <!--<StackLayout Orientation="Horizontal" Spacing="-10">
-                    <CheckBox Color="{StaticResource Quinary}" IsChecked="{Binding IsCatrated}"/>
-                    <Label Text="{Binding IsCastratedConfirm}" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,8,0,0" />
-                </StackLayout>-->
-            </StackLayout>
+                <!-- IsCastrated -->
+                <StackLayout Grid.Row="5" Grid.Column="1">
+                    <Label Text="Castrado(a)" Style="{StaticResource lblTitlesStyle}"/>
+                    <Border BackgroundColor="#2F3855" StrokeThickness="0" Style="{StaticResource borberCustomStyle}">
+                        <StackLayout Orientation="Horizontal" Spacing="10">
+                            <Switch OnColor="{StaticResource Quinary}" ThumbColor="{StaticResource Secondary}" IsToggled="{Binding IsToggledCatrated}"/>
+                            <Label Text="{Binding IsCastratedText}" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,10,0,0" />
+                        </StackLayout>
+                    </Border>
+                </StackLayout>
 
-            <!-- Observation -->
-            <StackLayout  Grid.Row="6" Grid.ColumnSpan="2" Orientation="Vertical">
-                <Label  Text="Observação" Style="{StaticResource lblTitlesStyle}"/>
-                <Border Style="{StaticResource borberCustomStyle}" HeightRequest="80">
-                    <Editor Placeholder="Observação"                                                     
+                <!-- Observation -->
+                <StackLayout  Grid.Row="6" Grid.ColumnSpan="2" Orientation="Vertical">
+                    <Label  Text="Observação" Style="{StaticResource lblTitlesStyle}"/>
+                    <Border Style="{StaticResource borberCustomStyle}" HeightRequest="80">
+                        <Editor Placeholder="Observação"                                                     
                             Text="{Binding PetSelectedForEdit.Observation}"
                             Margin="15,0,10,0"
                             TextColor="{StaticResource Quinary}"                         
@@ -219,16 +193,16 @@
                             HeightRequest="80"                                        
                             FontSize="Medium"
                             PlaceholderColor="{StaticResource Gray400}">
-                        <Editor.Behaviors>
-                            <local:TextValidationsBehaviors x:TypeArguments="Editor" x:Name="observationBehaviorValidator"/>
-                        </Editor.Behaviors>
-                    </Editor>
-                </Border>
-            </StackLayout>
+                            <Editor.Behaviors>
+                                <local:TextValidationsBehaviors x:TypeArguments="Editor" x:Name="observationBehaviorValidator"/>
+                            </Editor.Behaviors>
+                        </Editor>
+                    </Border>
+                </StackLayout>
 
-            <!-- Button Save -->
-            <StackLayout Grid.Row="7" Grid.ColumnSpan="2">
-                <Button x:Name="btnSave"
+                <!-- Button Save -->
+                <StackLayout Grid.Row="7" Grid.ColumnSpan="2">
+                    <Button x:Name="btnSave"
                         Text="Salvar" 
                         CornerRadius="15"
                         TextColor="{StaticResource White}" 
@@ -236,9 +210,11 @@
                         FontAttributes="None"
                         BackgroundColor="#2F3855"
                         Clicked="btnSave_Clicked"/>
-                <!--Command="{Binding AddPetCommand}"-->
-            </StackLayout>
+                    <!--Command="{Binding AddPetCommand}"-->
+                </StackLayout>
 
-        </Grid>
-    </ScrollView>
+            </Grid>
+        </ScrollView>
+    </Grid>
+   
 </ContentPage>
