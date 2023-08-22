@@ -1,3 +1,4 @@
+using VaccPet.Constants;
 using VaccPet.MVVM.ViewModels;
 using VaccPet.Services.Navigation;
 
@@ -21,6 +22,6 @@ public partial class DetailPetPage : ContentPage
     {
         var componentClicked = sender as Image;
 
-        await _navigationService.GoBackAsync("..", componentClicked);
+        await _navigationService.GoBackAsync(StringConstants.GoBackOnce, componentClicked);
     }
 }

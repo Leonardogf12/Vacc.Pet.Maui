@@ -6,11 +6,8 @@ namespace VaccPet.MVVM.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        #region VARIABLES
         public INavigationService Navigation => DependencyService.Get<INavigationService>();
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        #endregion
 
         #region PROPS
 
@@ -24,6 +21,9 @@ namespace VaccPet.MVVM.ViewModels
         #endregion
 
         #region METHODS
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
         protected void OnPropertyChanged([CallerMemberName] string name = "")
         {
             var change = PropertyChanged;

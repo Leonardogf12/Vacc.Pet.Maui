@@ -204,8 +204,7 @@ namespace VaccPet.MVVM.ViewModels
             pet.ImageData = ImagePath == "image_vetor.svg" ?
                             await _ImageContainerHelper.GetImageDefault(AnimalSelected.Value) :
                             await _ImageContainerHelper.ReadImageBytes(ImagePath);
-
-            //pet.ImageData = ImagePath == "image_vetor.svg" ? AnimalSelected.Value : ImagePath;                          
+                                   
             pet.BirthDate = BirthDate;
             pet.Color = Color;
             pet.Observation = Observation;

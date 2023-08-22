@@ -33,9 +33,7 @@ namespace VaccPet.MVVM.ViewModels
                 {
                     SexIcon = "male";
                     SexName = "Macho";
-                }
-                   
-
+                }                   
             }
         }
 

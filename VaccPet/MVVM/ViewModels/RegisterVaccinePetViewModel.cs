@@ -4,7 +4,6 @@ using VaccPet.Helpers.Models;
 using VaccPet.MVVM.Models;
 using VaccPet.MVVM.Views.Components;
 using VaccPet.Repositories;
-using VaccPet.Services;
 
 namespace VaccPet.MVVM.ViewModels
 {
@@ -67,13 +66,13 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref this._revacinationDate, value);
         }
 
+
         private Color _revacinationColor =  Color.FromRgba("#D54A9E");
         public Color RevacinationColor
         {
             get => _revacinationColor;
             set => SetProperty(ref this._revacinationColor, value);
         }
-
 
 
         private DateTime _maxRevacinationDate = DateTime.Now.AddYears(2);
@@ -167,16 +166,12 @@ namespace VaccPet.MVVM.ViewModels
            
             var result = await _VaccineModelRepository.SaveVaccineAsync(model);
           
-            if(result > 0)
-            {
-                await App.Current.MainPage.ShowPopupAsync(new PopupSuccessConfirmationPage());
-                return;
-            }
-            else
-            {
+            if(result > 0)            
+                await App.Current.MainPage.ShowPopupAsync(new PopupSuccessConfirmationPage());                           
+            else            
                 await App.Current.MainPage.ShowPopupAsync(new PopupErrorConfirmationPage());
-                return;
-            }
+                         
+            return;
         }
 
         #endregion

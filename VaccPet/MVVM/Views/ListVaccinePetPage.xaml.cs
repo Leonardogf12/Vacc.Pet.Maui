@@ -1,3 +1,4 @@
+using VaccPet.Constants;
 using VaccPet.Helpers.Buttons;
 using VaccPet.MVVM.ViewModels;
 using VaccPet.Services.Navigation;
@@ -23,13 +24,11 @@ public partial class ListVaccinePetPage : ContentPage
     }
 
     private async void TapGestureRecognizer_GoBackIcon(object sender, TappedEventArgs e)
-    {
-        ImageButtonAnimationHelper btnAdd = new ImageButtonAnimationHelper();
-
+    {       
         var image = sender as Image;
 
         await _imageButtonAnimationHelper.AnimateScaleViewElement(image);
 
-        await _navigationService.GoBackAsync("..");
+        await _navigationService.GoBackAsync(StringConstants.GoBackOnce);
     }
 }

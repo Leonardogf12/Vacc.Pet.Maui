@@ -82,7 +82,7 @@ namespace VaccPet.MVVM.ViewModels
             InformVaccinationCommand = new Command<VaccineModel>(OnInformVaccinationCommand);
         }
 
-        private async void OnInformVaccinationCommand(VaccineModel model)
+        private void OnInformVaccinationCommand(VaccineModel model)
         {
             RevaccinationColor = "GreenYellow";
         }

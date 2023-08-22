@@ -1,4 +1,3 @@
-using Microsoft.Maui.Dispatching;
 using VaccPet.Helpers.Models;
 using VaccPet.MVVM.ViewModels;
 
@@ -8,6 +7,7 @@ public partial class RegisterVaccinePetPage : ContentPage
 {
     public VaccineHelper _vaccineHelper { get; set; } = new VaccineHelper();
 
+
     public RegisterVaccinePetPage(RegisterVaccinePetViewModel model)
     {
         InitializeComponent();
@@ -15,15 +15,7 @@ public partial class RegisterVaccinePetPage : ContentPage
         BindingContext = model;
     }
 
-    protected override void OnAppearing()
-    {
-        var vm = BindingContext as RegisterVaccinePetViewModel;
-        var specie = vm.RegisterVaccinePet.Animal;
-        vm.VaccineList = _vaccineHelper.GetVaccines(specie);
-
-        base.OnAppearing();
-    }
-
+    
     private async void btnConfirmVaccine_Clicked(object sender, EventArgs e)
     {
         var result = await ValidateFieldsRegisterPet();
@@ -57,5 +49,14 @@ public partial class RegisterVaccinePetPage : ContentPage
         }
 
         return true;
+    }
+
+    protected override void OnAppearing()
+    {
+        var vm = BindingContext as RegisterVaccinePetViewModel;
+        var specie = vm.RegisterVaccinePet.Animal;
+        vm.VaccineList = _vaccineHelper.GetVaccines(specie);
+
+        base.OnAppearing();
     }
 }

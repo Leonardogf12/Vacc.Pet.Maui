@@ -12,6 +12,10 @@
              BackgroundColor="{StaticResource Primary}"              
              Shell.NavBarIsVisible="False">
 
+    <ContentPage.BindingContext>
+        <vm:HomeViewModel/>
+    </ContentPage.BindingContext>
+
     <Grid RowSpacing="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
@@ -72,10 +76,15 @@
                                 </LinearGradientBrush>
                             </Frame.Background>
                             <Frame.GestureRecognizers>
-                                <TapGestureRecognizer  Command="{Binding Source={x:RelativeSource 
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_PageByCardHorizontal" Command="{Binding Source={x:RelativeSource 
+                                                      AncestorType={x:Type vm:HomeViewModel}}}"
+                                                      CommandParameter="{Binding .}"/>
+                                
+                                <!-- ORIGINAL -->
+                                <!--<TapGestureRecognizer  Command="{Binding Source={x:RelativeSource 
                                                           AncestorType={x:Type vm:HomeViewModel}},
                                                           Path=NavigationMenuHorizontalCommand}"
-                                                          CommandParameter="{Binding .}"/>
+                                                          CommandParameter="{Binding .}"/>-->
                             </Frame.GestureRecognizers>
                         </Frame>
                     </DataTemplate>
@@ -185,7 +194,7 @@
                        BorderColor="{StaticResource Primary}"
                        HeightRequest="160">
                     <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_GoToPetList"/>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_GoToPetPageList"/>
                     </Frame.GestureRecognizers>
 
                     <Frame.Background>

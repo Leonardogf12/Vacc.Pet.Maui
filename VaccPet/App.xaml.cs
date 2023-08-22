@@ -22,14 +22,15 @@ public partial class App : Application
         Routing.RegisterRoute(nameof(EditPetPage), typeof(EditPetPage));
         Routing.RegisterRoute(nameof(ListVaccinePetPage), typeof(ListVaccinePetPage));
         Routing.RegisterRoute(nameof(RegisterVaccinePetPage), typeof(RegisterVaccinePetPage));
+        Routing.RegisterRoute(nameof(CardTopAHomePage), typeof(CardTopAHomePage));
+        Routing.RegisterRoute(nameof(CardTopBHomePage), typeof(CardTopBHomePage));
+        Routing.RegisterRoute(nameof(CardTopCHomePage), typeof(CardTopCHomePage));
+        Routing.RegisterRoute(nameof(CardMiddleAHomePage), typeof(CardMiddleAHomePage));
+        Routing.RegisterRoute(nameof(CardMiddleBHomePage), typeof(CardMiddleBHomePage));
+
         MainPage = new MainPage();
 	}
 
-    //protected override async void OnStart()
-    //{
-    //    base.OnStart();
-    //    await DBConnection.Instance.Initialize();
-    //}
 
     #region DATABASE
     private static Database database;

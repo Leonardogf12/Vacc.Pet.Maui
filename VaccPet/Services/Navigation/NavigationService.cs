@@ -7,6 +7,7 @@ namespace VaccPet.Services.Navigation
 {
     public class NavigationService : INavigationService
     {
+        public bool IsBrowsing = false;
 
         public ImageButtonAnimationHelper _imageButtonAnimationHelper;
 
@@ -45,17 +46,23 @@ namespace VaccPet.Services.Navigation
             await InternalNavigateToPageAsync(typeof(T), parameter, component);
         }
 
-        async Task InternalNavigateToPageAsync(Type viewType, Dictionary<string, object> parameter, View component = null)
+        public async Task InternalNavigateToPageAsync(Type viewType, Dictionary<string, object> parameter, View component = null)
         {
+            if (IsBrowsing) return;
+
+            IsBrowsing = true;
+
             _imageButtonAnimationHelper = new ImageButtonAnimationHelper();
 
             if (component != null)
                 await _imageButtonAnimationHelper.AnimateScaleViewElement(component);
 
-            if (parameter != null)
-                await Shell.Current.GoToAsync($"{viewType.Name}", parameter);
-            else
-                await Shell.Current.GoToAsync($"{viewType.Name}");
+            if (parameter != null)            
+                await Shell.Current.GoToAsync($"{viewType.Name}", parameter);                            
+            else            
+                await Shell.Current.GoToAsync($"{viewType.Name}");               
+            
+            IsBrowsing = false;
         }
 
         public async Task GoBackAsync(string quantityReturn, View component = null)
@@ -68,6 +75,7 @@ namespace VaccPet.Services.Navigation
             //*Caso queira voltar 2 views, passe o parametro assim ->  "..\\.."            
             await Shell.Current.GoToAsync(quantityReturn);
         }
+
         #endregion
     }
 }

@@ -3,16 +3,13 @@ using System.Windows.Input;
 using VaccPet.Helpers.Models;
 using VaccPet.MVVM.Models;
 using VaccPet.MVVM.Views;
-using VaccPet.Services.Navigation;
 
 namespace VaccPet.MVVM.ViewModels
 {
     public class HomeViewModel : BaseViewModel
     {
         #region VARIABLES
-
-        private readonly INavigationService _navigationService;
-
+        
         public ObservableCollection<PetModel> PetsCollection { get; set; } = new();
 
         public ObservableCollection<HomeMenuCardsHorizontalModel> HomeTopMenuHorizontalModelCollection { get; set; } = new();
@@ -33,7 +30,7 @@ namespace VaccPet.MVVM.ViewModels
 
 
         public HomeViewModel()
-        {
+        {          
             ListPetsCommand = new Command(OnListPetsCommand);
             NavigationMenuHorizontalCommand = new Command<HomeMenuCardsHorizontalModel>(OnNavigationMenuHorizontalCommand);
 
@@ -56,25 +53,23 @@ namespace VaccPet.MVVM.ViewModels
         }
 
         private async void OnNavigationMenuHorizontalCommand(HomeMenuCardsHorizontalModel model)
-        {
-            //TODO Create Navigation or action from future pages.
-
+        {           
             switch (model.Id)
             {
                 case 1:
-                    await App.Current.MainPage.Navigation.PushAsync(new CardTopAHomePage());
+                    await Navigation.NavigateToPageAsync<CardTopAHomePage>(null);                    
                     break;
                 case 2:
-                    await App.Current.MainPage.Navigation.PushAsync(new CardTopBHomePage());
+                    await Navigation.NavigateToPageAsync<CardTopBHomePage>(null);                   
                     break;
                 case 3:
-                    await App.Current.MainPage.Navigation.PushAsync(new CardTopCHomePage());
-                    break;
+                    await Navigation.NavigateToPageAsync<CardTopCHomePage>(null);
+                    break;                    
                 case 4:
-                    await App.Current.MainPage.Navigation.PushAsync(new CardMiddleAHomePage());
+                    await Navigation.NavigateToPageAsync<CardMiddleAHomePage>(null);                 
                     break;
                 case 5:
-                    await App.Current.MainPage.Navigation.PushAsync(new CardMiddleBHomePage());
+                    await Navigation.NavigateToPageAsync<CardMiddleBHomePage>(null);                   
                     break;
             }
         }

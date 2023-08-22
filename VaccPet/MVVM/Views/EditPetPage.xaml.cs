@@ -1,3 +1,4 @@
+using VaccPet.Constants;
 using VaccPet.MVVM.ViewModels;
 using VaccPet.Services.Navigation;
 
@@ -6,6 +7,7 @@ namespace VaccPet.MVVM.Views;
 public partial class EditPetPage : ContentPage
 {
     private readonly INavigationService _navigationService;
+
 	public EditPetPage(EditPetViewModel model, INavigationService navigationService)
 	{
         _navigationService = navigationService;
@@ -38,6 +40,6 @@ public partial class EditPetPage : ContentPage
     {
         var componentClicked = sender as Image;
 
-        await _navigationService.GoBackAsync("..", componentClicked);        
+        await _navigationService.GoBackAsync(StringConstants.GoBackOnce, componentClicked);        
     }
 }

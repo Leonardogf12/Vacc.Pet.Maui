@@ -6,10 +6,14 @@ namespace VaccPet.MVVM.Views;
 
 public partial class HomePage : ContentPage
 {
+
     private readonly INavigationService _navigationService;
 
+    public ImageButtonAnimationHelper _imageButtonAnimationHelper = new();
+
+
     public HomePage(HomeViewModel model, INavigationService navigationService)
-    {
+    {        
         _navigationService = navigationService;
 
         InitializeComponent();
@@ -18,12 +22,20 @@ public partial class HomePage : ContentPage
     }
 
 
-    private async void TapGestureRecognizer_GoToPetList(object sender, TappedEventArgs e)
-    {
-        ImageButtonAnimationHelper btnHelper = new ImageButtonAnimationHelper();
-
+    private async void TapGestureRecognizer_GoToPetPageList(object sender, TappedEventArgs e)
+    {      
         var buttonSelected = sender as Frame;     
 
         await _navigationService.NavigateToPageAsync<ListPetPage>(null, buttonSelected);
+    }
+
+    private async void TapGestureRecognizer_PageByCardHorizontal(object sender, TappedEventArgs e)
+    {
+        var element = sender as Frame;
+        await _imageButtonAnimationHelper.AnimateScaleViewElement(element);
+
+        var vm = BindingContext as HomeViewModel;
+
+        vm.NavigationMenuHorizontalCommand.Execute(e.Parameter);        
     }
 }

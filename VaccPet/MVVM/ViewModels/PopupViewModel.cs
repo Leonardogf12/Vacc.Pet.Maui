@@ -30,6 +30,7 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref tertiaryButton, value);
         }
 
+
         string quartenaryButton;
         public string QuartenaryButton
         {
@@ -61,6 +62,7 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref tertiaryCommand, value);
         }
 
+
         ICommand quartenaryCommand;
         public ICommand QuartenaryCommand
         {
@@ -83,13 +85,14 @@ namespace VaccPet.MVVM.ViewModels
             get=> message;
             set=> SetProperty(ref message, value);
         }
-
        
         #endregion
+
 
         public PopupViewModel()
         {
         }
+
 
         #region METHODS         
         public PopupViewModel SetParametersPopup(string firstButton = "", string secondButton = "",
