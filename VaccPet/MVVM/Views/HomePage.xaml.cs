@@ -38,4 +38,9 @@ public partial class HomePage : ContentPage
 
         vm.NavigationMenuHorizontalCommand.Execute(e.Parameter);        
     }
+
+    private void TapGestureRecognizer_GoToPetList(object sender, TappedEventArgs e)
+    {
+
+    }
 }

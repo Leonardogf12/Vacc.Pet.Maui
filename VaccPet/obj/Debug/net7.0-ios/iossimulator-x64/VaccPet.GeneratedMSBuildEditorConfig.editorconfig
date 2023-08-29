@@ -8,123 +8,123 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = VaccPet
-build_property.ProjectDir = D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\
+build_property.ProjectDir = S:\MyProjects\Vacc.Pet.Maui\VaccPet\
 
-[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/App.xaml]
+[S:/MyProjects/Vacc.Pet.Maui/VaccPet/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/AppShell.xaml]
+[S:/MyProjects/Vacc.Pet.Maui/VaccPet/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MainPage.xaml]
+[S:/MyProjects/Vacc.Pet.Maui/VaccPet/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MVVM/Views/CardMiddleAHomePage.xaml]
+[S:/MyProjects/Vacc.Pet.Maui/VaccPet/MVVM/Views/CardMiddleAHomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.CardMiddleAHomePage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\CardMiddleAHomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\CardMiddleAHomePage.xaml
 
-[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MVVM/Views/CardMiddleBHomePage.xaml]
+[S:/MyProjects/Vacc.Pet.Maui/VaccPet/MVVM/Views/CardMiddleBHomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.CardMiddleBHomePage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\CardMiddleBHomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\CardMiddleBHomePage.xaml
 
-[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MVVM/Views/CardTopAHomePage.xaml]
+[S:/MyProjects/Vacc.Pet.Maui/VaccPet/MVVM/Views/CardTopAHomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.CardTopAHomePage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\CardTopAHomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\CardTopAHomePage.xaml
 
-[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MVVM/Views/CardTopBHomePage.xaml]
+[S:/MyProjects/Vacc.Pet.Maui/VaccPet/MVVM/Views/CardTopBHomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.CardTopBHomePage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\CardTopBHomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\CardTopBHomePage.xaml
 
-[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MVVM/Views/CardTopCHomePage.xaml]
+[S:/MyProjects/Vacc.Pet.Maui/VaccPet/MVVM/Views/CardTopCHomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.CardTopCHomePage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\CardTopCHomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\CardTopCHomePage.xaml
 
-[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MVVM/Views/Components/PopupErrorConfirmationPage.xaml]
+[S:/MyProjects/Vacc.Pet.Maui/VaccPet/MVVM/Views/Components/PopupErrorConfirmationPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.Components.PopupErrorConfirmationPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\Components\PopupErrorConfirmationPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\Components\PopupErrorConfirmationPage.xaml
 
-[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MVVM/Views/Components/PopupListActionsPage.xaml]
+[S:/MyProjects/Vacc.Pet.Maui/VaccPet/MVVM/Views/Components/PopupListActionsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.Components.PopupListActionsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\Components\PopupListActionsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\Components\PopupListActionsPage.xaml
 
-[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MVVM/Views/Components/PopupSuccessConfirmationPage.xaml]
+[S:/MyProjects/Vacc.Pet.Maui/VaccPet/MVVM/Views/Components/PopupSuccessConfirmationPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.Components.PopupSuccessConfirmationPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\Components\PopupSuccessConfirmationPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\Components\PopupSuccessConfirmationPage.xaml
 
-[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MVVM/Views/DetailPetPage.xaml]
+[S:/MyProjects/Vacc.Pet.Maui/VaccPet/MVVM/Views/DetailPetPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.DetailPetPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\DetailPetPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\DetailPetPage.xaml
 
-[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MVVM/Views/EditPetPage.xaml]
+[S:/MyProjects/Vacc.Pet.Maui/VaccPet/MVVM/Views/EditPetPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.EditPetPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\EditPetPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\EditPetPage.xaml
 
-[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MVVM/Views/HomePage.xaml]
+[S:/MyProjects/Vacc.Pet.Maui/VaccPet/MVVM/Views/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.HomePage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\HomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\HomePage.xaml
 
-[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MVVM/Views/ListPetPage.xaml]
+[S:/MyProjects/Vacc.Pet.Maui/VaccPet/MVVM/Views/ListPetPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.ListPetPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\ListPetPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\ListPetPage.xaml
 
-[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MVVM/Views/ListVaccinePetPage.xaml]
+[S:/MyProjects/Vacc.Pet.Maui/VaccPet/MVVM/Views/ListVaccinePetPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.ListVaccinePetPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\ListVaccinePetPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\ListVaccinePetPage.xaml
 
-[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MVVM/Views/RegisterPetPage.xaml]
+[S:/MyProjects/Vacc.Pet.Maui/VaccPet/MVVM/Views/RegisterPetPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.RegisterPetPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\RegisterPetPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\RegisterPetPage.xaml
 
-[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/MVVM/Views/RegisterVaccinePetPage.xaml]
+[S:/MyProjects/Vacc.Pet.Maui/VaccPet/MVVM/Views/RegisterVaccinePetPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.MVVM.Views.RegisterVaccinePetPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\RegisterVaccinePetPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\RegisterVaccinePetPage.xaml
 
-[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/Resources/Styles/Colors.xaml]
+[S:/MyProjects/Vacc.Pet.Maui/VaccPet/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[D:/PROJETOS/Projetos MAUI/VaccPet.Project/Vacc.Pet.Maui/VaccPet/Resources/Styles/Styles.xaml]
+[S:/MyProjects/Vacc.Pet.Maui/VaccPet/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = VaccPet.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

@@ -6,7 +6,7 @@
              x:Class="VaccPet.MVVM.Views.RegisterVaccinePetPage"
              Title="Vacina"
              BackgroundColor="{StaticResource Primary}">
-
+        
     <ScrollView>
         <Grid>
             <Grid.RowDefinitions>
@@ -37,18 +37,23 @@
                         <HorizontalStackLayout Grid.Row="0">
                             <Label Text="Vacinado em:" Style="{StaticResource lblTitlesStyle}"/>
                             <Label Text="{Binding Source={x:Reference datePickerVaccinationDate}, Path=Date, StringFormat='{0:dd/MM/yyyy}'}" Style="{StaticResource lblDetailStyle}"/>
-                        </HorizontalStackLayout>
+                            <!--<Label Text="{Binding VacinationDateCard}" Style="{StaticResource lblDetailStyle}"/>-->
+                        </HorizontalStackLayout> 
                         <HorizontalStackLayout Grid.Row="1">
                             <Label Text="Revacinar em:" Style="{StaticResource lblTitlesStyle}"/>
-                            <Label Text="{Binding Source={x:Reference datePickerRevacinationDate}, Path=Date, StringFormat='{0:dd/MM/yyyy}'}" Style="{StaticResource lblDetailStyle}"/>
+                            <Label Text="{Binding Source={x:Reference datePickerRevaccinationDate}, Path=Date, StringFormat='{0:dd/MM/yyyy}'}" Style="{StaticResource lblDetailStyle}"/>
+                            <!--<Label Text="{Binding RevacinationDateCard}" Style="{StaticResource lblDetailStyle}"/>-->
                         </HorizontalStackLayout>
                         <HorizontalStackLayout Grid.Row="2">
                             <Label Text="Vacina:" Style="{StaticResource lblTitlesStyle}"/>
                             <Label Text="{Binding Source={x:Reference comboBoxAnimal}, Path=SelectedItem.Value, StringFormat='{0}'}" Style="{StaticResource lblDetailStyle}"/>
+                            <!--<Label Text="{Binding VaccineSelectedCard}" Style="{StaticResource lblDetailStyle}"/>-->
                         </HorizontalStackLayout>
                         <HorizontalStackLayout Grid.Row="3">
                             <Label Text="Peso - KG:" Style="{StaticResource lblTitlesStyle}" />
                             <Label Text="{Binding Source={x:Reference entryWeight}, Path=Text, StringFormat='{0}'}" Style="{StaticResource lblDetailStyle}"/>
+                            <!--<Label Text="{Binding WeightPetCard}" Style="{StaticResource lblDetailStyle}"/>-->
+
                         </HorizontalStackLayout>
 
                         <StackLayout Grid.Row="4"  Orientation="Horizontal">
@@ -111,7 +116,7 @@
                     <StackLayout Grid.Row="2" Orientation="Vertical">
                         <Label Text="Data para Revacinar" Style="{StaticResource lblTitlesStyle}"/>
                         <Border Style="{StaticResource borberCustomStyle}" >
-                            <DatePicker x:Name="datePickerRevacinationDate"                                                           
+                            <DatePicker x:Name="datePickerRevaccinationDate"                                                           
                                         TextColor="{StaticResource Primary}"                            
                                         Style="{StaticResource entryCustomStyle}"
                                         Date="{Binding RevacinationDate}"

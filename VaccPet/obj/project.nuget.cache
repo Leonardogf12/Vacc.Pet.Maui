@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t9EhXF/UaMq5qD8GbFdRoE6khLF4YZCWeGVoQGjOahZGA1oAeBY59XyFk/IwSWu9zDt6wEy514aJyidbxPEMEQ==",
+  "dgSpecHash": "uxVwl24FkcMoeYrGgLL02r+lsCHUQvZ7ETQJc2zDD6mOwO9JiZnywPXsl/W6NYOSCbYORsQRArmYqDhP+XMRig==",
   "success": true,
-  "projectFilePath": "D:\\PROJETOS\\Projetos MAUI\\VaccPet.Project\\Vacc.Pet.Maui\\VaccPet\\VaccPet.csproj",
+  "projectFilePath": "S:\\MyProjects\\Vacc.Pet.Maui\\VaccPet\\VaccPet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\root\\.nuget\\packages\\asyncawaitbestpractices\\6.0.4\\asyncawaitbestpractices.6.0.4.nupkg.sha512",
     "C:\\Users\\root\\.nuget\\packages\\communitytoolkit.maui\\5.2.0\\communitytoolkit.maui.5.2.0.nupkg.sha512",

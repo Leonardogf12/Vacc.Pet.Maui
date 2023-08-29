@@ -30895,11 +30895,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PROJETOS\\Projetos MAUI\\VaccPet.Project\\Vacc.Pet.Maui\\VaccPet\\VaccPet.csproj",
+      "projectUniqueName": "S:\\MyProjects\\Vacc.Pet.Maui\\VaccPet\\VaccPet.csproj",
       "projectName": "VaccPet",
-      "projectPath": "D:\\PROJETOS\\Projetos MAUI\\VaccPet.Project\\Vacc.Pet.Maui\\VaccPet\\VaccPet.csproj",
+      "projectPath": "S:\\MyProjects\\Vacc.Pet.Maui\\VaccPet\\VaccPet.csproj",
       "packagesPath": "C:\\Users\\root\\.nuget\\packages\\",
-      "outputPath": "D:\\PROJETOS\\Projetos MAUI\\VaccPet.Project\\Vacc.Pet.Maui\\VaccPet\\obj\\",
+      "outputPath": "S:\\MyProjects\\Vacc.Pet.Maui\\VaccPet\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

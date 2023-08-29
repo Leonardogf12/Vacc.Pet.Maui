@@ -5,7 +5,9 @@ namespace VaccPet.MVVM.Views;
 
 public partial class RegisterVaccinePetPage : ContentPage
 {
-    public VaccineHelper _vaccineHelper { get; set; } = new VaccineHelper();
+    public VaccineHelper _vaccineHelper { get; set; } = new();
+
+    //public RegisterVaccinePetViewModel ViewModel;
 
 
     public RegisterVaccinePetPage(RegisterVaccinePetViewModel model)
@@ -13,6 +15,8 @@ public partial class RegisterVaccinePetPage : ContentPage
         InitializeComponent();
 
         BindingContext = model;
+
+       //ViewModel = BindingContext as RegisterVaccinePetViewModel;
     }
 
     
@@ -31,20 +35,26 @@ public partial class RegisterVaccinePetPage : ContentPage
 
     public async Task<bool> ValidateFieldsRegisterPet()
     {
+        var ViewModel = BindingContext as RegisterVaccinePetViewModel;
+
+
         if (!VacinationDateBehaviorValidator.ValidateFields)
         {
             await DisplayAlert("Data da Vacina", "O campo 'Data da Vacina' está incorreto. Favor verificar.", "Ok");
+            ViewModel.IsToggledAllOk = false;
             return false;
         }
 
         if (comboBoxAnimal.SelectedItem == null)
         {
+            ViewModel.IsToggledAllOk = false;
             comboBoxAnimal.HasError = true;
         }
 
         if (!WeightBehaviorValidator.ValidateFields)
         {
             await DisplayAlert("Peso", "O campo Peso está incorreto. Favor verificar.", "Ok");
+            ViewModel.IsToggledAllOk = false;
             return false;
         }
 
@@ -53,9 +63,13 @@ public partial class RegisterVaccinePetPage : ContentPage
 
     protected override void OnAppearing()
     {
-        var vm = BindingContext as RegisterVaccinePetViewModel;
-        var specie = vm.RegisterVaccinePet.Animal;
-        vm.VaccineList = _vaccineHelper.GetVaccines(specie);
+        var ViewModel = BindingContext as RegisterVaccinePetViewModel;
+
+        var specie = ViewModel.RegisterVaccinePet.Animal;
+
+        ViewModel.VaccineList = _vaccineHelper.GetVaccines(specie);
+
+        ViewModel.ResetFields();
 
         base.OnAppearing();
     }

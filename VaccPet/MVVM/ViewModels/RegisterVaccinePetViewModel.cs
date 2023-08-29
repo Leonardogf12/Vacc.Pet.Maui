@@ -8,11 +8,12 @@ using VaccPet.Repositories;
 namespace VaccPet.MVVM.ViewModels
 {
     [QueryProperty(nameof(RegisterVaccinePet), "RegisterVaccinePet")]
+    [QueryProperty(nameof(RegisterRevaccinationVaccinePet), "RegisterRevaccinationVaccinePet")]
     public class RegisterVaccinePetViewModel : BaseViewModel
     {
 
         #region VARIABLES
-      
+
         private readonly VaccineModelRepository _VaccineModelRepository;
 
         #endregion
@@ -24,6 +25,14 @@ namespace VaccPet.MVVM.ViewModels
         {
             get => _registerVaccinePet;
             set => SetProperty(ref _registerVaccinePet, value);
+        }
+
+
+        private PetModel _registerRevaccinationVaccinePet;
+        public PetModel RegisterRevaccinationVaccinePet
+        {
+            get => _registerRevaccinationVaccinePet;
+            set => SetProperty(ref _registerRevaccinationVaccinePet, value);
         }
 
 
@@ -39,9 +48,13 @@ namespace VaccPet.MVVM.ViewModels
         public DateTime VacinationDate
         {
             get => _vacinationDate;
-            set => SetProperty(ref this._vacinationDate, value);
+            set
+            {
+                SetProperty(ref _vacinationDate, value);
+                VacinationDateCard = VacinationDate.ToString("dd/MM/yyyy");
+            }
         }
-        
+
 
         private DateTime _maxVacinationDate = DateTime.Now.AddYears(2);
         public DateTime MaxVacinationDate
@@ -51,7 +64,7 @@ namespace VaccPet.MVVM.ViewModels
         }
 
 
-        private DateTime _minVacinationDate = DateTime.Now.AddYears(-1);
+        private DateTime _minVacinationDate = DateTime.Now.AddMonths(-1);
         public DateTime MinVacinationDate
         {
             get => _minVacinationDate;
@@ -59,15 +72,19 @@ namespace VaccPet.MVVM.ViewModels
         }
 
 
-        private DateTime _revacinationDate = DateTime.Now;
+        private DateTime _revacinationDate = DateTime.Now.AddYears(1);
         public DateTime RevacinationDate
         {
             get => _revacinationDate;
-            set => SetProperty(ref this._revacinationDate, value);
+            set
+            {
+                SetProperty(ref this._revacinationDate, value);
+                RevacinationDateCard = RevacinationDate.ToString("dd/MM/yyyy");
+            }
         }
 
 
-        private Color _revacinationColor =  Color.FromRgba("#D54A9E");
+        private Color _revacinationColor = Color.FromRgba("#D54A9E");
         public Color RevacinationColor
         {
             get => _revacinationColor;
@@ -95,15 +112,11 @@ namespace VaccPet.MVVM.ViewModels
         public VaccineHelper VaccineSelected
         {
             get => _vaccineSelected;
-            set => SetProperty(ref this._vaccineSelected, value);
-        }
-
-
-        private string _vaccineName;
-        public string VaccineName
-        {
-            get => _vaccineName;
-            set => SetProperty(ref this._vaccineName, value);
+            set
+            {
+                SetProperty(ref this._vaccineSelected, value);
+                VaccineSelectedCard = VaccineSelected.Value.ToString();
+            }
         }
 
 
@@ -111,7 +124,11 @@ namespace VaccPet.MVVM.ViewModels
         public double WeightPet
         {
             get => _weightPet;
-            set => SetProperty(ref this._weightPet, value);
+            set
+            {
+                SetProperty(ref this._weightPet, value);
+                WeightPetCard = value.ToString();
+            }
         }
 
 
@@ -122,7 +139,7 @@ namespace VaccPet.MVVM.ViewModels
             set
             {
                 SetProperty(ref _isToggledAllOk, value);
-                if(IsToggledAllOk)
+                if (IsToggledAllOk)
                     AllFieldsOk = true;
                 else
                     AllFieldsOk = false;
@@ -137,6 +154,51 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref _allFieldsOk, value);
         }
 
+
+        private string _vacinationDateCard;
+        public string VacinationDateCard
+        {
+            get => _vacinationDateCard;
+            set
+            {
+                _vacinationDateCard = value;
+                SetProperty(ref _vacinationDateCard, value);
+            }
+        }
+
+
+        private string _revacinationDateCard;
+        public string RevacinationDateCard
+        {
+            get => _revacinationDateCard;
+            set
+            {
+                _revacinationDateCard = value;
+                SetProperty(ref _revacinationDateCard, value);
+            }
+        }
+
+
+        private string _weightPetCard;
+        public string WeightPetCard
+        {
+            get => _weightPetCard;
+            set
+            {
+                _weightPetCard = value;
+                SetProperty(ref _weightPetCard, value);
+            }
+        }
+
+
+        private string _vaccineSelectedCard;
+        public string VaccineSelectedCard
+        {
+            get => _vaccineSelectedCard;
+            set => SetProperty(ref this._vaccineSelectedCard, value);
+        }
+
+
         #endregion
 
         #region COMMANDS
@@ -146,7 +208,7 @@ namespace VaccPet.MVVM.ViewModels
         #endregion  
 
         public RegisterVaccinePetViewModel()
-        {            
+        {
             _VaccineModelRepository = new VaccineModelRepository(App.dbPath);
 
             AddVaccinePetCommand = new Command(OnAddVaccinePetCommand);
@@ -163,17 +225,42 @@ namespace VaccPet.MVVM.ViewModels
             model.VaccineName = VaccineSelected.Value;
             model.Weight = WeightPet;
             model.PetlId = RegisterVaccinePet.Id;
-           
+
+            SetValuesFielsCard(model);
+
             var result = await _VaccineModelRepository.SaveVaccineAsync(model);
-          
-            if(result > 0)            
-                await App.Current.MainPage.ShowPopupAsync(new PopupSuccessConfirmationPage());                           
-            else            
+
+            if (result > 0)
+                await App.Current.MainPage.ShowPopupAsync(new PopupSuccessConfirmationPage());
+            else
                 await App.Current.MainPage.ShowPopupAsync(new PopupErrorConfirmationPage());
-                         
+
             return;
         }
 
+        public void ResetFields()
+        {
+            IsToggledAllOk = false;
+            VacinationDate = DateTime.Now;
+            RevacinationDate = DateTime.Now.AddYears(1);
+            WeightPet = 0;
+
+            VacinationDateCard = string.Empty;
+            RevacinationDateCard = string.Empty;
+            WeightPetCard = string.Empty;
+            VaccineSelectedCard = string.Empty;
+        }
+
+        private void SetValuesFielsCard(VaccineModel model)
+        {
+
+            RevacinationDateCard = model.RevaccinateDate.ToString("dd/MM/yyyy");
+            WeightPetCard = model.Weight.ToString();
+            VaccineSelectedCard = model.VaccineName;
+        }
+
         #endregion
+
+
     }
 }
