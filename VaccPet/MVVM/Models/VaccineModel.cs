@@ -15,6 +15,8 @@ namespace VaccPet.MVVM.Models
         public string VaccineName { get; set; }
         public DateTime RevaccinateDate { get; set; }
         public double Weight { get; set; }
+        //public string CycleStatus { get; set; }
+        public string Observation { get; set; }
 
         [ForeignKey(typeof(PetModel))]
         public int PetlId { get; set; }
@@ -22,6 +24,7 @@ namespace VaccPet.MVVM.Models
         [ManyToOne]
         [NotMapped]
         public PetModel PetModel { get; set; }
-        
+
+       
     }
 }

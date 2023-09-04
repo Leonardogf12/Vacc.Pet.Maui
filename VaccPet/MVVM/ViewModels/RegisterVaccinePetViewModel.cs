@@ -132,6 +132,14 @@ namespace VaccPet.MVVM.ViewModels
         }
 
 
+        private string _observation;
+        public string Observation
+        {
+            get => _observation;
+            set => SetProperty(ref this._observation, value);
+        }
+
+
         private bool _isToggledAllOk;
         public bool IsToggledAllOk
         {
@@ -199,6 +207,18 @@ namespace VaccPet.MVVM.ViewModels
         }
 
 
+        private Color _colorCycleStatus = Colors.DeepPink;
+        public Color ColorCycleStatus
+        {
+            get => _colorCycleStatus;
+            set
+            {
+                _colorCycleStatus = value;
+                SetProperty(ref this._colorCycleStatus, value);
+            }
+        }
+
+
         #endregion
 
         #region COMMANDS
@@ -218,15 +238,35 @@ namespace VaccPet.MVVM.ViewModels
 
         private async void OnAddVaccinePetCommand()
         {
-            VaccineModel model = new VaccineModel();
+            VaccineModel model = new VaccineModel
+            {
+                VaccinationDate = VacinationDate,
+                RevaccinateDate = RevacinationDate,
+                VaccineName = VaccineSelected.Value,
+                Weight = WeightPet,
+                PetlId = RegisterVaccinePet.Id,
+                Observation = Observation,
+                //model.CycleStatus = CycleStatus.Pendente.ToString()
+            };
 
-            model.VaccinationDate = VacinationDate;
-            model.RevaccinateDate = RevacinationDate;
-            model.VaccineName = VaccineSelected.Value;
-            model.Weight = WeightPet;
-            model.PetlId = RegisterVaccinePet.Id;
+            var verifyOne = await CheckIfThereIsVaccineWithDateAndNameAlreadyRegistered(model);
+            if (verifyOne)
+            {
+                await App.Current.MainPage.DisplayAlert("Ops", $"Já existe uma vacina do tipo {VaccineSelected.Value} " +
+                    $"registrada para o dia {VacinationDate.ToShortDateString()}. Favor verificar.", "Ok");
+                
+                IsToggledAllOk = !verifyOne;
+                
+                return;
+            }
 
-            SetValuesFielsCard(model);
+            //var verifyTwo = await CheckCycleStatusForRegister(model);                        
+            //if (verifyTwo != null){
+
+            //    verifyTwo.CycleStatus = CycleStatus.Completo.ToString();
+
+            //    await _VaccineModelRepository.UpdateVaccineAsync(verifyTwo);               
+            //}           
 
             var result = await _VaccineModelRepository.SaveVaccineAsync(model);
 
@@ -236,6 +276,33 @@ namespace VaccPet.MVVM.ViewModels
                 await App.Current.MainPage.ShowPopupAsync(new PopupErrorConfirmationPage());
 
             return;
+        }
+
+        private async Task<VaccineModel> CheckCycleStatusForRegister(VaccineModel model)
+        {
+            var resut = await _VaccineModelRepository.GetAllVaccinesByPetAsync(model.PetlId);
+
+            if (resut.Count <= 0) return null;
+
+            var exist = resut.Where(x => x.RevaccinateDate.Date == model.VaccinationDate.Date && x.VaccineName == model.VaccineName).FirstOrDefault();
+
+            if (exist != null) return exist;
+
+            return null;
+        }
+
+        private async Task<bool> CheckIfThereIsVaccineWithDateAndNameAlreadyRegistered(VaccineModel model)
+        {
+            var resut = await _VaccineModelRepository.GetAllVaccinesByPetAsync(model.PetlId);
+
+            if (resut.Count <= 0) return false;
+
+            var exist = resut.Where(x => x.VaccinationDate == model.VaccinationDate && x.VaccineName == model.VaccineName).FirstOrDefault();
+
+            if (exist != null)
+                return true;
+
+            return false;
         }
 
         public void ResetFields()
@@ -249,14 +316,6 @@ namespace VaccPet.MVVM.ViewModels
             RevacinationDateCard = string.Empty;
             WeightPetCard = string.Empty;
             VaccineSelectedCard = string.Empty;
-        }
-
-        private void SetValuesFielsCard(VaccineModel model)
-        {
-
-            RevacinationDateCard = model.RevaccinateDate.ToString("dd/MM/yyyy");
-            WeightPetCard = model.Weight.ToString();
-            VaccineSelectedCard = model.VaccineName;
         }
 
         #endregion

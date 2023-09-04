@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                 x:Class="VaccPet.MVVM.Views.Components.PopupSuccessConfirmationPage"
-                 xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
-                 xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-                 Color="Transparent"
-                 Size="80,80">
+<toolkit:Popup
+    x:Class="VaccPet.MVVM.Views.Components.PopupSuccessConfirmationPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    Size="80,80"
+    Color="Transparent">
 
-   <Frame HorizontalOptions="Center" 
-          VerticalOptions="Center"
-          CornerRadius="60" 
-          BackgroundColor="#313A4A" 
-          BorderColor="Transparent">
-       
-        <skia:SKLottieView x:Name="ImagePopup"
-                           Source="check_json.json"                
-                           HeightRequest="50"
-                           WidthRequest="50"
-                           BackgroundColor="#313A4A"/>
+
+    <Frame
+        BackgroundColor="#313A4A"
+        BorderColor="Transparent"
+        CornerRadius="60"
+        HorizontalOptions="Center"
+        VerticalOptions="Center">
+
+        <skia:SKLottieView
+            x:Name="ImagePopup"
+            BackgroundColor="#313A4A"
+            HeightRequest="50"
+            Source="check_json.json"
+            WidthRequest="50" />
     </Frame>
 
 </toolkit:Popup>

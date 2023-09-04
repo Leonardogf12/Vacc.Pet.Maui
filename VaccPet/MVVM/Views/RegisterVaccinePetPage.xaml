@@ -1,150 +1,183 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:VaccPet.Helpers.Behaviors"  
-             xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors"
-             x:Class="VaccPet.MVVM.Views.RegisterVaccinePetPage"
-             Title="Vacina"
-             BackgroundColor="{StaticResource Primary}">
-        
+<ContentPage
+    x:Class="VaccPet.MVVM.Views.RegisterVaccinePetPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors"
+    xmlns:local="clr-namespace:VaccPet.Helpers.Behaviors"
+    Title="Vacina"
+    BackgroundColor="{StaticResource Primary}">
+
     <ScrollView>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="250"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-
             <StackLayout Grid.Row="0">
-                <Frame Margin="20" 
-                   HeightRequest="215"
-                   CornerRadius="30"
-                   BorderColor="Transparent">
+                <Frame
+                    Margin="20"
+                    BorderColor="Transparent"
+                    CornerRadius="30"
+                    HeightRequest="230">
                     <Frame.Background>
                         <LinearGradientBrush EndPoint="1,0">
-                            <GradientStop Color="{StaticResource Tertiary}" Offset="1.2" />
-                            <GradientStop Color="{StaticResource PrimaryFrame}" Offset="1.8"/>
+                            <GradientStop Offset="1.2" Color="{StaticResource Tertiary}" />
+                            <GradientStop Offset="1.8" Color="{StaticResource PrimaryFrame}" />
                         </LinearGradientBrush>
                     </Frame.Background>
                     <Grid>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="50" />
                         </Grid.RowDefinitions>
 
                         <HorizontalStackLayout Grid.Row="0">
-                            <Label Text="Vacinado em:" Style="{StaticResource lblTitlesStyle}"/>
-                            <Label Text="{Binding Source={x:Reference datePickerVaccinationDate}, Path=Date, StringFormat='{0:dd/MM/yyyy}'}" Style="{StaticResource lblDetailStyle}"/>
+                            <Label Style="{StaticResource lblTitlesStyle}" Text="Vacinado em:" />
+                            <Label Style="{StaticResource lblDetailStyle}" Text="{Binding Source={x:Reference datePickerVaccinationDate}, Path=Date, StringFormat='{0:dd/MM/yyyy}'}" />
                             <!--<Label Text="{Binding VacinationDateCard}" Style="{StaticResource lblDetailStyle}"/>-->
-                        </HorizontalStackLayout> 
+                        </HorizontalStackLayout>
                         <HorizontalStackLayout Grid.Row="1">
-                            <Label Text="Revacinar em:" Style="{StaticResource lblTitlesStyle}"/>
-                            <Label Text="{Binding Source={x:Reference datePickerRevaccinationDate}, Path=Date, StringFormat='{0:dd/MM/yyyy}'}" Style="{StaticResource lblDetailStyle}"/>
+                            <Label Style="{StaticResource lblTitlesStyle}" Text="Revacinar em:" />
+                            <Label Style="{StaticResource lblDetailStyle}" Text="{Binding Source={x:Reference datePickerRevaccinationDate}, Path=Date, StringFormat='{0:dd/MM/yyyy}'}" />
                             <!--<Label Text="{Binding RevacinationDateCard}" Style="{StaticResource lblDetailStyle}"/>-->
                         </HorizontalStackLayout>
                         <HorizontalStackLayout Grid.Row="2">
-                            <Label Text="Vacina:" Style="{StaticResource lblTitlesStyle}"/>
-                            <Label Text="{Binding Source={x:Reference comboBoxAnimal}, Path=SelectedItem.Value, StringFormat='{0}'}" Style="{StaticResource lblDetailStyle}"/>
+                            <Label Style="{StaticResource lblTitlesStyle}" Text="Vacina:" />
+                            <Label Style="{StaticResource lblDetailStyle}" Text="{Binding Source={x:Reference comboBoxAnimal}, Path=SelectedItem.Value, StringFormat='{0}'}" />
                             <!--<Label Text="{Binding VaccineSelectedCard}" Style="{StaticResource lblDetailStyle}"/>-->
                         </HorizontalStackLayout>
                         <HorizontalStackLayout Grid.Row="3">
-                            <Label Text="Peso - KG:" Style="{StaticResource lblTitlesStyle}" />
-                            <Label Text="{Binding Source={x:Reference entryWeight}, Path=Text, StringFormat='{0}'}" Style="{StaticResource lblDetailStyle}"/>
+                            <Label Style="{StaticResource lblTitlesStyle}" Text="Peso - KG:" />
+                            <Label Style="{StaticResource lblDetailStyle}" Text="{Binding Source={x:Reference entryWeight}, Path=Text, StringFormat='{0}'}" />
                             <!--<Label Text="{Binding WeightPetCard}" Style="{StaticResource lblDetailStyle}"/>-->
 
                         </HorizontalStackLayout>
 
-                        <StackLayout Grid.Row="4"  Orientation="Horizontal">
-                            <Switch  HorizontalOptions="Start" Margin="0,10,0,0" IsToggled="{Binding IsToggledAllOk}"/>
-                            <Label  Text="Tudo Certo?" FontSize="Small" Margin="0,5,0,0" VerticalOptions="Center" TextColor="{StaticResource Secondary}"/>
+                        <StackLayout Grid.Row="4" Orientation="Horizontal">
+                            <Switch
+                                Margin="0,10,0,0"
+                                HorizontalOptions="Start"
+                                IsToggled="{Binding IsToggledAllOk}" />
+                            <Label
+                                Margin="0,5,0,0"
+                                FontSize="Small"
+                                Text="Tudo Certo?"
+                                TextColor="{StaticResource Secondary}"
+                                VerticalOptions="Center" />
                         </StackLayout>
-                        
-                        <Button x:Name="btnConfirmVaccine" 
-                                Grid.Row="5"
-                                HorizontalOptions="End" 
-                                Text="Confirmar"  
-                                Style="{StaticResource btnDarkStyle}" 
-                                Margin="0,10,0,0" 
-                                IsEnabled="{Binding AllFieldsOk}" 
-                                Clicked="btnConfirmVaccine_Clicked"/>
-                      
+
+                        <Button
+                            x:Name="btnConfirmVaccine"
+                            Grid.Row="5"
+                            Margin="0,10,0,0"
+                            Clicked="btnConfirmVaccine_Clicked"
+                            HorizontalOptions="End"
+                            IsEnabled="{Binding AllFieldsOk}"
+                            Style="{StaticResource btnDarkStyle}"
+                            Text="Confirmar" />
+
                     </Grid>
                 </Frame>
             </StackLayout>
-
             <StackLayout Grid.Row="1">
                 <Grid Margin="15,10,15,0" RowSpacing="10">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="80"/>
-                        <RowDefinition Height="80"/>
-                        <RowDefinition Height="80"/>
-                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="80" />
+                        <RowDefinition Height="80" />
+                        <RowDefinition Height="80" />
+                        <RowDefinition Height="80" />
+                        <RowDefinition Height="80" />
+
                     </Grid.RowDefinitions>
 
-                    <!--Vacination Date-->
+                    <!--  Vacination Date  -->
                     <StackLayout Grid.Row="0" Orientation="Vertical">
-                        <Label Text="Data da Vacinação" Style="{StaticResource lblTitlesStyle}"/>
-                        <Border Style="{StaticResource borberCustomStyle}" >
-                            <DatePicker x:Name="datePickerVaccinationDate"                                                           
-                                        TextColor="{StaticResource Primary}"                            
-                                        Style="{StaticResource entryCustomStyle}"
-                                        Date="{Binding VacinationDate}"
-                                        MaximumDate="{Binding MaxVacinationDate}"
-                                        MinimumDate="{Binding MinVacinationDate}">
+                        <Label Style="{StaticResource lblTitlesStyle}" Text="Data da Vacinação" />
+                        <Border Style="{StaticResource borberCustomStyle}">
+                            <DatePicker
+                                x:Name="datePickerVaccinationDate"
+                                Date="{Binding VacinationDate}"
+                                MaximumDate="{Binding MaxVacinationDate}"
+                                MinimumDate="{Binding MinVacinationDate}"
+                                Style="{StaticResource entryCustomStyle}"
+                                TextColor="{StaticResource Primary}">
                                 <DatePicker.Behaviors>
-                                    <local:DateValidationsBehaviors x:TypeArguments="DatePicker" x:Name="VacinationDateBehaviorValidator" />
+                                    <local:DateValidationsBehaviors x:Name="VacinationDateBehaviorValidator" x:TypeArguments="DatePicker" />
                                 </DatePicker.Behaviors>
                             </DatePicker>
                         </Border>
                     </StackLayout>
 
-                    <!--Vaccine Name-->
+                    <!--  Vaccine Name  -->
                     <StackLayout Grid.Row="1">
-                        <Label Text="Nome da Vacina" Style="{StaticResource lblTitlesStyle}"/>
-                        <dxe:ComboBoxEdit x:Name="comboBoxAnimal"
-                                          ItemsSource="{Binding VaccineList}"
-                                          Margin="2,0,2,0"
-                                          Style="{StaticResource comboBoxStyle}"                                                                    
-                                          DisplayMember="Value"
-                                          SelectedItem="{Binding VaccineSelected}"/>
+                        <Label Style="{StaticResource lblTitlesStyle}" Text="Nome da Vacina" />
+                        <dxe:ComboBoxEdit
+                            x:Name="comboBoxAnimal"
+                            Margin="2,0,2,0"
+                            DisplayMember="Value"
+                            ItemsSource="{Binding VaccineList}"
+                            SelectedItem="{Binding VaccineSelected}"
+                            Style="{StaticResource comboBoxStyle}" />
 
                     </StackLayout>
 
-                    <!--Revacination Date-->
+                    <!--  Revacination Date  -->
                     <StackLayout Grid.Row="2" Orientation="Vertical">
-                        <Label Text="Data para Revacinar" Style="{StaticResource lblTitlesStyle}"/>
-                        <Border Style="{StaticResource borberCustomStyle}" >
-                            <DatePicker x:Name="datePickerRevaccinationDate"                                                           
-                                        TextColor="{StaticResource Primary}"                            
-                                        Style="{StaticResource entryCustomStyle}"
-                                        Date="{Binding RevacinationDate}"
-                                        MaximumDate="{Binding MaxRevacinationDate}"
-                                        MinimumDate="{Binding MinRevacinationDate}">
-                            </DatePicker>
+                        <Label Style="{StaticResource lblTitlesStyle}" Text="Data para Revacinar" />
+                        <Border Style="{StaticResource borberCustomStyle}">
+                            <DatePicker
+                                x:Name="datePickerRevaccinationDate"
+                                Date="{Binding RevacinationDate}"
+                                MaximumDate="{Binding MaxRevacinationDate}"
+                                MinimumDate="{Binding MinRevacinationDate}"
+                                Style="{StaticResource entryCustomStyle}"
+                                TextColor="{StaticResource Primary}" />
                         </Border>
                     </StackLayout>
 
-                    <!--Weight-->
+                    <!--  Weight  -->
                     <StackLayout Grid.Row="3" Orientation="Vertical">
-                        <Label Text="Peso - KG" Style="{StaticResource lblTitlesStyle}"/>
-                        <Border Style="{StaticResource borberCustomStyle}" >
-                            <Entry x:Name="entryWeight" 
-                                   Text="{Binding WeightPet}"
-                                   TextColor="{StaticResource Primary}"
-                                   Placeholder="0.0 KG"                              
-                                   Keyboard="Numeric"
-                                   Style="{StaticResource entryCustomStyle}">
+                        <Label Style="{StaticResource lblTitlesStyle}" Text="Peso - KG" />
+                        <Border Style="{StaticResource borberCustomStyle}">
+                            <Entry
+                                x:Name="entryWeight"
+                                Keyboard="Numeric"
+                                Placeholder="0.0 KG"
+                                Style="{StaticResource entryCustomStyle}"
+                                Text="{Binding WeightPet}"
+                                TextColor="{StaticResource Primary}">
                                 <Entry.Behaviors>
-                                    <local:NumericValidationsBehaviors x:TypeArguments="Entry" x:Name="WeightBehaviorValidator" />
+                                    <local:NumericValidationsBehaviors x:Name="WeightBehaviorValidator" x:TypeArguments="Entry" />
                                 </Entry.Behaviors>
                             </Entry>
                         </Border>
                     </StackLayout>
+
+                    <StackLayout Grid.Row="4" Orientation="Vertical">
+                        <Label Style="{StaticResource lblTitlesStyle}" Text="Observação" />
+                        <Border HeightRequest="80" Style="{StaticResource borberCustomStyle}">
+                            <Editor
+                                Margin="15,0,10,0"
+                                FontSize="Medium"
+                                HeightRequest="80"
+                                Keyboard="Text"
+                                Placeholder="Observação"
+                                PlaceholderColor="{StaticResource Gray400}"
+                                Text="{Binding Observation}"
+                                TextColor="{StaticResource Primary}">
+
+                                <Editor.Behaviors>
+                                    <local:TextValidationsBehaviors x:Name="observationBehaviorValidator" x:TypeArguments="Editor" />
+                                </Editor.Behaviors>
+                            </Editor>
+                        </Border>
+                    </StackLayout>
                 </Grid>
             </StackLayout>
-
         </Grid>
     </ScrollView>
 

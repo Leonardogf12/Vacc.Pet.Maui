@@ -1,216 +1,265 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"     
-             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"             
-             xmlns:local="clr-namespace:VaccPet.Helpers.Behaviors"      
-             xmlns:vm="clr-namespace:VaccPet.MVVM.ViewModels"
-             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
-             xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"             
-             x:Class="VaccPet.MVVM.Views.RegisterPetPage"
-             x:DataType="vm:RegisterPetViewModel"
-             BackgroundColor="{StaticResource Primary}"
-             Shell.NavBarIsVisible="False">
+<ContentPage
+    x:Class="VaccPet.MVVM.Views.RegisterPetPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors"
+    xmlns:local="clr-namespace:VaccPet.Helpers.Behaviors"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:vm="clr-namespace:VaccPet.MVVM.ViewModels"
+    x:DataType="vm:RegisterPetViewModel"
+    BackgroundColor="{StaticResource Primary}"
+    Shell.NavBarIsVisible="False">
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        
-        <!--btn GoBack-->
-        <Image Grid.Row="0" Source="back" 
-                   HeightRequest="30" 
-                   Margin="25" 
-                   HorizontalOptions="Start" 
-                   VerticalOptions="Start" >
+
+        <!--  btn GoBack  -->
+        <Image
+            Grid.Row="0"
+            Margin="25"
+            HeightRequest="30"
+            HorizontalOptions="Start"
+            Source="back"
+            VerticalOptions="Start">
 
             <Image.GestureRecognizers>
-                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
             </Image.GestureRecognizers>
         </Image>
 
-        <ScrollView Grid.Row="1" VerticalOptions="FillAndExpand" BackgroundColor="Transparent">
-      
-        <Grid Margin="20,10,20,0" RowSpacing="10" ColumnSpacing="10">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="80"/>
-                <RowDefinition Height="120"/>
-                <RowDefinition Height="100"/>
-            </Grid.RowDefinitions>
+        <ScrollView
+            Grid.Row="1"
+            BackgroundColor="Transparent"
+            VerticalOptions="FillAndExpand">
+
+            <Grid
+                Margin="20,10,20,0"
+                ColumnSpacing="10"
+                RowSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="120" />
+                    <RowDefinition Height="100" />
+                </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <!-- Photo -->
-            <StackLayout Grid.Row="0" Grid.ColumnSpan="2">
-                <Grid ColumnSpacing="10" HorizontalOptions="Center">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <Border Grid.Row="0" Grid.Column="0"
-                            HeightRequest="120" 
-                            WidthRequest="120" 
-                            Padding="1"                        
-                            BackgroundColor="{StaticResource White}"                       
-                            StrokeThickness="0.5">
-                        <Border.StrokeShape>
-                            <RoundRectangle CornerRadius="100" />
-                        </Border.StrokeShape>
-                        <StackLayout>
-                            <Image Source="{Binding ImagePath}"
-                                   WidthRequest="120" 
-                                   HeightRequest="120" 
-                                   Aspect="AspectFill"/>
-                        </StackLayout>
-                        <Border.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding GetImageFromGalleryCommand}"/>
-                        </Border.GestureRecognizers>
+                <!--  Photo  -->
+                <StackLayout Grid.Row="0" Grid.ColumnSpan="2">
+                    <Grid ColumnSpacing="10" HorizontalOptions="Center">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Border
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Padding="1"
+                            BackgroundColor="{StaticResource White}"
+                            HeightRequest="120"
+                            StrokeThickness="0.5"
+                            WidthRequest="120">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="100" />
+                            </Border.StrokeShape>
+                            <StackLayout>
+                                <Image
+                                    Aspect="AspectFill"
+                                    HeightRequest="120"
+                                    Source="{Binding ImagePath}"
+                                    WidthRequest="120" />
+                            </StackLayout>
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding GetImageFromGalleryCommand}" />
+                            </Border.GestureRecognizers>
 
-                    </Border>
-                </Grid>
-            </StackLayout>
+                        </Border>
+                    </Grid>
+                </StackLayout>
 
-            <!-- Name -->
-            <StackLayout Grid.Row="1" Grid.ColumnSpan="2" Orientation="Vertical">
-                <Label Text="Nome" Style="{StaticResource lblTitlesStyle}"/>
-                <Border Style="{StaticResource borberCustomStyle}" >
-                    <Entry x:Name="entryName"                              
-                           Text="{Binding Name}"  
-                           TextColor="{StaticResource Primary}"
-                           Placeholder="Nome"                              
-                           Keyboard="Text"
-                           Style="{StaticResource entryCustomStyle}">
-                        <Entry.Behaviors>
-                            <local:TextValidationsBehaviors x:TypeArguments="Entry" x:Name="nameBehaviorValidator" />
-                        </Entry.Behaviors>
-                    </Entry>
-                </Border>
-            </StackLayout>
-
-            <!-- Animals -->
-            <StackLayout Grid.Row="2" Grid.ColumnSpan="2">
-                <Label Text="Animal" Style="{StaticResource lblTitlesStyle}"/>
-                <dxe:ComboBoxEdit x:Name="comboBoxAnimal"
-                                  Margin="2,0,2,0"
-                                  PlaceholderText="Selecione"
-                                  PlaceholderColor="Gray"
-                                  Style="{StaticResource comboBoxStyle}" 
-                                  ItemsSource="{Binding AnimalsList}"
-                                  SelectedItem="{Binding AnimalSelected}"
-                                  DisplayMember="Value"/>
-
-            </StackLayout>
-
-            <!-- Color -->
-            <StackLayout Grid.Row="3" Grid.ColumnSpan="2"  Orientation="Vertical">
-                <Label Text="Cor" Style="{StaticResource lblTitlesStyle}"/>
-                <Border Style="{StaticResource borberCustomStyle}">
-                    <Entry x:Name="entryColor"                           
-                           Text="{Binding Color}"
-                           TextColor="{StaticResource Primary}"
-                           Placeholder="Cor"                                                    
-                           Keyboard="Text"                          
-                           Style="{StaticResource entryCustomStyle}">
-                        <Entry.Behaviors>
-                            <local:TextValidationsBehaviors x:TypeArguments="Entry" x:Name="colorBehaviorValidator"/>
-                        </Entry.Behaviors>
-                    </Entry>
-                </Border>
-            </StackLayout>
-
-            <!-- Weight -->
-            <StackLayout Grid.Row="4" Grid.Column="0" Orientation="Vertical">
-                <Label Text="Peso KG" Style="{StaticResource lblTitlesStyle}"/>
-                <Border Style="{StaticResource borberCustomStyle}">
-                    <Entry x:Name="entryWeigth"
-                           Text="{Binding Weight}" 
-                           TextColor="{StaticResource Primary}"
-                           Placeholder="0.0 KG"
-                           MaxLength="5"                                                                                                                                   
-                           Keyboard="Numeric"                                                                              
-                           Style="{StaticResource entryCustomStyle}">
-                        <Entry.Behaviors>
-                            <local:NumericValidationsBehaviors x:TypeArguments="Entry" x:Name="weightBehaviorValidator"/>
-                        </Entry.Behaviors>
-                    </Entry>
-                </Border>
-            </StackLayout>
-
-            <!-- BirthDate -->
-            <StackLayout Grid.Row="4" Grid.Column="1">
-                <Label Text="Nascimento" Style="{StaticResource lblTitlesStyle}"/>
-                <Border Style="{StaticResource borberCustomStyle}">
-                    <DatePicker  TextColor="{StaticResource Primary}" 
-                                 Margin="15,0,10,0"
-                                 MinimumDate="01/01/2008"
-                                 MaximumDate="12/31/2030"
-                                 FontSize="Medium" 
-                                 Date="{Binding BirthDate}">
-                        <DatePicker.Behaviors>
-                            <local:DateValidationsBehaviors x:TypeArguments="DatePicker" x:Name="birthDateBehaviorValidator"/>
-                        </DatePicker.Behaviors>
-                    </DatePicker>
-                </Border>
-            </StackLayout>
-
-            <!-- Sex -->
-            <StackLayout Grid.Row="5" Grid.Column="0">
-                <Label Text="Sexo" Style="{StaticResource lblTitlesStyle}"/>
-                <Border BackgroundColor="#2F3855" StrokeThickness="0" Style="{StaticResource borberCustomStyle}">
-                    <StackLayout Orientation="Horizontal" Spacing="10">
-                        <Switch OnColor="{StaticResource Quinary}" ThumbColor="{StaticResource Secondary}" IsToggled="{Binding IsToggledSex}"/>
-                        <Label Text="{Binding IsSexText}" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,10,0,0" />
-                    </StackLayout>
-                </Border>
-            </StackLayout>
-
-            <!-- IsCastrated -->
-            <StackLayout Grid.Row="5" Grid.Column="1">
-                <Label Text="Castrado(a)" Style="{StaticResource lblTitlesStyle}"/>
-                <Border BackgroundColor="#2F3855" StrokeThickness="0" Style="{StaticResource borberCustomStyle}">
-                    <StackLayout Orientation="Horizontal" Spacing="10">
-                        <Switch OnColor="{StaticResource Quinary}" ThumbColor="{StaticResource Secondary}" IsToggled="{Binding IsToggledCatrated}"/>
-                        <Label Text="{Binding IsCastratedText}" FontSize="Medium" TextColor="{StaticResource Quinary}" Margin="0,10,0,0" />
-                    </StackLayout>
-                </Border>
-            </StackLayout>
-
-            <!-- Observation -->
-            <StackLayout  Grid.Row="6" Grid.ColumnSpan="2" Orientation="Vertical">
-                <Label  Text="Observação" Style="{StaticResource lblTitlesStyle}"/>
-                <Border Style="{StaticResource borberCustomStyle}" HeightRequest="80">
-                    <Editor Placeholder="Observação"                                                     
-                            Text="{Binding Observation}"
-                            Margin="15,0,10,0"
-                            TextColor="{StaticResource Primary}"                         
+                <!--  Name  -->
+                <StackLayout
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                    Orientation="Vertical">
+                    <Label Style="{StaticResource lblTitlesStyle}" Text="Nome" />
+                    <Border Style="{StaticResource borberCustomStyle}">
+                        <Entry
+                            x:Name="entryName"
                             Keyboard="Text"
-                            HeightRequest="80"                                        
+                            Placeholder="Nome"
+                            Style="{StaticResource entryCustomStyle}"
+                            Text="{Binding Name}"
+                            TextColor="{StaticResource Primary}">
+                            <Entry.Behaviors>
+                                <local:TextValidationsBehaviors x:Name="nameBehaviorValidator" x:TypeArguments="Entry" />
+                            </Entry.Behaviors>
+                        </Entry>
+                    </Border>
+                </StackLayout>
+
+                <!--  Animals  -->
+                <StackLayout Grid.Row="2" Grid.ColumnSpan="2">
+                    <Label Style="{StaticResource lblTitlesStyle}" Text="Animal" />
+                    <dxe:ComboBoxEdit
+                        x:Name="comboBoxAnimal"
+                        DisplayMember="Value"
+                        ItemsSource="{Binding AnimalsList}"
+                        PlaceholderColor="Gray"
+                        PlaceholderText="Selecione"
+                        SelectedItem="{Binding AnimalSelected}"
+                        Style="{StaticResource comboBoxStyle}" />
+                </StackLayout>
+
+                <!--  Color  -->
+                <StackLayout
+                    Grid.Row="3"
+                    Grid.ColumnSpan="2"
+                    Orientation="Vertical">
+                    <Label Style="{StaticResource lblTitlesStyle}" Text="Cor" />
+                    <Border Style="{StaticResource borberCustomStyle}">
+                        <Entry
+                            x:Name="entryColor"
+                            Keyboard="Text"
+                            Placeholder="Cor"
+                            Style="{StaticResource entryCustomStyle}"
+                            Text="{Binding Color}"
+                            TextColor="{StaticResource Primary}">
+                            <Entry.Behaviors>
+                                <local:TextValidationsBehaviors x:Name="colorBehaviorValidator" x:TypeArguments="Entry" />
+                            </Entry.Behaviors>
+                        </Entry>
+                    </Border>
+                </StackLayout>
+
+                <!--  Weight  -->
+                <StackLayout
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Orientation="Vertical">
+                    <Label Style="{StaticResource lblTitlesStyle}" Text="Peso KG" />
+                    <Border Style="{StaticResource borberCustomStyle}">
+                        <Entry
+                            x:Name="entryWeigth"
+                            Keyboard="Numeric"
+                            MaxLength="5"
+                            Placeholder="0.0 KG"
+                            Style="{StaticResource entryCustomStyle}"
+                            Text="{Binding Weight}"
+                            TextColor="{StaticResource Primary}">
+                            <Entry.Behaviors>
+                                <local:NumericValidationsBehaviors x:Name="weightBehaviorValidator" x:TypeArguments="Entry" />
+                            </Entry.Behaviors>
+                        </Entry>
+                    </Border>
+                </StackLayout>
+
+                <!--  BirthDate  -->
+                <StackLayout Grid.Row="4" Grid.Column="1">
+                    <Label Style="{StaticResource lblTitlesStyle}" Text="Nascimento" />
+                    <Border Style="{StaticResource borberCustomStyle}">
+                        <DatePicker
+                            Margin="15,0,10,0"
+                            Date="{Binding BirthDate}"
                             FontSize="Medium"
-                            PlaceholderColor="{StaticResource Gray400}">
-                        <Editor.Behaviors>
-                            <local:TextValidationsBehaviors x:TypeArguments="Editor" x:Name="observationBehaviorValidator"/>
-                        </Editor.Behaviors>
-                    </Editor>
-                </Border>
-            </StackLayout>
+                            MaximumDate="12/31/2030"
+                            MinimumDate="01/01/2008"
+                            TextColor="{StaticResource Primary}">
+                            <DatePicker.Behaviors>
+                                <local:DateValidationsBehaviors x:Name="birthDateBehaviorValidator" x:TypeArguments="DatePicker" />
+                            </DatePicker.Behaviors>
+                        </DatePicker>
+                    </Border>
+                </StackLayout>
 
-            <!-- Button Save -->
-            <StackLayout Grid.Row="7" Grid.ColumnSpan="2">
-                    <Button x:Name="btnSave"
-                            Text="Salvar"                        
-                            TextColor="{StaticResource White}"                         
-                            Style="{StaticResource btnDefaultStyle}"                       
-                            Clicked="btnSave_Clicked"/>
-            </StackLayout>
+                <!--  Sex  -->
+                <StackLayout Grid.Row="5" Grid.Column="0">
+                    <Label Style="{StaticResource lblTitlesStyle}" Text="Sexo" />
+                    <Border
+                        BackgroundColor="#2F3855"
+                        StrokeThickness="0"
+                        Style="{StaticResource borberCustomStyle}">
+                        <StackLayout Orientation="Horizontal" Spacing="10">
+                            <Switch
+                                IsToggled="{Binding IsToggledSex}"
+                                OnColor="{StaticResource Quinary}"
+                                ThumbColor="{StaticResource Secondary}" />
+                            <Label
+                                Margin="0,10,0,0"
+                                FontSize="Medium"
+                                Text="{Binding IsSexText}"
+                                TextColor="{StaticResource Quinary}" />
+                        </StackLayout>
+                    </Border>
+                </StackLayout>
 
-        </Grid>
-    </ScrollView>
+                <!--  IsCastrated  -->
+                <StackLayout Grid.Row="5" Grid.Column="1">
+                    <Label Style="{StaticResource lblTitlesStyle}" Text="Castrado(a)" />
+                    <Border
+                        BackgroundColor="#2F3855"
+                        StrokeThickness="0"
+                        Style="{StaticResource borberCustomStyle}">
+                        <StackLayout Orientation="Horizontal" Spacing="10">
+                            <Switch
+                                IsToggled="{Binding IsToggledCatrated}"
+                                OnColor="{StaticResource Quinary}"
+                                ThumbColor="{StaticResource Secondary}" />
+                            <Label
+                                Margin="0,10,0,0"
+                                FontSize="Medium"
+                                Text="{Binding IsCastratedText}"
+                                TextColor="{StaticResource Quinary}" />
+                        </StackLayout>
+                    </Border>
+                </StackLayout>
+
+                <!--  Observation  -->
+                <StackLayout
+                    Grid.Row="6"
+                    Grid.ColumnSpan="2"
+                    Orientation="Vertical">
+                    <Label Style="{StaticResource lblTitlesStyle}" Text="Observação" />
+                    <Border HeightRequest="80" Style="{StaticResource borberCustomStyle}">
+                        <Editor
+                            Margin="15,0,10,0"
+                            FontSize="Medium"
+                            HeightRequest="80"
+                            Keyboard="Text"
+                            Placeholder="Observação"
+                            PlaceholderColor="{StaticResource Gray400}"
+                            Text="{Binding Observation}"
+                            TextColor="{StaticResource Primary}">
+                            <Editor.Behaviors>
+                                <local:TextValidationsBehaviors x:Name="observationBehaviorValidator" x:TypeArguments="Editor" />
+                            </Editor.Behaviors>
+                        </Editor>
+                    </Border>
+                </StackLayout>
+
+                <!--  Button Save  -->
+                <StackLayout Grid.Row="7" Grid.ColumnSpan="2">
+                    <Button
+                        x:Name="btnSave"
+                        Clicked="btnSave_Clicked"
+                        Style="{StaticResource btnDefaultStyle}"
+                        Text="Salvar"
+                        TextColor="{StaticResource White}" />
+                </StackLayout>
+
+            </Grid>
+        </ScrollView>
     </Grid>
 </ContentPage>

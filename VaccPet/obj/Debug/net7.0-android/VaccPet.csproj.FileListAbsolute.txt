@@ -3433,6 +3433,14 @@ D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\compressed_assemblies.x86_64.o
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\jni_remap.x86_64.o
 D:\PROJETOS\Projetos MAUI\VaccPet.Project\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\app_shared_libraries\x86_64\libxamarin-app.so
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\VaccPet.runtimeconfig.json
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\VaccPet.dll
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\VaccPet.pdb
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\com.companyname.vaccpet.apk
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\com.companyname.vaccpet.aab
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\com.companyname.vaccpet-Signed.aab
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\com.companyname.vaccpet-Signed.apk
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\com.companyname.vaccpet-Signed.apk.idsig
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\build.props
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\adb.props
@@ -3663,17 +3671,9 @@ S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\VaccPet.GeneratedMS
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\VaccPet.AssemblyInfoInputs.cache
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\VaccPet.AssemblyInfo.cs
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\VaccPet.csproj.CoreCompileInputs.cache
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\XamlC.stamp
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\VaccPet.dll
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\VaccPet.pdb
-S:\MyProjects\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\VaccPet.runtimeconfig.json
-S:\MyProjects\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\VaccPet.dll
-S:\MyProjects\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\VaccPet.pdb
-S:\MyProjects\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\com.companyname.vaccpet.apk
-S:\MyProjects\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\com.companyname.vaccpet.aab
-S:\MyProjects\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\com.companyname.vaccpet-Signed.aab
-S:\MyProjects\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\com.companyname.vaccpet-Signed.apk
-S:\MyProjects\Vacc.Pet.Maui\VaccPet\bin\Debug\net7.0-android\com.companyname.vaccpet-Signed.apk.idsig
-S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\XamlC.stamp
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\VaccPet.genruntimeconfig.cache
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\VaccPet.runtimeconfig.json.bin
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\bin\com.companyname.vaccpet.apk
@@ -4093,7 +4093,6 @@ S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\assets\Xama
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\assets\Xamarin.Kotlin.StdLib.Jdk8.dll
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\assets\Xamarin.KotlinX.Coroutines.Android.dll
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\assets\Xamarin.KotlinX.Coroutines.Core.Jvm.dll
-S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\typemaps.arm64-v8a.ll
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\AndroidManifest.xml
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\AndroidManifest.xml
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\__environment__.txt
@@ -4102,7 +4101,6 @@ S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\assets\mach
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\bin\mono.android.jar
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\static.flag
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\buildid.txt
-S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\environment.arm64-v8a.ll
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\src\androidx\activity\ktx\R.java
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\src\androidx\activity\R.java
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\src\androidx\annotation\experimental\R.java
@@ -4739,12 +4737,6 @@ S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\src\mono\co
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\src\mono\MonoPackageManager_Resources.java
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\bin\packaged_resources
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\src\com\companyname\vaccpet\R.java
-S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\compressed_assemblies.arm64-v8a.ll
-S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\typemaps.arm64-v8a.o
-S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\environment.arm64-v8a.o
-S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\compressed_assemblies.arm64-v8a.o
-S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\jni_remap.arm64-v8a.o
-S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\bin\classes.dex
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\bin\classes2.dex
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\stamp\_CleanIntermediateIfNeeded.stamp
@@ -4755,3 +4747,26 @@ S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\stamp\_ConvertResou
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\stamp\_GenerateJavaStubs.stamp
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\check_green.png
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\pending_purple.png
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\check_green.png
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\pending_purple.png
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\check_green.png
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\pending_purple.png
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\check_green.png
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\pending_purple.png
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\check_green.png
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\pending_purple.png
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\filter_white.png
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\filter_white.png
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\filter_white.png
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\filter_white.png
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\filter_white.png
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\typemaps.x86_64.ll
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\environment.x86_64.ll
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\compressed_assemblies.x86_64.ll
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\typemaps.x86_64.o
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\environment.x86_64.o
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\compressed_assemblies.x86_64.o
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\android\jni_remap.x86_64.o
+S:\MyProjects\Vacc.Pet.Maui\VaccPet\obj\Debug\net7.0-android\app_shared_libraries\x86_64\libxamarin-app.so

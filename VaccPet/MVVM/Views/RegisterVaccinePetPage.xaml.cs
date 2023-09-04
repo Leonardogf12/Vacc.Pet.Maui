@@ -1,3 +1,4 @@
+using System.Drawing.Printing;
 using VaccPet.Helpers.Models;
 using VaccPet.MVVM.ViewModels;
 
@@ -7,6 +8,7 @@ public partial class RegisterVaccinePetPage : ContentPage
 {
     public VaccineHelper _vaccineHelper { get; set; } = new();
 
+   
     //public RegisterVaccinePetViewModel ViewModel;
 
 
@@ -16,10 +18,10 @@ public partial class RegisterVaccinePetPage : ContentPage
 
         BindingContext = model;
 
-       //ViewModel = BindingContext as RegisterVaccinePetViewModel;
+        //ViewModel = BindingContext as RegisterVaccinePetViewModel;
     }
 
-    
+
     private async void btnConfirmVaccine_Clicked(object sender, EventArgs e)
     {
         var result = await ValidateFieldsRegisterPet();
@@ -30,7 +32,7 @@ public partial class RegisterVaccinePetPage : ContentPage
             vm.AddVaccinePetCommand.Execute(vm);
         }
 
-        return;        
+        return;
     }
 
     public async Task<bool> ValidateFieldsRegisterPet()
@@ -73,4 +75,5 @@ public partial class RegisterVaccinePetPage : ContentPage
 
         base.OnAppearing();
     }
+   
 }

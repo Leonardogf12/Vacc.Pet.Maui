@@ -21,12 +21,10 @@ namespace VaccPet.Helpers.Models
                     new VaccineHelper{Key = 2, Value =  "V8"},
                     new VaccineHelper{Key = 3, Value =  "V4"},
                     new VaccineHelper{Key = 4, Value =  "V5"},
-                    new VaccineHelper{Key = 5, Value =  "Antirrábica"},
-                    new VaccineHelper{Key = 6, Value =  "Traqueobronquite"},
-                    new VaccineHelper{Key = 7, Value =  "Leptospirose"},
-                    new VaccineHelper{Key = 8, Value =  "Giárdia"},
-                    new VaccineHelper{Key = 9, Value =  "Leishmaniose"},
-                    new VaccineHelper{Key = 10, Value = "Outra"},
+                    new VaccineHelper{Key = 5, Value =  "Antirrábica"},                 
+                    new VaccineHelper{Key = 6, Value =  "Leptospirose"},                  
+                    new VaccineHelper{Key = 7, Value =  "Leishmaniose"},
+                    new VaccineHelper{Key = 8, Value = "Outra"},
                 };
             }
 

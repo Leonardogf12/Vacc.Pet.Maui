@@ -36,7 +36,7 @@ namespace VaccPet.MVVM.ViewModels
         }
 
 
-        private ObservableCollection<VaccineModel> _vaccineModelCollection;
+        private ObservableCollection<VaccineModel> _vaccineModelCollection = new();
         public ObservableCollection<VaccineModel> VaccineModelCollection
         {
             get => _vaccineModelCollection;
@@ -84,18 +84,18 @@ namespace VaccPet.MVVM.ViewModels
 
         private async void OnInformVaccinationCommand(VaccineModel model)
         {
+            //if(model.CycleStatus == "Pendente")
+            //{
+            //    await App.Current.MainPage.DisplayAlert($"{model.CycleStatus}",
+            //    "O ciclo desta vacina ainda não está completo. Seu status é [Pendente]. " +
+            //    $"Para fechar este ciclo, lance uma vacina do mesmo tipo [{model.VaccineName}] " +
+            //    $"para a data de revacinação [{model.RevaccinateDate.Date.ToShortDateString()}].","Ok");                
+            //}
 
-            var result = await App.Current.MainPage.DisplayAlert("Alterar", "Deseja lançar a segunda dose a está vacina?." +
-                " Ao lançar a segunda dose, a primeira dose automaticamente receberá o status de concluída.", "Sim", "Não");
-
-            if (result)
-            {
-               //TODO Criar Popup para preencher os mesmos campos de RegisterVaccinePetPage. Com isso o registro clicado recebe status de concluido
-               // e um novo será lancado com a nova data de vacina e revacina, o registro concluido não poderá ser editado.
-               //assim que o novo registro for salvo deve subir para primeira posição da lista e o registro concluido deve descer na fila.
-               //a cor da data do campo de "Revacinar em:" do card concluido deve mudar para GreenYellow e o icone de edit deve mudar para Check_green.
-               //*******PENSAR EM UMA FORMA DE CORRECAO CASO O USUARIO QUEIRA CORRIGIR UMA FALHA DE DIGITAÇÃO (PERMITIR OU APAGAR PARA REFAZER)
-            }
+            //if (model.CycleStatus == "Completo")
+            //{
+            //    await App.Current.MainPage.DisplayAlert($"{model.CycleStatus}","Este ciclo está completo.","Ok");                
+            //}
         }
 
         private async void OnRemoveVaccineItem(VaccineModel model)
@@ -115,9 +115,7 @@ namespace VaccPet.MVVM.ViewModels
         }
 
         private async void GetAllVaccinesOfPetSelected()
-        {
-            VaccineModelCollection = new ObservableCollection<VaccineModel>();
-
+        {            
             var listVaccines = await _VaccineModelRepository.GetAllVaccinesByPetAsync(PetSelectedForVaccine.Id);
 
             VaccineModelCollection.Clear();

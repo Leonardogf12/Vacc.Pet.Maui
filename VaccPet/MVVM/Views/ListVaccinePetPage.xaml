@@ -1,220 +1,272 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:converters="clr-namespace:VaccPet.Helpers.Converters"       
-             xmlns:controls="clr-namespace:Microsoft.Maui.Controls"            
-             xmlns:local="clr-namespace:VaccPet.MVVM.ViewModels"
-             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
-             ios:Page.UseSafeArea="true"          
-             xmlns:dxg="clr-namespace:DevExpress.Maui.DataGrid;assembly=DevExpress.Maui.DataGrid"
-             xmlns:model="clr-namespace:VaccPet.MVVM.Models"
-             x:Class="VaccPet.MVVM.Views.ListVaccinePetPage"             
-             BackgroundColor="{StaticResource Primary}"
-             Shell.NavBarIsVisible="False">
-
+<ContentPage
+    x:Class="VaccPet.MVVM.Views.ListVaccinePetPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Microsoft.Maui.Controls"
+    xmlns:converters="clr-namespace:VaccPet.Helpers.Converters"
+    xmlns:dxg="clr-namespace:DevExpress.Maui.DataGrid;assembly=DevExpress.Maui.DataGrid"
+    xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+    xmlns:local="clr-namespace:VaccPet.MVVM.ViewModels"
+    xmlns:model="clr-namespace:VaccPet.MVVM.Models"
+    ios:Page.UseSafeArea="true"
+    BackgroundColor="{StaticResource Primary}"
+    Shell.NavBarIsVisible="False">
 
     <ContentPage.BindingContext>
-        <local:ListVaccinePetViewModel/>
+        <local:ListVaccinePetViewModel />
     </ContentPage.BindingContext>
 
     <ContentPage.Resources>
         <ResourceDictionary>
             <converters:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />
+            <!--<converters:CycleStatusColorConverter x:Key="CycleStatusColorConverter" />
+            <converters:IconCycleStatusConverter x:Key="IconCycleStatusConverter" />-->
         </ResourceDictionary>
     </ContentPage.Resources>
 
-
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="200"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="200" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
-        <!--btn GoBack-->
-        <Image x:Name="goBackIcon"
-               Source="back" 
-               HeightRequest="30" 
-               Margin="25" 
-               HorizontalOptions="Start" 
-               VerticalOptions="Start">
+        <!--  btn GoBack  -->
+        <Image
+            x:Name="goBackIcon"
+            Margin="25"
+            HeightRequest="30"
+            HorizontalOptions="Start"
+            Source="back"
+            VerticalOptions="Start">
             <Image.GestureRecognizers>
-                <TapGestureRecognizer Tapped="TapGestureRecognizer_GoBackIcon"/>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_GoBackIcon" />
             </Image.GestureRecognizers>
         </Image>
 
         <StackLayout Grid.Row="0">
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="150"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="150" />
+                    <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
-                <StackLayout Grid.Row="0" VerticalOptions="Center" Margin="0,30,0,0">
+                <StackLayout
+                    Grid.Row="0"
+                    Margin="0,30,0,0"
+                    VerticalOptions="Center">
 
-                    <Frame VerticalOptions="Center" HeightRequest="120" WidthRequest="120" CornerRadius="100">
-                        <Image Source="{Binding PetSelectedForVaccine.ImageData, 
-                           Converter={StaticResource ByteArrayToImageSourceConverter}}" 
-                           HeightRequest="120" 
-                           WidthRequest="120"                           
-                           Aspect="AspectFill"/>
+                    <Frame
+                        CornerRadius="100"
+                        HeightRequest="120"
+                        VerticalOptions="Center"
+                        WidthRequest="120">
+                        <Image
+                            Aspect="AspectFill"
+                            HeightRequest="120"
+                            Source="{Binding PetSelectedForVaccine.ImageData, Converter={StaticResource ByteArrayToImageSourceConverter}}"
+                            WidthRequest="120" />
                     </Frame>
-                   
+
                 </StackLayout>
 
                 <StackLayout Grid.Row="1" Spacing="-5">
-                    <Label Text="{Binding PetSelectedForVaccine.Name}" 
-                           HorizontalOptions="Center" 
-                           Style="{StaticResource lblTitlesStyle}" 
-                           FontAttributes="Bold"/>
-                    <Label Text="{Binding PetSelectedForVaccine.BirthDate, StringFormat='{}{0:dd/MM/yyyy}'}" 
-                           TextColor="{StaticResource Gray200}"
-                           HorizontalOptions="Center"          
-                           FontSize="Small"/>
+                    <Label
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        Style="{StaticResource lblTitlesStyle}"
+                        Text="{Binding PetSelectedForVaccine.Name}" />
+                    <Label
+                        FontSize="Small"
+                        HorizontalOptions="Center"
+                        Text="{Binding PetSelectedForVaccine.BirthDate, StringFormat='{}{0:dd/MM/yyyy}'}"
+                        TextColor="{StaticResource Gray200}" />
                 </StackLayout>
 
             </Grid>
         </StackLayout>
 
-       <Border Grid.Row="1" StrokeThickness="0" Margin="0,20,0,0"
-                BackgroundColor="{StaticResource Tertiary}">
+        <Border
+            Grid.Row="1"
+            Margin="0,20,0,0"
+            BackgroundColor="{StaticResource Tertiary}"
+            StrokeThickness="0">
             <Border.StrokeShape>
-                <RoundRectangle CornerRadius="60,60,0,0"/>
+                <RoundRectangle CornerRadius="60,60,0,0" />
             </Border.StrokeShape>
 
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="40"/>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
+                    <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 
-                <Label Grid.Row="0"
-                       Text="Cartão" 
-                       HorizontalOptions="Center" 
-                       Style="{StaticResource lblTitlesStyle}" 
-                       FontAttributes="Bold"/>
+                <Label
+                    Grid.Row="0"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    Style="{StaticResource lblTitlesStyle}"
+                    Text="Cartão" />
 
                 <HorizontalStackLayout Grid.Row="1" Margin="15">
-                    <Button Text="Nova" 
-                            Padding="5"
-                            HeightRequest="40" WidthRequest="80"
-                            Style="{StaticResource btnDarkStyle}"
-                            FontSize="Small"
-                            Command="{Binding AddVaccinePetCommand}"/>
-                    <Button Text="Salvar"
-                            Padding="5"
-                            Style="{StaticResource btnDarkStyle}"
-                            FontSize="Small"
-                            HeightRequest="40" WidthRequest="80"/>
+                    <Button
+                        Padding="5"
+                        Command="{Binding AddVaccinePetCommand}"
+                        FontSize="Small"
+                        HeightRequest="40"
+                        Style="{StaticResource btnDarkStyle}"
+                        Text="Novo"
+                        WidthRequest="80" />
+                    <Button
+                        Padding="5"
+                        FontSize="Small"
+                        HeightRequest="40"
+                        Style="{StaticResource btnDarkStyle}"
+                        Text="Filtrar"
+                        WidthRequest="80" />
 
                 </HorizontalStackLayout>
 
-                <HorizontalStackLayout Grid.Row="1" Spacing="5" HorizontalOptions="End" Margin="0,15,20,0">
-                    <Label Text="Total:"  TextColor="Gray" />
-                    <Label Text="{Binding VaccineCount}" HorizontalOptions="End" TextColor="Gray" />
+                <HorizontalStackLayout
+                    Grid.Row="1"
+                    Margin="0,15,20,0"
+                    HorizontalOptions="End"
+                    Spacing="5">
+                    <Label Text="Total:" TextColor="Gray" />
+                    <Label
+                        HorizontalOptions="End"
+                        Text="{Binding VaccineCount}"
+                        TextColor="Gray" />
                 </HorizontalStackLayout>
 
-                <Grid Grid.Row="2" Margin="20,0,20,0">
+                <Grid Grid.Row="2" Margin="10,0,10,0">
 
-                    <CollectionView ItemsSource="{Binding VaccineModelCollection}" >
+                    <CollectionView ItemsSource="{Binding VaccineModelCollection}">
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
 
-                                <Frame HeightRequest="140"
-                                           Margin="0,0,0,10"
-                                           CornerRadius="40"
-                                           BorderColor="Transparent"                                            
-                                           BackgroundColor="{StaticResource Primary}">
+                                <Frame
+                                    Margin="0,0,0,10"
+                                    BackgroundColor="{StaticResource Primary}"
+                                    BorderColor="Transparent"
+                                    CornerRadius="40"
+                                    HeightRequest="165">
                                     <Grid>
                                         <Grid.RowDefinitions>
-                                            <RowDefinition Height="25"/>
-                                            <RowDefinition Height="25"/>
-                                            <RowDefinition Height="25"/>
-                                            <RowDefinition Height="25"/>
+                                            <RowDefinition Height="25" />
+                                            <RowDefinition Height="25" />
+                                            <RowDefinition Height="25" />
+                                            <RowDefinition Height="25" />
+                                            <RowDefinition Height="25" />
+
                                         </Grid.RowDefinitions>
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="30"/>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="30" />
                                         </Grid.ColumnDefinitions>
 
                                         <HorizontalStackLayout Grid.Row="0" Spacing="10">
-                                            <Label Text="Vacinado em:"                                                    
-                                                       Margin="0"                                                   
-                                                       FontSize="Small"
-                                                       Style="{StaticResource lblTitlesStyle}"/>
+                                            <Label
+                                                Margin="0"
+                                                FontSize="Small"
+                                                Style="{StaticResource lblTitlesStyle}"
+                                                Text="Vacinado em:" />
 
-                                            <Label Text="{Binding VaccinationDate, StringFormat='{}{0:dd/MM/yyyy}'}" 
-                                                       TextColor="White" 
-                                                       FontSize="Small"                                                   
-                                                       FontFamily="MontserratRegular"
-                                                       IsEnabled="False"/>
+                                            <Label
+                                                FontFamily="MontserratRegular"
+                                                FontSize="Small"
+                                                IsEnabled="False"
+                                                Text="{Binding VaccinationDate, StringFormat='{}{0:dd/MM/yyyy}'}"
+                                                TextColor="White" />
                                         </HorizontalStackLayout>
 
                                         <HorizontalStackLayout Grid.Row="1" Spacing="10">
-                                            <Label Text="Revacinar em:"                                                    
-                                                       Margin="0"                                                   
-                                                       FontSize="Small"
-                                                       Style="{StaticResource lblTitlesStyle}"/>
-                                           
-                                            <Label Text="{Binding RevaccinateDate, StringFormat='{}{0:dd/MM/yyyy}'}" 
-                                                   TextColor="DeepPink" 
-                                                   FontSize="Small"                                                           
-                                                   FontFamily="MontserratRegular"/>
-                                            
-                                            <ImageButton x:Name="btnPopup"                                                                                                                                                                                                                     
-                                                         Source="edit_blue.svg"                                                          
-                                                         Margin="0,0,0,5"                                                         
-                                                         HeightRequest="20"                                                   
-                                                         Command="{Binding Source={x:RelativeSource 
-                                                         AncestorType={x:Type local:ListVaccinePetViewModel}},
-                                                         Path=InformVaccinationCommand}"
-                                                         CommandParameter="{Binding .}"/>
-                                            
+                                            <Label
+                                                Margin="0"
+                                                FontSize="Small"
+                                                Style="{StaticResource lblTitlesStyle}"
+                                                Text="Revacinar em:" />
+
+                                            <Label
+                                                FontFamily="MontserratRegular"
+                                                FontSize="Small"
+                                                Text="{Binding RevaccinateDate, StringFormat='{}{0:dd/MM/yyyy}'}"
+                                                TextColor="DeepPink" />
+                                            <!--  TextColor="{Binding CycleStatus, Converter={StaticResource CycleStatusColorConverter}}" />  -->
+
+                                            <!--<ImageButton
+                                                x:Name="btnPopup"
+                                                Margin="0,0,0,5"
+                                                Command="{Binding Source={x:RelativeSource AncestorType={x:Type local:ListVaccinePetViewModel}},
+                                                Path=InformVaccinationCommand}"
+                                                CommandParameter="{Binding .}"
+                                                HeightRequest="20"
+                                                Source="{Binding CycleStatus, Converter={StaticResource IconCycleStatusConverter}}" />-->
+
                                         </HorizontalStackLayout>
 
                                         <HorizontalStackLayout Grid.Row="2" Spacing="10">
-                                            <Label Text="Vacina:"                                                    
-                                                       Margin="0"                                                   
-                                                       FontSize="Small"
-                                                       Style="{StaticResource lblTitlesStyle}"/>
+                                            <Label
+                                                Margin="0"
+                                                FontSize="Small"
+                                                Style="{StaticResource lblTitlesStyle}"
+                                                Text="Vacina:" />
 
-                                            <Label Text="{Binding VaccineName}" 
-                                                       TextColor="{StaticResource White}" 
-                                                       FontSize="Small"                                                   
-                                                       FontFamily="MontserratRegular"
-                                                       IsEnabled="False"/>
+                                            <Label
+                                                FontFamily="MontserratRegular"
+                                                FontSize="Small"
+                                                IsEnabled="False"
+                                                Text="{Binding VaccineName}"
+                                                TextColor="{StaticResource White}" />
                                         </HorizontalStackLayout>
 
                                         <HorizontalStackLayout Grid.Row="3" Spacing="10">
-                                            <Label Text="Peso:"                                                    
-                                                       Margin="0"                                                   
-                                                       FontSize="Small"
-                                                       Style="{StaticResource lblTitlesStyle}"/>
+                                            <Label
+                                                Margin="0"
+                                                FontSize="Small"
+                                                Style="{StaticResource lblTitlesStyle}"
+                                                Text="Observação:" />
 
-                                            <Label Text="{Binding Weight}" 
-                                                       TextColor="{StaticResource White}" 
-                                                       FontSize="Small"                                                   
-                                                       FontFamily="MontserratRegular"
-                                                       IsEnabled="False"/>
+                                            <Label
+                                                FontFamily="MontserratRegular"
+                                                FontSize="Small"
+                                                IsEnabled="False"
+                                                Text="{Binding Observation, TargetNullValue='N/A'}"
+                                                TextColor="{StaticResource White}" />
                                         </HorizontalStackLayout>
 
-                                        <ImageButton x:Name="btnPopupMenu"                                                  
-                                                     Grid.Row="3" 
-                                                     Grid.Column="1"                                                    
-                                                     Source="remove_red.svg" 
-                                                     Margin="0"
-                                                     HeightRequest="25"                                                   
-                                                     Command="{Binding Source={x:RelativeSource 
-                                                     AncestorType={x:Type local:ListVaccinePetViewModel}},
-                                                     Path=RemoveVaccineItem}"
-                                                     CommandParameter="{Binding .}"/>
-                                       
+                                        <HorizontalStackLayout Grid.Row="4" Spacing="10">
+                                            <Label
+                                                Margin="0"
+                                                FontSize="Small"
+                                                Style="{StaticResource lblTitlesStyle}"
+                                                Text="Peso:" />
+
+                                            <Label
+                                                FontFamily="MontserratRegular"
+                                                FontSize="Small"
+                                                IsEnabled="False"
+                                                Text="{Binding Weight}"
+                                                TextColor="{StaticResource White}" />
+                                        </HorizontalStackLayout>
+
+                                        <ImageButton
+                                            x:Name="btnPopupMenu"
+                                            Grid.Row="4"
+                                            Grid.Column="1"
+                                            Margin="0"
+                                            Command="{Binding Source={x:RelativeSource AncestorType={x:Type local:ListVaccinePetViewModel}}, Path=RemoveVaccineItem}"
+                                            CommandParameter="{Binding .}"
+                                            HeightRequest="25"
+                                            Source="remove_red.svg" />
+
                                     </Grid>
                                 </Frame>
                             </DataTemplate>

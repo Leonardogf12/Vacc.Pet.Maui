@@ -41,7 +41,7 @@ namespace VaccPet.Repositories
 
         public Task<List<VaccineModel>> GetAllVaccinesByPetAsync(int idPet)
         {
-            return _database.Table<VaccineModel>().Where(x => x.PetlId == idPet).ToListAsync();
+            return _database.Table<VaccineModel>().Where(x => x.PetlId == idPet).OrderByDescending(x => x.VaccinationDate).ToListAsync();
         }
     }
 }

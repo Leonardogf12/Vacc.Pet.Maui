@@ -32,11 +32,11 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" />
 
 		<!-- Splash Screen -->
-		<MauiAsset Include="Resources\Splash\splash.svg" BaseSize="128,128" />		
-	
+		<MauiAsset Include="Resources\Splash\splash.svg" BaseSize="128,128" />
+
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />		
 
@@ -45,6 +45,8 @@
 
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+		
+		
 	</ItemGroup>
 
 	<ItemGroup>
@@ -113,6 +115,7 @@
 	  <MauiImage Remove="Resources\Images\six.svg" />
 	  <MauiImage Remove="Resources\Images\sixteen - Cópia.svg" />
 	  <MauiImage Remove="Resources\Images\sixteen.svg" />
+	  <MauiImage Remove="Resources\Images\splash.svg" />
 	  <MauiImage Remove="Resources\Images\ten - Cópia.svg" />
 	  <MauiImage Remove="Resources\Images\ten.svg" />
 	  <MauiImage Remove="Resources\Images\thirteen - Cópia.svg" />
@@ -164,10 +167,12 @@
 	  <None Remove="Resources\Images\cao.jpg" />
 	  <None Remove="Resources\Images\catdefault.png" />
 	  <None Remove="Resources\Images\catpets - Cópia.png" />
+	  <None Remove="Resources\Images\check_green.svg" />
 	  <None Remove="Resources\Images\dogdefault.png" />
 	  <None Remove="Resources\Images\dogpets - Cópia.png" />
 	  <None Remove="Resources\Images\edit_blue.svg" />
 	  <None Remove="Resources\Images\female.svg" />
+	  <None Remove="Resources\Images\filter_white.svg" />
 	  <None Remove="Resources\Images\home_primary.svg" />
 	  <None Remove="Resources\Images\image_vetor.svg" />
 	  <None Remove="Resources\Images\loading_green - Cópia.gif" />
@@ -178,6 +183,7 @@
 	  <None Remove="Resources\Images\menu_popup.svg" />
 	  <None Remove="Resources\Images\mousedefault.png" />
 	  <None Remove="Resources\Images\noimage.png" />
+	  <None Remove="Resources\Images\pending_purple.svg" />
 	  <None Remove="Resources\Images\pet_menu_1.png" />
 	  <None Remove="Resources\Images\pet_menu_2.png" />
 	  <None Remove="Resources\Images\pet_menu_3.png" />
@@ -190,6 +196,7 @@
 	  <None Remove="Resources\Images\question_yellow.svg" />
 	  <None Remove="Resources\Images\rabbitdefault.png" />
 	  <None Remove="Resources\Images\remove_red.svg" />
+	  <None Remove="Resources\Images\splash.svg" />
 	  <None Remove="Resources\Images\trash.svg" />
 	  <None Remove="Resources\Images\trash_red.svg" />
 	  <None Remove="Resources\Images\vaccine.svg" />
@@ -264,6 +271,13 @@
 	  </MauiXaml>
 	  <MauiXaml Update="MVVM\Views\RegisterVaccinePetPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Styles\Colors.xaml">
+	    <Generator></Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Styles\Styles.xaml">
+	    <Generator>MauiStyleGenerator</Generator>
+	    <LastGenOutput>Styles.cs</LastGenOutput>
 	  </MauiXaml>
 	</ItemGroup>
 

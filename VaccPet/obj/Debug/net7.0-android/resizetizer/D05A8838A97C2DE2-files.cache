@@ -20,9 +20,11 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\back.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\birthday.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\breed.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\breed_primary.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\check_green.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\edit_blue.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\female.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\filter_white.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\home.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\home_primary.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\image_vetor.png
@@ -30,6 +32,7 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\male.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\menu_dot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\menu_dot_yellow.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\menu_popup.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\pending_purple.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\pharmacy.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\question_yellow.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\remove_red.png
@@ -44,9 +47,11 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\back.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\birthday.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\breed.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\breed_primary.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\check_green.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\dotnet_bot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\edit_blue.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\female.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\filter_white.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\home.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\home_primary.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\image_vetor.png
@@ -54,6 +59,7 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\male.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\menu_dot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\menu_dot_yellow.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\menu_popup.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\pending_purple.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\pharmacy.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\question_yellow.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\remove_red.png
@@ -68,9 +74,11 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\back.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\birthday.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\breed.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\breed_primary.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\check_green.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\dotnet_bot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\edit_blue.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\female.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\filter_white.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\home.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\home_primary.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\image_vetor.png
@@ -78,6 +86,7 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\male.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\menu_dot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\menu_dot_yellow.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\menu_popup.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\pending_purple.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\pharmacy.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\question_yellow.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xhdpi\remove_red.png
@@ -92,9 +101,11 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\back.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\birthday.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\breed.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\breed_primary.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\check_green.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\dotnet_bot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\edit_blue.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\female.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\filter_white.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\home.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\home_primary.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\image_vetor.png
@@ -102,6 +113,7 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\male.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\menu_dot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\menu_dot_yellow.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\menu_popup.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\pending_purple.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\pharmacy.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\question_yellow.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxhdpi\remove_red.png
@@ -116,9 +128,11 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\back.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\birthday.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\breed.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\breed_primary.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\check_green.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\dotnet_bot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\edit_blue.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\female.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\filter_white.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\home.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\home_primary.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\image_vetor.png
@@ -126,6 +140,7 @@ obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\male.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\menu_dot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\menu_dot_yellow.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\menu_popup.png
+obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\pending_purple.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\pharmacy.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\question_yellow.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-xxxhdpi\remove_red.png

@@ -77,6 +77,8 @@ public partial class RegisterPetPage : ContentPage
         var vm = BindingContext as RegisterPetViewModel;
         vm.ImageVector = true;
 
+        vm.ResetFieldsViewModel();
+
         base.OnAppearing();
     }
 }

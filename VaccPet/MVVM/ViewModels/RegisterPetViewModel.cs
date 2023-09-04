@@ -12,17 +12,17 @@ namespace VaccPet.MVVM.ViewModels
     public class RegisterPetViewModel : BaseViewModel
     {
         #region VARIABLES
-       
+
         private readonly IAnimalService _IAnimalService;
 
         private readonly IImageContainerHelper _ImageContainerHelper;
 
         private readonly PetModelRepository _PetModelRepository;
-       
+
         public AnimalHelper _animalHelper { get; set; } = new AnimalHelper();
 
         #endregion
-        
+
         #region PROPS
 
         string name = "";
@@ -57,20 +57,22 @@ namespace VaccPet.MVVM.ViewModels
         }
 
 
-        string observation;
+        string _observation;
         public string Observation
         {
-            get => observation;
-            set => SetProperty(ref this.observation, value);
+            get => _observation;
+            set => SetProperty(ref this._observation, value);
         }
 
-       
+
         bool isCatrated;
         public bool IsCatrated
         {
             get => isCatrated;
-            set { SetProperty(ref this.isCatrated, value);
-                
+            set
+            {
+                SetProperty(ref this.isCatrated, value);
+
                 if (IsCatrated)
                     IsCastratedText = "Sim";
                 else
@@ -83,7 +85,7 @@ namespace VaccPet.MVVM.ViewModels
         public AnimalHelper AnimalSelected
         {
             get => animalSelected;
-            set => SetProperty(ref animalSelected, value);            
+            set=>SetProperty(ref animalSelected, value);                           
         }
 
 
@@ -168,6 +170,7 @@ namespace VaccPet.MVVM.ViewModels
             set => SetProperty(ref imageVector, value);
         }
 
+    
         #endregion
 
         #region COMMANDS
@@ -181,8 +184,8 @@ namespace VaccPet.MVVM.ViewModels
 
         public RegisterPetViewModel(IAnimalService IAnimalService,
                                     IImageContainerHelper ImageContainerHelper)
-        {          
-            _PetModelRepository = new PetModelRepository(App.dbPath);        
+        {           
+            _PetModelRepository = new PetModelRepository(App.dbPath);
             _IAnimalService = IAnimalService;
             _ImageContainerHelper = ImageContainerHelper;
 
@@ -191,9 +194,9 @@ namespace VaccPet.MVVM.ViewModels
             ClearFields = new Command(OnClearFields);
 
             GetImageFromGalleryCommand = new Command(async () => await OnGetImageFromGalleryCommand());
-            AddPetCommand = new Command(OnAddPetCommand);          
+            AddPetCommand = new Command(OnAddPetCommand);
         }
-        
+
         #region METHODS
         private async void OnAddPetCommand()
         {
@@ -204,7 +207,7 @@ namespace VaccPet.MVVM.ViewModels
             pet.ImageData = ImagePath == "image_vetor.svg" ?
                             await _ImageContainerHelper.GetImageDefault(AnimalSelected.Value) :
                             await _ImageContainerHelper.ReadImageBytes(ImagePath);
-                                   
+
             pet.BirthDate = BirthDate;
             pet.Color = Color;
             pet.Observation = Observation;
@@ -213,7 +216,7 @@ namespace VaccPet.MVVM.ViewModels
             pet.Weight = Weight;
             pet.Age = 0;
 
-            var result = await _PetModelRepository.SavePetAsync(pet);            
+            var result = await _PetModelRepository.SavePetAsync(pet);
 
             if (result > 0)
             {
@@ -241,7 +244,7 @@ namespace VaccPet.MVVM.ViewModels
                 ImageVector = true;
             }
         }
-      
+
         public void OnClearFields()
         {
             Name = string.Empty;
@@ -252,6 +255,19 @@ namespace VaccPet.MVVM.ViewModels
             BirthDate = DateTime.Now;
             IsToggledSex = false;
             IsCastratedText = "Não";
+            Observation = string.Empty;
+        }
+
+
+        public void ResetFieldsViewModel()
+        {            
+            Name = string.Empty;
+            AnimalSelected = new AnimalHelper();
+            Color = string.Empty;
+            Weight = 0;
+            BirthDate = DateTime.Now;
+            IsToggledSex = false;
+            IsToggledCatrated = false;
             Observation = string.Empty;
         }
 

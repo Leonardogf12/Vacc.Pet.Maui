@@ -6,7 +6,7 @@ namespace VaccPet.MVVM.Views;
 
 public partial class HomePage : ContentPage
 {
-
+   
     private readonly INavigationService _navigationService;
 
     public ImageButtonAnimationHelper _imageButtonAnimationHelper = new();

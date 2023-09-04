@@ -64,8 +64,8 @@
 
         private bool ValidateDateSelected(DateTime dateSelected)
         {
-            if (dateSelected > DateTime.Now)
-                return false;
+            //if (dateSelected > DateTime.Now)
+            //    return false;
 
             return true;
         }
